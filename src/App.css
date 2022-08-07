@@ -3,5 +3,8 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    width: 320px;
+    margin: 50px auto;
+    border: 1px solid black
    
 };

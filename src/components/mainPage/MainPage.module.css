@@ -1,7 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
 .mainPage {
     background: url(./img/BacgroundMainPage.svg) no-repeat;
     background-size: cover;
-    width:320px;
+    width: 320px;
     height: 570px;
 }
 
+
+.title {
+    margin-top: 70px;
+    margin-left: 16px;
+    margin-right: 16px;
+    width: 288px;
+    height: 34px;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    text-shadow: 0px 0px 25px #2692EC, 0px 0px 15px #2692EC;
+
+}
+
+.titleDescr {
+    width: 288px;
+    height: 74px;
+    margin-top: 20px;
+    margin-left: 16px;
+    margin-right: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    color: #F5F5F5;
+    text-shadow: 0px 0px 15px rgba(38, 146, 236, 0.5);
+}
+
+.course {
+    width: 140px;
+    height: 35px;
+    margin-top: 70px;
+    margin-left: 90px;
+    margin-right: 90px;
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    color: #000000;
+    text-align: center;
+}
+
+.course p,
+.practice p {
+    padding-top: 8px;
+}
+
+.practice {
+    width: 140px;
+    height: 35px;
+    margin-top: 30px;
+    margin-left: 90px;
+    margin-right: 90px;
+    background: #FFB81A;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    color: #000000;
+    text-align: center;
+}
+
+.down {
+    margin-top: 85px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    color: white;
+}
+
+.arrow {
+    margin-top:6px;
+}
