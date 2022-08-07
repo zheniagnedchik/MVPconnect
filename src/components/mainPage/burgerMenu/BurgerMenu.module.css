@@ -1,0 +1,18 @@
+.burgerMenu {
+    background: rgba(0, 0, 0, 0.5);
+    height: 64px;
+    width: 320px;
+}
+.mvpIcon {
+    width: 71px;
+    height: 32px;
+    padding: 16px;
+    position: absolute;
+}
+
+.burgerIcon {
+    margin-right: 16px;
+    margin-top: 24px;
+    float: right;
+}
+

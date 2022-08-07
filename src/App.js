@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+
 import './App.css';
+import FeebackGraduates from './components/feebackGraduates/FeebackGraduates';
+import HistorySuccess from './components/historySuccess/historySuccess';
+import MainPage from './components/mainPage/MainPage';
+import MvpConnect from './components/mvpConnect/MvpConnect';
+import OurPartners from './components/ourPartners/OurPartners';
+import Practice from './components/Practice/Practice';
+import StudentChoice from './components/studentChoice/StudentChoice';
+import SuccessTrajectory from './components/successTrajectory/SuccessTrajectory';
+import TestIT from './components/testIT/TestIT';
+import TheoryCourse from './components/theoryCourse/TheoryCourse';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <MainPage/>
+      <StudentChoice/>
+      <TheoryCourse/>
+       <TestIT/>
+      <Practice/>
+      <FeebackGraduates/>
+      <HistorySuccess/>
+      <SuccessTrajectory/>
+      <OurPartners/>
+      <MvpConnect/>
+     
+
     </div>
   );
 }

@@ -1,0 +1,7 @@
+.mainPage {
+    background: url(./img/BacgroundMainPage.svg) no-repeat;
+    background-size: cover;
+    width:320px;
+    height: 570px;
+}
+
