@@ -1,13 +1,7 @@
-import MvpConnectCss from './MvpConnect.module.css';
+import MvpConnectCss from './MvpConnect.module.css'
 
-
-const MvpConnect = ()=> {
-    
-    return (
-        <div className={MvpConnectCss.mvpConnect}>
-          MvpConnect
-        </div>
-    )
+const MvpConnect = () => {
+    return <div className={MvpConnectCss.mvpConnect}>MvpConnect</div>
 }
 
-export default MvpConnect;
+export default MvpConnect
