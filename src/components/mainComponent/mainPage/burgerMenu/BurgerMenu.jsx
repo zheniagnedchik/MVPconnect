@@ -1,10 +1,25 @@
-import BurgerMenuCss from './BurgerMenu.module.css'
-import MvpIcon from './img/MvpConnectIcon.svg'
-import BurgerIcon from './img/BurgerIcon.svg'
+import BurgerMenuCss from './BurgerMenu.module.css';
+import MvpIcon from './img/MvpConnectIcon.svg';
+import BurgerIcon from './img/BurgerIcon.svg';
+import { useRef } from 'react';
 
-const BurgerMenu = () => {
+const BurgerMenu = (props) => {
+    const checkScroll = useRef();
+    const fixedBurgerMenu = () => {
+        if (
+            window.scrollY == window.innerHeight ||
+            window.scrollY > window.innerHeight
+        ) {
+            checkScroll.current.style.position = 'fixed';
+            console.log(checkScroll.current.style.position);
+        } else {
+            checkScroll.current.style.position = 'absolute';
+        }
+    };
+    window.addEventListener('scroll', fixedBurgerMenu);
+
     return (
-        <div className={BurgerMenuCss.burgerMenu}>
+        <div ref={checkScroll} className={BurgerMenuCss.burgerMenu}>
             <div className={BurgerMenuCss.mvpIcon}>
                 <img src={MvpIcon} alt="" />
             </div>
@@ -12,6 +27,6 @@ const BurgerMenu = () => {
                 <img src={BurgerIcon} alt="" />
             </div>
         </div>
-    )
-}
-export default BurgerMenu
+    );
+};
+export default BurgerMenu;

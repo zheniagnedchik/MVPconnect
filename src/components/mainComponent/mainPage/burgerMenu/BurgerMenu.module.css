@@ -1,12 +1,17 @@
 .burgerMenu {
     height: 8vh;
     width: 100%;
+    position: absolute;
 }
 .mvpIcon {
     width: 22.18vw;
     height: 5.61vh;
     padding: 5vw;
     position: absolute;
+}
+.mvpIcon img {
+    width: 22.18vw;
+    height: 5.61vh;
 }
 
 .burgerIcon {
