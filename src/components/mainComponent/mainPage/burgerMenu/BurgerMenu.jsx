@@ -7,11 +7,12 @@ const BurgerMenu = (props) => {
     const checkScroll = useRef();
     const fixedBurgerMenu = () => {
         if (
-            window.scrollY == window.innerHeight ||
-            window.scrollY > window.innerHeight
+            (window.scrollY == window.innerHeight &&
+                checkScroll.current.style.position == 'absolute') ||
+            (window.scrollY > window.innerHeight &&
+                checkScroll.current.style.position == 'absolute')
         ) {
             checkScroll.current.style.position = 'fixed';
-            console.log(checkScroll.current.style.position);
         } else {
             checkScroll.current.style.position = 'absolute';
         }

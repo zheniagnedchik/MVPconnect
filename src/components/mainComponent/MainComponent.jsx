@@ -9,6 +9,7 @@ import TestIT from './testIT/TestIT';
 import TheoryCourse from './theoryCourse/TheoryCourse';
 import FeebackGraduates from './feebackGraduates/FeebackGraduates';
 import HistorySuccess from './historySuccess/historySuccess';
+import { useRef, useCallback, useEffect } from 'react';
 
 const MainComponent = () => {
     return (
