@@ -19,3 +19,7 @@
     margin-top: 4.21vh;
     float: right;
 }
+
+.fixed {
+    position: fixed;
+}
