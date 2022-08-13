@@ -1,7 +1,8 @@
 .burgerMenu {
-    height: 8vh;
+    height: 12.1vh;
     width: 100%;
     position: absolute;
+    background: rgba(0, 0, 0, 0.5);
 }
 .mvpIcon {
     width: 22.18vw;
@@ -9,7 +10,7 @@
     padding: 5vw;
     position: absolute;
 }
-.mvpIcon img {
+.mvpIconImg {
     width: 22.18vw;
     height: 5.61vh;
 }
@@ -22,4 +23,15 @@
 
 .fixed {
     position: fixed;
+    height: 10vh;
+}
+
+.fixedImg {
+    width: 15.62vw;
+    height: 8.77vh;
+}
+.fixedIcon {
+    width: 22.18vw;
+    height: 5.61vh;
+    padding: 2.5vw;
 }
