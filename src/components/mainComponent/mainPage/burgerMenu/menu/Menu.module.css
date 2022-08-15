@@ -1,0 +1,13 @@
+.menu {
+    position: fixed;
+    width: 100vw;
+
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    transition: all 1s;
+    color: white;
+}
+
+.menuActive {
+    transform: translateX(100%);
+}

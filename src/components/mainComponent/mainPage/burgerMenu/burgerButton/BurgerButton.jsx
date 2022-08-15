@@ -2,13 +2,18 @@ import BurgerButtonCss from './BurgerButton.module.css';
 
 const BurgerButton = (props) => {
     return (
-        <div>
-            <div className={BurgerButtonCss.burgerButtonWrapper}>
+        <div className={BurgerButtonCss.burgerButtonWrapper}>
+            <div
+                className={BurgerButtonCss.burgerButton}
+                onClick={() => {
+                    props.updateMenu();
+                }}
+            >
                 <div
                     className={` ${
                         props.active
-                            ? BurgerButtonCss.fixedBtn
-                            : BurgerButtonCss.btn
+                            ? BurgerButtonCss.fixedTwoLine
+                            : BurgerButtonCss.twoLine
                     }`}
                 >
                     <span

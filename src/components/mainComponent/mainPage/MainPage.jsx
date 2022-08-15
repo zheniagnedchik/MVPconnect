@@ -6,7 +6,7 @@ const MainPage = () => {
     return (
         <div className={MainPageCss.mainWrapper}>
             <div className={MainPageCss.mainPage}>
-                <BurgerMenu fixedBurger="fixedBurger" />
+                <BurgerMenu />
 
                 <div className={MainPageCss.title}>MVP connect</div>
                 <div className={MainPageCss.subtitle}>

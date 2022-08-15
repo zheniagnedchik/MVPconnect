@@ -2,6 +2,7 @@ import BurgerMenuCss from './BurgerMenu.module.css';
 import MvpIcon from './img/MvpConnectIcon.svg';
 import React from 'react';
 import BurgerButton from './burgerButton/BurgerButton';
+import Menu from './menu/Menu';
 
 class BurgerMenu extends React.Component {
     constructor(props) {
@@ -10,6 +11,7 @@ class BurgerMenu extends React.Component {
             prevScrollpos: window.pageYOffset,
             pastScrollpos: window.innerHeight,
             visible: false,
+            menuActive: false,
         };
     }
 
@@ -31,6 +33,11 @@ class BurgerMenu extends React.Component {
         });
     };
 
+    updateMenu = () => {
+        const menuActive = !this.state.menuActive;
+        this.setState({ menuActive });
+    };
+
     render() {
         return (
             <div
@@ -38,6 +45,8 @@ class BurgerMenu extends React.Component {
                     this.state.visible ? BurgerMenuCss.fixed : ''
                 }`}
             >
+                {' '}
+                <Menu menuActive={this.state.menuActive} />
                 <div
                     className={`${BurgerMenuCss.mvpIcon} ${
                         this.state.visible ? BurgerMenuCss.fixedIcon : ''
@@ -52,7 +61,10 @@ class BurgerMenu extends React.Component {
                     />
                 </div>
                 <div className={BurgerMenuCss.burgerIcon}>
-                    <BurgerButton active={this.state.visible} />
+                    <BurgerButton
+                        active={this.state.visible}
+                        updateMenu={this.updateMenu}
+                    />
                 </div>
             </div>
         );
