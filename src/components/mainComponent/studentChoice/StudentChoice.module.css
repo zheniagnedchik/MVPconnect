@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
 .studentChoice {
     width: 100%;
     height: 113.71vh;
     background: black;
 }
 
-.wrapper {
-    margin-top: 12.28vh;
-}
-
-.title {
+.mainTitle {
     width: 90vw;
     height: 15.43vh;
     font-family: 'Open Sans';
@@ -18,107 +15,80 @@
     font-size: 4.2vmax;
     line-height: 140%;
     color: #ffffff;
+    margin-top: 12.28vh;
 
     text-shadow: 0px 0px 25px #2692ec, 0px 0px 15px #2692ec;
     margin-left: 5vw;
     margin-right: 5vw;
 }
-.accordionWrapper {
-    margin-left: 5vw;
-    margin-right: 5vw;
-    margin-top: 5.26vh;
-}
-.accordionItem:nth-child(4) div .accordion {
-    font-size: 2.7vmax;
-}
-.accordionItem:nth-child(4) div .accordion::after {
-    margin-top: -7vh;
-}
-.accordionItem:nth-child(4) div .active.accordion::after {
-    margin-top: -7vh;
-}
-.accordionItem {
+.accordiondWrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 1.4vh;
 }
 
-.accordionItem img {
-    margin-right: 5vw;
-}
 .accordion {
-    background-color: black;
+    margin-top: 5.26vh;
+    margin-left: 5.31vw;
+    margin-right: 4.46vw;
+    width: 90vw;
+}
+
+.icon {
+    float: left;
+    padding-top: 10px;
+}
+
+.title {
     color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
     cursor: pointer;
+    color: #aeb4b9;
+}
+
+.title h2 {
+    font-family: 'Open Sans';
+    font-style: normal;
     font-size: 2.8vmax;
     width: 59.6vw;
-    height: 7.71vh;
-    line-height: 140%;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    color: #aeb4b9;
-    text-align: left;
-    border: none;
-    outline: none;
+    font-weight: 400;
+    text-align: start;
     transition: 0.4s;
-    margin-top: 2.98vh;
-    display: block;
 }
-
-.accordion::after {
-    content: '';
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    display: block;
-    position: absolute;
-    left: 90vw;
-
-    margin-top: -30px;
-    width: 10px;
-    height: 10px;
-    transform: rotate(45deg);
-    transition: transform 1s;
-}
-
-.active.accordion::after {
-    content: '';
-    border: solid gold;
-    border-width: 0 2px 2px 0;
-    display: block;
-    position: absolute;
-    left: 90vw;
-    margin-top: -5.26vh;
-
-    width: 3.12vw;
-    height: 1.75vh;
-    transform: rotate(220deg);
-    transition: transform 1s;
-}
-
-.active,
-.accordion:hover {
+.title:hover {
     color: gold;
 }
-.panel {
-    background-color: black;
 
-    max-height: 0;
-    font-size: 12px;
-    text-align: left;
-    color: white;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+.titleActive {
+    color: gold;
 }
-
-.panel p {
-    margin-left: 0.87vh;
-    font-size: 2.1vmax;
-    line-height: 140%;
+.content {
+    text-align: start;
+    color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
+    font-size: 2.1vmax;
+
+    margin-left: 15.56vw;
+    margin-bottom: 1.22vh;
+}
+
+.activeContent {
+    max-height: 50px;
+    transition: all 0.5s;
+}
+.arrow {
+    transition: all 0.5s;
+}
+.active {
+    rotate: 180deg;
 }
 
 .btn {

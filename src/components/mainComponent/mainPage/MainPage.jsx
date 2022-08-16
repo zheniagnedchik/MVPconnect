@@ -1,6 +1,7 @@
 import BurgerMenu from './burgerMenu/BurgerMenu';
 import MainPageCss from './MainPage.module.css';
 import Vector from './img/Vector.svg';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const MainPage = () => {
     return (
@@ -19,12 +20,19 @@ const MainPage = () => {
                     <p>Практика</p>
                 </div>
 
-                <div className={MainPageCss.down}>
-                    Вниз
-                    <div className={MainPageCss.arrow}>
-                        <img src={Vector} alt="" />
+                <Link
+                    to="#studentChoice"
+                    smooth
+                    style={{ textDecoration: 'none' }}
+                >
+                    {' '}
+                    <div className={MainPageCss.down}>
+                        Вниз
+                        <div className={MainPageCss.arrow}>
+                            <img src={Vector} alt="" />
+                        </div>
                     </div>
-                </div>
+                </Link>
             </div>
         </div>
     );

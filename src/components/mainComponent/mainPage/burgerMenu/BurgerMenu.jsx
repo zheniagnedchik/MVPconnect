@@ -23,6 +23,8 @@ class BurgerMenu extends React.Component {
         window.removeEventListener('scroll', this.handleScroll);
     }
 
+    // position fixed for burger menu
+
     handleScroll = () => {
         const { pastScrollpos } = this.state;
         const currentScrollPos = window.pageYOffset;
@@ -32,7 +34,7 @@ class BurgerMenu extends React.Component {
             visible,
         });
     };
-
+    //  Open burger menu
     updateMenu = () => {
         const menuActive = !this.state.menuActive;
         this.setState({ menuActive });
@@ -62,6 +64,7 @@ class BurgerMenu extends React.Component {
                 </div>
                 <div className={BurgerMenuCss.burgerIcon}>
                     <BurgerButton
+                        menuActive={this.state.menuActive}
                         active={this.state.visible}
                         updateMenu={this.updateMenu}
                     />

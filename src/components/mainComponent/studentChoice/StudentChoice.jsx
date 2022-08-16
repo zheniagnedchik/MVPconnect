@@ -1,118 +1,68 @@
 import StudentChoiceCss from './StudentChoice.module.css';
-
+import { useState } from 'react';
 import Icon from './img/icon.svg';
 import Vector from './img/Vector.svg';
+import VectorGold from './img/VectorGold.svg';
 
 const StudentChoice = () => {
-    let openAccordion = (event) => {
-        event.target.classList.toggle(StudentChoiceCss.active);
-        if (event.target.nextElementSibling.style.maxHeight) {
-            event.target.nextElementSibling.style.maxHeight = null;
-        } else {
-            event.target.nextElementSibling.style.maxHeight =
-                event.target.nextElementSibling.scrollHeight + 'px';
+    const [selected, setSelected] = useState(null);
+    // Accordion
+    const toggle = (i) => {
+        if (selected == i) {
+            return setSelected(null);
         }
+        setSelected(i);
     };
+
     return (
-        <div className={StudentChoiceCss.studentChoice}>
-            <div className={StudentChoiceCss.wrapper}>
-                <div className={StudentChoiceCss.title}>
-                    Почему студенты выбирают MVP connect
-                </div>
-                <div className={StudentChoiceCss.accordionWrapper}>
-                    {/* First */}
-                    <div className={StudentChoiceCss.accordionItem}>
-                        <img src={Icon} alt="" />
-                        <div>
-                            <div
-                                onClick={openAccordion}
-                                className={StudentChoiceCss.accordion}
-                            >
-                                Коммерческие проекты
-                            </div>
-
-                            <div className={StudentChoiceCss.panel}>
-                                <p>
-                                    IT- курсы и практика на коммерческих
-                                    проектах и стартапах
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    {/* Second */}
-                    <div className={StudentChoiceCss.accordionItem}>
-                        <img src={Icon} alt="" />
-                        <div>
-                            <div
-                                onClick={openAccordion}
-                                className={StudentChoiceCss.accordion}
-                            >
-                                Ментор для каждой профессии
-                            </div>
-
-                            <div className={StudentChoiceCss.panel}>
-                                <p>
-                                    IT- курсы и практика на коммерческих
-                                    проектах и стартапах
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    {/* Third */}
-                    <div className={StudentChoiceCss.accordionItem}>
-                        <img src={Icon} alt="" />
-                        <div>
-                            <div
-                                onClick={openAccordion}
-                                className={StudentChoiceCss.accordion}
-                            >
-                                Совмещай работу и учёбу
-                            </div>
-                            <div className={StudentChoiceCss.panel}>
-                                <p>
-                                    IT- курсы и практика на коммерческих
-                                    проектах и стартапах
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    {/* Fourth */}
-                    <div className={StudentChoiceCss.accordionItem}>
-                        <img src={Icon} alt="" />
-                        <div>
-                            <div
-                                onClick={openAccordion}
-                                className={StudentChoiceCss.accordion}
-                            >
-                                Полноценные команды (BA,Dev,UI/UX...)
-                            </div>
-                            <div className={StudentChoiceCss.panel}>
-                                <p>
-                                    IT- курсы и практика на коммерческих
-                                    проектах и стартапах
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    {/* Fifth */}
-                    <div className={StudentChoiceCss.accordionItem}>
-                        <img src={Icon} alt="" />
-                        <div>
-                            <div
-                                onClick={openAccordion}
-                                className={StudentChoiceCss.accordion}
-                            >
+        <div className={StudentChoiceCss.studentChoice} id="studentChoice">
+            <div className={StudentChoiceCss.mainTitle}>
+                Почему студенты выбирают MVP connect
+            </div>
+            <div className={StudentChoiceCss.accordiondWrapper}>
+                <div className={StudentChoiceCss.accordion}>
+                    {data.map((item, i) => (
+                        <div className={StudentChoiceCss.item}>
+                            <div className={StudentChoiceCss.icon}>
                                 {' '}
-                                Стоимость обучения
+                                <img src={Icon} alt="" />
                             </div>
-                            <div className={StudentChoiceCss.panel}>
-                                <p>
-                                    IT- курсы и практика на коммерческих
-                                    проектах и стартапах
-                                </p>
+                            <div
+                                className={`${StudentChoiceCss.title} ${
+                                    selected == i
+                                        ? StudentChoiceCss.titleActive
+                                        : ''
+                                }`}
+                                onClick={() => toggle(i)}
+                            >
+                                <h2>{item.section}</h2>
+                                <div
+                                    className={`${StudentChoiceCss.arrow} ${
+                                        selected == i
+                                            ? StudentChoiceCss.active
+                                            : ''
+                                    }`}
+                                >
+                                    {' '}
+                                    <img
+                                        src={`${
+                                            selected == i ? VectorGold : Vector
+                                        }`}
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <div
+                                className={`${StudentChoiceCss.content} ${
+                                    selected == i
+                                        ? StudentChoiceCss.activeContent
+                                        : ''
+                                }`}
+                            >
+                                <div> {item.subsection}</div>{' '}
                             </div>
                         </div>
-                    </div>
+                    ))}
                 </div>
             </div>
             <div className={StudentChoiceCss.btn}>
@@ -121,5 +71,29 @@ const StudentChoice = () => {
         </div>
     );
 };
+
+const data = [
+    {
+        section: 'Коммерческие проекты  ',
+        subsection: 'IT- курсы и практика на коммерческих проектах и стартапах',
+    },
+    {
+        section: 'Ментор для каждой профессии',
+        subsection: 'IT- курсы и практика на коммерческих проектах и стартапах',
+    },
+
+    {
+        section: 'Совмещай работу и учёбу',
+        subsection: 'IT- курсы и практика на коммерческих проектах и стартапах',
+    },
+    {
+        section: 'Стоимость обучения',
+        subsection: 'IT- курсы и практика на коммерческих проектах и стартапах',
+    },
+    {
+        section: 'Полноценные команды (BA, Dev, UI/UX...)',
+        subsection: 'IT- курсы и практика на коммерческих проектах и стартапах',
+    },
+];
 
 export default StudentChoice;

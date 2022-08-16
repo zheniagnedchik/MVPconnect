@@ -6,7 +6,7 @@ const Menu = (props) => {
         <div className={MenuCss.wrapper}>
             <div
                 className={`${MenuCss.menu} ${
-                    props.menuActive ? MenuCss.menuActive : ''
+                    props.menuActive ? '' : MenuCss.menuActive
                 }`}
             >
                 <MenuAccordion />

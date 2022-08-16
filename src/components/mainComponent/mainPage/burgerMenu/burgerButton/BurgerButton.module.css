@@ -2,15 +2,21 @@
     width: 8.43vw;
     height: 2.8vh;
     position: relative;
+    transition: all 0.3s;
 }
+
 .twoLine::before {
     content: '';
     right: 0;
     position: absolute;
-    top: 0;
+
     background: white;
     width: 8.43vw;
     height: 0.52vh;
+}
+
+.twoLineActive::before {
+    visibility: hidden;
 }
 
 .twoLine::after {
@@ -22,6 +28,9 @@
     background: white;
     height: 0.52vh;
 }
+.twoLineActive::after {
+    visibility: hidden;
+}
 
 .mediumLine {
     position: absolute;
@@ -30,22 +39,33 @@
     width: 8.43vw;
     height: 0.52vh;
     right: 0;
+    transition: 0.3s;
+}
+
+.mediumLineActive {
+    transform: rotate(45deg);
+    transition: 0.3s;
+}
+.mediumLineActive2 {
+    transform: rotate(-45deg);
+    transition: 0.3s;
 }
 
 .fixedTwoLine {
     width: 7.05vw;
     height: 2.28vh;
-
+    transition: all 0.3s;
     position: relative;
 }
 
 .fixedTwoLine::before {
     content: '';
     position: absolute;
-    top: 0;
+
     right: 0;
     background: white;
     width: 7.05vw;
+
     height: 0.35vh;
 }
 
@@ -66,4 +86,5 @@
     background: white;
     width: 7.05vw;
     height: 0.35vh;
+    transition: 0.3s;
 }

@@ -14,14 +14,31 @@ const BurgerButton = (props) => {
                         props.active
                             ? BurgerButtonCss.fixedTwoLine
                             : BurgerButtonCss.twoLine
-                    }`}
+                    } ${
+                        props.menuActive ? BurgerButtonCss.twoLineActive : ''
+                    } `}
                 >
                     <span
                         className={` ${
                             props.active
                                 ? BurgerButtonCss.fixedMediumLine
                                 : BurgerButtonCss.mediumLine
-                        }`}
+                        } ${
+                            props.menuActive
+                                ? BurgerButtonCss.mediumLineActive
+                                : ''
+                        }  `}
+                    ></span>
+                    <span
+                        className={` ${
+                            props.active
+                                ? BurgerButtonCss.fixedMediumLine
+                                : BurgerButtonCss.mediumLine
+                        } ${
+                            props.menuActive
+                                ? BurgerButtonCss.mediumLineActive2
+                                : ''
+                        }  `}
                     ></span>
                 </div>
             </div>

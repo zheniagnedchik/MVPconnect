@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+.wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+}
+
+.accordion {
+    margin-top: 13.68vh;
+    margin-left: 5.31vw;
+    margin-right: 4.46vw;
+    width: 90vw;
+}
+
+.title {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.title h2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 3.15vmax;
+    line-height: 100%;
+    font-weight: 400;
+}
+
+.content {
+    text-align: start;
+    color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.8vmax;
+    line-height: 160%;
+    margin-left: 11.56vw;
+    margin-bottom: 1.22vh;
+}
+
+.activeContent {
+    max-height: 130px;
+    transition: all 0.5s;
+}
+.arrow {
+    transition: all 0.5s;
+}
+.active {
+    rotate: 180deg;
+}
