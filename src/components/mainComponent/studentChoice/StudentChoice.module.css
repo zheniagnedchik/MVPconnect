@@ -17,7 +17,7 @@
     color: #ffffff;
     margin-top: 12.28vh;
 
-    text-shadow: 0px 0px 25px #2692ec, 0px 0px 15px #2692ec;
+    text-shadow: 0px 0px 10px #2692ec;
     margin-left: 5vw;
     margin-right: 5vw;
 }
@@ -88,11 +88,11 @@
     transition: all 0.5s;
 }
 .active {
-    rotate: 180deg;
+    transform: rotate(180deg);
 }
 
 .btn {
-    width: 58.75wh;
+    width: 58.75vw;
     height: 5.96vh;
     background: #ffb81a;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);

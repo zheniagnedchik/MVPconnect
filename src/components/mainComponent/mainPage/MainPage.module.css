@@ -6,6 +6,11 @@
     height: 100vh;
     width: 100%;
 }
+.mainPage a {
+    display: block;
+    width: 15.62vw;
+    margin: 0 auto;
+}
 
 .title {
     padding-top: 22.8vh;
@@ -79,10 +84,11 @@
 }
 
 .down {
-    margin-top: 16.31vh;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
+
+    margin-top: 16.31vh;
     font-size: 4.37vmin;
     line-height: 100%;
     color: white;
