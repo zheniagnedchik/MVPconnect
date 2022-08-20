@@ -1,0 +1,111 @@
+.TestITStartCss {
+    width: 100%;
+    height: 100vh;
+}
+.btnBackWrapper {
+    margin-top: 8vh;
+}
+.btnBack {
+    color: white;
+    display: flex;
+    margin-left: 5vw;
+}
+
+.btnBack p {
+    margin-left: 3.12vw;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.75vmax;
+    line-height: 130%;
+}
+
+.titleWrapper {
+    margin-top: 5.5vh;
+}
+
+.title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.5vmax;
+    line-height: 130%;
+    color: #f6c350;
+}
+
+.subTitle {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.63vmax;
+    line-height: 130%;
+    color: white;
+    margin-top: 1.75vh;
+}
+.questionWrapper {
+    margin-top: 3.5vh;
+}
+.questionNumber {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.45vmax;
+    line-height: 130%;
+    color: white;
+}
+
+.question {
+    margin-top: 1.75vh;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.45vmax;
+    line-height: 130%;
+    color: white;
+}
+
+.options {
+    color: white;
+    margin: 5.96vh auto 0;
+}
+
+.option {
+    margin-top: 1.75vh;
+}
+.option label {
+    margin-left: 3.12vw;
+}
+
+.option p {
+    margin-left: 3.12vw;
+}
+
+.allQuestionNumbers {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.45vmax;
+    line-height: 130%;
+    margin-top: 12.28vh;
+    color: white;
+}
+
+.testBtn {
+    width: 43.75vw;
+    height: 5.96vh;
+    background: #ffb81a;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+
+    margin: 1.75vh auto 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.45vmax;
+    line-height: 130%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    color: #000000;
+}

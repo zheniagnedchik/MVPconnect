@@ -62,7 +62,11 @@ class BurgerMenu extends React.Component {
                         alt=""
                     />
                 </div>
-                <div className={BurgerMenuCss.burgerIcon}>
+                <div
+                    className={`${BurgerMenuCss.burgerIcon} ${
+                        this.state.visible ? BurgerMenuCss.fixedBurgerIcon : ''
+                    }`}
+                >
                     <BurgerButton
                         menuActive={this.state.menuActive}
                         active={this.state.visible}

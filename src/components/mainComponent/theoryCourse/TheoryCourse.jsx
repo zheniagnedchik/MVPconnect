@@ -19,8 +19,10 @@ const TheoryCourse = () => {
             <Splide
                 hasTrack={false}
                 options={{
+                    type: 'loop',
                     rewind: true,
                     rewindByDrag: true,
+
                     classes: {
                         page: `splide__pagination__page splide__pagination__customPage`,
                     },
@@ -113,7 +115,7 @@ const TheoryCourse = () => {
                     </button>
                 </div>
                 <div className="splide__customPagination">
-                    <ul class="splide__pagination "></ul>
+                    <ul className="splide__pagination "></ul>
                 </div>
             </Splide>
         </div>
