@@ -2,7 +2,7 @@
 
 .theoryCourse {
     width: 100%;
-    height: 570px;
+    height: 100vh;
     background: black;
 }
 
@@ -47,7 +47,9 @@
 .sliderImg {
     margin: 2.63vh 5vw 5vw 1.75vh;
 }
-
+.sliderImg img {
+    width: 58.75vw;
+}
 .sliderTitle {
     color: white;
     font-family: 'Open Sans';
@@ -87,8 +89,4 @@
     font-style: normal;
     font-weight: 700;
     color: #000000;
-}
-
-.splideWrapper {
-    height: 400px;
 }

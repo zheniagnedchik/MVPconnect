@@ -4,6 +4,7 @@ import VectorLeft from './img/VectorLeft.svg';
 import slider1 from './img/slider1.svg';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/skyblue';
+import './splide.css';
 
 const TheoryCourse = () => {
     return (
@@ -16,14 +17,12 @@ const TheoryCourse = () => {
                 </div>
             </div>
             <Splide
-                onActive={(Slide) => {
-                    console.log(Slide);
-                }}
                 hasTrack={false}
                 options={{
+                    rewind: true,
+                    rewindByDrag: true,
                     classes: {
-                        pagination: `splide__pagination ${TheoryCourseCss.pagination}`,
-                        page: `splide__pagination__page`,
+                        page: `splide__pagination__page splide__pagination__customPage`,
                     },
                 }}
                 aria-label="..."
@@ -85,15 +84,36 @@ const TheoryCourse = () => {
                                 </div>
                             </div>
                         </SplideSlide>
+                        <SplideSlide>
+                            {' '}
+                            <div className={TheoryCourseCss.slider}>
+                                <div className={TheoryCourseCss.sliderImg}>
+                                    <img src={slider1} alt="" />
+                                </div>
+                                <div className={TheoryCourseCss.sliderTitle}>
+                                    Введение в програмирование
+                                </div>
+                                <div className={TheoryCourseCss.sliderSubTitle}>
+                                    Вы изучите распространенные языки
+                                    програмирования.
+                                </div>
+                                <div className={TheoryCourseCss.sliderBtn}>
+                                    Подробнее
+                                </div>
+                            </div>
+                        </SplideSlide>
                     </SplideTrack>
 
-                    <div className="splide__arrows" />
-                    <button className="splide__arrow splide__arrow--prev">
+                    <div className="splide__arrows splide__arrows" />
+                    <button className="splide__arrow splide__arrow--prev splide__customArrow--prev">
                         <img src={VectorLeft} alt="" />
                     </button>
-                    <button className="splide__arrow splide__arrow--next">
+                    <button className="splide__arrow splide__arrow--next splide__customArrow--next">
                         <img src={VectorRight} alt="" />
                     </button>
+                </div>
+                <div className="splide__customPagination">
+                    <ul class="splide__pagination "></ul>
                 </div>
             </Splide>
         </div>
