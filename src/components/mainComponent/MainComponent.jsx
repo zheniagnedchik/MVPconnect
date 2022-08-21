@@ -23,8 +23,11 @@ import TestITQuestion8 from './testIT/testITQuestions/questions/TestITQuestion8'
 import TestITQuestion9 from './testIT/testITQuestions/questions/TestITQuestion9';
 import TestITQuestion10 from './testIT/testITQuestions/questions/TestITQuestion10';
 import TestDesigner from './testIT/testITQuestions/testResults/TestDesigner';
+import TestHR from './testIT/testITQuestions/testResults/TestHR';
+import TestPrdM from './testIT/testITQuestions/testResults/TestPrdM';
+import TestQA from './testIT/testITQuestions/testResults/TestQA';
 
-const MainComponent = () => {
+const MainComponent = (props) => {
     return (
         <div className={MainComponentCss.mainComponent}>
             <MainPage />
@@ -32,19 +35,109 @@ const MainComponent = () => {
             <TheoryCourse />
             <Routes>
                 <Route path="/" element={<TestIT />} />
-                <Route path="/testITQuestions" element={<TestITStart />}>
-                    <Route path="Question1" element={<TestITQuestion1 />} />
-                    <Route path="Question2" element={<TestITQuestion2 />} />
-                    <Route path="Question3" element={<TestITQuestion3 />} />
-                    <Route path="Question4" element={<TestITQuestion4 />} />
-                    <Route path="Question5" element={<TestITQuestion5 />} />
-                    <Route path="Question6" element={<TestITQuestion6 />} />
-                    <Route path="Question7" element={<TestITQuestion7 />} />
-                    <Route path="Question8" element={<TestITQuestion8 />} />
-                    <Route path="Question9" element={<TestITQuestion9 />} />
-                    <Route path="Question10" element={<TestITQuestion10 />} />
+                <Route
+                    path="/testITQuestions"
+                    element={<TestITStart clearResult={props.clearResult} />}
+                >
+                    <Route
+                        path="Question1"
+                        element={
+                            <TestITQuestion1
+                                creatingResult={props.creatingResult}
+                            />
+                        }
+                    />
+                    <Route
+                        path="Question2"
+                        element={
+                            <TestITQuestion2
+                                creatingResult={props.creatingResult}
+                            />
+                        }
+                    />
+                    <Route
+                        path="Question3"
+                        element={
+                            <TestITQuestion3
+                                creatingResult={props.creatingResult}
+                            />
+                        }
+                    />
+                    <Route
+                        path="Question4"
+                        element={
+                            <TestITQuestion4
+                                creatingResult={props.creatingResult}
+                            />
+                        }
+                    />
+                    <Route
+                        path="Question5"
+                        element={
+                            <TestITQuestion5
+                                creatingResult={props.creatingResult}
+                            />
+                        }
+                    />
+                    <Route
+                        path="Question6"
+                        element={
+                            <TestITQuestion6
+                                creatingResult={props.creatingResult}
+                            />
+                        }
+                    />
+                    <Route
+                        path="Question7"
+                        element={
+                            <TestITQuestion7
+                                creatingResult={props.creatingResult}
+                            />
+                        }
+                    />
+                    <Route
+                        path="Question8"
+                        element={
+                            <TestITQuestion8
+                                creatingResult={props.creatingResult}
+                            />
+                        }
+                    />
+                    <Route
+                        path="Question9"
+                        element={
+                            <TestITQuestion9
+                                creatingResult={props.creatingResult}
+                            />
+                        }
+                    />
+                    <Route
+                        path="Question10"
+                        element={
+                            <TestITQuestion10
+                                creatingResult={props.creatingResult}
+                                linkResultTest={props.linkResultTest}
+                                state={props.state}
+                            />
+                        }
+                    />
                 </Route>
-                <Route path="/Designer" element={<TestDesigner />} />
+                <Route
+                    path="/Designer2"
+                    element={<TestDesigner clearResult={props.clearResult} />}
+                />
+                <Route
+                    path="/HR1"
+                    element={<TestHR clearResult={props.clearResult} />}
+                />
+                <Route
+                    path="/PrdM3"
+                    element={<TestPrdM clearResult={props.clearResult} />}
+                />
+                <Route
+                    path="/QA4"
+                    element={<TestQA clearResult={props.clearResult} />}
+                />
             </Routes>
             <Practice />
             <FeebackGraduates />

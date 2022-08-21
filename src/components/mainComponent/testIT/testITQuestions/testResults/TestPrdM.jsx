@@ -1,20 +1,22 @@
 import TestResultsCss from './TestResults.module.css';
 
-import Slide1 from './img/slide1.svg';
+import Slide2 from './img/slide2.svg';
 
 import { NavLink } from 'react-router-dom';
 
-const TestDesigner = (props) => {
+const TestPrdM = (props) => {
     return (
         <div className={TestResultsCss.TestResults}>
             <div className={TestResultsCss.resultImg}>
-                <img src={Slide1} alt="" />
+                <img src={Slide2} alt="" />
             </div>
             <div className={TestResultsCss.titleWrapper}>
                 <div className={TestResultsCss.titleOverhead}>
                     ваш результат
                 </div>
-                <div className={TestResultsCss.title}>You are designer</div>
+                <div className={TestResultsCss.title}>
+                    You are Product Manager
+                </div>
                 <div className={TestResultsCss.subTitle}>Подзаголовок</div>
             </div>
 
@@ -30,4 +32,4 @@ const TestDesigner = (props) => {
     );
 };
 
-export default TestDesigner;
+export default TestPrdM;
