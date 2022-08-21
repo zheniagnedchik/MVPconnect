@@ -37,7 +37,7 @@ const MainComponent = (props) => {
                 <Route path="/" element={<TestIT />} />
                 <Route
                     path="/testITQuestions"
-                    element={<TestITStart clearResult={props.clearResult} />}
+                    element={<TestITStart clearResult={props.clearResult} />} // Outlet for these Route in <TestItStart>
                 >
                     <Route
                         path="Question1"

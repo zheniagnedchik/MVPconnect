@@ -1,6 +1,6 @@
 let state = {
     testITResults: [0, 0, 0, 0], // All points
-    linkResult: '', // Link for question/TestITQuestion10.jsx
+    linkResult: '', // Link for NavLink in question/TestITQuestion10.jsx
 };
 export default state;
 
@@ -19,6 +19,7 @@ export let creatingResult = (value) => {
         state.testITResults[3] += 1; // Point for QA
     }
 };
+// Link for NavLink in question/TestITQuestion10.jsx
 export let linkResultTest = () => {
     let max = Math.max(...state.testITResults);
     let result = state.testITResults.indexOf(max);

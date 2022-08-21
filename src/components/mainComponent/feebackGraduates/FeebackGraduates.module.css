@@ -1,5 +1,103 @@
-.feebackGraduates {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+.theoryCourse {
     width: 100%;
-    height: 570px;
-    border-top: 3px solid dodgerblue;
+    height: 100vh;
+    background: black;
+}
+
+.titleWrapper {
+    margin-top: 12.28vh;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    width: 87.5vw;
+}
+
+.title {
+    color: white;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.2vmax;
+    line-height: 140%;
+
+    text-align: center;
+    text-shadow: 0px 0px 10px #2692ec;
+}
+
+.sliderWrapper {
+    margin-top: 14vh;
+}
+.slider {
+    margin: auto;
+    margin-top: 14vh;
+    background: #000000;
+    border: 1px solid #000000;
+    box-shadow: 0px 0px 15px rgba(255, 184, 26, 0.3);
+    border-radius: 4px;
+    width: 68.75vw;
+    height: 43.85vh;
+    position: relative;
+}
+.sliderImg img {
+    left: 14.7vw;
+
+    bottom: 32vh;
+    position: absolute;
+    width: 40.6vw;
+}
+
+.linedin {
+    color: white;
+    float: right;
+    margin-right: 5vw;
+    margin-top: 2.8vw;
+}
+
+.linedin a {
+    color: white;
+    text-decoration: none;
+}
+
+.sliderTitle {
+    color: white;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.8vmax;
+    line-height: 130%;
+
+    margin-top: 12.28vh;
+}
+
+.sliderProfession {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.1vmax;
+    margin-top: 1.75vh;
+    line-height: 130%;
+    color: rgba(255, 255, 255, 0.31);
+}
+.sliderStars {
+    margin-top: 1.75vh;
+}
+.sliderSubTitle {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.1vmax;
+    line-height: 130%;
+    color: white;
+    margin-top: 1.75vh;
+}
+
+.sliderMore {
+    display: inline;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.1vmax;
+    line-height: 130%;
+    color: #ffb81a;
 }
