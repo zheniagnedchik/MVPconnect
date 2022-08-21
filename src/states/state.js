@@ -1,24 +1,36 @@
 let state = {
-    testITResults: '',
-    linkResult: '',
+    testITResults: [0, 0, 0, 0], // All points
+    linkResult: '', // Link for question/TestITQuestion10.jsx
 };
 export default state;
 
 export let clearResult = () => {
-    state.testITResults = '';
+    state.testITResults = [0, 0, 0, 0]; // Clear All points
 };
 
 export let creatingResult = (value) => {
-    state.testITResults += value;
+    if (value === 1) {
+        state.testITResults[0] += 1; // Point for HR
+    } else if (value === 2) {
+        state.testITResults[1] += 1; // Point for Designer
+    } else if (value === 3) {
+        state.testITResults[2] += 1; // Point for PrdM
+    } else if (value === 4) {
+        state.testITResults[3] += 1; // Point for QA
+    }
 };
 export let linkResultTest = () => {
-    if (state.testITResults == '111111111') {
+    let max = Math.max(...state.testITResults);
+    let result = state.testITResults.indexOf(max);
+    if (result === 0) {
         state.linkResult = '/HR';
-    } else if (state.testITResults == '222222222') {
+    } else if (result === 1) {
         state.linkResult = '/Designer';
-    } else if (state.testITResults == '333333333') {
+    } else if (result === 2) {
         state.linkResult = '/PrdM';
-    } else if (state.testITResults == '444444444') {
+    } else if (result === 3) {
         state.linkResult = '/QA';
+    } else {
+        state.linkResult = '/PrdM';
     }
 };

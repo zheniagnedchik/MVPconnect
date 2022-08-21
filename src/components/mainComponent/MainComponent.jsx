@@ -123,19 +123,19 @@ const MainComponent = (props) => {
                     />
                 </Route>
                 <Route
-                    path="/Designer2"
+                    path="/Designer"
                     element={<TestDesigner clearResult={props.clearResult} />}
                 />
                 <Route
-                    path="/HR1"
+                    path="/HR"
                     element={<TestHR clearResult={props.clearResult} />}
                 />
                 <Route
-                    path="/PrdM3"
+                    path="/PrdM"
                     element={<TestPrdM clearResult={props.clearResult} />}
                 />
                 <Route
-                    path="/QA4"
+                    path="/QA"
                     element={<TestQA clearResult={props.clearResult} />}
                 />
             </Routes>

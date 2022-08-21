@@ -58,7 +58,7 @@ const TestITQuestion10 = (props) => {
             </div>
 
             <NavLink
-                to={`${props.state.linkResult}${selected}`}
+                to={`${props.state.linkResult}`}
                 className={`${selected ? '' : TestITStartCss.testBtnDisabled}`}
             >
                 {' '}
