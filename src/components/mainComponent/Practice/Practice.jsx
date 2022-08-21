@@ -57,16 +57,17 @@ const Practice = () => {
                                     <img src={slider1} alt="" />
                                 </div>
                                 <div className={PracticeCss.sliderTitle}>
-                                    Введение в програмирование
+                                    Business Analysis
                                 </div>
                                 <div className={PracticeCss.sliderSubTitle}>
-                                    Вы изучите распространенные языки
-                                    програмирования.
+                                    Упор на решение реальных задач и
+                                    приобретение практических навыков.
                                 </div>
                                 <div className={PracticeCss.sliderBtn}>
                                     Подробнее
                                 </div>
                             </div>
+                            <br />
                         </SplideSlide>
                         <SplideSlide>
                             {' '}
@@ -75,16 +76,17 @@ const Practice = () => {
                                     <img src={slider1} alt="" />
                                 </div>
                                 <div className={PracticeCss.sliderTitle}>
-                                    Введение в програмирование
+                                    Business Analysis
                                 </div>
                                 <div className={PracticeCss.sliderSubTitle}>
-                                    Вы изучите распространенные языки
-                                    програмирования.
+                                    Упор на решение реальных задач и
+                                    приобретение практических навыков.
                                 </div>
                                 <div className={PracticeCss.sliderBtn}>
                                     Подробнее
                                 </div>
                             </div>
+                            <br />
                         </SplideSlide>
                         <SplideSlide>
                             {' '}
@@ -93,16 +95,17 @@ const Practice = () => {
                                     <img src={slider1} alt="" />
                                 </div>
                                 <div className={PracticeCss.sliderTitle}>
-                                    Введение в програмирование
+                                    Business Analysis
                                 </div>
                                 <div className={PracticeCss.sliderSubTitle}>
-                                    Вы изучите распространенные языки
-                                    програмирования.
+                                    Упор на решение реальных задач и
+                                    приобретение практических навыков.
                                 </div>
                                 <div className={PracticeCss.sliderBtn}>
                                     Подробнее
                                 </div>
                             </div>
+                            <br />
                         </SplideSlide>
                         <SplideSlide>
                             {' '}
@@ -111,16 +114,17 @@ const Practice = () => {
                                     <img src={slider1} alt="" />
                                 </div>
                                 <div className={PracticeCss.sliderTitle}>
-                                    Введение в програмирование
+                                    Business Analysis
                                 </div>
                                 <div className={PracticeCss.sliderSubTitle}>
-                                    Вы изучите распространенные языки
-                                    програмирования.
+                                    Упор на решение реальных задач и
+                                    приобретение практических навыков.
                                 </div>
                                 <div className={PracticeCss.sliderBtn}>
                                     Подробнее
                                 </div>
                             </div>
+                            <br />
                         </SplideSlide>
                     </SplideTrack>
 
