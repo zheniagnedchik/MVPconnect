@@ -1,0 +1,27 @@
+.splide__customPagination {
+    margin-top: 5.26vh;
+
+    height: 2.98vh;
+}
+
+.splide__pagination__customPage {
+    background: #d9d9d9a1;
+    transform: scale(0.8);
+}
+
+.splide__pagination__customPage:hover {
+    background: #ffb81a;
+}
+
+.splide__pagination__customPage.is-active {
+    background: #ffb81a;
+    transform: scale(0.8);
+    z-index: 1;
+}
+
+.splide__customArrow--prev {
+    left: 0.5em;
+}
+.splide__customArrow--next {
+    right: 0.5em;
+}

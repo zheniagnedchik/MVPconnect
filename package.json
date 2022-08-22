@@ -5,6 +5,7 @@
   "dependencies": {
     "@splidejs/react-splide": "^0.7.8",
     "@splidejs/splide-extension-auto-scroll": "^0.4.2",
+    "@splidejs/splide-extension-video": "^0.7.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",

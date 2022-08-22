@@ -8,7 +8,7 @@ import SuccessTrajectory from './successTrajectory/SuccessTrajectory';
 import TestIT from './testIT/TestIT';
 import TheoryCourse from './theoryCourse/TheoryCourse';
 import FeebackGraduates from './feebackGraduates/FeebackGraduates';
-import HistorySuccess from './historySuccess/historySuccess';
+import HistorySuccess from './historySuccess/HistorySuccess';
 import { Routes } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import TestITStart from './testIT/testITQuestions/TestITStart';
