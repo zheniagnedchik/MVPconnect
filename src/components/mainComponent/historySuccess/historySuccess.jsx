@@ -24,7 +24,18 @@ const historySuccess = () => {
                     type: 'loop',
                     rewind: true,
                     rewindByDrag: true,
-
+                    video: {
+                        mute: true,
+                        playerOptions: {
+                            youtube: {
+                                width: '600',
+                            },
+                            vimeo: {},
+                            htmlVideo: {
+                                width: '600',
+                            },
+                        },
+                    },
                     classes: {
                         page: `splide__pagination__page splide__pagination__customPage`,
                     },

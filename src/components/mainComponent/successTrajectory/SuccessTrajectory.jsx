@@ -1,160 +1,102 @@
 import SuccessTrajectoryCss from './SuccessTrajectory.module.css';
 import VectorRight from './img/VectorRight.svg';
 import VectorLeft from './img/VectorLeft.svg';
-import slider1 from './img/slider1.svg';
+import { useRef, useEffect } from 'react';
+import slide1 from './img/slide1.svg';
+import slide2 from './img/slide2.svg';
+import slide3 from './img/slide3.svg';
+import slide4 from './img/slide4.svg';
+import table from './img/table.svg';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/skyblue';
 import './splide.css';
 
 const SuccessTrajectory = () => {
+    const slider1 = useRef();
+    const slider2 = useRef();
+
+    useEffect(() => {
+        slider1.current.sync(slider2.current.splide);
+    }, [slider1, slider2]);
+
     return (
         <div className={SuccessTrajectoryCss.theoryCourse}>
             <div className={SuccessTrajectoryCss.titleWrapper}>
-                <div className={SuccessTrajectoryCss.title}>Практика</div>
+                <div className={SuccessTrajectoryCss.title}>
+                    Траектория вашего успеха
+                </div>
                 <div className={SuccessTrajectoryCss.subTitle}>
-                    Большие проекты, смелые идеи и новые технологии станут
-                    частью твоей работы!
+                    Динамика заработной платы в месяц
                 </div>
             </div>
-            <Splide
-                hasTrack={false}
-                options={{
-                    type: 'loop',
-                    rewind: true,
-                    rewindByDrag: true,
-
-                    classes: {
-                        page: `splide__pagination__page splide__pagination__customPage`,
-                    },
-                }}
-                aria-label="..."
-            >
-                <div className={SuccessTrajectoryCss.splideWrapper}>
-                    <SplideTrack>
-                        <SplideSlide>
+            <div className={SuccessTrajectoryCss.splideWrapper}>
+                <Splide
+                    ref={(slider) => (slider1.current = slider)}
+                    hasTrack={false}
+                    options={{
+                        gap: 2,
+                        perPage: 3,
+                        rewind: true,
+                        isNavigation: true,
+                        pagination: false,
+                        focus: 'center',
+                        breakpoints: {
+                            600: {
+                                fixedWidth: '28.12vw',
+                                fixedHeight: '30vh',
+                            },
+                        },
+                    }}
+                    aria-label="..."
+                >
+                    <SplideTrack className={SuccessTrajectoryCss.splide}>
+                        <SplideSlide
+                            className={SuccessTrajectoryCss.characters}
+                        >
                             {' '}
-                            <div className={SuccessTrajectoryCss.slider}>
-                                <div className={SuccessTrajectoryCss.sliderImg}>
-                                    <img src={slider1} alt="" />
-                                </div>
-                                <div
-                                    className={SuccessTrajectoryCss.sliderTitle}
-                                >
-                                    Business Analysis
-                                </div>
-                                <div
-                                    className={
-                                        SuccessTrajectoryCss.sliderSubTitle
-                                    }
-                                >
-                                    Упор на решение реальных задач и
-                                    приобретение практических навыков.
-                                </div>
-                                <div className={SuccessTrajectoryCss.sliderBtn}>
-                                    Подробнее
-                                </div>
-                            </div>
-                            <br />
+                            <img src={slide1} alt="" />
                         </SplideSlide>
-                        <SplideSlide>
+                        <SplideSlide
+                            className={SuccessTrajectoryCss.characters}
+                        >
                             {' '}
-                            <div className={SuccessTrajectoryCss.slider}>
-                                <div className={SuccessTrajectoryCss.sliderImg}>
-                                    <img src={slider1} alt="" />
-                                </div>
-                                <div
-                                    className={SuccessTrajectoryCss.sliderTitle}
-                                >
-                                    Business Analysis
-                                </div>
-                                <div
-                                    className={
-                                        SuccessTrajectoryCss.sliderSubTitle
-                                    }
-                                >
-                                    Упор на решение реальных задач и
-                                    приобретение практических навыков.
-                                </div>
-                                <div className={SuccessTrajectoryCss.sliderBtn}>
-                                    Подробнее
-                                </div>
-                            </div>
-                            <br />
+                            <img src={slide2} alt="" />
                         </SplideSlide>
-                        <SplideSlide>
+                        <SplideSlide
+                            className={SuccessTrajectoryCss.characters}
+                        >
                             {' '}
-                            <div className={SuccessTrajectoryCss.slider}>
-                                <div className={SuccessTrajectoryCss.sliderImg}>
-                                    <img src={slider1} alt="" />
-                                </div>
-                                <div
-                                    className={SuccessTrajectoryCss.sliderTitle}
-                                >
-                                    Business Analysis
-                                </div>
-                                <div
-                                    className={
-                                        SuccessTrajectoryCss.sliderSubTitle
-                                    }
-                                >
-                                    Упор на решение реальных задач и
-                                    приобретение практических навыков.
-                                </div>
-                                <div className={SuccessTrajectoryCss.sliderBtn}>
-                                    Подробнее
-                                </div>
-                            </div>
-                            <br />
+                            <img src={slide3} alt="" />
                         </SplideSlide>
-                        <SplideSlide>
+                        <SplideSlide
+                            className={SuccessTrajectoryCss.characters}
+                        >
                             {' '}
-                            <div className={SuccessTrajectoryCss.slider}>
-                                <div className={SuccessTrajectoryCss.sliderImg}>
-                                    <img src={slider1} alt="" />
-                                </div>
-                                <div
-                                    className={SuccessTrajectoryCss.sliderTitle}
-                                >
-                                    Business Analysis
-                                </div>
-                                <div
-                                    className={
-                                        SuccessTrajectoryCss.sliderSubTitle
-                                    }
-                                >
-                                    Упор на решение реальных задач и
-                                    приобретение практических навыков.
-                                </div>
-                                <div className={SuccessTrajectoryCss.sliderBtn}>
-                                    Подробнее
-                                </div>
-                            </div>
-                            <br />
+                            <img src={slide4} alt="" />
                         </SplideSlide>
-                        <SplideSlide>
+                        <SplideSlide
+                            className={SuccessTrajectoryCss.characters}
+                        >
                             {' '}
-                            <div className={SuccessTrajectoryCss.slider}>
-                                <div className={SuccessTrajectoryCss.sliderImg}>
-                                    <img src={slider1} alt="" />
-                                </div>
-                                <div
-                                    className={SuccessTrajectoryCss.sliderTitle}
-                                >
-                                    Business Analysis
-                                </div>
-                                <div
-                                    className={
-                                        SuccessTrajectoryCss.sliderSubTitle
-                                    }
-                                >
-                                    Упор на решение реальных задач и
-                                    приобретение практических навыков.
-                                </div>
-                                <div className={SuccessTrajectoryCss.sliderBtn}>
-                                    Подробнее
-                                </div>
-                            </div>
-                            <br />
+                            <img src={slide1} alt="" />
+                        </SplideSlide>
+                        <SplideSlide
+                            className={SuccessTrajectoryCss.characters}
+                        >
+                            {' '}
+                            <img src={slide2} alt="" />
+                        </SplideSlide>
+                        <SplideSlide
+                            className={SuccessTrajectoryCss.characters}
+                        >
+                            {' '}
+                            <img src={slide3} alt="" />
+                        </SplideSlide>
+                        <SplideSlide
+                            className={SuccessTrajectoryCss.characters}
+                        >
+                            {' '}
+                            <img src={slide4} alt="" />
                         </SplideSlide>
                     </SplideTrack>
 
@@ -165,11 +107,44 @@ const SuccessTrajectory = () => {
                     <button className="splide__arrow splide__arrow--next splide__customArrow--next">
                         <img src={VectorRight} alt="" />
                     </button>
+                </Splide>
+                <div className={SuccessTrajectoryCss.splideWrapper2}>
+                    <Splide
+                        ref={(slider) => (slider2.current = slider)}
+                        options={{
+                            type: 'loop',
+                            rewind: true,
+                            pagination: false,
+                            arrows: false,
+                        }}
+                    >
+                        <SplideSlide>
+                            <img src={table} alt="" />
+                        </SplideSlide>
+                        <SplideSlide>
+                            <img src={table} alt="" />
+                        </SplideSlide>
+                        <SplideSlide>
+                            <img src={table} alt="" />
+                        </SplideSlide>
+                        <SplideSlide>
+                            <img src={table} alt="" />
+                        </SplideSlide>
+                        <SplideSlide>
+                            <img src={table} alt="" />
+                        </SplideSlide>
+                        <SplideSlide>
+                            <img src={table} alt="" />
+                        </SplideSlide>
+                        <SplideSlide>
+                            <img src={table} alt="" />
+                        </SplideSlide>
+                        <SplideSlide>
+                            <img src={table} alt="" />
+                        </SplideSlide>
+                    </Splide>
                 </div>
-                <div className="splide__customPagination">
-                    <ul className="splide__pagination "></ul>
-                </div>
-            </Splide>
+            </div>
         </div>
     );
 };

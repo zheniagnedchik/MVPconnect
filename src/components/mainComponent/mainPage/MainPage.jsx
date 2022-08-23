@@ -5,7 +5,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 const MainPage = () => {
     return (
-        <div className={MainPageCss.mainWrapper}>
+        <div className={MainPageCss.mainWrapper} id="mainPage">
             <div className={MainPageCss.mainPage}>
                 <BurgerMenu />
 

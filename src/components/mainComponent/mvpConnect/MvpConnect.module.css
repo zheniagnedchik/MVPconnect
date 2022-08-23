@@ -1,5 +1,47 @@
 .mvpConnect {
+    background: url(./img/footer.svg) no-repeat;
+    background-size: cover;
     width: 100%;
-    height: 570px;
-    border-top: 3px solid rgb(192, 75, 192);
+    height: 43vh;
+}
+
+.down {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+
+    margin-top: 3.31vh;
+    font-size: 4.37vmin;
+    line-height: 100%;
+    color: white;
+}
+.arrow {
+    margin-bottom: 1vh;
+}
+
+.info {
+    margin-top: 17.56vh;
+}
+
+.number {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.1vmax;
+    line-height: 140%;
+    color: #ffb81a;
+}
+
+.mail {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.1vmax;
+    line-height: 140%;
+    color: #ffb81a;
+    margin-top: 1vh;
+}
+
+.participant img {
+    width: 39vw;
 }
