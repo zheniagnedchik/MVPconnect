@@ -45,3 +45,9 @@
 .participant img {
     width: 39vw;
 }
+
+.linkWrapper {
+    display: block;
+    width: 15.62vw;
+    margin: 0 auto;
+}

@@ -3,7 +3,7 @@ import VectorRight from './img/VectorRight.svg';
 import VectorLeft from './img/VectorLeft.svg';
 import { useRef, useEffect } from 'react';
 import slide1 from './img/slide1.svg';
-import slide2 from './img/slide2.svg';
+
 import slide3 from './img/slide3.svg';
 import slide4 from './img/slide4.svg';
 import table from './img/table.svg';
@@ -34,9 +34,11 @@ const SuccessTrajectory = () => {
                     ref={(slider) => (slider1.current = slider)}
                     hasTrack={false}
                     options={{
+                        type: 'loop',
                         gap: 2,
                         perPage: 3,
                         rewind: true,
+                        rewindByDrag: true,
                         isNavigation: true,
                         pagination: false,
                         focus: 'center',
@@ -60,7 +62,7 @@ const SuccessTrajectory = () => {
                             className={SuccessTrajectoryCss.characters}
                         >
                             {' '}
-                            <img src={slide2} alt="" />
+                            <img src={slide4} alt="" />
                         </SplideSlide>
                         <SplideSlide
                             className={SuccessTrajectoryCss.characters}
@@ -84,13 +86,19 @@ const SuccessTrajectory = () => {
                             className={SuccessTrajectoryCss.characters}
                         >
                             {' '}
-                            <img src={slide2} alt="" />
+                            <img src={slide4} alt="" />
                         </SplideSlide>
                         <SplideSlide
                             className={SuccessTrajectoryCss.characters}
                         >
                             {' '}
                             <img src={slide3} alt="" />
+                        </SplideSlide>
+                        <SplideSlide
+                            className={SuccessTrajectoryCss.characters}
+                        >
+                            {' '}
+                            <img src={slide4} alt="" />
                         </SplideSlide>
                         <SplideSlide
                             className={SuccessTrajectoryCss.characters}
@@ -118,6 +126,9 @@ const SuccessTrajectory = () => {
                             arrows: false,
                         }}
                     >
+                        <SplideSlide>
+                            <img src={table} alt="" />
+                        </SplideSlide>
                         <SplideSlide>
                             <img src={table} alt="" />
                         </SplideSlide>
