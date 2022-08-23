@@ -32,7 +32,7 @@ function App(props) {
                     linkResultTest={props.linkResultTest}
                 />
             </div>
-            <div className={`${window.innerWidth > 800 ? 'check' : ''}`}></div>
+            <div className={`${window.innerWidth > 700 ? 'check' : ''}`}></div>
         </BrowserRouter>
     );
 }
