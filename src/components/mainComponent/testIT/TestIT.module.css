@@ -1,6 +1,6 @@
 .testIT {
     width: 100%;
-    height: 100vh;
+    height: 105vh;
 }
 
 .title {
@@ -70,16 +70,6 @@
     color: #000000;
 }
 
-@media (min-width: 415px) {
-    .testIT {
-        height: 105vh;
-    }
-}
-@media (min-width: 415px) {
-    .testIT {
-        height: 105vh;
-    }
-}
 @media (min-width: 434px) {
     .title {
         margin-top: 8.28vh;

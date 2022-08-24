@@ -97,6 +97,12 @@
     color: #000000;
 }
 
+@media (min-width: 325px) {
+    .slider {
+        height: 56.08vh;
+    }
+}
+
 @media (min-width: 342px) {
     .titleWrapper {
         margin-top: 4.28vh;
