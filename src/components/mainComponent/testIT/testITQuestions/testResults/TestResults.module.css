@@ -58,7 +58,19 @@
     color: #000000;
 }
 
-@media (min-width: 495px) {
+@media (min-width: 375px) {
+    .resultImg img {
+        width: 80vw;
+    }
+}
+
+@media (min-width: 420px) {
+    .resultImg img {
+        width: 70vw;
+    }
+}
+
+@media (min-width: 480px) {
     .TestResults {
         height: 110vh;
     }
