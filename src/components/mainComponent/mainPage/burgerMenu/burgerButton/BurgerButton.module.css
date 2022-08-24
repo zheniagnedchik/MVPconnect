@@ -88,3 +88,59 @@
     height: 0.35vh;
     transition: 0.3s;
 }
+
+@media (min-width: 415px) {
+    .mediumLine {
+        width: 7.43vw;
+    }
+
+    .twoLine::before {
+        width: 7.43vw;
+    }
+
+    .twoLine::after {
+        width: 7.43vw;
+    }
+}
+
+@media (min-width: 415px) {
+    .fixedMediumLine {
+        width: 6.43vw;
+    }
+
+    .fixedTwoLine::before {
+        width: 6.43vw;
+    }
+
+    .fixedTwoLine::after {
+        width: 6.43vw;
+    }
+}
+
+@media (min-width: 475px) {
+    .mediumLine {
+        width: 6.43vw;
+    }
+
+    .twoLine::before {
+        width: 6.43vw;
+    }
+
+    .twoLine::after {
+        width: 6.43vw;
+    }
+}
+
+@media (min-width: 415px) {
+    .fixedMediumLine {
+        width: 5.43vw;
+    }
+
+    .fixedTwoLine::before {
+        width: 5.43vw;
+    }
+
+    .fixedTwoLine::after {
+        width: 5.43vw;
+    }
+}

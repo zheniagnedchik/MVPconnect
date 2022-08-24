@@ -29,6 +29,7 @@
     margin-top: 1.75vh;
     font-family: 'Open Sans';
     font-style: normal;
+
     font-weight: 600;
     font-size: 2.8vmax;
     line-height: 140%;
@@ -58,6 +59,8 @@
     font-size: 3.15vmax;
     line-height: 140%;
     text-shadow: 0px 0px 10px #2692ec;
+    margin-left: 2.56vw;
+    margin-right: 2.56vw;
 }
 
 .sliderSubTitle {
@@ -66,6 +69,9 @@
     font-weight: 400;
     font-size: 2.1vmax;
     line-height: 130%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     color: white;
     margin-top: 1.75vh;
 }
@@ -89,4 +95,57 @@
     font-style: normal;
     font-weight: 700;
     color: #000000;
+}
+
+@media (min-width: 342px) {
+    .titleWrapper {
+        margin-top: 4.28vh;
+    }
+}
+@media (min-width: 365px) {
+    .slider {
+        height: 58.08vh;
+    }
+}
+@media (min-width: 400px) {
+    .slider {
+        height: 60.08vh;
+    }
+}
+@media (min-width: 408px) {
+    .titleWrapper {
+        margin-top: 1.28vh;
+    }
+}
+
+@media (min-width: 410px) {
+    .slider {
+        height: 61.08vh;
+    }
+}
+@media (min-width: 430px) {
+    .slider {
+        height: 62.08vh;
+    }
+}
+@media (min-width: 434px) {
+    .slider {
+        height: 58.08vh;
+    }
+}
+@media (min-width: 460px) {
+    .slider {
+        height: 60.08vh;
+    }
+}
+
+@media (min-width: 480px) {
+    .slider {
+        height: 62.08vh;
+    }
+}
+@media (min-width: 510px) {
+    .slider {
+        height: 64.08vh;
+    }
 }

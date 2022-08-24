@@ -10,6 +10,9 @@
     font-size: 4.21vmax;
     line-height: 140%;
     color: #ffffff;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 7vw;
     margin-top: 12.28vh;
     text-shadow: 0px 0px 10px #2692ec;
 }
@@ -18,6 +21,9 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 7vw;
     font-size: 2.8vmax;
     line-height: 140%;
     margin-top: 1.75vh;
@@ -62,4 +68,26 @@
     font-style: normal;
     font-weight: 700;
     color: #000000;
+}
+
+@media (min-width: 415px) {
+    .testIT {
+        height: 105vh;
+    }
+}
+@media (min-width: 415px) {
+    .testIT {
+        height: 105vh;
+    }
+}
+@media (min-width: 434px) {
+    .title {
+        margin-top: 8.28vh;
+    }
+}
+
+@media (min-width: 495px) {
+    .testIT {
+        height: 110vh;
+    }
 }

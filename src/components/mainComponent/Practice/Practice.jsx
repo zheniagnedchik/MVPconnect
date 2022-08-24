@@ -8,7 +8,7 @@ import './splide.css';
 
 const Practice = () => {
     return (
-        <div className={PracticeCss.theoryCourse}>
+        <div className={PracticeCss.Practice}>
             <div className={PracticeCss.titleWrapper}>
                 <div className={PracticeCss.title}>Практика</div>
                 <div className={PracticeCss.subTitle}>

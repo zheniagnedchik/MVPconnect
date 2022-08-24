@@ -1,5 +1,6 @@
 import MvpConnectCss from './MvpConnect.module.css';
 import Vector from './img/Vector.svg';
+import MvpConnectImg from './img/MvpConnect.svg';
 import Participants from './img/participants.svg';
 import { HashLink as Link } from 'react-router-hash-link';
 
@@ -15,6 +16,10 @@ const MvpConnect = () => {
                         Вверх
                     </div>
                 </Link>
+            </div>
+            <div className={MvpConnectCss.mvpImg}>
+                {' '}
+                <img src={MvpConnectImg} alt="" />
             </div>
             <div className={MvpConnectCss.info}>
                 <div className={MvpConnectCss.number}>+375 44 780 12 36</div>

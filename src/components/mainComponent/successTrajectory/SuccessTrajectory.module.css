@@ -52,3 +52,9 @@
     width: 25.5vw;
     height: auto;
 }
+
+@media (min-width: 430px) {
+    .titleWrapper {
+        margin-top: 9.28vh;
+    }
+}

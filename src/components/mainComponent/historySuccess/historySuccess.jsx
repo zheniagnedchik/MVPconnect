@@ -28,11 +28,11 @@ const historySuccess = () => {
                         mute: true,
                         playerOptions: {
                             youtube: {
-                                width: '600',
+                                width: 200,
                             },
                             vimeo: {},
                             htmlVideo: {
-                                width: '600',
+                                width: 200,
                             },
                         },
                     },
@@ -46,31 +46,31 @@ const historySuccess = () => {
                 <div className={HistorySuccessCss.splideWrapper}>
                     <SplideTrack>
                         <li
-                            class="splide__slide splide__Customslide"
+                            className="splide__slide splide__Customslide"
                             data-splide-youtube="https://www.youtube.com/watch?v=cdz__ojQOuU"
                         >
                             <img src={Success} />
                         </li>
                         <li
-                            class="splide__slide splide__Customslide"
+                            className="splide__slide splide__Customslide"
                             data-splide-vimeo="https://vimeo.com/215334213"
                         >
                             <img src={Success} />
                         </li>
                         <li
-                            class="splide__slide splide__Customslide"
+                            className="splide__slide splide__Customslide"
                             data-splide-vimeo="https://vimeo.com/215334213"
                         >
                             <img src={Success} />
                         </li>
                         <li
-                            class="splide__slide splide__Customslide"
+                            className="splide__slide splide__Customslide"
                             data-splide-vimeo="https://vimeo.com/215334213"
                         >
                             <img src={Success} />
                         </li>
                         <li
-                            class="splide__slide splide__Customslide"
+                            className="splide__slide splide__Customslide"
                             data-splide-vimeo="https://vimeo.com/215334213"
                         >
                             <img src={Success} />

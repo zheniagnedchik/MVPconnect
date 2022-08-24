@@ -96,3 +96,50 @@
 .arrow {
     margin-top: 1vh;
 }
+
+@media (min-width: 370px) {
+    .subtitle {
+        margin-top: 4.5vh;
+    }
+}
+@media (min-width: 390px) {
+    .course p,
+    .practice p {
+        padding-top: 1.2vh;
+    }
+}
+
+@media (min-width: 410px) {
+    .subtitle {
+        margin-top: 5.5vh;
+    }
+
+    .down {
+        margin-top: 14.31vh;
+    }
+}
+
+@media (min-width: 420px) {
+    .course p,
+    .practice p {
+        padding-top: 1vh;
+    }
+}
+
+@media (min-width: 435px) {
+    .subtitle {
+        margin-top: 6.5vh;
+    }
+}
+@media (min-width: 440px) {
+    .course p,
+    .practice p {
+        padding-top: 0.5vh;
+    }
+}
+
+@media (min-width: 480px) {
+    .down {
+        margin-top: 11.31vh;
+    }
+}

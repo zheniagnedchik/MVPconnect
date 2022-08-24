@@ -72,7 +72,9 @@
     font-weight: 600;
     font-size: 2.8vmax;
     line-height: 130%;
-
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 12.28vh;
 }
 
@@ -98,7 +100,7 @@
     margin-left: 5vw;
     margin-right: 5vw;
     margin-top: 1.75vh;
-    width: 58.75vw;
+    width: 56.75vw;
     height: 11.22vh;
     overflow: hidden;
 }
@@ -114,7 +116,7 @@
 
     width: 36vw;
     position: absolute;
-    margin: -2.5vh 0 0 25.75vw;
+    margin: -2.51vh 0 0 25.75vw;
 }
 
 .sliderMore.active {
@@ -145,4 +147,66 @@
     content: '... ';
     color: white;
     font-size: 2.1vmax;
+}
+
+@media (min-width: 380px) {
+    .slider {
+        height: 45.85vh;
+    }
+
+    .slider.active {
+        height: 52.85vh;
+    }
+}
+@media (min-width: 420px) {
+    .slider {
+        height: 46.85vh;
+    }
+}
+@media (min-width: 430px) {
+    .titleWrapper {
+        margin-top: 15.28vh;
+    }
+}
+
+@media (min-width: 420px) {
+    .slider {
+        height: 47.85vh;
+    }
+
+    .slider.active {
+        height: 53.85vh;
+    }
+}
+@media (min-width: 430px) {
+    .titleWrapper {
+        margin-top: 15.28vh;
+    }
+}
+
+@media (min-width: 435px) {
+    .slider {
+        height: 49.85vh;
+    }
+
+    .slider.active {
+        height: 54.85vh;
+    }
+}
+@media (min-width: 450px) {
+    .titleWrapper {
+        margin-top: 17.28vh;
+    }
+}
+
+@media (min-width: 475px) {
+    .slider {
+        height: 51.85vh;
+    }
+
+    .slider.active {
+        height: 57.85vh;
+    }
+}
+@media (min-width: 475px) {
 }

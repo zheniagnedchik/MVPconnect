@@ -7,7 +7,7 @@ import './splide.css';
 
 const OurPartners = () => {
     return (
-        <div className={OurPartnersCss.theoryCourse}>
+        <div className={OurPartnersCss.OurPartners}>
             <div className={OurPartnersCss.titleWrapper}>
                 <div className={OurPartnersCss.title}>Наши партнеры</div>
             </div>

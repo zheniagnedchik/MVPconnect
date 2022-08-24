@@ -92,3 +92,20 @@
     font-weight: 700;
     color: #000000;
 }
+
+@media (min-width: 380px) {
+    .titleWrapper {
+        margin-top: 9.28vh;
+    }
+}
+
+@media (min-width: 430px) {
+    .titleWrapper {
+        margin-top: 13.28vh;
+    }
+}
+@media (min-width: 475px) {
+    .titleWrapper {
+        margin-top: 15.28vh;
+    }
+}
