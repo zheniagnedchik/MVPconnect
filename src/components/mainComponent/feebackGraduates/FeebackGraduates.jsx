@@ -17,7 +17,7 @@ const FeebackGraduates = () => {
     const [selected4, setSelected4] = useState();
 
     return (
-        <div className={FeebackGraduatesCss.theoryCourse}>
+        <div className={FeebackGraduatesCss.FeebackGraduates}>
             <div className={FeebackGraduatesCss.titleWrapper}>
                 <div className={FeebackGraduatesCss.title}>
                     {' '}

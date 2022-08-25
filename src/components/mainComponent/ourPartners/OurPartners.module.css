@@ -2,12 +2,13 @@
 
 .OurPartners {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background: black;
+    margin-top: 20.28%;
+    margin-bottom: 12.28%;
 }
 
 .titleWrapper {
-    margin-top: 16.28vh;
     margin-left: 6vw;
     margin-right: 6vw;
     width: 87.5vw;
@@ -98,7 +99,7 @@
     color: #000000;
 }
 
-@media (min-width: 340px) {
+@media (min-width: 370px) {
     .splideWrapper img {
         width: 55vw;
     }
@@ -109,33 +110,14 @@
         width: 50vw;
     }
 }
-@media (min-width: 420px) {
-    .titleWrapper {
-        margin-top: 21.28vh;
-    }
-    .OurPartners {
-        height: 110vh;
-    }
-}
-@media (min-width: 430px) {
-    .titleWrapper {
-        margin-top: 24.28vh;
-    }
-}
+
 @media (min-width: 450px) {
-    .titleWrapper {
-        margin-top: 26.28vh;
-    }
     .splideWrapper img {
         width: 45vw;
     }
 }
-
-@media (min-width: 480px) {
-    .titleWrapper {
-        margin-top: 28.28vh;
-    }
-    .OurPartners {
-        height: 115vh;
+@media (min-width: 520px) {
+    .splideWrapper img {
+        width: 40vw;
     }
 }

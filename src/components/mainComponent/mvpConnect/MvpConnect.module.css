@@ -72,3 +72,8 @@
         height: 60vh;
     }
 }
+@media (min-width: 550px) {
+    .mvpConnect {
+        height: 63vh;
+    }
+}

@@ -2,12 +2,12 @@
 
 .Practice {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background: black;
+    margin-top: 20.28%;
 }
 
 .titleWrapper {
-    margin-top: 6.28vh;
     margin-left: 6vw;
     margin-right: 6vw;
     width: 87.5vw;
@@ -42,7 +42,7 @@
     box-shadow: 0px 0px 15px rgba(255, 184, 26, 0.3);
     border-radius: 4px;
     width: 68.75vw;
-    height: 55.08vh;
+    height: 90%;
 }
 .sliderImg {
     margin: 2.63vh 5vw 5vw 1.75vh;
@@ -66,6 +66,9 @@
     font-weight: 400;
     font-size: 2.1vmax;
     line-height: 130%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     color: white;
     margin-top: 1.75vh;
 }
@@ -89,43 +92,4 @@
     font-style: normal;
     font-weight: 700;
     color: #000000;
-}
-
-@media (min-width: 365px) {
-    .slider {
-        height: 58.08vh;
-    }
-}
-@media (min-width: 380px) {
-    .title {
-        margin-top: 9.28vh;
-    }
-}
-@media (min-width: 410px) {
-    .slider {
-        height: 60.08vh;
-    }
-}
-@media (min-width: 430px) {
-    .slider {
-        height: 61.08vh;
-    }
-    .titleWrapper {
-        margin-top: 11.28vh;
-    }
-}
-@media (min-width: 450px) {
-    .slider {
-        height: 63.08vh;
-    }
-}
-@media (min-width: 475px) {
-    .slider {
-        height: 65.08vh;
-    }
-}
-@media (min-width: 495px) {
-    .slider {
-        height: 67.08vh;
-    }
 }

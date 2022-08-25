@@ -20,7 +20,7 @@ const SuccessTrajectory = () => {
     }, [slider1, slider2]);
 
     return (
-        <div className={SuccessTrajectoryCss.theoryCourse}>
+        <div className={SuccessTrajectoryCss.SuccessTrajectory}>
             <div className={SuccessTrajectoryCss.titleWrapper}>
                 <div className={SuccessTrajectoryCss.title}>
                     Траектория вашего успеха

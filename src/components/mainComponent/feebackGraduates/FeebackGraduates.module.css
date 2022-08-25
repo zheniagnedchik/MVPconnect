@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
-.theoryCourse {
+.FeebackGraduates {
     width: 100%;
     height: 100vh;
     background: black;
 }
 
 .titleWrapper {
-    margin-top: 12.28vh;
+    margin-top: 20.28%;
     margin-left: 6vw;
     margin-right: 6vw;
     width: 87.5vw;
@@ -143,13 +143,7 @@
     color: gold;
 }
 
-.moreText::before {
-    content: '... ';
-    color: white;
-    font-size: 2.1vmax;
-}
-
-@media (min-width: 380px) {
+@media (min-width: 370px) {
     .slider {
         height: 45.85vh;
     }
@@ -158,55 +152,43 @@
         height: 52.85vh;
     }
 }
-@media (min-width: 420px) {
+@media (min-width: 384px) {
     .slider {
-        height: 46.85vh;
-    }
-}
-@media (min-width: 430px) {
-    .titleWrapper {
-        margin-top: 15.28vh;
-    }
-}
-
-@media (min-width: 420px) {
-    .slider {
-        height: 47.85vh;
+        height: 73.6%;
     }
 
     .slider.active {
-        height: 53.85vh;
-    }
-}
-@media (min-width: 430px) {
-    .titleWrapper {
-        margin-top: 15.28vh;
+        height: 75.55%;
     }
 }
 
-@media (min-width: 435px) {
+@media (min-width: 500px) {
     .slider {
-        height: 49.85vh;
-    }
-
-    .slider.active {
-        height: 54.85vh;
+        height: 75%;
     }
 }
-@media (min-width: 450px) {
-    .titleWrapper {
-        margin-top: 17.28vh;
-    }
-}
-
-@media (min-width: 475px) {
+@media (min-width: 550px) {
     .slider {
-        height: 51.85vh;
+        height: 75%;
     }
-
     .slider.active {
-        height: 57.85vh;
+        height: 78.85%;
     }
 }
-@media (min-width: 475px) {
+
+@media (min-width: 570px) {
+    .slider.active {
+        height: 78.85%;
+    }
+}
+@media (min-width: 580px) {
+    .slider {
+        height: 76%;
+    }
+    .slider.active {
+        height: 78.85%;
+    }
+    .FeebackGraduates {
+        height: 102vh;
+    }
 }

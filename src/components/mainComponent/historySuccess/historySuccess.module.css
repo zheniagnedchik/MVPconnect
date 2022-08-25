@@ -2,12 +2,12 @@
 
 .theoryCourse {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background: black;
+    margin-top: 12.28%;
 }
 
 .titleWrapper {
-    margin-top: 3.28vh;
     margin-left: 6vw;
     margin-right: 6vw;
     width: 87.5vw;
@@ -91,21 +91,4 @@
     font-style: normal;
     font-weight: 700;
     color: #000000;
-}
-
-@media (min-width: 380px) {
-    .titleWrapper {
-        margin-top: 9.28vh;
-    }
-}
-
-@media (min-width: 430px) {
-    .titleWrapper {
-        margin-top: 13.28vh;
-    }
-}
-@media (min-width: 475px) {
-    .titleWrapper {
-        margin-top: 15.28vh;
-    }
 }

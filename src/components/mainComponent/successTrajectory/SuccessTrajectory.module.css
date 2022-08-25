@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
-.theoryCourse {
+.SuccessTrajectory {
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     background: black;
+    margin-top: 6.28%;
 }
 
 .titleWrapper {
-    margin-top: 6.28vh;
     margin-left: 6vw;
     margin-right: 6vw;
     width: 87.5vw;
@@ -53,8 +53,8 @@
     height: auto;
 }
 
-@media (min-width: 430px) {
-    .titleWrapper {
-        margin-top: 9.28vh;
+@media (min-width: 380px) {
+    .theoryCourse {
+        margin-top: 23.28%;
     }
 }
