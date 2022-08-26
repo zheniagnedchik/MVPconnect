@@ -45,6 +45,7 @@
 }
 .splide {
     width: 80vw;
+
     margin: 0 auto;
 }
 
@@ -56,5 +57,24 @@
 @media (min-width: 380px) {
     .theoryCourse {
         margin-top: 23.28%;
+    }
+}
+
+/* mobile with rotate */
+@media (max-height: 500px) {
+    .SuccessTrajectory {
+        margin-top: 10.28%;
+    }
+
+    .characters {
+        height: 54vh !important;
+    }
+
+    .characters img {
+        height: 50vh;
+    }
+
+    .table img {
+        height: 75vh;
     }
 }

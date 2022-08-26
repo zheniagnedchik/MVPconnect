@@ -122,3 +122,13 @@
     color: #888;
     background: rgb(207, 198, 198);
 }
+
+/* mobile with rotate */
+@media (max-height: 500px) {
+    .testBtn {
+        width: 30%;
+        height: 6.4vh;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+}

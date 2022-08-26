@@ -121,3 +121,14 @@
         width: 40vw;
     }
 }
+
+/* mobile with rotate */
+@media (max-height: 500px) {
+    .OurPartners {
+        margin-top: 36.28%;
+    }
+
+    .splideWrapper img {
+        height: 100vh;
+    }
+}

@@ -97,61 +97,24 @@
     color: #000000;
 }
 
-/* @media (min-width: 325px) {
-    .slider {
-        height: 56.08vh;
+/* mobile with rotate */
+@media (max-height: 500px) {
+    .sliderImg img {
+        height: 40.75vh;
     }
-}
 
-@media (min-width: 342px) {
-    .titleWrapper {
-        margin-top: 4.28vh;
+    .theoryCourse {
+        height: 130vh;
     }
-}
-@media (min-width: 365px) {
-    .slider {
-        height: 58.08vh;
-    }
-}
-@media (min-width: 400px) {
-    .slider {
-        height: 60.08vh;
-    }
-}
-@media (min-width: 408px) {
-    .titleWrapper {
-        margin-top: 1.28vh;
-    }
-}
 
-@media (min-width: 410px) {
-    .slider {
-        height: 61.08vh;
+    .sliderBtn {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
     }
-}
-@media (min-width: 430px) {
-    .slider {
-        height: 62.08vh;
-    }
-}
-@media (min-width: 434px) {
-    .slider {
-        height: 58.08vh;
-    }
-}
-@media (min-width: 460px) {
-    .slider {
-        height: 60.08vh;
-    }
-}
 
-@media (min-width: 480px) {
     .slider {
-        height: 62.08vh;
+        width: 55.75vw;
+        height: 92%;
     }
 }
-@media (min-width: 510px) {
-    .slider {
-        height: 64.08vh;
-    }
-} */

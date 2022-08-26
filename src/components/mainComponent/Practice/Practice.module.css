@@ -93,3 +93,25 @@
     font-weight: 700;
     color: #000000;
 }
+
+/* mobile with rotate */
+@media (max-height: 500px) {
+    .sliderImg img {
+        height: 40.75vh;
+    }
+
+    .Practice {
+        height: 100vh;
+    }
+
+    .sliderBtn {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .slider {
+        width: 55.75vw;
+        height: 92%;
+    }
+}

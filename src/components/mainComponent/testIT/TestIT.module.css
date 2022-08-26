@@ -82,3 +82,16 @@
         height: 110vh;
     }
 }
+
+/* mobile with rotate */
+@media (max-height: 500px) {
+    .sliderImg img {
+        height: 50.75vh;
+    }
+
+    .sliderBtn {
+        width: 30%;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+}

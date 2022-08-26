@@ -144,3 +144,43 @@
         width: 5.43vw;
     }
 }
+
+/* mobile with rotate */
+
+@media (max-height: 500px) {
+    .mediumLine {
+        width: 5.43vw;
+        height: 0.62vh;
+        top: 0.87vh;
+    }
+
+    .twoLine::before {
+        width: 5.43vw;
+        height: 0.62vh;
+        top: -1vh;
+    }
+
+    .twoLine::after {
+        width: 5.43vw;
+        height: 0.62vh;
+        bottom: -0.8vh;
+    }
+
+    .fixedMediumLine {
+        width: 5.43vw;
+        height: 0.62vh;
+        top: 0.67vh;
+    }
+
+    .fixedTwoLine::before {
+        width: 5.43vw;
+        height: 0.62vh;
+        top: -1vh;
+    }
+
+    .fixedTwoLine::after {
+        width: 5.43vw;
+        height: 0.62vh;
+        bottom: -0.8vh;
+    }
+}

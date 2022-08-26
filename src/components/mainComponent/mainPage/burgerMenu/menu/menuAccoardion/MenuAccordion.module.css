@@ -57,3 +57,20 @@
 .active {
     rotate: 180deg;
 }
+
+/* mobile with rotate */
+
+@media (max-height: 500px) {
+    .title h2 {
+        font-size: 14px;
+    }
+    .content {
+        font-size: 12px;
+    }
+    .accordion {
+        margin-top: 17.68vh;
+    }
+    .content {
+        margin-bottom: 0;
+    }
+}

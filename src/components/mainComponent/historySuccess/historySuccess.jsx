@@ -9,9 +9,9 @@ import '@splidejs/splide-extension-video/dist/css/splide-extension-video.min.css
 import '@splidejs/react-splide/css/skyblue';
 import './splide.css';
 
-const historySuccess = () => {
+const HistorySuccess = () => {
     return (
-        <div className={HistorySuccessCss.theoryCourse}>
+        <div className={HistorySuccessCss.historySuccess}>
             <div className={HistorySuccessCss.titleWrapper}>
                 <div className={HistorySuccessCss.title}>Истории успеха</div>
                 <div className={HistorySuccessCss.subTitle}>
@@ -93,4 +93,4 @@ const historySuccess = () => {
     );
 };
 
-export default historySuccess;
+export default HistorySuccess;

@@ -110,3 +110,26 @@
     font-weight: 700;
     color: #000000;
 }
+
+/* mobile with rotate */
+@media (max-height: 500px) {
+    .btn {
+        width: 30%;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+    .studentChoice {
+        height: 112vh;
+    }
+    .title h2 {
+        font-size: 2.5vmax;
+    }
+    .accordion {
+        margin-top: 7.26vh;
+    }
+}
+@media (max-height: 552px) {
+    .icon {
+        padding-top: 0;
+    }
+}

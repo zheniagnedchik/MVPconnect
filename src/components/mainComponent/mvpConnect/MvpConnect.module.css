@@ -77,3 +77,11 @@
         height: 63vh;
     }
 }
+
+/* mobile with rotate */
+@media (max-height: 500px) {
+    .mvpConnect {
+        margin-top: 18vh;
+        height: 111vh;
+    }
+}

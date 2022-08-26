@@ -75,3 +75,18 @@
         height: 110vh;
     }
 }
+
+/* mobile with rotate */
+@media (max-height: 500px) {
+    .resultBtn {
+        width: 30%;
+        height: 6.4vh;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+
+    .resultImg img {
+        height: 70vh;
+        margin-top: 4vh;
+    }
+}

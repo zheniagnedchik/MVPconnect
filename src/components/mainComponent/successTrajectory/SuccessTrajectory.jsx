@@ -126,31 +126,31 @@ const SuccessTrajectory = () => {
                             arrows: false,
                         }}
                     >
-                        <SplideSlide>
+                        <SplideSlide className={SuccessTrajectoryCss.table}>
                             <img src={table} alt="" />
                         </SplideSlide>
-                        <SplideSlide>
+                        <SplideSlide className={SuccessTrajectoryCss.table}>
                             <img src={table} alt="" />
                         </SplideSlide>
-                        <SplideSlide>
+                        <SplideSlide className={SuccessTrajectoryCss.table}>
                             <img src={table} alt="" />
                         </SplideSlide>
-                        <SplideSlide>
+                        <SplideSlide className={SuccessTrajectoryCss.table}>
                             <img src={table} alt="" />
                         </SplideSlide>
-                        <SplideSlide>
+                        <SplideSlide className={SuccessTrajectoryCss.table}>
                             <img src={table} alt="" />
                         </SplideSlide>
-                        <SplideSlide>
+                        <SplideSlide className={SuccessTrajectoryCss.table}>
                             <img src={table} alt="" />
                         </SplideSlide>
-                        <SplideSlide>
+                        <SplideSlide className={SuccessTrajectoryCss.table}>
                             <img src={table} alt="" />
                         </SplideSlide>
-                        <SplideSlide>
+                        <SplideSlide className={SuccessTrajectoryCss.table}>
                             <img src={table} alt="" />
                         </SplideSlide>
-                        <SplideSlide>
+                        <SplideSlide className={SuccessTrajectoryCss.table}>
                             <img src={table} alt="" />
                         </SplideSlide>
                     </Splide>

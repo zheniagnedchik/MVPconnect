@@ -24,7 +24,7 @@ function App(props) {
     }
     return (
         <BrowserRouter>
-            <div className={`${window.innerWidth > 700 ? 'App' : ''}`}>
+            <div className={`${window.innerWidth > 900 ? 'App' : ''}`}>
                 <MainComponent
                     state={props.state}
                     creatingResult={props.creatingResult}
@@ -32,7 +32,7 @@ function App(props) {
                     linkResultTest={props.linkResultTest}
                 />
             </div>
-            <div className={`${window.innerWidth > 700 ? 'check' : ''}`}></div>
+            <div className={`${window.innerWidth > 900 ? 'check' : ''}`}></div>
         </BrowserRouter>
     );
 }
