@@ -1,30 +1,14 @@
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
+import { CheckWindowSize } from './states/state';
 import MainComponent from './components/mainComponent/MainComponent';
-import { useEffect, useState } from 'react';
 
 function App(props) {
-    const [windowSize, setWindowSize] = useState(getWindowSize());
+    CheckWindowSize();
 
-    useEffect(() => {
-        function handleWindowResize() {
-            setWindowSize(getWindowSize());
-        }
-
-        window.addEventListener('resize', handleWindowResize);
-
-        return () => {
-            window.removeEventListener('resize', handleWindowResize);
-        };
-    }, []);
-
-    function getWindowSize() {
-        const { innerWidth, innerHeight } = window;
-        return { innerWidth, innerHeight };
-    }
     return (
         <BrowserRouter>
-            <div className={`${window.innerWidth > 900 ? 'App' : ''}`}>
+            <div>
                 <MainComponent
                     state={props.state}
                     creatingResult={props.creatingResult}
@@ -32,7 +16,7 @@ function App(props) {
                     linkResultTest={props.linkResultTest}
                 />
             </div>
-            <div className={`${window.innerWidth > 900 ? 'check' : ''}`}></div>
+            <div></div>
         </BrowserRouter>
     );
 }

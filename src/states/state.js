@@ -1,6 +1,11 @@
+import { useEffect, useState } from 'react';
 let state = {
     testITResults: [0, 0, 0, 0], // All points
     linkResult: '', // Link for NavLink in question/TestITQuestion10.jsx
+    displaySize: {
+        isMobile: Boolean,
+        isDesktop: Boolean,
+    },
 };
 export default state;
 
@@ -33,5 +38,33 @@ export let linkResultTest = () => {
         state.linkResult = '/QA';
     } else {
         state.linkResult = '/PrdM';
+    }
+};
+// Check innerWidth and innerHeight sizes
+export const CheckWindowSize = () => {
+    const [windowSize, setWindowSize] = useState(getWindowSize());
+
+    useEffect(() => {
+        function handleWindowResize() {
+            setWindowSize(getWindowSize());
+            if (window.innerWidth > 700) {
+                state.displaySize.isDesktop = true;
+            } else {
+                state.displaySize.isDesktop = false;
+            }
+        }
+
+        window.addEventListener('resize', handleWindowResize);
+
+        return () => {
+            window.removeEventListener('resize', handleWindowResize);
+        };
+    });
+
+    function getWindowSize() {
+        const innerWidth = window;
+        const innerHeight = window;
+
+        return { innerWidth, innerHeight };
     }
 };

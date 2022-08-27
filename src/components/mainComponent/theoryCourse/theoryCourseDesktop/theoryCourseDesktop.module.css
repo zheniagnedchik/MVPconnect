@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+.theoryCourse {
+    width: 100%;
+    height: 120vh;
+    background: black;
+    margin-top: 12.28%;
+}
+
+.title {
+    color: #ffffff;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4vmin;
+    line-height: 140%;
+
+    text-shadow: 0px 0px 25px #2692ec, 0px 0px 15px #2692ec;
+}
+.subTitle {
+    color: white;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    width: 50%;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 3vmin;
+    line-height: 140%;
+}
+
+.subTitle p {
+    padding-top: 1.75vh;
+    display: inline-block;
+    border-top: 3px solid #2692ec;
+}
+
+.slider {
+    margin: auto;
+    margin-top: 5.26vh;
+    background: #000000;
+    border: 1px solid #000000;
+    box-shadow: 0px 0px 15px rgba(255, 184, 26, 0.3);
+    border-radius: 4px;
+    width: 23.75vw;
+    height: 90%;
+}
+.sliderImg {
+    margin: 2.63vh auto 1.75vh;
+}
+.sliderImg img {
+    width: 18.75vw;
+}
+.sliderTitle {
+    color: white;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.75vmax;
+    line-height: 140%;
+    text-shadow: 0px 0px 10px #2692ec;
+    margin-left: 2.56vw;
+    margin-right: 2.56vw;
+}
+
+.sliderSubTitle {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1vmax;
+    line-height: 130%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    margin-top: 1.75vh;
+}
+
+.sliderBtn {
+    width: 15.75vw;
+    height: 3.96vh;
+    background: #ffb81a;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    margin: 2.63vh auto 0;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25vmax;
+    line-height: 130%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    color: #000000;
+}
+
+/* mobile with rotate */
+@media (max-height: 500px) {
+    .sliderImg img {
+        height: 40.75vh;
+    }
+
+    .theoryCourse {
+        height: 130vh;
+    }
+
+    .sliderBtn {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .slider {
+        width: 55.75vw;
+        height: 92%;
+    }
+}
+
+/* desktop  */
+@media (min-width: 700px) {
+    .theoryCourse {
+        background: none;
+    }
+}

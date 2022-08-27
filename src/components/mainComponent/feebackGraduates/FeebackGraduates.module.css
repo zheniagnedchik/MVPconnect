@@ -224,3 +224,10 @@
         height: 5.98vh;
     }
 }
+
+/* desktop  */
+@media (min-width: 700px) {
+    .FeebackGraduates {
+        background: none;
+    }
+}

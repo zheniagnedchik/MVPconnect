@@ -99,3 +99,10 @@
         height: 110vh;
     }
 }
+
+/* desktop  */
+@media (min-width: 700px) {
+    .historySuccess {
+        background: none;
+    }
+}

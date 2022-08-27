@@ -6,3 +6,10 @@
     margin: auto;
     background: black;
 }
+
+@media (min-width: 700px) {
+    .wrapper {
+        background: url('./img/backgroundDesktop.png') no-repeat;
+        background-size: cover;
+    }
+}

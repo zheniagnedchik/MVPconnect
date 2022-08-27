@@ -4,9 +4,11 @@ import MvpConnect from './mvpConnect/MvpConnect';
 import OurPartners from './ourPartners/OurPartners';
 import Practice from './Practice/Practice';
 import StudentChoice from './studentChoice/StudentChoice';
+import StudentChoiceDesktop from './studentChoice/studentChoiceDesktop/StudentChoiceDesktop';
 import SuccessTrajectory from './successTrajectory/SuccessTrajectory';
 import TestIT from './testIT/TestIT';
 import TheoryCourse from './theoryCourse/TheoryCourse';
+import TheoryCourseDesktop from './theoryCourse/theoryCourseDesktop/theoryCourseDesktop';
 import FeebackGraduates from './feebackGraduates/FeebackGraduates';
 import HistorySuccess from './historySuccess/HistorySuccess';
 import { Routes } from 'react-router-dom';
@@ -30,120 +32,135 @@ import TestQA from './testIT/testITQuestions/testResults/TestQA';
 const MainComponent = (props) => {
     return (
         <div className={MainComponentCss.mainComponent}>
-            <MainPage />
-            <StudentChoice />
-            <TheoryCourse />
-            <Routes>
-                <Route path="/" element={<TestIT />} />
-                <Route
-                    path="/testITQuestions"
-                    element={<TestITStart clearResult={props.clearResult} />} // Outlet for these Route in <TestItStart>
-                >
+            <MainPage displaySize={props.state.displaySize} />
+            <div className={MainComponentCss.wrapper}>
+                {props.state.displaySize.isDesktop ? (
+                    <StudentChoiceDesktop />
+                ) : (
+                    <StudentChoice />
+                )}
+                {props.state.displaySize.isDesktop ? (
+                    <TheoryCourseDesktop />
+                ) : (
+                    <TheoryCourse />
+                )}
+
+                <Routes>
+                    <Route path="/" element={<TestIT />} />
                     <Route
-                        path="Question1"
+                        path="/testITQuestions"
                         element={
-                            <TestITQuestion1
-                                creatingResult={props.creatingResult}
-                            />
+                            <TestITStart clearResult={props.clearResult} />
+                        } // Outlet for these Route in <TestItStart>
+                    >
+                        <Route
+                            path="Question1"
+                            element={
+                                <TestITQuestion1
+                                    creatingResult={props.creatingResult}
+                                />
+                            }
+                        />
+                        <Route
+                            path="Question2"
+                            element={
+                                <TestITQuestion2
+                                    creatingResult={props.creatingResult}
+                                />
+                            }
+                        />
+                        <Route
+                            path="Question3"
+                            element={
+                                <TestITQuestion3
+                                    creatingResult={props.creatingResult}
+                                />
+                            }
+                        />
+                        <Route
+                            path="Question4"
+                            element={
+                                <TestITQuestion4
+                                    creatingResult={props.creatingResult}
+                                />
+                            }
+                        />
+                        <Route
+                            path="Question5"
+                            element={
+                                <TestITQuestion5
+                                    creatingResult={props.creatingResult}
+                                />
+                            }
+                        />
+                        <Route
+                            path="Question6"
+                            element={
+                                <TestITQuestion6
+                                    creatingResult={props.creatingResult}
+                                />
+                            }
+                        />
+                        <Route
+                            path="Question7"
+                            element={
+                                <TestITQuestion7
+                                    creatingResult={props.creatingResult}
+                                />
+                            }
+                        />
+                        <Route
+                            path="Question8"
+                            element={
+                                <TestITQuestion8
+                                    creatingResult={props.creatingResult}
+                                />
+                            }
+                        />
+                        <Route
+                            path="Question9"
+                            element={
+                                <TestITQuestion9
+                                    creatingResult={props.creatingResult}
+                                />
+                            }
+                        />
+                        <Route
+                            path="Question10"
+                            element={
+                                <TestITQuestion10
+                                    creatingResult={props.creatingResult}
+                                    linkResultTest={props.linkResultTest}
+                                    state={props.state}
+                                />
+                            }
+                        />
+                    </Route>
+                    <Route
+                        path="/Designer"
+                        element={
+                            <TestDesigner clearResult={props.clearResult} />
                         }
                     />
                     <Route
-                        path="Question2"
-                        element={
-                            <TestITQuestion2
-                                creatingResult={props.creatingResult}
-                            />
-                        }
+                        path="/HR"
+                        element={<TestHR clearResult={props.clearResult} />}
                     />
                     <Route
-                        path="Question3"
-                        element={
-                            <TestITQuestion3
-                                creatingResult={props.creatingResult}
-                            />
-                        }
+                        path="/PrdM"
+                        element={<TestPrdM clearResult={props.clearResult} />}
                     />
                     <Route
-                        path="Question4"
-                        element={
-                            <TestITQuestion4
-                                creatingResult={props.creatingResult}
-                            />
-                        }
+                        path="/QA"
+                        element={<TestQA clearResult={props.clearResult} />}
                     />
-                    <Route
-                        path="Question5"
-                        element={
-                            <TestITQuestion5
-                                creatingResult={props.creatingResult}
-                            />
-                        }
-                    />
-                    <Route
-                        path="Question6"
-                        element={
-                            <TestITQuestion6
-                                creatingResult={props.creatingResult}
-                            />
-                        }
-                    />
-                    <Route
-                        path="Question7"
-                        element={
-                            <TestITQuestion7
-                                creatingResult={props.creatingResult}
-                            />
-                        }
-                    />
-                    <Route
-                        path="Question8"
-                        element={
-                            <TestITQuestion8
-                                creatingResult={props.creatingResult}
-                            />
-                        }
-                    />
-                    <Route
-                        path="Question9"
-                        element={
-                            <TestITQuestion9
-                                creatingResult={props.creatingResult}
-                            />
-                        }
-                    />
-                    <Route
-                        path="Question10"
-                        element={
-                            <TestITQuestion10
-                                creatingResult={props.creatingResult}
-                                linkResultTest={props.linkResultTest}
-                                state={props.state}
-                            />
-                        }
-                    />
-                </Route>
-                <Route
-                    path="/Designer"
-                    element={<TestDesigner clearResult={props.clearResult} />}
-                />
-                <Route
-                    path="/HR"
-                    element={<TestHR clearResult={props.clearResult} />}
-                />
-                <Route
-                    path="/PrdM"
-                    element={<TestPrdM clearResult={props.clearResult} />}
-                />
-                <Route
-                    path="/QA"
-                    element={<TestQA clearResult={props.clearResult} />}
-                />
-            </Routes>
-            <Practice />
-            <FeebackGraduates />
-            <HistorySuccess />
-            <SuccessTrajectory />
-            <OurPartners />
+                </Routes>
+                <Practice />
+                <FeebackGraduates />
+                <HistorySuccess />
+                <SuccessTrajectory />
+                <OurPartners />
+            </div>
             <MvpConnect />
         </div>
     );

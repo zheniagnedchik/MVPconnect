@@ -45,7 +45,7 @@
     height: 90%;
 }
 .sliderImg {
-    margin: 2.63vh 5vw 5vw 1.75vh;
+    margin: 2.63vh auto 1.75vh;
 }
 .sliderImg img {
     width: 58.75vw;
@@ -113,5 +113,12 @@
     .slider {
         width: 55.75vw;
         height: 92%;
+    }
+}
+
+/* desktop  */
+@media (min-width: 700px) {
+    .Practice {
+        background: none;
     }
 }
