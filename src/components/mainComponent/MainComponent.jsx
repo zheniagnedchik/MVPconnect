@@ -31,6 +31,8 @@ import TestQA from './testIT/testITQuestions/testResults/TestQA';
 import './splide.css';
 import TestITDesktop from './testIT/testITDesktop/TestITDesktop';
 import PracticeDesktop from './Practice/PracticeDesktop/PracticeDesktop';
+import FeebackGraduatesDesktop from './feebackGraduates/feebackGraduatesDesktop/FeebackGraduatesDesktop';
+import HistorySuccessDesctop from './historySuccess/PracticeDesktop/HistorySuccessDesctop';
 
 const MainComponent = (props) => {
     return (
@@ -172,9 +174,17 @@ const MainComponent = (props) => {
                 ) : (
                     <Practice />
                 )}
+                {props.state.displaySize.isDesktop ? (
+                    <FeebackGraduatesDesktop />
+                ) : (
+                    <FeebackGraduates />
+                )}
+                {props.state.displaySize.isDesktop ? (
+                    <HistorySuccessDesctop />
+                ) : (
+                    <HistorySuccess />
+                )}
 
-                <FeebackGraduates />
-                <HistorySuccess />
                 <SuccessTrajectory />
                 <OurPartners />
             </div>
