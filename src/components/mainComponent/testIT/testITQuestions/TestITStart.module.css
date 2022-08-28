@@ -132,3 +132,32 @@
         margin-right: 35%;
     }
 }
+
+/* Desktop */
+@media (min-width: 700px) {
+    .testBtn {
+        width: 14.75vw;
+        height: 3.76vh;
+        margin: 8.63vh auto 0;
+        font-size: 1.4vmax;
+    }
+
+    .title {
+        font-size: 2.5vmax;
+    }
+
+    .subTitle {
+        font-size: 1.63vmax;
+    }
+
+    .questionNumber {
+        font-size: 1.45vmax;
+    }
+
+    .question {
+        font-size: 1.45vmax;
+    }
+    .allQuestionNumbers {
+        font-size: 1.45vmax;
+    }
+}

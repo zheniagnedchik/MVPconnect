@@ -28,6 +28,9 @@ import TestDesigner from './testIT/testITQuestions/testResults/TestDesigner';
 import TestHR from './testIT/testITQuestions/testResults/TestHR';
 import TestPrdM from './testIT/testITQuestions/testResults/TestPrdM';
 import TestQA from './testIT/testITQuestions/testResults/TestQA';
+import './splide.css';
+import TestITDesktop from './testIT/testITDesktop/TestITDesktop';
+import PracticeDesktop from './Practice/PracticeDesktop/PracticeDesktop';
 
 const MainComponent = (props) => {
     return (
@@ -46,7 +49,16 @@ const MainComponent = (props) => {
                 )}
 
                 <Routes>
-                    <Route path="/" element={<TestIT />} />
+                    <Route
+                        path="/"
+                        element={
+                            props.state.displaySize.isDesktop ? (
+                                <TestITDesktop />
+                            ) : (
+                                <TestIT />
+                            )
+                        }
+                    />
                     <Route
                         path="/testITQuestions"
                         element={
@@ -155,7 +167,12 @@ const MainComponent = (props) => {
                         element={<TestQA clearResult={props.clearResult} />}
                     />
                 </Routes>
-                <Practice />
+                {props.state.displaySize.isDesktop ? (
+                    <PracticeDesktop />
+                ) : (
+                    <Practice />
+                )}
+
                 <FeebackGraduates />
                 <HistorySuccess />
                 <SuccessTrajectory />

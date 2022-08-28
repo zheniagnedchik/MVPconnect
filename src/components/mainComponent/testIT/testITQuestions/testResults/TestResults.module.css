@@ -90,3 +90,29 @@
         margin-top: 4vh;
     }
 }
+
+/* Desktop  */
+@media (min-width: 700px) {
+    .resultBtn {
+        width: 14.75vw;
+        height: 4.76vh;
+        margin: 8.63vh auto 0;
+        font-size: 1.4vmax;
+    }
+
+    .resultImg img {
+        height: 50vh;
+        margin-top: 4vh;
+    }
+
+    .titleOverhead {
+        font-size: 1.45vmax;
+    }
+    .title {
+        font-size: 2.5vmax;
+    }
+
+    .subTitle {
+        font-size: 1.45vmax;
+    }
+}
