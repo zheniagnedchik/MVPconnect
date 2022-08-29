@@ -1,0 +1,107 @@
+.MvpConnectDesktop {
+    background: url(./img/footer.svg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 55vh;
+}
+.MvpConnectDesktopWrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1fr;
+    margin-top: 8vh;
+}
+.mvpImg {
+    width: 15vw;
+    margin: 0 auto;
+}
+.mvpImg img {
+    width: 15vw;
+}
+
+.number {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8vmax;
+    margin-top: 3vh;
+    line-height: 140%;
+    color: #ffb81a;
+}
+
+.socialNetworkIcons {
+    margin: 3vh auto 0;
+    display: flex;
+    width: 20vw;
+
+    justify-content: space-around;
+}
+
+.socialNetworkIcons img {
+    width: 2.5vw;
+}
+
+.infoWrapper {
+    height: 30vh;
+}
+
+.info {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    width: 100%;
+    text-align: start;
+    margin: 0 auto;
+    font-size: 2vmin;
+    line-height: 140%;
+    color: #ffffff;
+}
+
+.buttonWrapper {
+    margin-top: 5vh;
+    width: 100%;
+    display: flex;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2vmin;
+    line-height: 140%;
+}
+
+.buttonCourse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 4vh;
+    background: #ffffff;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    color: black;
+}
+
+.buttonPractise {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3vw;
+    width: 30%;
+    height: 4vh;
+    background: #ffb81a;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    color: black;
+}
+
+.jobWrapper {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.job img {
+    width: 15vw;
+}
+
+.participant img {
+    width: 15vw;
+}

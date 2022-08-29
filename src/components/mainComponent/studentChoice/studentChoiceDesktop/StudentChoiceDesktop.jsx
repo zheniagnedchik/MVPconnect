@@ -13,6 +13,7 @@ const StudentChoiceDesktop = () => {
                 {' '}
                 <p> Почему студенты выбирают MVP connect</p>
             </div>
+            <div className={StudentChoiceCss.mainSubTitle}> </div>
 
             <div className={StudentChoiceCss.wrapperTable}>
                 <div className={StudentChoiceCss.cell1}>

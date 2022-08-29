@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
-.theoryCourse {
+.SuccessTrajectory {
     width: 100%;
-    height: 120vh;
-
-    margin-top: 12.28%;
+    height: 140vh;
 }
 
 .title {
@@ -22,7 +20,7 @@
 
     font-family: 'Open Sans';
     font-style: normal;
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     font-weight: 600;
     font-size: 3vmin;
@@ -35,26 +33,25 @@
     border-top: 3px solid #2692ec;
 }
 .splideWrapper {
-    width: 80%;
-    margin: 0 10%;
+    width: 70%;
+    margin: 0 15%;
 }
 
 .slider {
     margin: 0 auto;
-    margin-top: 5.26vh;
+    margin: 10.26vh auto 6.5vh;
     background: #000000;
     border: 1px solid #000000;
     box-shadow: 0px 0px 15px #ffb81a;
     border-radius: 4px;
-    width: 21.75vw;
+    width: 10.75vw;
     height: 85%;
-    margin-bottom: 4.5vh;
 }
 .sliderImg {
     margin: 2.63vh auto 1.75vh;
 }
 .sliderImg img {
-    width: 16.75vw;
+    height: 13.75vw;
 }
 .sliderTitle {
     color: white;
@@ -68,35 +65,6 @@
     margin-right: 2.56vw;
 }
 
-.sliderSubTitle {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1vmax;
-    line-height: 130%;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    color: white;
-    margin-top: 1.75vh;
-}
-
-.sliderBtn {
-    width: 14.75vw;
-    height: 3.76vh;
-    background: #ffb81a;
-    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 4px;
-    margin: 1.63vh auto 0;
-
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.15vmax;
-    line-height: 130%;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    color: #000000;
+.table img {
+    width: 55vw;
 }

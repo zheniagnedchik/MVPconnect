@@ -1,7 +1,7 @@
-import HistorySuccessDesctopCss from './HistorySuccessDesctop.module.css';
+import HistorySuccessDesktopCss from './HistorySuccessDesktop.module.css';
 import VectorRight from './img/VectorRight.svg';
 import VectorLeft from './img/VectorLeft.svg';
-import Success from './img/success.svg';
+
 import slider2 from './img/slider2.svg';
 import slider3 from './img/slider3.svg';
 import slider4 from './img/slider3.svg';
@@ -10,14 +10,14 @@ import { Video } from '@splidejs/splide-extension-video';
 import '@splidejs/react-splide/css/skyblue';
 import './splide.css';
 
-const HistorySuccessDesctop = () => {
+const HistorySuccessDesktop = () => {
     return (
-        <div className={HistorySuccessDesctopCss.HistorySuccessDesctop}>
-            <div className={HistorySuccessDesctopCss.titleWrapper}>
-                <div className={HistorySuccessDesctopCss.title}>
+        <div className={HistorySuccessDesktopCss.HistorySuccessDesktop}>
+            <div className={HistorySuccessDesktopCss.titleWrapper}>
+                <div className={HistorySuccessDesktopCss.title}>
                     Истории успеха
                 </div>
-                <div className={HistorySuccessDesctopCss.subTitle}>
+                <div className={HistorySuccessDesktopCss.subTitle}>
                     {' '}
                     <p>
                         Большие проекты, смелые идеи и новые технологии станут
@@ -60,7 +60,7 @@ const HistorySuccessDesctop = () => {
                 aria-label="..."
             >
                 {' '}
-                <div className={HistorySuccessDesctopCss.splideWrapper}>
+                <div className={HistorySuccessDesktopCss.splideWrapper}>
                     <SplideTrack>
                         <li
                             className="splide__slide splide__Customslide"
@@ -109,4 +109,4 @@ const HistorySuccessDesctop = () => {
     );
 };
 
-export default HistorySuccessDesctop;
+export default HistorySuccessDesktop;

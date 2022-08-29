@@ -32,7 +32,10 @@ import './splide.css';
 import TestITDesktop from './testIT/testITDesktop/TestITDesktop';
 import PracticeDesktop from './Practice/PracticeDesktop/PracticeDesktop';
 import FeebackGraduatesDesktop from './feebackGraduates/feebackGraduatesDesktop/FeebackGraduatesDesktop';
-import HistorySuccessDesctop from './historySuccess/PracticeDesktop/HistorySuccessDesctop';
+import HistorySuccessDesktop from './historySuccess/historySuccessDesktop/HistorySuccessDesktop';
+import SuccessTrajectoryDesktop from './successTrajectory/successTrajectoryDesktop/SuccessTrajectoryDesktop';
+import OurPartnersDesktop from './ourPartners/ourPartnersDesktop/OurPartnersDesktop';
+import MvpConnectDesktop from './mvpConnect/mvpConnectDesktop/MvpConnectDesktop';
 
 const MainComponent = (props) => {
     return (
@@ -180,15 +183,26 @@ const MainComponent = (props) => {
                     <FeebackGraduates />
                 )}
                 {props.state.displaySize.isDesktop ? (
-                    <HistorySuccessDesctop />
+                    <HistorySuccessDesktop />
                 ) : (
                     <HistorySuccess />
                 )}
-
-                <SuccessTrajectory />
-                <OurPartners />
+                {props.state.displaySize.isDesktop ? (
+                    <SuccessTrajectoryDesktop />
+                ) : (
+                    <SuccessTrajectory />
+                )}
+                {props.state.displaySize.isDesktop ? (
+                    <OurPartnersDesktop />
+                ) : (
+                    <OurPartners />
+                )}
             </div>
-            <MvpConnect />
+            {props.state.displaySize.isDesktop ? (
+                <MvpConnectDesktop />
+            ) : (
+                <MvpConnect />
+            )}
         </div>
     );
 };
