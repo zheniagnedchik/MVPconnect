@@ -39,6 +39,23 @@
     margin: 3.82vh 5vw 4.82vh 86.56vw;
 }
 
+/* mobile  */
+@media (min-width: 600px) {
+    .mvpIcon {
+        width: 22.18vw;
+        height: 5.61vh;
+        padding: 3vh 1vw 1vh 1vw;
+        position: absolute;
+    }
+    .fixedImg {
+        width: 15.62vw;
+        height: 8.77vh;
+    }
+    .fixedIcon {
+        padding: 1vh 1vw 1vh 1vw;
+    }
+}
+
 /* mobile with rotate */
 
 @media (max-height: 500px) {

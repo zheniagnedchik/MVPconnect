@@ -187,6 +187,31 @@
         height: 103vh;
     }
 }
+@media (min-width: 600px) {
+    .slider {
+        height: 76%;
+    }
+    .slider.active {
+        height: 78.85%;
+    }
+    .FeebackGraduates {
+        height: 103vh;
+    }
+}
+@media (min-width: 620px) {
+    .slider {
+        height: 76%;
+    }
+    .slider.active {
+        height: 78.85%;
+    }
+    .FeebackGraduates {
+        height: 103vh;
+    }
+    .SplideTrack {
+        height: 69vh;
+    }
+}
 
 /* mobile with rotate */
 @media (max-height: 500px) {
@@ -222,12 +247,5 @@
     .moreGradient {
         width: 9.68vw;
         height: 5.98vh;
-    }
-}
-
-/* desktop  */
-@media (min-width: 700px) {
-    .FeebackGraduates {
-        background: none;
     }
 }

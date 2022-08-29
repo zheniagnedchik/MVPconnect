@@ -100,3 +100,34 @@
     font-weight: 600;
     color: #000000;
 }
+
+@media (max-width: 1100px) {
+    .slider {
+        height: 83%;
+    }
+    .sliderSubTitle {
+        font-size: 1.2vmax;
+    }
+    .sliderBtn {
+        font-size: 1.3vmax;
+    }
+}
+
+@media (max-width: 900px) {
+    .sliderSubTitle {
+        font-size: 1.4vmax;
+    }
+}
+@media (max-width: 950px) {
+    .sliderTitle {
+        font-size: 1.3vmax;
+    }
+}
+@media (max-width: 850px) {
+    .sliderTitle {
+        font-size: 1.3vmax;
+    }
+    .sliderSubTitle {
+        font-size: 1.3vmax;
+    }
+}

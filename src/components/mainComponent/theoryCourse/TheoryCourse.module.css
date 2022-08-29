@@ -96,6 +96,12 @@
     font-weight: 700;
     color: #000000;
 }
+/* mobile  */
+@media (min-width: 610px) {
+    .slider {
+        height: 91%;
+    }
+}
 
 /* mobile with rotate */
 @media (max-height: 500px) {
@@ -116,12 +122,5 @@
     .slider {
         width: 55.75vw;
         height: 92%;
-    }
-}
-
-/* desktop  */
-@media (min-width: 700px) {
-    .theoryCourse {
-        background: none;
     }
 }

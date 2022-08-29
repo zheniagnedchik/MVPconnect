@@ -105,3 +105,22 @@
 .participant img {
     width: 15vw;
 }
+
+@media (max-width: 1300px) {
+    .info {
+        font-size: 1.5vmin;
+    }
+
+    .participant img {
+        width: 20vw;
+    }
+    .socialNetworkIcons img {
+        width: 4vw;
+        margin-left: 1vw;
+    }
+}
+@media (max-width: 900px) {
+    .info {
+        font-size: 1.7vmin;
+    }
+}

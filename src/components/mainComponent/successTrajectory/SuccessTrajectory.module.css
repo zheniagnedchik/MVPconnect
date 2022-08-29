@@ -78,10 +78,3 @@
         height: 75vh;
     }
 }
-
-/* desktop  */
-@media (min-width: 700px) {
-    .SuccessTrajectory {
-        background: none;
-    }
-}

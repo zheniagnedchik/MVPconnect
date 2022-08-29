@@ -38,7 +38,7 @@ const FeebackGraduates = () => {
                 aria-label="..."
             >
                 <div className={FeebackGraduatesCss.splideWrapper}>
-                    <SplideTrack>
+                    <SplideTrack className={FeebackGraduatesCss.SplideTrack}>
                         <SplideSlide>
                             {' '}
                             <div

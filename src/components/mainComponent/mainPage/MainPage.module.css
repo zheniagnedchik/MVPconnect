@@ -145,6 +145,24 @@
         margin-top: 11.31vh;
     }
 }
+@media (min-width: 600px) {
+    .course,
+    .practice {
+        height: 5.1vh;
+    }
+    .course p,
+    .practice p {
+        padding-top: 0.5vh;
+        font-size: 3.9vmin;
+    }
+    .title {
+        font-size: 11vmin;
+    }
+    .subtitle {
+        font-size: 4.6vmin;
+        margin-top: 7.5vh;
+    }
+}
 
 /* mobile with rotate */
 
@@ -169,10 +187,10 @@
 
 /* Desktop */
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
     .mainPage {
         background: center url(./img/BacgroundMainPageDesktop.svg) no-repeat;
-        /* background-size: cover; */
+
         height: 100vh;
         width: 100%;
     }
@@ -202,19 +220,42 @@
         margin: 20.2vh auto 0;
 
         font-weight: 700;
-        font-size: 2.4vmin;
+    }
+    .course,
+    .practice {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .course p,
     .practice p {
-        padding-top: 1vh;
+        padding-top: 0;
+        font-size: 2.1vmin;
     }
 
     .practice {
         width: 21vw;
         height: 5vh;
         margin: 5.26vh auto 0;
+    }
+    .down {
+        display: none;
+    }
+}
 
-        font-size: 2.4vmin;
+@media (max-width: 1200px) {
+    .title {
+        font-size: 7.6vmin;
+    }
+
+    .subtitle {
+        font-size: 3.8vmin;
+    }
+    .course p {
+        font-size: 2vmin;
+    }
+    .practice p {
+        font-size: 1.8vmin;
     }
 }

@@ -33,3 +33,16 @@
 .splideWrapper img {
     width: 60vw;
 }
+
+/* Desktop  */
+
+@media (max-width: 1500px) {
+    .OurPartnersDesktop {
+        margin-top: 0;
+    }
+}
+@media (max-width: 1050px) {
+    .splideWrapper img {
+        width: 80vw;
+    }
+}

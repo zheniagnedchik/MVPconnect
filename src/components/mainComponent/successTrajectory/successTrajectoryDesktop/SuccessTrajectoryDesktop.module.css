@@ -68,3 +68,14 @@
 .table img {
     width: 55vw;
 }
+
+@media (max-width: 1100px) {
+    .table img {
+        width: 70vw;
+    }
+}
+@media (max-width: 900px) {
+    .table img {
+        width: 80vw;
+    }
+}

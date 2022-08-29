@@ -10,7 +10,7 @@ import './splide.css';
 
 const PracticeDesktop = () => {
     return (
-        <div className={PracticeDesktopCss.theoryCourse}>
+        <div className={PracticeDesktopCss.PracticeDesktop}>
             <div className={PracticeDesktopCss.titleWrapper}>
                 <div className={PracticeDesktopCss.title}>Практика</div>
                 <div className={PracticeDesktopCss.subTitle}>

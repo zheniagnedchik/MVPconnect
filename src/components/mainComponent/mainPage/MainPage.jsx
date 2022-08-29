@@ -30,23 +30,19 @@ const MainPage = (props) => {
                             : 'Практика'}
                     </p>
                 </div>
-                {props.displaySize.isDesktop
-                    ? ''
-                    : `${(
-                          <Link
-                              to="#studentChoice"
-                              smooth
-                              style={{ textDecoration: 'none' }}
-                          >
-                              {' '}
-                              <div className={MainPageCss.down}>
-                                  Вниз
-                                  <div className={MainPageCss.arrow}>
-                                      <img src={Vector} alt="" />
-                                  </div>
-                              </div>
-                          </Link>
-                      )}`}
+                <Link
+                    to="#studentChoice"
+                    smooth
+                    style={{ textDecoration: 'none' }}
+                >
+                    {' '}
+                    <div className={MainPageCss.down}>
+                        Вниз
+                        <div className={MainPageCss.arrow}>
+                            <img src={Vector} alt="" />
+                        </div>
+                    </div>
+                </Link>
             </div>
         </div>
     );

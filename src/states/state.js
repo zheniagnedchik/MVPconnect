@@ -47,7 +47,7 @@ export const CheckWindowSize = () => {
     useEffect(() => {
         function handleWindowResize() {
             setWindowSize(getWindowSize());
-            if (window.innerWidth > 700) {
+            if (window.innerWidth > 800) {
                 state.displaySize.isDesktop = true;
             } else {
                 state.displaySize.isDesktop = false;
