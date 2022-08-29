@@ -23,7 +23,7 @@
     font-family: 'Open Sans';
     font-style: normal;
     width: 60%;
-    margin: 0 auto;
+    margin: 0 auto 4vh;
     font-weight: 600;
     font-size: 3vmin;
     line-height: 140%;
@@ -41,7 +41,7 @@
 
 .slider {
     margin: 0 auto;
-    margin-top: 5.26vh;
+    margin-top: 4.26vh;
     background: #000000;
     border: 1px solid #000000;
     box-shadow: 0px 0px 15px #ffb81a;

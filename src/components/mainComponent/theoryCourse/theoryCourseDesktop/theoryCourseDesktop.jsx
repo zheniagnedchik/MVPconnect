@@ -44,7 +44,7 @@ const theoryCourseDesktop = () => {
             >
                 {' '}
                 <div className={TheoryCourseCss.splideWrapper}>
-                    <SplideTrack>
+                    <SplideTrack className={TheoryCourseCss.SplideTrack}>
                         <SplideSlide className="slider_transform">
                             <div className={`${TheoryCourseCss.slider} slider`}>
                                 <div className={TheoryCourseCss.sliderImg}>
