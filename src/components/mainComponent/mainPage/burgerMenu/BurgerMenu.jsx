@@ -3,6 +3,7 @@ import MvpIcon from './img/MvpConnectIcon.svg';
 import React from 'react';
 import BurgerButton from './burgerButton/BurgerButton';
 import Menu from './menu/Menu';
+import { NavLink } from 'react-router-dom';
 
 class BurgerMenu extends React.Component {
     constructor(props) {
@@ -54,13 +55,16 @@ class BurgerMenu extends React.Component {
                         this.state.visible ? BurgerMenuCss.fixedIcon : ''
                     }`}
                 >
-                    <img
-                        className={`${BurgerMenuCss.mvpIconImg} ${
-                            this.state.visible ? BurgerMenuCss.fixedImg : ''
-                        }`}
-                        src={MvpIcon}
-                        alt=""
-                    />
+                    <NavLink to="/">
+                        {' '}
+                        <img
+                            className={`${BurgerMenuCss.mvpIconImg} ${
+                                this.state.visible ? BurgerMenuCss.fixedImg : ''
+                            }`}
+                            src={MvpIcon}
+                            alt=""
+                        />
+                    </NavLink>
                 </div>
                 <div
                     className={`${BurgerMenuCss.burgerIcon} ${

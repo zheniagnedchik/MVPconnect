@@ -3,6 +3,7 @@ import BurgerMenuDesktop from './burgerMenuDesktop/BurgerMenuDesktop';
 import MainPageCss from './MainPage.module.css';
 import Vector from './img/Vector.svg';
 import { HashLink as Link } from 'react-router-hash-link';
+import { NavLink } from 'react-router-dom';
 
 const MainPage = (props) => {
     return (
@@ -18,11 +19,15 @@ const MainPage = (props) => {
                 <div className={MainPageCss.subtitle}>
                     IT- курсы и практика на коммерческих проектах и стартапах
                 </div>
-                <div className={MainPageCss.course}>
-                    <p>
-                        {props.displaySize.isDesktop ? 'Выбрать курс' : 'Курсы'}
-                    </p>
-                </div>
+                <NavLink to="/Courses">
+                    <div className={MainPageCss.course}>
+                        <p>
+                            {props.displaySize.isDesktop
+                                ? 'Выбрать курс'
+                                : 'Курсы'}
+                        </p>
+                    </div>
+                </NavLink>
                 <div className={MainPageCss.practice}>
                     <p>
                         {props.displaySize.isDesktop
@@ -31,6 +36,7 @@ const MainPage = (props) => {
                     </p>
                 </div>
                 <Link
+                    className={MainPageCss.link}
                     to="#studentChoice"
                     smooth
                     style={{ textDecoration: 'none' }}

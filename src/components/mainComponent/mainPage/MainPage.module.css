@@ -6,7 +6,7 @@
     height: 100vh;
     width: 100%;
 }
-.mainPage a {
+.link {
     display: block;
     width: 15.62vw;
     margin: 0 auto;
@@ -244,7 +244,7 @@
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px) and (min-width: 800px) {
     .title {
         font-size: 7.6vmin;
     }

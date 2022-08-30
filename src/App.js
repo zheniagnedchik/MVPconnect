@@ -1,7 +1,9 @@
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import { CheckWindowSize } from './states/state';
 import MainComponent from './components/mainComponent/MainComponent';
+import Courses from './components/courses/Courses';
+import Frontend from './components/courses/frontend/Frontend';
 
 function App(props) {
     CheckWindowSize();
@@ -9,14 +11,28 @@ function App(props) {
     return (
         <BrowserRouter>
             <div>
-                <MainComponent
-                    state={props.state}
-                    creatingResult={props.creatingResult}
-                    clearResult={props.clearResult}
-                    linkResultTest={props.linkResultTest}
-                />
+                <Routes>
+                    <Route
+                        path="/"
+                        element={
+                            <MainComponent
+                                state={props.state}
+                                creatingResult={props.creatingResult}
+                                clearResult={props.clearResult}
+                                linkResultTest={props.linkResultTest}
+                            />
+                        }
+                    />
+                    <Route
+                        path="/Courses"
+                        element={<Courses state={props.state} />}
+                    />
+                    <Route
+                        path="/Frontend"
+                        element={<Frontend state={props.state} />}
+                    />
+                </Routes>
             </div>
-            <div></div>
         </BrowserRouter>
     );
 }
