@@ -8,8 +8,31 @@ import Facebook from './img/socialNetwork/f.svg';
 import Inst from './img/socialNetwork/inst.svg';
 import In from './img/socialNetwork/in.svg';
 import Tel from './img/socialNetwork/teleg.svg';
+import { NavLink } from 'react-router-dom';
+import Accordion1 from './accordions/Accordion1';
+import Accordion2 from './accordions/Accordion2';
+import Accordion3 from './accordions/Accordion3';
+import MaxCard from './cards/MaxCard';
+import Card1 from './cards/Card1';
+import Card2 from './cards/Card2';
+import Card3 from './cards/Card3';
+import MenuDesktop from './menu/MenuDesktop';
+import { useState } from 'react';
+import MenuMobile from './menu/MenuMobile';
 
 const Frontend = (props) => {
+    const [ChoiseModule, setChoiseModule] = useState(0);
+
+    let modules = [<Accordion1 />, <Accordion2 />, <Accordion3 />, <MaxCard />];
+    if (ChoiseModule === 2) {
+        modules = [<Accordion1 />, <Card1 />];
+    } else if (ChoiseModule === 3) {
+        modules = [<Accordion2 />, <Card2 />];
+    } else if (ChoiseModule === 4) {
+        modules = [<Accordion3 />, <Card3 />];
+    } else {
+        modules = [<Accordion1 />, <Accordion2 />, <Accordion3 />, <MaxCard />];
+    }
     return (
         <div className={FrontendCss.Frontend}>
             {props.state.displaySize.isDesktop ? (
@@ -26,9 +49,12 @@ const Frontend = (props) => {
                         Теоретические и практические курсы по подготовке
                         Frontend разработчиков на реальных проектах (стартапах)
                     </div>
-                    <div className={FrontendCss.titleBtn}>
-                        <p>Записаться на курс</p>
-                    </div>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeASX9u0xCzgvDeLxKqwMXpx2c8qyBCGFN4G17faCjnzT2VSQ/viewform">
+                        {' '}
+                        <div className={FrontendCss.titleBtn}>
+                            <p>Записаться на курс</p>
+                        </div>
+                    </a>
                 </div>
                 <div className={FrontendCss.blackBack}>
                     <div className={FrontendCss.stagesTitleWrapper}>
@@ -121,9 +147,12 @@ const Frontend = (props) => {
                         </div>
                     </div>
 
-                    <div className={FrontendCss.coursesBtn}>
-                        Записаться на курс
-                    </div>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeASX9u0xCzgvDeLxKqwMXpx2c8qyBCGFN4G17faCjnzT2VSQ/viewform">
+                        {' '}
+                        <div className={FrontendCss.coursesBtn}>
+                            Записаться на курс
+                        </div>{' '}
+                    </a>
                     <div className={FrontendCss.mentorWrapper}>
                         <div className={FrontendCss.mentor}>
                             <img src={mentor} alt="" />
@@ -157,11 +186,27 @@ const Frontend = (props) => {
                     <div className={FrontendCss.programTitle}>
                         Программа подготовки Frontend разработчиков
                     </div>
+                    {props.state.displaySize.isDesktop ? (
+                        <MenuDesktop
+                            ChoiseModule={ChoiseModule}
+                            setChoiseModule={setChoiseModule}
+                        />
+                    ) : (
+                        <MenuMobile
+                            ChoiseModule={ChoiseModule}
+                            setChoiseModule={setChoiseModule}
+                        />
+                    )}
+
+                    {modules}
 
                     <footer className={FrontendCss.footer}>
                         <div className={FrontendCss.footerWrapper}>
                             <div className={FrontendCss.footerImg}>
-                                <img src={mvp} alt="" />
+                                <NavLink to="/">
+                                    {' '}
+                                    <img src={mvp} alt="" />
+                                </NavLink>
                             </div>
 
                             <div className={FrontendCss.footerInfo}>
@@ -185,11 +230,26 @@ const Frontend = (props) => {
                                 </div>
                             </div>
                             <div className={FrontendCss.socialNetworkIcons}>
-                                <img src={Vk} alt="" />
-                                <img src={Facebook} alt="" />
-                                <img src={Inst} alt="" />
-                                <img src={In} alt="" />
-                                <img src={Tel} alt="" />
+                                <a href="https://vk.com/">
+                                    {' '}
+                                    <img src={Vk} alt="" />{' '}
+                                </a>
+                                <a href="https://www.facebook.com/people/Mvp-connect/100083144028399/">
+                                    {' '}
+                                    <img src={Facebook} alt="" />
+                                </a>
+                                <a href="https://www.instagram.com/mvp.connect/">
+                                    {' '}
+                                    <img src={Inst} alt="" />
+                                </a>
+                                <a href="https://www.linkedin.com/company/mvp-connect/">
+                                    {' '}
+                                    <img src={In} alt="" />{' '}
+                                </a>
+                                <a href="https://t.me/alexander_balodis">
+                                    {' '}
+                                    <img src={Tel} alt="" />{' '}
+                                </a>
                             </div>
                         </div>
                     </footer>

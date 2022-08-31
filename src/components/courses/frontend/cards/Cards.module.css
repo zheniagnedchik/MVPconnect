@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+.CardWrapper {
+    border: 2px solid white;
+    width: 30%;
+    margin: 8% auto;
+    text-align: center;
+}
+.CardWrapper p {
+    display: inline;
+}
+.monthPrice {
+    color: rgb(246, 195, 80);
+    font-size: 3.6vmax;
+    font-weight: 700;
+    margin: 15%;
+}
+
+.monthPrice p {
+    display: inline;
+    font-size: 2.2vmax;
+}
+
+.currency1 {
+    color: rgb(6, 146, 236);
+    font-size: 2.3vmax;
+}
+.currency2 {
+    color: rgb(246, 195, 80);
+    font-size: 2.3vmax;
+}
+.currency3 {
+    color: rgb(2, 189, 108);
+    font-size: 2.3vmax;
+}
+
+.allPrice {
+    color: white;
+    font-size: 1.6vmax;
+    margin: 10% 8%;
+    line-height: 140%;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 300;
+}
+
+.redPrice {
+    color: rgb(247, 99, 99);
+    font-weight: 700;
+}
+
+.cardBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin: 10% auto 20%;
+    height: 8vh;
+    background: #f6c350;
+    border-radius: 6px;
+
+    font-size: 1.2vmax;
+    font-weight: 700;
+}
+
+@media (max-width: 800px) {
+    .CardWrapper {
+        width: 60%;
+    }
+
+    .allPrice {
+        font-size: 2vmax;
+    }
+    .cardBtn {
+        font-size: 1.8vmax;
+    }
+}

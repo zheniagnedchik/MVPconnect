@@ -2,6 +2,7 @@ import BurgerMenu from '../mainComponent/mainPage/burgerMenu/BurgerMenu';
 import CoursesCss from './Courses.module.css';
 import front from './img/front.webp';
 import ux from './img/UXUI.webp';
+import Py from './img/Python.jpg';
 import mvp from './img/MvpConnect.svg';
 import Vk from './img/socialNetwork/vk.svg';
 import Facebook from './img/socialNetwork/f.svg';
@@ -12,7 +13,6 @@ import BurgerMenuDesktop from '../mainComponent/mainPage/burgerMenuDesktop/Burge
 import { NavLink } from 'react-router-dom';
 
 const Courses = (props) => {
-    console.log(props);
     return (
         <div>
             {props.state.displaySize.isDesktop ? (
@@ -55,8 +55,8 @@ const Courses = (props) => {
                         </div>
 
                         <div className={CoursesCss.item}>
-                            <div className={CoursesCss.img}>
-                                <img src={ux} alt="" />
+                            <div className={CoursesCss.imgPy}>
+                                <img src={Py} alt="" />
                             </div>
                             <div className={CoursesCss.itemTitle}>Python</div>
                             <div className={CoursesCss.btn}>

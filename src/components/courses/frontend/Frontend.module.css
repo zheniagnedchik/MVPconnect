@@ -4,7 +4,7 @@
     background: url('./img/Frontend.jpg');
     background-size: 100% auto;
     background-attachment: fixed;
-    width: 100vw;
+    width: 100%;
     height: max-content;
 }
 
@@ -249,20 +249,21 @@
     align-items: center;
     justify-content: center;
 }
-.footerImg img {
+.footerImg a {
     width: 45%;
 }
 
 .socialNetworkIcons {
     margin-top: 4vh;
-    margin: 3vh auto 0;
+    margin: 0 auto 0;
     display: flex;
     width: 35%;
+    align-items: center;
 
     justify-content: space-around;
 }
 
-.socialNetworkIcons img {
+.socialNetworkIcons a {
     width: 30%;
     padding-left: 6%;
 }
@@ -278,4 +279,103 @@
     margin-top: 4vh;
     color: white;
     font-size: 1.5vmax;
+}
+
+@media (max-width: 800px) {
+    .titleBtn {
+        width: 62%;
+        font-size: 1.6vmax;
+        height: fit-content;
+        text-align: center;
+    }
+    .coursesBtn {
+        width: 32%;
+        font-size: 1.6vmax;
+        height: 4vh;
+        text-align: center;
+    }
+    .courses {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'month'
+            'course'
+            'month2'
+            'course2'
+            'month3'
+            'course3';
+    }
+    .month p,
+    .month2 p,
+    .month3 p {
+        text-align: center;
+        width: 30%;
+        margin: 4vh auto;
+        font-size: 3vmax;
+    }
+
+    .courseInfo,
+    .courseShedule {
+        font-size: 2vmax;
+    }
+
+    .mentorWrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mentor {
+        width: 80%;
+    }
+    .mentor img {
+        width: 100%;
+    }
+
+    .mentorInfo {
+        margin-top: 4vh;
+        width: 80%;
+    }
+
+    .mentorProf,
+    .mentorDescr {
+        font-size: 2vmax;
+    }
+
+    .mentorName {
+        font-size: 3vmax;
+    }
+
+    .programTitle {
+        font-size: 3vmax;
+        margin: 15% auto;
+    }
+
+    .footerWrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .footerDescr {
+        font-size: 2vmax;
+        margin: 4vh 5%;
+    }
+
+    .footerMail {
+        font-size: 3vmax;
+    }
+
+    .footerNumber {
+        font-size: 3vmax;
+    }
+
+    .socialNetworkIcons a {
+        width: 40%;
+        padding-left: 6%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .socialNetworkIcons a {
+        width: 50%;
+        padding-left: 6%;
+    }
 }
