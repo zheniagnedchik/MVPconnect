@@ -124,3 +124,9 @@
         font-size: 1.7vmin;
     }
 }
+
+@media (max-height: 600px) {
+    .MvpConnectDesktop {
+        height: 57vh;
+    }
+}

@@ -48,3 +48,9 @@
         height: 85vh;
     }
 }
+
+@media (max-height: 600px) {
+    .HistorySuccessDesktop {
+        margin-top: 30vh;
+    }
+}

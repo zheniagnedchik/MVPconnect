@@ -234,6 +234,10 @@
         width: 80%;
     }
 
+    .SplideTrack {
+        height: 100vh;
+    }
+
     .FeebackGraduates {
         height: 130vh;
     }

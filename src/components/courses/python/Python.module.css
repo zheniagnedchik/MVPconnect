@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+.Python {
+    background: url('./img/Frontend.jpg');
+    background-size: 100% auto;
+    background-attachment: fixed;
+    width: 100%;
+    height: max-content;
+}
+
+.titleBack {
+    background-image: -webkit-linear-gradient(
+        top,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+    );
+    height: max-content;
+}
+.titleWrapper {
+    width: 50%;
+    padding: 20vh 0 10vh 5vh;
+}
+
+.title {
+    font-size: 6.5vmax;
+    font-weight: 700;
+    color: white;
+}
+.subTitle {
+    margin-top: 10vh;
+    color: #afafaf;
+    font-size: 1.8vmax;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+.titleBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 8vh;
+    background: #f6c350;
+    border-radius: 6px;
+    margin: 5vh 0 0;
+    font-size: 1.2vmax;
+    font-weight: 700;
+}
+
+.blackBack {
+    background: black;
+    height: max-content;
+}
+.stagesTitleWrapper {
+    text-align: center;
+    width: 90%;
+    margin: 5vh auto 5vh;
+}
+.stagesTitle {
+    color: white;
+    font-size: 4vmax;
+    font-weight: 700;
+    padding-top: 5vh;
+}
+
+.stagesSubTitle {
+    font-size: 2vmax;
+    color: white;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 300;
+    margin-top: 5vh;
+}
+
+.courses {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+    grid-template-areas:
+        'month course'
+        'month2 course2'
+        'month3 course3';
+}
+
+.month {
+    grid-area: month;
+}
+.course {
+    grid-area: course;
+}
+
+.month2 {
+    grid-area: month2;
+}
+.course2 {
+    grid-area: course2;
+}
+.month3 {
+    grid-area: month3;
+}
+.course3 {
+    grid-area: course3;
+}
+.course,
+.course2,
+.course3 {
+    padding-left: 5%;
+    border-left: 2px solid white;
+    padding-bottom: 5%;
+    padding-right: 4%;
+}
+.course3 {
+    padding-bottom: 1%;
+}
+.course2 {
+    border-left: 2px solid #f6c350;
+}
+.course3 {
+    border-left: 2px solid #0692ec;
+}
+.month p,
+.month2 p,
+.month3 p {
+    margin: 0 5% 0 55%;
+    font-size: 2vmax;
+    font-weight: 700;
+}
+
+.courseTitle {
+    font-size: 2.4vmax;
+    font-weight: 700;
+}
+
+.courseSubTitle {
+    color: rgb(246, 195, 80);
+    font-size: 2vmax;
+    margin-top: 2%;
+}
+.courseSubTitle p {
+    display: inline;
+    text-decoration: underline;
+}
+.courseInfo {
+    color: rgb(255, 255, 255);
+    margin-top: 2%;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 1.5vmax;
+    line-height: 140%;
+}
+
+.courseShedule {
+    color: rgb(255, 255, 255);
+    margin-top: 2%;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 1.5vmax;
+    line-height: 140%;
+}
+
+.coursesBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    margin: 10% auto 10%;
+    height: 8vh;
+    background: #f6c350;
+    border-radius: 6px;
+
+    font-size: 1.2vmax;
+    font-weight: 700;
+}
+
+.mentorWrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mentor {
+    width: 50%;
+}
+.mentor img {
+    width: 100%;
+}
+
+.mentorInfo {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 600;
+    width: 47%;
+    background: rgb(212, 212, 212);
+}
+
+.mentorInfoWrapper {
+    padding: 15% 10%;
+}
+.mentorName {
+    font-size: 2vmax;
+}
+
+.mentorProf {
+    margin-top: 3%;
+    font-weight: 300;
+    color: #666;
+    font-size: 1.4vmax;
+}
+
+.mentorProf a {
+    color: #ff8562;
+}
+
+.mentorBorder {
+    width: 14%;
+    margin-top: 8%;
+    border-bottom: 3px solid black;
+}
+
+.mentorDescr {
+    margin-top: 8%;
+    font-size: 1.5vmax;
+    line-height: 1.55;
+    font-weight: 300;
+}
+
+.programTitle {
+    text-align: center;
+    font-size: 4vmax;
+    color: white;
+    font-weight: 700;
+    width: 60%;
+    margin: 5% auto 5%;
+}
+
+.footer {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.footerWrapper {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.footerImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footerImg a {
+    width: 45%;
+}
+
+.socialNetworkIcons {
+    margin-top: 4vh;
+    margin: 0 auto 0;
+    display: flex;
+    width: 35%;
+    align-items: center;
+
+    justify-content: space-around;
+}
+
+.socialNetworkIcons a {
+    width: 30%;
+    padding-left: 6%;
+}
+
+.footerNumber,
+.footerMail {
+    color: rgb(6, 146, 236);
+    margin-top: 4vh;
+    font-size: 2.6vmax;
+}
+
+.footerDescr {
+    margin-top: 4vh;
+    color: white;
+    font-size: 1.5vmax;
+}
+
+@media (max-width: 800px) {
+    .titleBtn {
+        width: 62%;
+        font-size: 1.6vmax;
+        height: fit-content;
+        text-align: center;
+    }
+    .coursesBtn {
+        width: 32%;
+        font-size: 1.6vmax;
+        height: 4vh;
+        text-align: center;
+    }
+    .courses {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'month'
+            'course'
+            'month2'
+            'course2'
+            'month3'
+            'course3';
+    }
+    .month p,
+    .month2 p,
+    .month3 p {
+        text-align: center;
+        width: 30%;
+        margin: 4vh auto;
+        font-size: 3vmax;
+    }
+
+    .courseInfo,
+    .courseShedule {
+        font-size: 2vmax;
+    }
+
+    .mentorWrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mentor {
+        width: 80%;
+    }
+    .mentor img {
+        width: 100%;
+    }
+
+    .mentorInfo {
+        margin-top: 4vh;
+        width: 80%;
+    }
+
+    .mentorProf,
+    .mentorDescr {
+        font-size: 2vmax;
+    }
+
+    .mentorName {
+        font-size: 3vmax;
+    }
+
+    .programTitle {
+        font-size: 3vmax;
+        margin: 15% auto;
+    }
+
+    .footerWrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .footerDescr {
+        font-size: 2vmax;
+        margin: 4vh 5%;
+    }
+
+    .footerMail {
+        font-size: 3vmax;
+    }
+
+    .footerNumber {
+        font-size: 3vmax;
+    }
+
+    .socialNetworkIcons a {
+        width: 40%;
+        padding-left: 6%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .socialNetworkIcons a {
+        width: 50%;
+        padding-left: 6%;
+    }
+}

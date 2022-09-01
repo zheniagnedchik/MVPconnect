@@ -111,6 +111,10 @@
     .sliderBtn {
         font-size: 1.3vmax;
     }
+
+    .sliderTitle {
+        font-size: 1.25vmax;
+    }
 }
 
 @media (max-width: 900px) {
@@ -129,5 +133,15 @@
     }
     .sliderSubTitle {
         font-size: 1.3vmax;
+    }
+}
+
+@media (max-height: 600px) {
+    .SplideTrack {
+        height: 100vh;
+        padding-top: 5vh;
+    }
+    .theoryCourse {
+        margin-bottom: 12.28%;
     }
 }

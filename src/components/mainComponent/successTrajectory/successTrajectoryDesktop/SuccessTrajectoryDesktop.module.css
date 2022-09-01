@@ -79,3 +79,9 @@
         width: 80vw;
     }
 }
+
+@media (max-height: 600px) {
+    .table img {
+        width: 60vw;
+    }
+}

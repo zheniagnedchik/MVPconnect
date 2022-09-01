@@ -124,3 +124,14 @@
         font-size: 1.25vmax;
     }
 }
+
+@media (max-height: 600px) {
+    .SplideTrack {
+        height: 84vh;
+        padding-top: 5vh;
+    }
+
+    .PracticeDesktop {
+        margin-bottom: 12.28%;
+    }
+}

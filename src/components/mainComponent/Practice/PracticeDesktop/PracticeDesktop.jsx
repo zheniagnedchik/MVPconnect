@@ -44,7 +44,7 @@ const PracticeDesktop = () => {
             >
                 {' '}
                 <div className={PracticeDesktopCss.splideWrapper}>
-                    <SplideTrack>
+                    <SplideTrack className={PracticeDesktopCss.SplideTrack}>
                         <SplideSlide className="slider_transform">
                             <div
                                 className={`${PracticeDesktopCss.slider} slider`}

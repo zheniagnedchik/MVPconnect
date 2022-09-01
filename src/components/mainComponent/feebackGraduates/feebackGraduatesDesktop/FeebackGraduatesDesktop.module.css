@@ -258,3 +258,28 @@
         height: 2vh;
     }
 }
+
+/* tablet rotate */
+
+@media (max-height: 965px) {
+    .splideTrack {
+        height: 84vh;
+    }
+}
+
+@media (max-height: 600px) {
+    .splideTrack {
+        height: 120vh;
+    }
+    .sliderImg {
+        margin: -10.9vh auto 0;
+    }
+
+    .FeebackGraduatesDesktop {
+        margin-bottom: 20vh;
+    }
+
+    .sliderImg img {
+        width: 13vw;
+    }
+}

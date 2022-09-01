@@ -49,9 +49,12 @@ const Courses = (props) => {
                             <div className={CoursesCss.itemTitle}>
                                 UX/UI designer
                             </div>
-                            <div className={CoursesCss.btn}>
-                                <p> Подробнее</p>
-                            </div>
+                            <NavLink to="/Designer">
+                                {' '}
+                                <div className={CoursesCss.btn}>
+                                    <p> Подробнее</p>
+                                </div>
+                            </NavLink>
                         </div>
 
                         <div className={CoursesCss.item}>
@@ -59,9 +62,12 @@ const Courses = (props) => {
                                 <img src={Py} alt="" />
                             </div>
                             <div className={CoursesCss.itemTitle}>Python</div>
-                            <div className={CoursesCss.btn}>
-                                <p> Подробнее</p>
-                            </div>
+                            <NavLink to="/Python">
+                                {' '}
+                                <div className={CoursesCss.btn}>
+                                    <p> Подробнее</p>
+                                </div>
+                            </NavLink>
                         </div>
                     </div>
                     <footer className={CoursesCss.footer}>

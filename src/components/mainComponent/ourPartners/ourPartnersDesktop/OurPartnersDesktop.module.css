@@ -46,3 +46,9 @@
         width: 80vw;
     }
 }
+
+@media (max-height: 600px) {
+    .OurPartnersDesktop {
+        margin-top: 15vh;
+    }
+}
