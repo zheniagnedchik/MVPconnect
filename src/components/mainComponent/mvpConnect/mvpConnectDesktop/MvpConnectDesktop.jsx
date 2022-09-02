@@ -21,11 +21,26 @@ const MvpConnectDesktop = () => {
                         +375 44 780 12 36
                     </div>
                     <div className={MvpConnectDesktopCss.socialNetworkIcons}>
-                        <img src={Vk} alt="" />
-                        <img src={Facebook} alt="" />
-                        <img src={Inst} alt="" />
-                        <img src={In} alt="" />
-                        <img src={Tel} alt="" />
+                        <a href="https://vk.com/">
+                            {' '}
+                            <img src={Vk} alt="" />{' '}
+                        </a>
+                        <a href="https://www.facebook.com/people/Mvp-connect/100083144028399/">
+                            {' '}
+                            <img src={Facebook} alt="" />
+                        </a>
+                        <a href="https://www.instagram.com/mvp.connect/">
+                            {' '}
+                            <img src={Inst} alt="" />
+                        </a>
+                        <a href="https://www.linkedin.com/company/mvp-connect/">
+                            {' '}
+                            <img src={In} alt="" />{' '}
+                        </a>
+                        <a href="https://t.me/alexander_balodis">
+                            {' '}
+                            <img src={Tel} alt="" />{' '}
+                        </a>
                     </div>
                 </div>
                 <div className={MvpConnectDesktopCss.infoWrapper}>
