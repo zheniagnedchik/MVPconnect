@@ -39,20 +39,20 @@ const Accordion1 = () => {
                     } ${AccordionCss.accordionTopBorder} `}
                 >
                     <div
-                        className={AccordionCss.accordionTitle}
-                        onClick={() => {
-                            selected ? setSelected(false) : setSelected(true);
-                        }}
+                    // className={AccordionCss.accordionTitle}
+                    // onClick={() => {
+                    //     selected ? setSelected(false) : setSelected(true);
+                    // }}
                     >
                         {' '}
                         <p> 1. Введение в Python </p>{' '}
-                        <p
+                        {/* <p
                             className={`${AccordionCss.accordionPlus} ${
                                 selected ? AccordionCss.accordionPlusActive : ''
                             }  `}
                         >
                             +
-                        </p>{' '}
+                        </p>{' '} */}
                     </div>
                     <div></div>
                     <div
@@ -60,12 +60,12 @@ const Accordion1 = () => {
                             selected ? AccordionCss.accordionActive : ''
                         }  `}
                     >
-                        <ul>
+                        {/* <ul>
                             <li>Настройка рабочего окружения</li>
                             <li>Структура и разметка страницы</li>
                             <li>HTML - теги</li>
                             <li>Атрибуты</li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
                 <div
@@ -75,15 +75,15 @@ const Accordion1 = () => {
                 >
                     <div
                         className={AccordionCss.accordionTitle}
-                        onClick={() => {
-                            selected1
-                                ? setSelected1(false)
-                                : setSelected1(true);
-                        }}
+                        // onClick={() => {
+                        //     selected1
+                        //         ? setSelected1(false)
+                        //         : setSelected1(true);
+                        // }}
                     >
                         {' '}
                         <p> 2. Основы Python </p>{' '}
-                        <p
+                        {/* <p
                             className={`${AccordionCss.accordionPlus} ${
                                 selected1
                                     ? AccordionCss.accordionPlusActive
@@ -91,7 +91,7 @@ const Accordion1 = () => {
                             }  `}
                         >
                             +
-                        </p>{' '}
+                        </p>{' '} */}
                     </div>
                     <div></div>
                     <div
@@ -99,13 +99,13 @@ const Accordion1 = () => {
                             selected1 ? AccordionCss.accordionActive : ''
                         }  `}
                     >
-                        <ul>
+                        {/* <ul>
                             <li>Подключение стилей</li>
                             <li>Основные свойства CSS</li>
                             <li>Блочная модель элементов</li>
                             <li>Подключение шрифтов</li>
                             <li>Методология БЭМ</li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
                 <div
@@ -115,15 +115,15 @@ const Accordion1 = () => {
                 >
                     <div
                         className={AccordionCss.accordionTitle}
-                        onClick={() => {
-                            selected2
-                                ? setSelected2(false)
-                                : setSelected2(true);
-                        }}
+                        // onClick={() => {
+                        //     selected2
+                        //         ? setSelected2(false)
+                        //         : setSelected2(true);
+                        // }}
                     >
                         {' '}
                         <p> 3. Работа со строками </p>{' '}
-                        <p
+                        {/* <p
                             className={`${AccordionCss.accordionPlus} ${
                                 selected2
                                     ? AccordionCss.accordionPlusActive
@@ -131,7 +131,7 @@ const Accordion1 = () => {
                             }  `}
                         >
                             +
-                        </p>{' '}
+                        </p>{' '} */}
                     </div>
                     <div></div>
                     <div
@@ -139,11 +139,11 @@ const Accordion1 = () => {
                             selected2 ? AccordionCss.accordionActive : ''
                         }  `}
                     >
-                        <ul>
+                        {/* <ul>
                             <li>Основные команды</li>
                             <li>Ветвление и состояния в git</li>
                             <li>Командная работа в git</li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
                 <div
@@ -153,15 +153,15 @@ const Accordion1 = () => {
                 >
                     <div
                         className={AccordionCss.accordionTitle}
-                        onClick={() => {
-                            selected3
-                                ? setSelected3(false)
-                                : setSelected3(true);
-                        }}
+                        // onClick={() => {
+                        //     selected3
+                        //         ? setSelected3(false)
+                        //         : setSelected3(true);
+                        // }}
                     >
                         {' '}
                         <p> 4. Работа со списками </p>{' '}
-                        <p
+                        {/* <p
                             className={`${AccordionCss.accordionPlus} ${
                                 selected3
                                     ? AccordionCss.accordionPlusActive
@@ -169,7 +169,7 @@ const Accordion1 = () => {
                             }  `}
                         >
                             +
-                        </p>{' '}
+                        </p>{' '} */}
                     </div>
                     <div></div>
                     <div
@@ -177,12 +177,12 @@ const Accordion1 = () => {
                             selected3 ? AccordionCss.accordionActive : ''
                         }  `}
                     >
-                        <ul>
+                        {/* <ul>
                             <li>Переменные</li>
                             <li>Типы данных</li>
                             <li>Преобразование типов</li>
                             <li> Встроенные функции браузера</li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
                 <div
@@ -192,15 +192,15 @@ const Accordion1 = () => {
                 >
                     <div
                         className={AccordionCss.accordionTitle}
-                        onClick={() => {
-                            selected4
-                                ? setSelected4(false)
-                                : setSelected4(true);
-                        }}
+                        // onClick={() => {
+                        //     selected4
+                        //         ? setSelected4(false)
+                        //         : setSelected4(true);
+                        // }}
                     >
                         {' '}
                         <p> 5. Кортежи, словари и множества </p>{' '}
-                        <p
+                        {/* <p
                             className={`${AccordionCss.accordionPlus} ${
                                 selected4
                                     ? AccordionCss.accordionPlusActive
@@ -208,7 +208,7 @@ const Accordion1 = () => {
                             }  `}
                         >
                             +
-                        </p>{' '}
+                        </p>{' '} */}
                     </div>
                     <div></div>
                     <div
@@ -216,12 +216,12 @@ const Accordion1 = () => {
                             selected4 ? AccordionCss.accordionActive : ''
                         }  `}
                     >
-                        <ul>
+                        {/* <ul>
                             <li>Базовые операторы</li>
                             <li>Условия</li>
                             <li>Циклы</li>
                             <li>Конструкция switch</li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
                 <div
@@ -231,15 +231,15 @@ const Accordion1 = () => {
                 >
                     <div
                         className={AccordionCss.accordionTitle}
-                        onClick={() => {
-                            selected5
-                                ? setSelected5(false)
-                                : setSelected5(true);
-                        }}
+                        // onClick={() => {
+                        //     selected5
+                        //         ? setSelected5(false)
+                        //         : setSelected5(true);
+                        // }}
                     >
                         {' '}
                         <p> 6. Условия в Python </p>{' '}
-                        <p
+                        {/* <p
                             className={`${AccordionCss.accordionPlus} ${
                                 selected5
                                     ? AccordionCss.accordionPlusActive
@@ -247,7 +247,7 @@ const Accordion1 = () => {
                             }  `}
                         >
                             +
-                        </p>{' '}
+                        </p>{' '} */}
                     </div>
                     <div></div>
                     <div
@@ -255,11 +255,11 @@ const Accordion1 = () => {
                             selected5 ? AccordionCss.accordionActive : ''
                         }  `}
                     >
-                        <ul>
+                        {/* <ul>
                             <li> Объявление и вызов</li>
                             <li>Параметры и аргументы</li>
                             <li>Ключевое слово return</li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
                 <div
@@ -269,15 +269,15 @@ const Accordion1 = () => {
                 >
                     <div
                         className={AccordionCss.accordionTitle}
-                        onClick={() => {
-                            selected6
-                                ? setSelected6(false)
-                                : setSelected6(true);
-                        }}
+                        // onClick={() => {
+                        //     selected6
+                        //         ? setSelected6(false)
+                        //         : setSelected6(true);
+                        // }}
                     >
                         {' '}
                         <p> 7. Работа с циклами while и for </p>{' '}
-                        <p
+                        {/* <p
                             className={`${AccordionCss.accordionPlus} ${
                                 selected6
                                     ? AccordionCss.accordionPlusActive
@@ -285,7 +285,7 @@ const Accordion1 = () => {
                             }  `}
                         >
                             +
-                        </p>{' '}
+                        </p>{' '} */}
                     </div>
                     <div></div>
                     <div
@@ -293,12 +293,12 @@ const Accordion1 = () => {
                             selected6 ? AccordionCss.accordionActive : ''
                         }  `}
                     >
-                        <ul>
+                        {/* <ul>
                             <li>Синтаксис и особенности</li>
                             <li>Методы объекта</li>
                             <li>Синтаксис и особенности</li>
                             <li>Методы массивов</li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
                 <div
@@ -308,15 +308,15 @@ const Accordion1 = () => {
                 >
                     <div
                         className={AccordionCss.accordionTitle}
-                        onClick={() => {
-                            selected7
-                                ? setSelected7(false)
-                                : setSelected7(true);
-                        }}
+                        // onClick={() => {
+                        //     selected7
+                        //         ? setSelected7(false)
+                        //         : setSelected7(true);
+                        // }}
                     >
                         {' '}
                         <p> 8. Работа с текстом и файлами </p>{' '}
-                        <p
+                        {/* <p
                             className={`${AccordionCss.accordionPlus} ${
                                 selected7
                                     ? AccordionCss.accordionPlusActive
@@ -324,7 +324,7 @@ const Accordion1 = () => {
                             }  `}
                         >
                             +
-                        </p>{' '}
+                        </p>{' '} */}
                     </div>
                     <div></div>
                     <div
@@ -332,12 +332,12 @@ const Accordion1 = () => {
                             selected7 ? AccordionCss.accordionActive : ''
                         }  `}
                     >
-                        <ul>
+                        {/* <ul>
                             <li>localStorage</li>
                             <li>sessionStorage</li>
                             <li>JSON</li>
                             <li>Событиe storage</li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
                 <div
@@ -347,15 +347,15 @@ const Accordion1 = () => {
                 >
                     <div
                         className={AccordionCss.accordionTitle}
-                        onClick={() => {
-                            selected8
-                                ? setSelected8(false)
-                                : setSelected8(true);
-                        }}
+                        // onClick={() => {
+                        //     selected8
+                        //         ? setSelected8(false)
+                        //         : setSelected8(true);
+                        // }}
                     >
                         {' '}
                         <p> 9. Работа с функциями </p>{' '}
-                        <p
+                        {/* <p
                             className={`${AccordionCss.accordionPlus} ${
                                 selected8
                                     ? AccordionCss.accordionPlusActive
@@ -363,7 +363,7 @@ const Accordion1 = () => {
                             }  `}
                         >
                             +
-                        </p>{' '}
+                        </p>{' '} */}
                     </div>
                     <div></div>
                     <div
@@ -371,11 +371,11 @@ const Accordion1 = () => {
                             selected8 ? AccordionCss.accordionActive : ''
                         }  `}
                     >
-                        <ul>
+                        {/* <ul>
                             <li>Функции таймеры</li>
                             <li>Цикл событий</li>
                             <li> Знакомство с сетевыми запросами</li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
                 <div
@@ -385,15 +385,15 @@ const Accordion1 = () => {
                 >
                     <div
                         className={AccordionCss.accordionTitle}
-                        onClick={() => {
-                            selected9
-                                ? setSelected9(false)
-                                : setSelected9(true);
-                        }}
+                        // onClick={() => {
+                        //     selected9
+                        //         ? setSelected9(false)
+                        //         : setSelected9(true);
+                        // }}
                     >
                         {' '}
                         <p> 10. Модули и пакеты в Python </p>{' '}
-                        <p
+                        {/* <p
                             className={`${AccordionCss.accordionPlus} ${
                                 selected9
                                     ? AccordionCss.accordionPlusActive
@@ -401,7 +401,7 @@ const Accordion1 = () => {
                             }  `}
                         >
                             +
-                        </p>{' '}
+                        </p>{' '} */}
                     </div>
                     <div></div>
                     <div
@@ -409,10 +409,10 @@ const Accordion1 = () => {
                             selected9 ? AccordionCss.accordionActive : ''
                         }  `}
                     >
-                        <ul>
+                        {/* <ul>
                             <li>Fetch API</li>
                             <li>Базовый синтаксис new Promise</li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
                 <div
@@ -422,15 +422,15 @@ const Accordion1 = () => {
                 >
                     <div
                         className={AccordionCss.accordionTitle}
-                        onClick={() => {
-                            selected10
-                                ? setSelected10(false)
-                                : setSelected10(true);
-                        }}
+                        // onClick={() => {
+                        //     selected10
+                        //         ? setSelected10(false)
+                        //         : setSelected10(true);
+                        // }}
                     >
                         {' '}
                         <p> 11. ООП </p>{' '}
-                        <p
+                        {/* <p
                             className={`${AccordionCss.accordionPlus} ${
                                 selected10
                                     ? AccordionCss.accordionPlusActive
@@ -438,7 +438,7 @@ const Accordion1 = () => {
                             }  `}
                         >
                             +
-                        </p>{' '}
+                        </p>{' '} */}
                     </div>
                     <div></div>
                     <div
@@ -446,10 +446,10 @@ const Accordion1 = () => {
                             selected10 ? AccordionCss.accordionActive : ''
                         }  `}
                     >
-                        <ul>
+                        {/* <ul>
                             <li>Fetch API</li>
                             <li>Базовый синтаксис new Promise</li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
                 <div
@@ -459,15 +459,15 @@ const Accordion1 = () => {
                 >
                     <div
                         className={AccordionCss.accordionTitle}
-                        onClick={() => {
-                            selected11
-                                ? setSelected11(false)
-                                : setSelected11(true);
-                        }}
+                        // onClick={() => {
+                        //     selected11
+                        //         ? setSelected11(false)
+                        //         : setSelected11(true);
+                        // }}
                     >
                         {' '}
                         <p> 12. Работа с исключениями </p>{' '}
-                        <p
+                        {/* <p
                             className={`${AccordionCss.accordionPlus} ${
                                 selected11
                                     ? AccordionCss.accordionPlusActive
@@ -475,7 +475,7 @@ const Accordion1 = () => {
                             }  `}
                         >
                             +
-                        </p>{' '}
+                        </p>{' '} */}
                     </div>
                     <div></div>
                     <div
@@ -483,10 +483,10 @@ const Accordion1 = () => {
                             selected11 ? AccordionCss.accordionActive : ''
                         }  `}
                     >
-                        <ul>
+                        {/* <ul>
                             <li>Fetch API</li>
                             <li>Базовый синтаксис new Promise</li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
                 <div
@@ -496,15 +496,15 @@ const Accordion1 = () => {
                 >
                     <div
                         className={AccordionCss.accordionTitle}
-                        onClick={() => {
-                            selected12
-                                ? setSelected12(false)
-                                : setSelected12(true);
-                        }}
+                        // onClick={() => {
+                        //     selected12
+                        //         ? setSelected12(false)
+                        //         : setSelected12(true);
+                        // }}
                     >
                         {' '}
                         <p>13. Итераторы и генераторы </p>{' '}
-                        <p
+                        {/* <p
                             className={`${AccordionCss.accordionPlus} ${
                                 selected12
                                     ? AccordionCss.accordionPlusActive
@@ -512,7 +512,7 @@ const Accordion1 = () => {
                             }  `}
                         >
                             +
-                        </p>{' '}
+                        </p>{' '} */}
                     </div>
                     <div></div>
                     <div
@@ -520,10 +520,10 @@ const Accordion1 = () => {
                             selected12 ? AccordionCss.accordionActive : ''
                         }  `}
                     >
-                        <ul>
+                        {/* <ul>
                             <li>Fetch API</li>
                             <li>Базовый синтаксис new Promise</li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
                 <div
@@ -533,17 +533,17 @@ const Accordion1 = () => {
                 >
                     <div
                         className={AccordionCss.accordionTitle}
-                        onClick={() => {
-                            selected13
-                                ? setSelected13(false)
-                                : setSelected13(true);
-                        }}
+                        // onClick={() => {
+                        //     selected13
+                        //         ? setSelected13(false)
+                        //         : setSelected13(true);
+                        // }}
                     >
                         {' '}
                         <p>
                             14. Стандартные и стороние библиотеки Python{' '}
                         </p>{' '}
-                        <p
+                        {/* <p
                             className={`${AccordionCss.accordionPlus} ${
                                 selected13
                                     ? AccordionCss.accordionPlusActive
@@ -551,7 +551,7 @@ const Accordion1 = () => {
                             }  `}
                         >
                             +
-                        </p>{' '}
+                        </p>{' '} */}
                     </div>
                     <div></div>
                     <div
@@ -559,10 +559,10 @@ const Accordion1 = () => {
                             selected13 ? AccordionCss.accordionActive : ''
                         }  `}
                     >
-                        <ul>
+                        {/* <ul>
                             <li>Fetch API</li>
                             <li>Базовый синтаксис new Promise</li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
                 <div
@@ -572,15 +572,15 @@ const Accordion1 = () => {
                 >
                     <div
                         className={AccordionCss.accordionTitle}
-                        onClick={() => {
-                            selected14
-                                ? setSelected14(false)
-                                : setSelected14(true);
-                        }}
+                        // onClick={() => {
+                        //     selected14
+                        //         ? setSelected14(false)
+                        //         : setSelected14(true);
+                        // }}
                     >
                         {' '}
                         <p> 15. Работа с потоками </p>{' '}
-                        <p
+                        {/* <p
                             className={`${AccordionCss.accordionPlus} ${
                                 selected14
                                     ? AccordionCss.accordionPlusActive
@@ -588,7 +588,7 @@ const Accordion1 = () => {
                             }  `}
                         >
                             +
-                        </p>{' '}
+                        </p>{' '} */}
                     </div>
                     <div></div>
                     <div
@@ -596,10 +596,10 @@ const Accordion1 = () => {
                             selected14 ? AccordionCss.accordionActive : ''
                         }  `}
                     >
-                        <ul>
+                        {/* <ul>
                             <li>Fetch API</li>
                             <li>Базовый синтаксис new Promise</li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
                 <div
@@ -609,15 +609,15 @@ const Accordion1 = () => {
                 >
                     <div
                         className={AccordionCss.accordionTitle}
-                        onClick={() => {
-                            selected15
-                                ? setSelected15(false)
-                                : setSelected15(true);
-                        }}
+                        // onClick={() => {
+                        //     selected15
+                        //         ? setSelected15(false)
+                        //         : setSelected15(true);
+                        // }}
                     >
                         {' '}
                         <p> 16. Интернет и сеть </p>{' '}
-                        <p
+                        {/* <p
                             className={`${AccordionCss.accordionPlus} ${
                                 selected15
                                     ? AccordionCss.accordionPlusActive
@@ -625,7 +625,7 @@ const Accordion1 = () => {
                             }  `}
                         >
                             +
-                        </p>{' '}
+                        </p>{' '} */}
                     </div>
                     <div></div>
                     <div
@@ -633,10 +633,10 @@ const Accordion1 = () => {
                             selected15 ? AccordionCss.accordionActive : ''
                         }  `}
                     >
-                        <ul>
+                        {/* <ul>
                             <li>Fetch API</li>
                             <li>Базовый синтаксис new Promise</li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
                 <div
@@ -646,15 +646,15 @@ const Accordion1 = () => {
                 >
                     <div
                         className={AccordionCss.accordionTitle}
-                        onClick={() => {
-                            selected16
-                                ? setSelected16(false)
-                                : setSelected16(true);
-                        }}
+                        // onClick={() => {
+                        //     selected16
+                        //         ? setSelected16(false)
+                        //         : setSelected16(true);
+                        // }}
                     >
                         {' '}
                         <p> 17. Окружение Python </p>{' '}
-                        <p
+                        {/* <p
                             className={`${AccordionCss.accordionPlus} ${
                                 selected16
                                     ? AccordionCss.accordionPlusActive
@@ -662,7 +662,7 @@ const Accordion1 = () => {
                             }  `}
                         >
                             +
-                        </p>{' '}
+                        </p>{' '} */}
                     </div>
                     <div></div>
                     <div
@@ -670,10 +670,10 @@ const Accordion1 = () => {
                             selected16 ? AccordionCss.accordionActive : ''
                         }  `}
                     >
-                        <ul>
+                        {/* <ul>
                             <li>Fetch API</li>
                             <li>Базовый синтаксис new Promise</li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
                 <div
@@ -683,15 +683,15 @@ const Accordion1 = () => {
                 >
                     <div
                         className={AccordionCss.accordionTitle}
-                        onClick={() => {
-                            selected17
-                                ? setSelected17(false)
-                                : setSelected17(true);
-                        }}
+                        // onClick={() => {
+                        //     selected17
+                        //         ? setSelected17(false)
+                        //         : setSelected17(true);
+                        // }}
                     >
                         {' '}
                         <p> 18. Базы данных </p>{' '}
-                        <p
+                        {/* <p
                             className={`${AccordionCss.accordionPlus} ${
                                 selected17
                                     ? AccordionCss.accordionPlusActive
@@ -699,7 +699,7 @@ const Accordion1 = () => {
                             }  `}
                         >
                             +
-                        </p>{' '}
+                        </p>{' '} */}
                     </div>
                     <div></div>
                     <div
@@ -707,10 +707,10 @@ const Accordion1 = () => {
                             selected17 ? AccordionCss.accordionActive : ''
                         }  `}
                     >
-                        <ul>
+                        {/* <ul>
                             <li>Fetch API</li>
                             <li>Базовый синтаксис new Promise</li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
                 <div
@@ -720,15 +720,15 @@ const Accordion1 = () => {
                 >
                     <div
                         className={AccordionCss.accordionTitle}
-                        onClick={() => {
-                            selected18
-                                ? setSelected18(false)
-                                : setSelected18(true);
-                        }}
+                        // onClick={() => {
+                        //     selected18
+                        //         ? setSelected18(false)
+                        //         : setSelected18(true);
+                        // }}
                     >
                         {' '}
                         <p> 19. Продвинутый SQL </p>{' '}
-                        <p
+                        {/* <p
                             className={`${AccordionCss.accordionPlus} ${
                                 selected18
                                     ? AccordionCss.accordionPlusActive
@@ -736,7 +736,7 @@ const Accordion1 = () => {
                             }  `}
                         >
                             +
-                        </p>{' '}
+                        </p>{' '} */}
                     </div>
                     <div></div>
                     <div
@@ -744,10 +744,10 @@ const Accordion1 = () => {
                             selected18 ? AccordionCss.accordionActive : ''
                         }  `}
                     >
-                        <ul>
+                        {/* <ul>
                             <li>Fetch API</li>
                             <li>Базовый синтаксис new Promise</li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
             </div>

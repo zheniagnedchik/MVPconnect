@@ -71,6 +71,7 @@
 
 .descr {
     margin-top: 4vh;
+    margin-bottom: 4vh;
     color: white;
     font-size: 2.3vmax;
 }
@@ -84,9 +85,9 @@
     justify-content: space-around;
 }
 
-.socialNetworkIcons img {
-    width: 8.5vw;
-    padding-left: 3vw;
+.socialNetworkIcons a {
+    width: 10.5vw;
+    padding: 0 2.5vw;
 }
 
 @media (min-width: 800px) {
@@ -124,5 +125,9 @@
     }
     .imgWrapper img {
         width: 20vw;
+    }
+    .socialNetworkIcons img {
+        width: 8.5vw;
+        padding-left: 3vw;
     }
 }

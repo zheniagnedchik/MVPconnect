@@ -1,6 +1,7 @@
 {
   "name": "mvp_connect",
   "version": "0.1.0",
+  "homepage": "http://mvp.by/",
   "private": true,
   "dependencies": {
     "@splidejs/react-splide": "^0.7.8",

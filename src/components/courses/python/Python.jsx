@@ -21,9 +21,9 @@ import { useState } from 'react';
 import MenuMobile from './menu/MenuMobile';
 
 const Python = (props) => {
-    const [ChoiseModule, setChoiseModule] = useState(1);
+    const [ChoiseModule, setChoiseModule] = useState(2);
 
-    let modules = [<Accordion1 />, <Accordion2 />, <Accordion3 />, <MaxCard />];
+    let modules = [<Accordion1 />, <Card1 />];
     if (ChoiseModule === 2) {
         modules = [<Accordion1 />, <Card1 />];
     } else if (ChoiseModule === 3) {
@@ -31,7 +31,7 @@ const Python = (props) => {
     } else if (ChoiseModule === 4) {
         modules = [<Accordion3 />, <Card3 />];
     } else {
-        modules = [<Accordion1 />, <Accordion2 />, <Accordion3 />, <MaxCard />];
+        modules = [<Accordion1 />, <Card1 />];
     }
     return (
         <div className={PythonCss.Python}>

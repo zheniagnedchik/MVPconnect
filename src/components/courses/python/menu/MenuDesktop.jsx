@@ -4,14 +4,14 @@ const MenuDesktop = (props) => {
     return (
         <div className={MenuCss.dMenu}>
             <div className={MenuCss.dWrapper}>
-                <div
+                {/* <div
                     onClick={() => props.setChoiseModule(1)}
                     className={` ${
                         props.ChoiseModule === 1 ? MenuCss.dMenuActive : ''
                     }`}
                 >
                     <p> Максимальный</p>
-                </div>
+                </div> */}
                 <div
                     onClick={() => props.setChoiseModule(2)}
                     className={` ${
@@ -20,14 +20,14 @@ const MenuDesktop = (props) => {
                 >
                     <p> Базовый</p>
                 </div>
-                <div
+                {/* <div
                     onClick={() => props.setChoiseModule(3)}
                     className={` ${
                         props.ChoiseModule === 3 ? MenuCss.dMenuActive : ''
                     }`}
                 >
                     <p> Профессиональный</p>
-                </div>
+                </div> */}
                 <div
                     onClick={() => props.setChoiseModule(4)}
                     className={` ${

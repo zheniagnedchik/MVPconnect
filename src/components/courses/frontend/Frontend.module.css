@@ -378,4 +378,12 @@
         width: 50%;
         padding-left: 6%;
     }
+
+    .titleBtn {
+        height: 6vh;
+        width: 44%;
+    }
+    .coursesBtn {
+        height: 5vh;
+    }
 }

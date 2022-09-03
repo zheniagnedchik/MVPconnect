@@ -35,7 +35,7 @@
     font-size: 2vmax;
     width: 50%;
 }
-.accordionTopBorder {
+/* .accordionTopBorder {
     border-top: 2px solid white !important;
 }
 .accordionItem {
@@ -44,7 +44,7 @@
 .accordionItemBorder {
     border-bottom: 2px solid white;
     transition-delay: 0.23s;
-}
+} */
 
 .accordionTitle {
     height: auto;

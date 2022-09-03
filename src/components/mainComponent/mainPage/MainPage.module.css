@@ -58,14 +58,20 @@
     line-height: 130%;
     color: #000000;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .course p,
 .practice p {
-    padding-top: 1.4vh;
+    /* padding-top: 1.4vh; */
 }
 
 .practice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 43.75vw;
     height: 6.14vh;
     margin-top: 5.26vh;
@@ -104,12 +110,6 @@
         margin-top: 4.5vh;
     }
 }
-@media (min-width: 390px) {
-    .course p,
-    .practice p {
-        padding-top: 1.2vh;
-    }
-}
 
 @media (min-width: 410px) {
     .subtitle {
@@ -121,22 +121,9 @@
     }
 }
 
-@media (min-width: 420px) {
-    .course p,
-    .practice p {
-        padding-top: 1vh;
-    }
-}
-
 @media (min-width: 435px) {
     .subtitle {
         margin-top: 6.5vh;
-    }
-}
-@media (min-width: 440px) {
-    .course p,
-    .practice p {
-        padding-top: 0.5vh;
     }
 }
 

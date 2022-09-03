@@ -31,7 +31,7 @@ export let linkResultTest = () => {
     if (result === 0) {
         state.linkResult = '/HR';
     } else if (result === 1) {
-        state.linkResult = '/Designer';
+        state.linkResult = '/UX';
     } else if (result === 2) {
         state.linkResult = '/PrdM';
     } else if (result === 3) {
@@ -54,6 +54,7 @@ export const CheckWindowSize = () => {
             }
         }
 
+        window.addEventListener('load', handleWindowResize);
         window.addEventListener('resize', handleWindowResize);
 
         return () => {
