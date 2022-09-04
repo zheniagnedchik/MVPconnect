@@ -385,7 +385,7 @@
         background-position: right 130% top 30%;
     }
 }
-@media (max-width: 1200px) {
+@media (min-width: 801px) and (max-width: 1200px) {
     .socialNetworkIcons a {
         width: 50%;
         padding-left: 6%;
