@@ -62,7 +62,7 @@ const MvpConnectDesktop = () => {
                                 <p> Курсы</p>
                             </div>
                         </NavLink>
-                        <NavLink to="/Courses">
+                        <NavLink to="/Practice">
                             {' '}
                             <div
                                 className={MvpConnectDesktopCss.buttonPractise}

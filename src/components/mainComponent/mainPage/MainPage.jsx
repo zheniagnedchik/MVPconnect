@@ -28,13 +28,16 @@ const MainPage = (props) => {
                         </p>
                     </div>
                 </NavLink>
-                <div className={MainPageCss.practice}>
-                    <p>
-                        {props.displaySize.isDesktop
-                            ? 'Перейти к практике'
-                            : 'Практика'}
-                    </p>
-                </div>
+                <NavLink to="/Practice">
+                    {' '}
+                    <div className={MainPageCss.practice}>
+                        <p>
+                            {props.displaySize.isDesktop
+                                ? 'Перейти к практике'
+                                : 'Практика'}
+                        </p>
+                    </div>
+                </NavLink>
                 <Link
                     className={MainPageCss.link}
                     to="#studentChoice"

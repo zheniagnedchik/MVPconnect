@@ -80,7 +80,7 @@
 }
 
 .activeContent {
-    max-height: 50px;
+    max-height: 150px;
     transition: all 0.5s;
 }
 .arrow {

@@ -24,6 +24,7 @@ import TestPrdM from './components/mainComponent/testIT/testITQuestions/testResu
 import TestQA from './components/mainComponent/testIT/testITQuestions/testResults/TestQA';
 import './components/mainComponent/splide.css';
 import TestITDesktop from './components/mainComponent/testIT/testITDesktop/TestITDesktop';
+import Practice from './components/practice/Practice';
 
 function App(props) {
     CheckWindowSize();
@@ -178,6 +179,10 @@ function App(props) {
                     <Route
                         path="/Python"
                         element={<Python state={props.state} />}
+                    />
+                    <Route
+                        path="/Practice"
+                        element={<Practice state={props.state} />}
                     />
                 </Routes>
             </div>

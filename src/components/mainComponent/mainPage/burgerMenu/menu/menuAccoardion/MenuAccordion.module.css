@@ -48,7 +48,7 @@
 }
 
 .activeContent {
-    max-height: 130px;
+    max-height: 200px;
     transition: all 0.5s;
 }
 .arrow {

@@ -31,7 +31,10 @@ class BurgerMenuDesktop extends React.Component {
                     {' '}
                     <div className={BurgerMenuCss.itCourse}>IT Курсы</div>
                 </NavLink>
-                <div className={BurgerMenuCss.itPractise}>IT Практика</div>
+                <NavLink to="/Practice">
+                    {' '}
+                    <div className={BurgerMenuCss.itPractise}>IT Практика</div>
+                </NavLink>
                 <div className={BurgerMenuCss.cooperation}>Сотрудничество</div>
                 <div className={BurgerMenuCss.account}>
                     Кабинет пользователя
