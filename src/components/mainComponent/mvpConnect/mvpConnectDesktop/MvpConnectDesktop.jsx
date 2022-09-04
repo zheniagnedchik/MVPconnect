@@ -7,6 +7,7 @@ import Tel from './img/socialNetwork/teleg.svg';
 import MvpConnectImg from './img/MvpConnect.svg';
 import Participants from './img/participants.svg';
 import Job from './img/job.svg';
+import { NavLink } from 'react-router-dom';
 
 const MvpConnectDesktop = () => {
     return (
@@ -21,10 +22,10 @@ const MvpConnectDesktop = () => {
                         +375 44 780 12 36
                     </div>
                     <div className={MvpConnectDesktopCss.socialNetworkIcons}>
-                        <a href="https://vk.com/">
+                        {/* <a href="https://vk.com/">
                             {' '}
                             <img src={Vk} alt="" />{' '}
-                        </a>
+                        </a> */}
                         <a href="https://www.facebook.com/people/Mvp-connect/100083144028399/">
                             {' '}
                             <img src={Facebook} alt="" />
@@ -55,13 +56,21 @@ const MvpConnectDesktop = () => {
                     </div>
 
                     <div className={MvpConnectDesktopCss.buttonWrapper}>
-                        <div className={MvpConnectDesktopCss.buttonCourse}>
-                            <p> Курсы</p>
-                        </div>
-                        <div className={MvpConnectDesktopCss.buttonPractise}>
+                        <NavLink to="/Courses">
                             {' '}
-                            <p> Практика</p>
-                        </div>
+                            <div className={MvpConnectDesktopCss.buttonCourse}>
+                                <p> Курсы</p>
+                            </div>
+                        </NavLink>
+                        <NavLink to="/Courses">
+                            {' '}
+                            <div
+                                className={MvpConnectDesktopCss.buttonPractise}
+                            >
+                                {' '}
+                                <p> Практика</p>
+                            </div>
+                        </NavLink>
                     </div>
                 </div>
                 <div className={MvpConnectDesktopCss.jobWrapper}>

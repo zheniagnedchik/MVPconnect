@@ -27,7 +27,7 @@ import TestITDesktop from './components/mainComponent/testIT/testITDesktop/TestI
 
 function App(props) {
     CheckWindowSize();
-    console.log(window.innerWidth);
+
     return (
         <BrowserRouter>
             <div>

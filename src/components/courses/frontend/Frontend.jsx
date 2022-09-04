@@ -230,10 +230,10 @@ const Frontend = (props) => {
                                 </div>
                             </div>
                             <div className={FrontendCss.socialNetworkIcons}>
-                                <a href="https://vk.com/">
+                                {/* <a href="https://vk.com/">
                                     {' '}
                                     <img src={Vk} alt="" />{' '}
-                                </a>
+                                </a> */}
                                 <a href="https://www.facebook.com/people/Mvp-connect/100083144028399/">
                                     {' '}
                                     <img src={Facebook} alt="" />

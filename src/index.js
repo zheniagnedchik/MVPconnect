@@ -7,8 +7,10 @@ import State from './states/state';
 import { creatingResult } from './states/state';
 import { clearResult } from './states/state';
 import { linkResultTest } from './states/state';
+import { CheckWindowStart } from './states/state';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+CheckWindowStart();
 root.render(
     <React.StrictMode>
         <App

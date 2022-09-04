@@ -63,11 +63,6 @@
     justify-content: center;
 }
 
-.course p,
-.practice p {
-    /* padding-top: 1.4vh; */
-}
-
 .practice {
     display: flex;
     align-items: center;
@@ -177,6 +172,8 @@
 @media (min-width: 800px) {
     .mainPage {
         background: center url(./img/BacgroundMainPageDesktop.svg) no-repeat;
+        -webkit-background: center url(./img/BacgroundMainPageDesktop.svg)
+            no-repeat;
 
         height: 100vh;
         width: 100%;

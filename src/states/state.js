@@ -54,7 +54,7 @@ export const CheckWindowSize = () => {
             }
         }
 
-        window.addEventListener('load', handleWindowResize);
+        // document.addEventListener('readystatechange', handleWindowResize);
         window.addEventListener('resize', handleWindowResize);
 
         return () => {
@@ -67,5 +67,13 @@ export const CheckWindowSize = () => {
         const innerHeight = window;
 
         return { innerWidth, innerHeight };
+    }
+};
+
+export const CheckWindowStart = () => {
+    if (window.innerWidth > 800) {
+        state.displaySize.isDesktop = true;
+    } else {
+        state.displaySize.isDesktop = false;
     }
 };

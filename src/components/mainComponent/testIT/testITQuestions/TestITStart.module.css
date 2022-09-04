@@ -1,6 +1,6 @@
 .TestITStartCss {
     width: 100%;
-    height: 120vh;
+    height: 100vh;
 }
 .btnBackWrapper {
     margin-top: 8vh;
@@ -142,6 +142,9 @@
         font-size: 1.4vmax;
     }
 
+    .TestITStartCss {
+        height: 90vh;
+    }
     .title {
         font-size: 2.5vmax;
     }
@@ -159,5 +162,8 @@
     }
     .allQuestionNumbers {
         font-size: 1.45vmax;
+    }
+    .options {
+        font-size: 1.5vmax;
     }
 }
