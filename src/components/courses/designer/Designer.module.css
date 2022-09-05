@@ -398,3 +398,23 @@
         height: 5vh;
     }
 }
+@media (max-height: 500px) {
+    .Designer {
+        background: url('./img/UXUI.webp') no-repeat;
+        background-size: 50% auto;
+        background-position: right;
+        background-attachment: fixed;
+        width: 100%;
+        height: max-content;
+    }
+}
+@media (min-height: 750px) and (max-height: 800px) {
+    .Designer {
+        background: url('./img/UXUI.webp') no-repeat;
+        background-size: 60% auto;
+        background-position: right;
+        background-attachment: fixed;
+        width: 100%;
+        height: max-content;
+    }
+}

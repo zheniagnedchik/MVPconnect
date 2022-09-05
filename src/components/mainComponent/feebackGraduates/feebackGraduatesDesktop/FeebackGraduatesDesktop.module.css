@@ -68,6 +68,7 @@
 
 .sliderImg img {
     width: 11vw;
+    border-radius: 50%;
 }
 
 .linedin {
@@ -110,6 +111,9 @@
     line-height: 130%;
     color: rgba(255, 255, 255, 0.31);
 }
+.sliderProfession a {
+    color: #ff8562;
+}
 .sliderStars {
     margin-top: 1.75vh;
 }
@@ -143,7 +147,7 @@
 
     width: 50%;
     position: absolute;
-    margin: 15vh 0 0 8vw;
+    margin: 15vh 0 0 8.5vw;
 }
 
 .sliderMore.active {
@@ -206,9 +210,7 @@
         width: 100%;
         height: 130vh;
     }
-    .sliderImg img {
-        width: 15vw;
-    }
+
     .stars img {
         width: 15vw;
     }

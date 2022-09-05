@@ -13,7 +13,7 @@ const TestITQuestion8 = (props) => {
             <div className={TestITStartCss.questionWrapper}>
                 <div className={TestITStartCss.questionNumber}>Вопрос 8</div>
                 <div className={TestITStartCss.question}>
-                    Ваш любимый предмет в школе?
+                    Вы бы с большим интересом?
                 </div>
             </div>
 
@@ -24,7 +24,16 @@ const TestITQuestion8 = (props) => {
                         name="option"
                         type="radio"
                     />
-                    <label htmlFor="option">Вариант 1</label>
+                    <label htmlFor="option">выдумали интересный конкурс</label>
+                </div>
+
+                <div className={TestITStartCss.option}>
+                    <input
+                        onClick={() => checkBtn(4)}
+                        name="option"
+                        type="radio"
+                    />
+                    <label htmlFor="option">приняли участие в состязании</label>
                 </div>
                 <div className={TestITStartCss.option}>
                     <input
@@ -32,7 +41,9 @@ const TestITQuestion8 = (props) => {
                         name="option"
                         type="radio"
                     />
-                    <label htmlFor="option">Вариант 2</label>
+                    <label htmlFor="option">
+                        оформили декорации для соревнований
+                    </label>
                 </div>
                 <div className={TestITStartCss.option}>
                     <input
@@ -40,15 +51,9 @@ const TestITQuestion8 = (props) => {
                         name="option"
                         type="radio"
                     />
-                    <label htmlFor="option">Вариант 3</label>
-                </div>
-                <div className={TestITStartCss.option}>
-                    <input
-                        onClick={() => checkBtn(4)}
-                        name="option"
-                        type="radio"
-                    />
-                    <label htmlFor="option">Вариант 4</label>
+                    <label htmlFor="option">
+                        организовали конкурс и управляли им{' '}
+                    </label>
                 </div>
             </div>
 

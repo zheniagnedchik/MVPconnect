@@ -13,7 +13,7 @@ const TestITQuestion5 = (props) => {
             <div className={TestITStartCss.questionWrapper}>
                 <div className={TestITStartCss.questionNumber}>Вопрос 5</div>
                 <div className={TestITStartCss.question}>
-                    Ваш любимый предмет в школе?
+                    Сталкиваясь с задачей, Вы обычно?
                 </div>
             </div>
 
@@ -24,23 +24,9 @@ const TestITQuestion5 = (props) => {
                         name="option"
                         type="radio"
                     />
-                    <label htmlFor="option">Вариант 1</label>
-                </div>
-                <div className={TestITStartCss.option}>
-                    <input
-                        onClick={() => checkBtn(2)}
-                        name="option"
-                        type="radio"
-                    />
-                    <label htmlFor="option">Вариант 2</label>
-                </div>
-                <div className={TestITStartCss.option}>
-                    <input
-                        onClick={() => checkBtn(3)}
-                        name="option"
-                        type="radio"
-                    />
-                    <label htmlFor="option">Вариант 3</label>
+                    <label htmlFor="option">
+                        скрупулезно все проверить и взвесить{' '}
+                    </label>
                 </div>
                 <div className={TestITStartCss.option}>
                     <input
@@ -48,7 +34,30 @@ const TestITQuestion5 = (props) => {
                         name="option"
                         type="radio"
                     />
-                    <label htmlFor="option">Вариант 4</label>
+                    <label htmlFor="option">
+                        отыскать необычное решение, придумать новый способ{' '}
+                    </label>
+                </div>
+
+                <div className={TestITStartCss.option}>
+                    <input
+                        onClick={() => checkBtn(3)}
+                        name="option"
+                        type="radio"
+                    />
+                    <label htmlFor="option">
+                        стараетесь выслушать всех и выбрать оптимальный вариант
+                    </label>
+                </div>
+                <div className={TestITStartCss.option}>
+                    <input
+                        onClick={() => checkBtn(2)}
+                        name="option"
+                        type="radio"
+                    />
+                    <label htmlFor="option">
+                        изучить всю информацию и принять решение самостоятельно{' '}
+                    </label>
                 </div>
             </div>
 

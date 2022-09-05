@@ -17,7 +17,9 @@ const MainPage = (props) => {
 
                 <div className={MainPageCss.title}>MVP connect</div>
                 <div className={MainPageCss.subtitle}>
-                    IT- курсы и практика на коммерческих проектах и стартапах
+                    {props.displaySize.isDesktop
+                        ? '  IT- курсы и практика на коммерческих проектах и стартапах'
+                        : 'IT курсы и практический опыт на реальных проектах'}
                 </div>
                 <NavLink to="/Courses">
                     <div className={MainPageCss.course}>

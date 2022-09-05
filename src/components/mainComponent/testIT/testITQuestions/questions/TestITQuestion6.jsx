@@ -13,34 +13,31 @@ const TestITQuestion6 = (props) => {
             <div className={TestITStartCss.questionWrapper}>
                 <div className={TestITStartCss.questionNumber}>Вопрос 6</div>
                 <div className={TestITStartCss.question}>
-                    Ваш любимый предмет в школе?
+                    В случае если бы довелось выбирать из списка профессий, на
+                    чем бы Вы остановили выбор (без учета уровня дохода)?
                 </div>
             </div>
 
             <div className={TestITStartCss.options}>
                 <div className={TestITStartCss.option}>
                     <input
-                        onClick={() => checkBtn(1)}
-                        name="option"
-                        type="radio"
-                    />
-                    <label htmlFor="option">Вариант 1</label>
-                </div>
-                <div className={TestITStartCss.option}>
-                    <input
-                        onClick={() => checkBtn(2)}
-                        name="option"
-                        type="radio"
-                    />
-                    <label htmlFor="option">Вариант 2</label>
-                </div>
-                <div className={TestITStartCss.option}>
-                    <input
                         onClick={() => checkBtn(3)}
                         name="option"
                         type="radio"
                     />
-                    <label htmlFor="option">Вариант 3</label>
+                    <label htmlFor="option">
+                        предприниматель, маркетолог, менеджер
+                    </label>
+                </div>
+                <div className={TestITStartCss.option}>
+                    <input
+                        onClick={() => checkBtn(1)}
+                        name="option"
+                        type="radio"
+                    />
+                    <label htmlFor="option">
+                        консультант, психолог, преподаватель{' '}
+                    </label>
                 </div>
                 <div className={TestITStartCss.option}>
                     <input
@@ -48,7 +45,17 @@ const TestITQuestion6 = (props) => {
                         name="option"
                         type="radio"
                     />
-                    <label htmlFor="option">Вариант 4</label>
+                    <label htmlFor="option">инженер, конструктор </label>
+                </div>
+                <div className={TestITStartCss.option}>
+                    <input
+                        onClick={() => checkBtn(2)}
+                        name="option"
+                        type="radio"
+                    />
+                    <label htmlFor="option">
+                        творческая профессия (музыкант, художник, фотограф){' '}
+                    </label>
                 </div>
             </div>
 

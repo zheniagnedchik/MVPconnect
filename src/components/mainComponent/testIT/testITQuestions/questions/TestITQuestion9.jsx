@@ -13,7 +13,7 @@ const TestITQuestion9 = (props) => {
             <div className={TestITStartCss.questionWrapper}>
                 <div className={TestITStartCss.questionNumber}>Вопрос 9</div>
                 <div className={TestITStartCss.question}>
-                    Ваш любимый предмет в школе?
+                    Вы получили образование в сфере?
                 </div>
             </div>
 
@@ -24,7 +24,7 @@ const TestITQuestion9 = (props) => {
                         name="option"
                         type="radio"
                     />
-                    <label htmlFor="option">Вариант 1</label>
+                    <label htmlFor="option">гуманитарной</label>
                 </div>
                 <div className={TestITStartCss.option}>
                     <input
@@ -32,7 +32,7 @@ const TestITQuestion9 = (props) => {
                         name="option"
                         type="radio"
                     />
-                    <label htmlFor="option">Вариант 2</label>
+                    <label htmlFor="option">творческой</label>
                 </div>
                 <div className={TestITStartCss.option}>
                     <input
@@ -40,7 +40,7 @@ const TestITQuestion9 = (props) => {
                         name="option"
                         type="radio"
                     />
-                    <label htmlFor="option">Вариант 3</label>
+                    <label htmlFor="option">управления/ менеджмента </label>
                 </div>
                 <div className={TestITStartCss.option}>
                     <input
@@ -48,7 +48,7 @@ const TestITQuestion9 = (props) => {
                         name="option"
                         type="radio"
                     />
-                    <label htmlFor="option">Вариант 4</label>
+                    <label htmlFor="option">технической</label>
                 </div>
             </div>
 

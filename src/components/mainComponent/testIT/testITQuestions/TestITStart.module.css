@@ -1,6 +1,6 @@
 .TestITStartCss {
     width: 100%;
-    height: 100vh;
+    height: 120vh;
 }
 .btnBackWrapper {
     margin-top: 8vh;
@@ -54,29 +54,40 @@
     font-weight: 400;
     font-size: 2.45vmax;
     line-height: 130%;
-    color: white;
+    color: gray;
 }
 
 .question {
-    margin-top: 1.75vh;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
+    width: 80%;
+    margin: 10% auto 0;
     font-size: 2.45vmax;
     line-height: 130%;
     color: white;
 }
 
 .options {
+    width: 80%;
     color: white;
     margin: 5.96vh auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
 }
 
 .option {
     margin-top: 1.75vh;
+    display: flex;
+    align-items: flex-start;
 }
 .option label {
     margin-left: 3.12vw;
+}
+.option input {
+    align-self: center;
 }
 
 .option p {
@@ -131,6 +142,15 @@
         margin-left: 35%;
         margin-right: 35%;
     }
+    .TestITStartCss {
+        height: 130vh;
+    }
+    .options {
+        font-size: 2vmax !important;
+    }
+    .question {
+        font-size: 2vmax !important;
+    }
 }
 
 /* Desktop */
@@ -143,7 +163,7 @@
     }
 
     .TestITStartCss {
-        height: 90vh;
+        height: 100vh;
     }
     .title {
         font-size: 2.5vmax;

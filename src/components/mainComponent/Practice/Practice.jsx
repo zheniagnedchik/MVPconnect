@@ -38,14 +38,14 @@ const Practice = () => {
                                     <img src={slider1} alt="" />
                                 </div>
                                 <div className={PracticeCss.sliderTitle}>
-                                    Business Analysis
+                                    Frontend разработчик
                                 </div>
                                 <div className={PracticeCss.sliderSubTitle}>
                                     Упор на решение реальных задач и
                                     приобретение практических навыков.
                                 </div>
                                 <div className={PracticeCss.sliderBtn}>
-                                    Подробнее
+                                    Подробнее о практике
                                 </div>
                             </div>
                             <br />
@@ -57,14 +57,14 @@ const Practice = () => {
                                     <img src={slider1} alt="" />
                                 </div>
                                 <div className={PracticeCss.sliderTitle}>
-                                    Business Analysis
+                                    Python разработчик
                                 </div>
                                 <div className={PracticeCss.sliderSubTitle}>
                                     Упор на решение реальных задач и
                                     приобретение практических навыков.
                                 </div>
                                 <div className={PracticeCss.sliderBtn}>
-                                    Подробнее
+                                    Подробнее о практике
                                 </div>
                             </div>
                             <br />
@@ -76,52 +76,14 @@ const Practice = () => {
                                     <img src={slider1} alt="" />
                                 </div>
                                 <div className={PracticeCss.sliderTitle}>
-                                    Business Analysis
+                                    UX/UI дизайнер
                                 </div>
                                 <div className={PracticeCss.sliderSubTitle}>
                                     Упор на решение реальных задач и
                                     приобретение практических навыков.
                                 </div>
                                 <div className={PracticeCss.sliderBtn}>
-                                    Подробнее
-                                </div>
-                            </div>
-                            <br />
-                        </SplideSlide>
-                        <SplideSlide>
-                            {' '}
-                            <div className={PracticeCss.slider}>
-                                <div className={PracticeCss.sliderImg}>
-                                    <img src={slider1} alt="" />
-                                </div>
-                                <div className={PracticeCss.sliderTitle}>
-                                    Business Analysis
-                                </div>
-                                <div className={PracticeCss.sliderSubTitle}>
-                                    Упор на решение реальных задач и
-                                    приобретение практических навыков.
-                                </div>
-                                <div className={PracticeCss.sliderBtn}>
-                                    Подробнее
-                                </div>
-                            </div>
-                            <br />
-                        </SplideSlide>
-                        <SplideSlide>
-                            {' '}
-                            <div className={PracticeCss.slider}>
-                                <div className={PracticeCss.sliderImg}>
-                                    <img src={slider1} alt="" />
-                                </div>
-                                <div className={PracticeCss.sliderTitle}>
-                                    Business Analysis
-                                </div>
-                                <div className={PracticeCss.sliderSubTitle}>
-                                    Упор на решение реальных задач и
-                                    приобретение практических навыков.
-                                </div>
-                                <div className={PracticeCss.sliderBtn}>
-                                    Подробнее
+                                    Подробнее о практике
                                 </div>
                             </div>
                             <br />

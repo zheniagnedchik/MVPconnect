@@ -13,26 +13,41 @@ const TestITQuestion3 = (props) => {
             <div className={TestITStartCss.questionWrapper}>
                 <div className={TestITStartCss.questionNumber}>Вопрос 3</div>
                 <div className={TestITStartCss.question}>
-                    Ваш любимый предмет в школе?
+                    Вы желаете, дабы в Вашей повседневной работе отсутствовали?
                 </div>
             </div>
 
             <div className={TestITStartCss.options}>
                 <div className={TestITStartCss.option}>
                     <input
-                        onClick={() => checkBtn(1)}
+                        onClick={() => checkBtn(4)}
                         name="option"
                         type="radio"
                     />
-                    <label htmlFor="option">Вариант 1</label>
+                    <label htmlFor="option">
+                        комплексные и сложные задачи{' '}
+                    </label>
                 </div>
+
                 <div className={TestITStartCss.option}>
                     <input
                         onClick={() => checkBtn(2)}
                         name="option"
                         type="radio"
                     />
-                    <label htmlFor="option">Вариант 2</label>
+                    <label htmlFor="option">
+                        скука, рутина и монотонность{' '}
+                    </label>
+                </div>
+                <div className={TestITStartCss.option}>
+                    <input
+                        onClick={() => checkBtn(1)}
+                        name="option"
+                        type="radio"
+                    />
+                    <label htmlFor="option">
+                        неопределенность, нестабильность
+                    </label>
                 </div>
                 <div className={TestITStartCss.option}>
                     <input
@@ -40,15 +55,10 @@ const TestITQuestion3 = (props) => {
                         name="option"
                         type="radio"
                     />
-                    <label htmlFor="option">Вариант 3</label>
-                </div>
-                <div className={TestITStartCss.option}>
-                    <input
-                        onClick={() => checkBtn(4)}
-                        name="option"
-                        type="radio"
-                    />
-                    <label htmlFor="option">Вариант 4</label>
+                    <label htmlFor="option">
+                        {' '}
+                        правила, стереотипы и строгие рамки
+                    </label>
                 </div>
             </div>
 

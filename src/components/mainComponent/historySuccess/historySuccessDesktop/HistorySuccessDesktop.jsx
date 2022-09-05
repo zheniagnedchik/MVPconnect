@@ -33,9 +33,9 @@ const HistorySuccessDesktop = () => {
                     perPage: 3,
                     rewind: true,
                     rewindByDrag: true,
-                    // isNavigation: true,
+
                     pagination: true,
-                    // focus: 'center',
+
                     video: {
                         mute: true,
                         playerOptions: {
@@ -64,39 +64,21 @@ const HistorySuccessDesktop = () => {
                     <SplideTrack>
                         <li
                             className="splide__slide splide__Customslide"
-                            data-splide-youtube="https://www.youtube.com/watch?v=cdz__ojQOuU"
+                            data-splide-youtube="https://www.youtube.com/watch?v=KST8GEDhmBI"
                         >
                             <img src={slider2} />
                         </li>
                         <li
                             className="splide__slide splide__Customslide"
-                            data-splide-youtube="https://www.youtube.com/watch?v=cdz__ojQOuU"
-                        >
-                            <img src={slider3} />
-                        </li>
-                        <li
-                            className="splide__slide splide__Customslide"
-                            data-splide-youtube="https://www.youtube.com/watch?v=cdz__ojQOuU"
-                        >
-                            <img src={slider4} />
-                        </li>
-                        <li
-                            className="splide__slide splide__Customslide"
-                            data-splide-youtube="https://www.youtube.com/watch?v=cdz__ojQOuU"
+                            data-splide-youtube="https://www.youtube.com/watch?v=KST8GEDhmBI"
                         >
                             <img src={slider2} />
                         </li>
                         <li
                             className="splide__slide splide__Customslide"
-                            data-splide-youtube="https://www.youtube.com/watch?v=cdz__ojQOuU"
+                            data-splide-youtube="https://www.youtube.com/watch?v=KST8GEDhmBI"
                         >
-                            <img src={slider3} />
-                        </li>
-                        <li
-                            className="splide__slide splide__Customslide"
-                            data-splide-youtube="https://www.youtube.com/watch?v=cdz__ojQOuU"
-                        >
-                            <img src={slider4} />
+                            <img src={slider2} />
                         </li>
                     </SplideTrack>
                 </div>

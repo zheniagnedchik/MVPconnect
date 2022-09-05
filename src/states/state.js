@@ -15,13 +15,13 @@ export let clearResult = () => {
 
 export let creatingResult = (value) => {
     if (value === 1) {
-        state.testITResults[0] += 1; // Point for HR
+        state.testITResults[0] += 1; // Point for HR (b/a)
     } else if (value === 2) {
         state.testITResults[1] += 1; // Point for Designer
     } else if (value === 3) {
         state.testITResults[2] += 1; // Point for PrdM
     } else if (value === 4) {
-        state.testITResults[3] += 1; // Point for QA
+        state.testITResults[3] += 1; // Point for QA (dev)
     }
 };
 // Link for NavLink in question/TestITQuestion10.jsx

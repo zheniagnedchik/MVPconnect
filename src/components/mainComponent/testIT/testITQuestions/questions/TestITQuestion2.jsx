@@ -13,26 +13,43 @@ const TestITQuestion2 = (props) => {
             <div className={TestITStartCss.questionWrapper}>
                 <div className={TestITStartCss.questionNumber}>Вопрос 2</div>
                 <div className={TestITStartCss.question}>
-                    Ваш любимый предмет в школе?
+                    Для Вас принципиально, чтобы в Вашей работе была
+                    возможность?
                 </div>
             </div>
 
             <div className={TestITStartCss.options}>
                 <div className={TestITStartCss.option}>
                     <input
-                        onClick={() => checkBtn(1)}
-                        name="option"
-                        type="radio"
-                    />
-                    <label htmlFor="option">Вариант 1</label>
-                </div>
-                <div className={TestITStartCss.option}>
-                    <input
                         onClick={() => checkBtn(2)}
                         name="option"
                         type="radio"
                     />
-                    <label htmlFor="option">Вариант 2</label>
+                    <label htmlFor="option">
+                        проявлять фантазию и творческий подход
+                    </label>
+                </div>
+                <div className={TestITStartCss.option}>
+                    <input
+                        onClick={() => checkBtn(1)}
+                        name="option"
+                        type="radio"
+                    />
+                    <label htmlFor="option">
+                        создавать порядок, структурировать информацию и процессы{' '}
+                    </label>
+                </div>
+
+                <div className={TestITStartCss.option}>
+                    <input
+                        onClick={() => checkBtn(4)}
+                        name="option"
+                        type="radio"
+                    />
+                    <label htmlFor="option">
+                        четко понимать свои обязанности и возможности для
+                        развития{' '}
+                    </label>
                 </div>
                 <div className={TestITStartCss.option}>
                     <input
@@ -40,15 +57,9 @@ const TestITQuestion2 = (props) => {
                         name="option"
                         type="radio"
                     />
-                    <label htmlFor="option">Вариант 3</label>
-                </div>
-                <div className={TestITStartCss.option}>
-                    <input
-                        onClick={() => checkBtn(4)}
-                        name="option"
-                        type="radio"
-                    />
-                    <label htmlFor="option">Вариант 4</label>
+                    <label htmlFor="option">
+                        общаться с клиентами, влиять на других людей{' '}
+                    </label>
                 </div>
             </div>
 

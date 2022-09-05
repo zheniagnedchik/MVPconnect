@@ -1,6 +1,7 @@
 import MenuAccordionCss from './MenuAccordion.module.css';
 import Vector from './img/Vector.svg';
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const MenuAccordion = () => {
     const [selected, setSelected] = useState(null);
@@ -39,12 +40,18 @@ const MenuAccordion = () => {
                                     : ''
                             }`}
                         >
-                            <div> {item.subsection}</div>{' '}
-                            <div>{item.subsection1}</div>
-                            <div> {item.subsection2}</div>{' '}
-                            <div>{item.subsection3}</div>
-                            <div> {item.subsection4}</div>{' '}
-                            <div>{item.subsection5}</div>
+                            <NavLink to={item.link}>
+                                {' '}
+                                <div> {item.subsection}</div>
+                            </NavLink>{' '}
+                            <NavLink to={item.link1}>
+                                {' '}
+                                <div>{item.subsection1}</div>
+                            </NavLink>
+                            <NavLink to={item.link2}>
+                                {' '}
+                                <div> {item.subsection2}</div>
+                            </NavLink>{' '}
                         </div>
                     </div>
                 ))}
@@ -59,38 +66,17 @@ const data = [
     {
         section: 'IT Курсы',
         subsection: 'Front-end',
-        subsection1: 'Back-end',
+        subsection1: 'Python',
         subsection2: 'UX/UI',
-        subsection3: 'PM',
-        subsection4: 'BA',
-        subsection5: 'QA',
+        link: '/Frontend',
+        link1: '/Python',
+        link2: '/Designer',
     },
     {
         section: 'IT Практика',
-        subsection: 'Front-end',
-        subsection1: 'Back-end',
-        subsection2: 'UX/UI',
-        subsection3: 'PM',
-        subsection4: 'BA',
-        subsection5: 'QA',
-    },
-
-    {
-        section: 'Сотрудничество',
-        subsection: 'Front-end',
-        subsection1: 'Back-end',
-        subsection2: 'UX/UI',
-        subsection3: 'PM',
-        subsection4: 'BA',
-        subsection5: 'QA',
-    },
-    {
-        section: 'Кабинет пользователя',
-        subsection: 'Front-end',
-        subsection1: 'Back-end',
-        subsection2: 'UX/UI',
-        subsection3: 'PM',
-        subsection4: 'BA',
-        subsection5: 'QA',
+        subsection: 'Практика',
+        link: '/Practice',
+        link1: '',
+        link2: '',
     },
 ];

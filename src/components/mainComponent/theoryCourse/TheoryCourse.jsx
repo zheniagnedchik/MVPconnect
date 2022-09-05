@@ -5,15 +5,15 @@ import slider1 from './img/slider1.svg';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/skyblue';
 import './splide.css';
-
+import { NavLink } from 'react-router-dom';
 const TheoryCourse = () => {
     return (
         <div className={TheoryCourseCss.theoryCourse}>
             <div className={TheoryCourseCss.titleWrapper}>
                 <div className={TheoryCourseCss.title}>Теоретические курсы</div>
                 <div className={TheoryCourseCss.subTitle}>
-                    Большие проекты, смелые идеи и новые технологии станут
-                    частью твоей работы!
+                    Мы готовим IT специалистов различных направлений. Что ближе
+                    тебе?
                 </div>
             </div>
             <Splide
@@ -30,7 +30,7 @@ const TheoryCourse = () => {
                 aria-label="..."
             >
                 <div className={TheoryCourseCss.splideWrapper}>
-                    <SplideTrack>
+                    <SplideTrack className={TheoryCourseCss.spliderTrack}>
                         <SplideSlide>
                             {' '}
                             <div className={TheoryCourseCss.slider}>
@@ -38,15 +38,17 @@ const TheoryCourse = () => {
                                     <img src={slider1} alt="" />
                                 </div>
                                 <div className={TheoryCourseCss.sliderTitle}>
-                                    Введение в програмирование
+                                    Курс Frontend разработчик
                                 </div>
                                 <div className={TheoryCourseCss.sliderSubTitle}>
-                                    Вы изучите распространенные языки
-                                    програмирования.
+                                    От нулевого уровня до специалиста
                                 </div>
-                                <div className={TheoryCourseCss.sliderBtn}>
-                                    Подробнее
-                                </div>
+                                <NavLink to="/Frontend">
+                                    {' '}
+                                    <div className={TheoryCourseCss.sliderBtn}>
+                                        Подробнее о курсе
+                                    </div>
+                                </NavLink>
                             </div>
                             <br />
                         </SplideSlide>
@@ -57,15 +59,17 @@ const TheoryCourse = () => {
                                     <img src={slider1} alt="" />
                                 </div>
                                 <div className={TheoryCourseCss.sliderTitle}>
-                                    Введение в програмирование
+                                    Курс UX/UI <br /> дизайнер
                                 </div>
                                 <div className={TheoryCourseCss.sliderSubTitle}>
-                                    Вы изучите распространенные языки
-                                    програмирования.
+                                    От нулевого уровня до специалиста
                                 </div>
-                                <div className={TheoryCourseCss.sliderBtn}>
-                                    Подробнее
-                                </div>
+                                <NavLink to="/Designer">
+                                    {' '}
+                                    <div className={TheoryCourseCss.sliderBtn}>
+                                        Подробнее о курсе
+                                    </div>
+                                </NavLink>
                             </div>
                         </SplideSlide>
                         <SplideSlide>
@@ -75,33 +79,17 @@ const TheoryCourse = () => {
                                     <img src={slider1} alt="" />
                                 </div>
                                 <div className={TheoryCourseCss.sliderTitle}>
-                                    Введение в програмирование
+                                    Курс Python разработчик
                                 </div>
                                 <div className={TheoryCourseCss.sliderSubTitle}>
-                                    Вы изучите распространенные языки
-                                    програмирования.
+                                    От нулевого уровня до специалиста
                                 </div>
-                                <div className={TheoryCourseCss.sliderBtn}>
-                                    Подробнее
-                                </div>
-                            </div>
-                        </SplideSlide>
-                        <SplideSlide>
-                            {' '}
-                            <div className={TheoryCourseCss.slider}>
-                                <div className={TheoryCourseCss.sliderImg}>
-                                    <img src={slider1} alt="" />
-                                </div>
-                                <div className={TheoryCourseCss.sliderTitle}>
-                                    Введение в програмирование
-                                </div>
-                                <div className={TheoryCourseCss.sliderSubTitle}>
-                                    Вы изучите распространенные языки
-                                    програмирования.
-                                </div>
-                                <div className={TheoryCourseCss.sliderBtn}>
-                                    Подробнее
-                                </div>
+                                <NavLink to="/Python">
+                                    {' '}
+                                    <div className={TheoryCourseCss.sliderBtn}>
+                                        Подробнее о курсе
+                                    </div>
+                                </NavLink>
                             </div>
                         </SplideSlide>
                     </SplideTrack>

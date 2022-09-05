@@ -101,6 +101,15 @@
     .slider {
         height: 91%;
     }
+    .spliderTrack {
+        height: 63vh;
+    }
+}
+
+@media (min-width: 727px) {
+    .slider {
+        height: 87%;
+    }
 }
 
 /* mobile with rotate */

@@ -19,10 +19,7 @@ const TestIT = () => {
                 <div className={TestITCss.title}>
                     Пройди тест, чтобы определиться с IT сферой
                 </div>
-                <div className={TestITCss.subTitle}>
-                    Тест на профориентацию, где Вы раскроете ценные качества для
-                    IT.
-                </div>
+                <div className={TestITCss.subTitle}>Кто ты в IT ?</div>
             </div>
             <Splide
                 hasTrack={false}

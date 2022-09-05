@@ -13,34 +13,33 @@ const TestITQuestion7 = (props) => {
             <div className={TestITStartCss.questionWrapper}>
                 <div className={TestITStartCss.questionNumber}>Вопрос 7</div>
                 <div className={TestITStartCss.question}>
-                    Ваш любимый предмет в школе?
+                    Если бы у Вас было больше свободного времени, охотнее всего
+                    Вы бы использовали его, чтобы?
                 </div>
             </div>
 
             <div className={TestITStartCss.options}>
                 <div className={TestITStartCss.option}>
                     <input
-                        onClick={() => checkBtn(1)}
-                        name="option"
-                        type="radio"
-                    />
-                    <label htmlFor="option">Вариант 1</label>
-                </div>
-                <div className={TestITStartCss.option}>
-                    <input
                         onClick={() => checkBtn(2)}
                         name="option"
                         type="radio"
                     />
-                    <label htmlFor="option">Вариант 2</label>
+                    <label htmlFor="option">
+                        создавать что-то руками, усовершенствовать вещи
+                    </label>
                 </div>
+
                 <div className={TestITStartCss.option}>
                     <input
                         onClick={() => checkBtn(3)}
                         name="option"
                         type="radio"
                     />
-                    <label htmlFor="option">Вариант 3</label>
+                    <label htmlFor="option">
+                        заниматься развитием собственного дела, повышать
+                        квалификацию
+                    </label>
                 </div>
                 <div className={TestITStartCss.option}>
                     <input
@@ -48,7 +47,19 @@ const TestITQuestion7 = (props) => {
                         name="option"
                         type="radio"
                     />
-                    <label htmlFor="option">Вариант 4</label>
+                    <label htmlFor="option">
+                        делать что-то новое, изобретать
+                    </label>
+                </div>
+                <div className={TestITStartCss.option}>
+                    <input
+                        onClick={() => checkBtn(1)}
+                        name="option"
+                        type="radio"
+                    />
+                    <label htmlFor="option">
+                        читать книги, решать ребусы, задачи на логику
+                    </label>
                 </div>
             </div>
 

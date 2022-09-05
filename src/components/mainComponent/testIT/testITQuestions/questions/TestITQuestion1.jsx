@@ -13,7 +13,8 @@ const TestITQuestion1 = (props) => {
             <div className={TestITStartCss.questionWrapper}>
                 <div className={TestITStartCss.questionNumber}>Вопрос 1</div>
                 <div className={TestITStartCss.question}>
-                    Ваш любимый предмет в школе?
+                    Совершенная работа - это деятельность, которая дает
+                    возможность?
                 </div>
             </div>
 
@@ -24,7 +25,10 @@ const TestITQuestion1 = (props) => {
                         name="option"
                         type="radio"
                     />
-                    <label htmlFor="option">Вариант 1</label>
+                    <label htmlFor="option">
+                        анализировать информацию и принимать нестандартные
+                        решения{' '}
+                    </label>
                 </div>
                 <div className={TestITStartCss.option}>
                     <input
@@ -32,7 +36,9 @@ const TestITQuestion1 = (props) => {
                         name="option"
                         type="radio"
                     />
-                    <label htmlFor="option">Вариант 2</label>
+                    <label htmlFor="option">
+                        работать нестандартно и находить новые методы и подходы{' '}
+                    </label>
                 </div>
                 <div className={TestITStartCss.option}>
                     <input
@@ -40,7 +46,9 @@ const TestITQuestion1 = (props) => {
                         name="option"
                         type="radio"
                     />
-                    <label htmlFor="option">Вариант 3</label>
+                    <label htmlFor="option">
+                        много общаться и вести взаимодействие с другими людьми{' '}
+                    </label>
                 </div>
                 <div className={TestITStartCss.option}>
                     <input
@@ -48,7 +56,9 @@ const TestITQuestion1 = (props) => {
                         name="option"
                         type="radio"
                     />
-                    <label htmlFor="option">Вариант 4</label>
+                    <label htmlFor="option">
+                        сделать карьеру и увеличить социальный статус
+                    </label>
                 </div>
             </div>
 

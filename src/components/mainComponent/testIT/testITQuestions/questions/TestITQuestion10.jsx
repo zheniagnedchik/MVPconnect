@@ -14,7 +14,7 @@ const TestITQuestion10 = (props) => {
             <div className={TestITStartCss.questionWrapper}>
                 <div className={TestITStartCss.questionNumber}>Вопрос 10</div>
                 <div className={TestITStartCss.question}>
-                    Ваш любимый предмет в школе?
+                    При общении с людьми Вы?
                 </div>
             </div>
 
@@ -25,7 +25,9 @@ const TestITQuestion10 = (props) => {
                         name="option"
                         type="radio"
                     />
-                    <label htmlFor="option">Вариант 1</label>
+                    <label htmlFor="option">
+                        с радостью вступаете в разговор{' '}
+                    </label>
                 </div>
                 <div className={TestITStartCss.option}>
                     <input
@@ -33,7 +35,7 @@ const TestITQuestion10 = (props) => {
                         name="option"
                         type="radio"
                     />
-                    <label htmlFor="option">Вариант 2</label>
+                    <label htmlFor="option">нечто среднее</label>
                 </div>
                 <div className={TestITStartCss.option}>
                     <input
@@ -41,7 +43,10 @@ const TestITQuestion10 = (props) => {
                         name="option"
                         type="radio"
                     />
-                    <label htmlFor="option">Вариант 3</label>
+                    <label htmlFor="option">
+                        {' '}
+                        предпочитаете спокойно оставаться в стороне
+                    </label>
                 </div>
                 <div className={TestITStartCss.option}>
                     <input
@@ -49,7 +54,9 @@ const TestITQuestion10 = (props) => {
                         name="option"
                         type="radio"
                     />
-                    <label htmlFor="option">Вариант 4</label>
+                    <label htmlFor="option">
+                        предпочитаете брать инициативу на себя
+                    </label>
                 </div>
             </div>
 

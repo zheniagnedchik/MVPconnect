@@ -35,10 +35,10 @@ class BurgerMenuDesktop extends React.Component {
                     {' '}
                     <div className={BurgerMenuCss.itPractise}>IT Практика</div>
                 </NavLink>
-                <div className={BurgerMenuCss.cooperation}>Сотрудничество</div>
+                {/* <div className={BurgerMenuCss.cooperation}>Сотрудничество</div>
                 <div className={BurgerMenuCss.account}>
                     Кабинет пользователя
-                </div>
+                </div> */}
             </div>
         );
     }
