@@ -39,7 +39,7 @@ const SuccessTrajectoryDesktop = () => {
                 hasTrack={false}
                 options={{
                     type: 'loop',
-                    gap: 105,
+                    gap: 0,
                     perPage: 3,
                     rewind: true,
                     rewindByDrag: true,
@@ -65,7 +65,7 @@ const SuccessTrajectoryDesktop = () => {
             >
                 {' '}
                 <div className={SuccessTrajectoryCss.splideWrapper}>
-                    <SplideTrack>
+                    <SplideTrack className={SuccessTrajectoryCss.splideTrack}>
                         <SplideSlide className="slider_transformTest">
                             <div
                                 className={`${SuccessTrajectoryCss.slider} sliderTest`}
@@ -187,9 +187,6 @@ const SuccessTrajectoryDesktop = () => {
                 <button className="splide__arrow splide__arrow--next splide__customArrowDesktop--next">
                     <img src={VectorRight} alt="" />
                 </button>
-                <div className="splide__customPagination">
-                    <ul className="splide__pagination "></ul>
-                </div>
             </Splide>
 
             <div className={SuccessTrajectoryCss.splideWrapper1}>

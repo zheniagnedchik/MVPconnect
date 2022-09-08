@@ -7,7 +7,6 @@ import slider3 from './img/slider3.svg';
 import partners from './img/partners.svg';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/skyblue';
-import './splide.css';
 
 const OurPartnersDesktop = () => {
     return (

@@ -5,6 +5,7 @@ import slider1 from './img/slider1.svg';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/skyblue';
 import './splide.css';
+import { NavLink } from 'react-router-dom';
 
 const Practice = () => {
     return (
@@ -44,9 +45,12 @@ const Practice = () => {
                                     Упор на решение реальных задач и
                                     приобретение практических навыков.
                                 </div>
-                                <div className={PracticeCss.sliderBtn}>
-                                    Подробнее о практике
-                                </div>
+                                <NavLink to="/Practice">
+                                    {' '}
+                                    <div className={PracticeCss.sliderBtn}>
+                                        Подробнее о практике
+                                    </div>
+                                </NavLink>
                             </div>
                             <br />
                         </SplideSlide>
@@ -63,9 +67,12 @@ const Practice = () => {
                                     Упор на решение реальных задач и
                                     приобретение практических навыков.
                                 </div>
-                                <div className={PracticeCss.sliderBtn}>
-                                    Подробнее о практике
-                                </div>
+                                <NavLink to="/Practice">
+                                    {' '}
+                                    <div className={PracticeCss.sliderBtn}>
+                                        Подробнее о практике
+                                    </div>
+                                </NavLink>
                             </div>
                             <br />
                         </SplideSlide>
@@ -82,9 +89,12 @@ const Practice = () => {
                                     Упор на решение реальных задач и
                                     приобретение практических навыков.
                                 </div>
-                                <div className={PracticeCss.sliderBtn}>
-                                    Подробнее о практике
-                                </div>
+                                <NavLink to="/Practice">
+                                    {' '}
+                                    <div className={PracticeCss.sliderBtn}>
+                                        Подробнее о практике
+                                    </div>
+                                </NavLink>
                             </div>
                             <br />
                         </SplideSlide>

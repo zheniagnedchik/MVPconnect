@@ -22,6 +22,7 @@ import { NavLink } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 
 const Practice = (props) => {
+    window.scrollTo(0, 0);
     return (
         <div className={PracticeCss.Practice}>
             {props.state.displaySize.isDesktop ? (

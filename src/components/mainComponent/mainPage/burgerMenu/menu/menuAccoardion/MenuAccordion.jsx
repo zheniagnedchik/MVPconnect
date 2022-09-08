@@ -55,6 +55,12 @@ const MenuAccordion = () => {
                         </div>
                     </div>
                 ))}
+
+                <NavLink to="/Practice">
+                    <div className={MenuAccordionCss.title}>
+                        <h2> IT Практика</h2>
+                    </div>
+                </NavLink>
             </div>
         </div>
     );
@@ -71,12 +77,5 @@ const data = [
         link: '/Frontend',
         link1: '/Python',
         link2: '/Designer',
-    },
-    {
-        section: 'IT Практика',
-        subsection: 'Практика',
-        link: '/Practice',
-        link1: '',
-        link2: '',
     },
 ];

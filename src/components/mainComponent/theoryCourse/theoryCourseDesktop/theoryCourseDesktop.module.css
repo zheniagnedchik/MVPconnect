@@ -4,7 +4,7 @@
     width: 100%;
     height: 120vh;
 
-    margin-top: 12.28%;
+    margin-top: 4.28%;
 }
 
 .title {
@@ -143,5 +143,8 @@
     }
     .theoryCourse {
         margin-bottom: 12.28%;
+    }
+    .theoryCourse {
+        margin-top: 13.28%;
     }
 }

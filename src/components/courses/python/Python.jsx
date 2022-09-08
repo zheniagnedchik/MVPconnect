@@ -21,6 +21,7 @@ import { useState } from 'react';
 import MenuMobile from './menu/MenuMobile';
 
 const Python = (props) => {
+    window.scrollTo(0, 0);
     const [ChoiseModule, setChoiseModule] = useState(2);
 
     let modules = [<Accordion1 />, <Card1 />];
@@ -160,7 +161,7 @@ const Python = (props) => {
                         <div className={PythonCss.mentorInfo}>
                             <div className={PythonCss.mentorInfoWrapper}>
                                 <div className={PythonCss.mentorName}>
-                                    Евгений Гнедчик
+                                    Жогаль Дмитрий
                                 </div>
                                 <div className={PythonCss.mentorProf}>
                                     Senior Full-stack Developer в{' '}

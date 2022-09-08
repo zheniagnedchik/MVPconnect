@@ -8,7 +8,6 @@ import slider4 from './img/slider3.svg';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import { Video } from '@splidejs/splide-extension-video';
 import '@splidejs/react-splide/css/skyblue';
-import './splide.css';
 
 const HistorySuccessDesktop = () => {
     return (
@@ -70,13 +69,13 @@ const HistorySuccessDesktop = () => {
                         </li>
                         <li
                             className="splide__slide splide__Customslide"
-                            data-splide-youtube="https://www.youtube.com/watch?v=KST8GEDhmBI"
+                            data-splide-youtube="https://www.youtube.com/watch?v=VxlWXEsymGM"
                         >
                             <img src={slider2} />
                         </li>
                         <li
                             className="splide__slide splide__Customslide"
-                            data-splide-youtube="https://www.youtube.com/watch?v=KST8GEDhmBI"
+                            data-splide-youtube="https://www.youtube.com/watch?v=hhFYcnwzWEY"
                         >
                             <img src={slider2} />
                         </li>

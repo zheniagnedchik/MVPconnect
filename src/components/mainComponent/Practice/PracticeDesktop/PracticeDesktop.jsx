@@ -6,7 +6,8 @@ import slider2 from './img/slider2.svg';
 import slider3 from './img/slider3.svg';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/skyblue';
-import './splide.css';
+
+import { NavLink } from 'react-router-dom';
 
 const PracticeDesktop = () => {
     return (
@@ -25,7 +26,7 @@ const PracticeDesktop = () => {
                 hasTrack={false}
                 options={{
                     type: 'loop',
-                    gap: 2,
+                    gap: 0,
                     perPage: 3,
                     rewind: true,
                     rewindByDrag: true,
@@ -65,11 +66,14 @@ const PracticeDesktop = () => {
                                     языки програмирования.Вы изучите
                                     распространенные.
                                 </div>
-                                <div
-                                    className={`${PracticeDesktopCss.sliderBtn} sliderBtn`}
-                                >
-                                    Подробнее
-                                </div>
+                                <NavLink to="/Practice">
+                                    {' '}
+                                    <div
+                                        className={`${PracticeDesktopCss.sliderBtn} sliderBtn`}
+                                    >
+                                        Подробнее
+                                    </div>
+                                </NavLink>
                             </div>
                             <br />
                         </SplideSlide>
@@ -93,11 +97,14 @@ const PracticeDesktop = () => {
                                     языки програмирования.Вы изучите
                                     распространенные.
                                 </div>
-                                <div
-                                    className={`${PracticeDesktopCss.sliderBtn} sliderBtn`}
-                                >
-                                    Подробнее
-                                </div>
+                                <NavLink to="/Practice">
+                                    {' '}
+                                    <div
+                                        className={`${PracticeDesktopCss.sliderBtn} sliderBtn`}
+                                    >
+                                        Подробнее
+                                    </div>
+                                </NavLink>
                             </div>
                             <br />
                         </SplideSlide>
@@ -121,11 +128,14 @@ const PracticeDesktop = () => {
                                     языки програмирования.Вы изучите
                                     распространенные.
                                 </div>
-                                <div
-                                    className={`${PracticeDesktopCss.sliderBtn} sliderBtn`}
-                                >
-                                    Подробнее
-                                </div>
+                                <NavLink to="/Practice">
+                                    {' '}
+                                    <div
+                                        className={`${PracticeDesktopCss.sliderBtn} sliderBtn`}
+                                    >
+                                        Подробнее
+                                    </div>
+                                </NavLink>
                             </div>
                             <br />
                         </SplideSlide>
@@ -149,11 +159,14 @@ const PracticeDesktop = () => {
                                     языки програмирования.Вы изучите
                                     распространенные.
                                 </div>
-                                <div
-                                    className={`${PracticeDesktopCss.sliderBtn} sliderBtn`}
-                                >
-                                    Подробнее
-                                </div>
+                                <NavLink to="/Practice">
+                                    {' '}
+                                    <div
+                                        className={`${PracticeDesktopCss.sliderBtn} sliderBtn`}
+                                    >
+                                        Подробнее
+                                    </div>
+                                </NavLink>
                             </div>
                             <br />
                         </SplideSlide>
@@ -177,11 +190,14 @@ const PracticeDesktop = () => {
                                     языки програмирования.Вы изучите
                                     распространенные.
                                 </div>
-                                <div
-                                    className={`${PracticeDesktopCss.sliderBtn} sliderBtn`}
-                                >
-                                    Подробнее
-                                </div>
+                                <NavLink to="/Practice">
+                                    {' '}
+                                    <div
+                                        className={`${PracticeDesktopCss.sliderBtn} sliderBtn`}
+                                    >
+                                        Подробнее
+                                    </div>
+                                </NavLink>
                             </div>
                             <br />
                         </SplideSlide>
@@ -205,11 +221,14 @@ const PracticeDesktop = () => {
                                     языки програмирования.Вы изучите
                                     распространенные.
                                 </div>
-                                <div
-                                    className={`${PracticeDesktopCss.sliderBtn} sliderBtn`}
-                                >
-                                    Подробнее
-                                </div>
+                                <NavLink to="/Practice">
+                                    {' '}
+                                    <div
+                                        className={`${PracticeDesktopCss.sliderBtn} sliderBtn`}
+                                    >
+                                        Подробнее
+                                    </div>{' '}
+                                </NavLink>
                             </div>
                             <br />
                         </SplideSlide>

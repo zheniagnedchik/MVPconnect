@@ -58,7 +58,10 @@ const FeebackGraduates = () => {
                                     <img src={slider1} alt="" />
                                 </div>
                                 <div className={FeebackGraduatesCss.linedin}>
-                                    <a href="https://www.linkedin.com/in/alehsaroka/">
+                                    <a
+                                        target="_blank"
+                                        href="https://www.linkedin.com/in/alehsaroka/"
+                                    >
                                         in
                                     </a>
                                 </div>
@@ -139,7 +142,10 @@ const FeebackGraduates = () => {
                                     <img src={slider2} alt="" />
                                 </div>
                                 <div className={FeebackGraduatesCss.linedin}>
-                                    <a href="https://www.linkedin.com/in/andrei-anoshka-a562a0209/">
+                                    <a
+                                        target="_blank"
+                                        href="https://www.linkedin.com/in/andrei-anoshka-a562a0209/"
+                                    >
                                         in
                                     </a>
                                 </div>
@@ -224,7 +230,10 @@ const FeebackGraduates = () => {
                                     <img src={slider3} alt="" />
                                 </div>
                                 <div className={FeebackGraduatesCss.linedin}>
-                                    <a href="https://www.linkedin.com/in/e-maltsev/">
+                                    <a
+                                        target="_blank"
+                                        href="https://www.linkedin.com/in/e-maltsev/"
+                                    >
                                         in
                                     </a>
                                 </div>
@@ -305,7 +314,10 @@ const FeebackGraduates = () => {
                                     <img src={slider4} alt="" />
                                 </div>
                                 <div className={FeebackGraduatesCss.linedin}>
-                                    <a href="https://www.linkedin.com/in/verkate/">
+                                    <a
+                                        target="_blank"
+                                        href="https://www.linkedin.com/in/verkate/"
+                                    >
                                         in
                                     </a>
                                 </div>
@@ -395,7 +407,10 @@ const FeebackGraduates = () => {
                                     <img src={slider5} alt="" />
                                 </div>
                                 <div className={FeebackGraduatesCss.linedin}>
-                                    <a href="https://www.linkedin.com/in/aliaksandr-auchynnikau-95a210194/">
+                                    <a
+                                        target="_blank"
+                                        href="https://www.linkedin.com/in/aliaksandr-auchynnikau-95a210194/"
+                                    >
                                         in
                                     </a>
                                 </div>

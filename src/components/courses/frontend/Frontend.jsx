@@ -21,6 +21,7 @@ import { useState } from 'react';
 import MenuMobile from './menu/MenuMobile';
 
 const Frontend = (props) => {
+    window.scrollTo(0, 0);
     const [ChoiseModule, setChoiseModule] = useState(1);
 
     let modules = [<Accordion1 />, <Accordion2 />, <Accordion3 />, <MaxCard />];

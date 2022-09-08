@@ -119,7 +119,7 @@
     justify-content: start;
 }
 .resultImg {
-    width: 20%;
+    width: 10%;
 }
 .resultImg img {
     width: 100%;
@@ -127,15 +127,16 @@
 
 .resultImgAdv {
     width: 7%;
+    align-self: start;
 }
 .resultImgAdv img {
     width: 100%;
-    padding-bottom: 100%;
 }
 
 .resultTitle {
     color: #afc1ff;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .resultSubTitle {
@@ -197,8 +198,8 @@
 
 .costItemWrapper {
     display: flex;
-    width: 90%;
-    margin: 4% 5% 0;
+    width: 70%;
+    margin: 4% auto 0;
     align-items: center;
 }
 
@@ -212,7 +213,7 @@
 
 .cost {
     color: #f6c350;
-    font-size: 3.3vmax;
+    font-size: 2.3vmax;
     text-align: center;
     font-weight: 700;
 }
@@ -221,7 +222,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 85%;
+    width: 65%;
     margin-top: 5%;
 }
 
@@ -245,14 +246,14 @@
     margin: 5%;
     color: white;
     text-align: center;
-    font-size: 2vmax;
+    font-size: 1.5vmax;
     font-weight: 400;
 }
 
 .costProg {
     margin-top: 5%;
     color: white;
-    font-size: 2vmax;
+    font-size: 1.5vmax;
     text-align: center;
 }
 
@@ -400,16 +401,17 @@
     .resultBtn {
         width: 30%;
 
-        font-size: 2vmax;
+        font-size: 1.8vmax;
     }
     .resulAdvtBtn {
         width: 50%;
 
-        font-size: 2vmax;
+        font-size: 1.8vmax;
     }
 
     .resultImgAdv {
         width: 10%;
+        align-self: flex-start;
     }
     .resultAdv {
         padding-left: 3%;
@@ -421,12 +423,9 @@
     .resultSubTitle {
         font-size: 2vmax;
     }
-    .resultImgAdv img {
-        padding-bottom: 200%;
-    }
 
     .costItemWrapper {
-        margin: 10% 5% 0;
+        margin: 10% auto 0;
 
         flex-direction: column;
     }
@@ -447,7 +446,7 @@
     }
 
     .costBtn {
-        font-size: 2vmax;
+        font-size: 1.8vmax;
     }
     .costItem a {
         width: 50%;
@@ -461,7 +460,7 @@
     }
     .footerWrapper {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 3fr 1fr;
     }
 
     .footerDescr {
@@ -489,7 +488,7 @@
         padding-left: 6%;
     }
 }
-@media (max-width: 1100px) {
+@media (min-width: 800px) and (max-width: 1100px) {
     .titleWrapper {
         width: 70%;
         padding: 30vh 0 10vh 5vw;
