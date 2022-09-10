@@ -22,7 +22,7 @@ import { NavLink } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 
 const Practice = (props) => {
-    window.scrollTo(0, 0);
+    props.ScrollTop();
     return (
         <div className={PracticeCss.Practice}>
             {props.state.displaySize.isDesktop ? (
@@ -164,11 +164,11 @@ const Practice = (props) => {
                             </div>
                         </div>
                     </div>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiCh3CArjEyhaol9fSuC9WGcEUz5bJJk1BjcFK3qahwF3JKg/viewform">
+                    <NavLink to="/PracticeForm">
                         <div className={PracticeCss.resultBtn}>
                             <p>Прокачаться</p>
                         </div>
-                    </a>
+                    </NavLink>
 
                     <div className={PracticeCss.resultsWrapper}>
                         <div className={PracticeCss.titleMVP}>
@@ -334,9 +334,7 @@ const Practice = (props) => {
                                 </div>
 
                                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiCh3CArjEyhaol9fSuC9WGcEUz5bJJk1BjcFK3qahwF3JKg/viewform">
-                                    <div className={PracticeCss.costBtn}>
-                                        <p>Зарегистрироваться</p>
-                                    </div>
+                                    <div className={PracticeCss.costBtn}></div>
                                 </a>
                             </div>
                             <div className={PracticeCss.costItem}>

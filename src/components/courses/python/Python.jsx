@@ -21,7 +21,7 @@ import { useState } from 'react';
 import MenuMobile from './menu/MenuMobile';
 
 const Python = (props) => {
-    window.scrollTo(0, 0);
+    props.ScrollTop();
     const [ChoiseModule, setChoiseModule] = useState(2);
 
     let modules = [<Accordion1 />, <Card1 />];

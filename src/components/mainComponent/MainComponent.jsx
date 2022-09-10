@@ -21,7 +21,6 @@ import OurPartnersDesktop from './ourPartners/ourPartnersDesktop/OurPartnersDesk
 import MvpConnectDesktop from './mvpConnect/mvpConnectDesktop/MvpConnectDesktop';
 
 const MainComponent = (props) => {
-    window.scrollTo(0, 0);
     return (
         <div className={MainComponentCss.mainComponent}>
             <MainPage displaySize={props.state.displaySize} />

@@ -25,6 +25,7 @@ import TestQA from './components/mainComponent/testIT/testITQuestions/testResult
 import './components/mainComponent/splide.css';
 import TestITDesktop from './components/mainComponent/testIT/testITDesktop/TestITDesktop';
 import Practice from './components/practice/Practice';
+import PracticeForm from './components/forms/PracticeForm';
 
 function App(props) {
     CheckWindowSize();
@@ -166,23 +167,52 @@ function App(props) {
                     </Route>
                     <Route
                         path="/Courses"
-                        element={<Courses state={props.state} />}
+                        element={
+                            <Courses
+                                ScrollTop={props.ScrollTop}
+                                state={props.state}
+                            />
+                        }
                     />
                     <Route
                         path="/Frontend"
-                        element={<Frontend state={props.state} />}
+                        element={
+                            <Frontend
+                                ScrollTop={props.ScrollTop}
+                                state={props.state}
+                            />
+                        }
                     />
                     <Route
                         path="/Designer"
-                        element={<Designer state={props.state} />}
+                        element={
+                            <Designer
+                                ScrollTop={props.ScrollTop}
+                                state={props.state}
+                            />
+                        }
                     />
                     <Route
                         path="/Python"
-                        element={<Python state={props.state} />}
+                        element={
+                            <Python
+                                ScrollTop={props.ScrollTop}
+                                state={props.state}
+                            />
+                        }
                     />
                     <Route
                         path="/Practice"
-                        element={<Practice state={props.state} />}
+                        element={
+                            <Practice
+                                ScrollTop={props.ScrollTop}
+                                state={props.state}
+                            />
+                        }
+                    />
+                    <Route
+                        path="/PracticeForm"
+                        element={<PracticeForm state={props.state} />}
                     />
                 </Routes>
             </div>

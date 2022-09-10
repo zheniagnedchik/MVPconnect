@@ -55,7 +55,12 @@ class BurgerMenu extends React.Component {
                         this.state.visible ? BurgerMenuCss.fixedIcon : ''
                     }`}
                 >
-                    <NavLink to="/">
+                    <NavLink
+                        onClick={() => {
+                            window.scrollTo(0, 0);
+                        }}
+                        to="/"
+                    >
                         {' '}
                         <img
                             className={`${BurgerMenuCss.mvpIconImg} ${

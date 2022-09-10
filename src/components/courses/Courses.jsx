@@ -13,7 +13,7 @@ import BurgerMenuDesktop from '../mainComponent/mainPage/burgerMenuDesktop/Burge
 import { NavLink } from 'react-router-dom';
 
 const Courses = (props) => {
-    window.scrollTo(0, 0);
+    props.ScrollTop();
     return (
         <div>
             {props.state.displaySize.isDesktop ? (

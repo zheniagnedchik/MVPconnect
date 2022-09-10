@@ -13,7 +13,12 @@ class BurgerMenuDesktop extends React.Component {
             <div className={BurgerMenuCss.burgerMenu}>
                 {' '}
                 <div className={BurgerMenuCss.mvpIcon}>
-                    <NavLink to="/">
+                    <NavLink
+                        onClick={() => {
+                            window.scrollTo(0, 0);
+                        }}
+                        to="/"
+                    >
                         {' '}
                         <img
                             className={BurgerMenuCss.mvpIconImg}
@@ -25,7 +30,14 @@ class BurgerMenuDesktop extends React.Component {
                 <div className={BurgerMenuCss.empty}></div>
                 <div className={BurgerMenuCss.home}>
                     {' '}
-                    <NavLink to="/">Главная</NavLink>{' '}
+                    <NavLink
+                        onClick={() => {
+                            window.scrollTo(0, 0);
+                        }}
+                        to="/"
+                    >
+                        Главная
+                    </NavLink>{' '}
                 </div>
                 <NavLink to="/Courses">
                     {' '}

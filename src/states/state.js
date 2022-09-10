@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-
+import { useLocation } from 'react-router-dom';
 let state = {
     testITResults: [0, 0, 0, 0], // All points
     linkResult: '', // Link for NavLink in question/TestITQuestion10.jsx
@@ -77,4 +77,13 @@ export const CheckWindowStart = () => {
     } else {
         state.displaySize.isDesktop = false;
     }
+};
+
+export const ScrollTop = () => {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+    return null;
 };

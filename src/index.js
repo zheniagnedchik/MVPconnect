@@ -8,12 +8,14 @@ import { creatingResult } from './states/state';
 import { clearResult } from './states/state';
 import { linkResultTest } from './states/state';
 import { CheckWindowStart } from './states/state';
+import { ScrollTop } from './states/state';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 CheckWindowStart();
 root.render(
     <React.StrictMode>
         <App
+            ScrollTop={ScrollTop}
             state={State}
             creatingResult={creatingResult}
             clearResult={clearResult}
