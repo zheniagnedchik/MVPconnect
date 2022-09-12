@@ -1,17 +1,22 @@
 .PracticeForm {
     background: black;
     color: white;
-    height: 100vh;
-    width: 100vw;
 }
+.formWrapper {
+    padding: 10% 0;
 
+    width: 60%;
+
+    margin: 0 auto;
+}
 .formItem {
     display: flex;
-    width: 60%;
+    padding: 5% 10%;
     margin: 0 auto;
     height: 50%;
     flex-direction: column;
-    padding: 10% 0;
+    border: 1px solid #2692ec;
+    box-shadow: 0px 0px 15px #2692ec;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -22,6 +27,7 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
+    margin-bottom: 3%;
 }
 
 .title {
@@ -43,7 +49,7 @@
     height: max-content;
 }
 
-.form label {
+.inputWrapper label {
     margin-top: 3%;
     color: #ffb81a;
     font-family: 'Open Sans';
@@ -52,13 +58,90 @@
     font-size: 1.2vmax;
 }
 
-.form input {
+.inputWrapper {
+    margin-top: 3%;
+}
+
+.inputWrapper input {
     width: 100%;
     background: black;
     border: 1px solid #1c6db1;
     color: white;
     height: 4vh;
     font-size: 1.2vmax;
+}
+
+.inputItem {
+    margin-bottom: 3%;
+}
+
+.profWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+}
+
+.profWrapper input[type='text'] {
+    width: 80%;
+    margin-left: 3%;
+    background: black;
+    color: white;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    font-size: 1.2vmax;
+}
+.profTitle {
+    color: #ffb81a;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.2vmax;
+}
+.profWrapper input {
+    position: relative;
+    height: 22px;
+    width: 22px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
+.profWrapper input::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    border: 2px solid dodgerblue;
+}
+.profWrapper input:checked:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: dodgerblue;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+}
+.profItem {
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+}
+.profWrapper label {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 1.2vmax;
+    margin-left: 2%;
 }
 
 .footer {
@@ -68,7 +151,7 @@
     text-align: center;
 }
 .footer a {
-    width: 30%;
+    width: 40%;
     margin: 3% auto;
 }
 
@@ -78,6 +161,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 1.1vmax;
+    margin-top: 3%;
 }
 
 .footerInfo a {
@@ -105,3 +189,122 @@
     font-style: normal;
     font-weight: 600;
 }
+
+@media (max-width: 800px) {
+    .formWrapper {
+        width: 80%;
+    }
+    .overhead {
+        font-size: 2vmax;
+    }
+    .title {
+        font-size: 2.5vmax;
+    }
+
+    .inputWrapper label {
+        font-size: 2vmax;
+    }
+    .inputWrapper input {
+        font-size: 2vmax;
+    }
+    .profTitle {
+        font-size: 2vmax;
+    }
+    .profWrapper label {
+        font-size: 2vmax;
+    }
+
+    .profWrapper input::before {
+        width: 14px;
+        height: 14px;
+    }
+    .profWrapper input:checked:after {
+        width: 12px;
+        height: 12px;
+    }
+    .profWrapper input[type='text'] {
+        width: 60%;
+        font-size: 2vmax;
+    }
+
+    .footerInfo {
+        font-size: 1.6vmax;
+    }
+
+    .footer a {
+        width: 60%;
+    }
+
+    .footerBtn {
+        font-size: 2vmax;
+    }
+
+    .overhead,
+    .inputItem,
+    .footer,
+    .profWrapper {
+        margin-bottom: 7%;
+    }
+
+    .inputWrapper label,
+    .inputWrapper,
+    .profItem,
+    .footerInfo,
+    .footer {
+        margin-top: 7%;
+    }
+    .footer a {
+        margin: 7% auto;
+    }
+    .footerInfo a {
+        display: inline-block;
+        color: #2692ec;
+        width: inherit;
+        margin: 0;
+    }
+}
+
+@media (max-height: 500px) {
+    .inputWrapper input {
+        height: 9vh;
+        font-size: 2vmax;
+    }
+    .overhead {
+        font-size: 2vmax;
+    }
+    .title {
+        font-size: 2.5vmax;
+    }
+
+    .inputWrapper label {
+        font-size: 2vmax;
+    }
+    .inputWrapper input {
+        font-size: 2vmax;
+    }
+    .profTitle {
+        font-size: 2vmax;
+    }
+    .profWrapper label {
+        font-size: 2vmax;
+    }
+    .footerInfo {
+        font-size: 1.6vmax;
+    }
+    .footerBtn {
+        font-size: 2vmax;
+        height: 9vh;
+    }
+    .footer a {
+        width: 60%;
+    }
+    .footerInfo a {
+        display: inline-block;
+        color: #2692ec;
+        width: inherit;
+        margin: 0;
+    }
+    .profWrapper input[type='text'] {
+        font-size: 2vmax;
+    }
+} ;
