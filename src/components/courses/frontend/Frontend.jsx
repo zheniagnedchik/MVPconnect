@@ -24,15 +24,34 @@ const Frontend = (props) => {
     props.ScrollTop();
     const [ChoiseModule, setChoiseModule] = useState(1);
 
-    let modules = [<Accordion1 />, <Accordion2 />, <Accordion3 />, <MaxCard />];
+    let modules = [
+        <Accordion1 />,
+        <Accordion2 />,
+        <Accordion3 />,
+        <MaxCard CheckNumberSplider={props.CheckNumberSplider} />,
+    ];
     if (ChoiseModule === 2) {
-        modules = [<Accordion1 />, <Card1 />];
+        modules = [
+            <Accordion1 />,
+            <Card1 CheckNumberSplider={props.CheckNumberSplider} />,
+        ];
     } else if (ChoiseModule === 3) {
-        modules = [<Accordion2 />, <Card2 />];
+        modules = [
+            <Accordion2 />,
+            <Card2 CheckNumberSplider={props.CheckNumberSplider} />,
+        ];
     } else if (ChoiseModule === 4) {
-        modules = [<Accordion3 />, <Card3 />];
+        modules = [
+            <Accordion3 />,
+            <Card3 CheckNumberSplider={props.CheckNumberSplider} />,
+        ];
     } else {
-        modules = [<Accordion1 />, <Accordion2 />, <Accordion3 />, <MaxCard />];
+        modules = [
+            <Accordion1 />,
+            <Accordion2 />,
+            <Accordion3 />,
+            <MaxCard CheckNumberSplider={props.CheckNumberSplider} />,
+        ];
     }
     return (
         <div className={FrontendCss.Frontend}>
@@ -50,12 +69,15 @@ const Frontend = (props) => {
                         Теоретические и практические курсы по подготовке
                         Frontend разработчиков на реальных проектах (стартапах)
                     </div>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeASX9u0xCzgvDeLxKqwMXpx2c8qyBCGFN4G17faCjnzT2VSQ/viewform">
+                    <NavLink
+                        to="/CourseForm"
+                        onClick={() => props.CheckNumberSplider(1)}
+                    >
                         {' '}
                         <div className={FrontendCss.titleBtn}>
                             <p>Записаться на курс</p>
                         </div>
-                    </a>
+                    </NavLink>
                 </div>
                 <div className={FrontendCss.blackBack}>
                     <div className={FrontendCss.stagesTitleWrapper}>
@@ -148,12 +170,15 @@ const Frontend = (props) => {
                         </div>
                     </div>
 
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeASX9u0xCzgvDeLxKqwMXpx2c8qyBCGFN4G17faCjnzT2VSQ/viewform">
+                    <NavLink
+                        to="/CourseForm"
+                        onClick={() => props.CheckNumberSplider(1)}
+                    >
                         {' '}
                         <div className={FrontendCss.coursesBtn}>
                             Записаться на курс
                         </div>{' '}
-                    </a>
+                    </NavLink>
                     <div className={FrontendCss.mentorWrapper}>
                         <div className={FrontendCss.mentor}>
                             <img src={mentor} alt="" />

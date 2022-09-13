@@ -5,11 +5,11 @@ const MenuMobile = (props) => {
         switch (e.target.value) {
             case '1':
                 props.setChoiseModule(1);
-                console.log(props);
+
                 break;
             case '2':
                 props.setChoiseModule(2);
-                console.log(props);
+
                 break;
             case '3':
                 props.setChoiseModule(3);

@@ -1,3 +1,4 @@
+import { check } from 'prettier';
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 let state = {
@@ -7,6 +8,7 @@ let state = {
         isMobile: Boolean,
         isDesktop: Boolean,
     },
+    numberSplider: 0,
 };
 export default state;
 
@@ -86,4 +88,10 @@ export const ScrollTop = () => {
         window.scrollTo(0, 0);
     }, [pathname]);
     return null;
+};
+
+// check number splider in forms for splider (forms/CoursesForm and forms/splider/DesktopSplider, MobileSplider). CallBack for all NavLink buttons which have link './CoursesForm'.
+
+export const CheckNumberSplider = (e) => {
+    state.numberSplider = e;
 };

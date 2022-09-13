@@ -26,6 +26,7 @@ import './components/mainComponent/splide.css';
 import TestITDesktop from './components/mainComponent/testIT/testITDesktop/TestITDesktop';
 import Practice from './components/practice/Practice';
 import PracticeForm from './components/forms/PracticeForm';
+import CourseForm from './components/forms/CoursesForm';
 
 function App(props) {
     CheckWindowSize();
@@ -178,6 +179,7 @@ function App(props) {
                         path="/Frontend"
                         element={
                             <Frontend
+                                CheckNumberSplider={props.CheckNumberSplider}
                                 ScrollTop={props.ScrollTop}
                                 state={props.state}
                             />
@@ -212,7 +214,21 @@ function App(props) {
                     />
                     <Route
                         path="/PracticeForm"
-                        element={<PracticeForm state={props.state} />}
+                        element={
+                            <PracticeForm
+                                ScrollTop={props.ScrollTop}
+                                state={props.state}
+                            />
+                        }
+                    />
+                    <Route
+                        path="/CourseForm"
+                        element={
+                            <CourseForm
+                                ScrollTop={props.ScrollTop}
+                                state={props.state}
+                            />
+                        }
                     />
                 </Routes>
             </div>

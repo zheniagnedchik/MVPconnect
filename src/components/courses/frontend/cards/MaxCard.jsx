@@ -1,6 +1,7 @@
 import CardsCss from './Cards.module.css';
+import { NavLink } from 'react-router-dom';
 
-const MaxCard = () => {
+const MaxCard = (props) => {
     return (
         <div className={CardsCss.Card}>
             <div className={CardsCss.CardWrapper}>
@@ -39,9 +40,15 @@ const MaxCard = () => {
                 </div>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeASX9u0xCzgvDeLxKqwMXpx2c8qyBCGFN4G17faCjnzT2VSQ/viewform">
                     {' '}
-                    <div className={CardsCss.cardBtn}>
-                        Записаться на курс
-                    </div>{' '}
+                    <NavLink
+                        to="/CourseForm"
+                        onClick={() => props.CheckNumberSplider(1)}
+                    >
+                        {' '}
+                        <div className={CardsCss.cardBtn}>
+                            Записаться на курс
+                        </div>{' '}
+                    </NavLink>
                 </a>
             </div>
         </div>

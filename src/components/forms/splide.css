@@ -1,0 +1,15 @@
+.splide__customFormArrow--prev {
+    width: 5%;
+    left: 0;
+}
+.splide__customFormArrow--prev img {
+    width: 100%;
+}
+
+.splide__customFormArrow--next {
+    width: 5%;
+    right: 0;
+}
+.splide__customFormArrow--next img {
+    width: 100%;
+}

@@ -9,12 +9,14 @@ import { clearResult } from './states/state';
 import { linkResultTest } from './states/state';
 import { CheckWindowStart } from './states/state';
 import { ScrollTop } from './states/state';
+import { CheckNumberSplider } from './states/state';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 CheckWindowStart();
 root.render(
     <React.StrictMode>
         <App
+            CheckNumberSplider={CheckNumberSplider}
             ScrollTop={ScrollTop}
             state={State}
             creatingResult={creatingResult}

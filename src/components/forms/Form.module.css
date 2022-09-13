@@ -190,6 +190,24 @@
     font-weight: 600;
 }
 
+.splideTrack {
+    width: 50%;
+    margin: 5% auto;
+}
+.splideWrapper {
+    width: 100%;
+}
+
+.coursesTitle {
+    text-shadow: 0px 0px 10px #2692ec;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    font-size: 2vmax;
+    text-align: center;
+}
+
 @media (max-width: 800px) {
     .formWrapper {
         width: 80%;
