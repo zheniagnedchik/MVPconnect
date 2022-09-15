@@ -32,7 +32,7 @@ const MobileSplider = (props) => {
             className={MenuCss.splideWrapper}
             options={{
                 type: 'fade',
-
+                start: props.numberSplider,
                 pagination: false,
                 arrows: false,
             }}

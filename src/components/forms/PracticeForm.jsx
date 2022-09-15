@@ -1,8 +1,10 @@
 import FormCss from './Form.module.css';
 import { useState } from 'react';
 
-const PracticeForm = () => {
+const PracticeForm = (props) => {
+    props.ScrollTop();
     const [selected, useSelected] = useState(false);
+    const [btnCheck, setBtnCheck] = useState(false);
 
     const ChangeState = (e) => {
         useSelected(e.target.value === '' ? true : true);
@@ -13,6 +15,27 @@ const PracticeForm = () => {
     const SelectOther = () => {
         useSelected(true);
     };
+
+    const checkBtn = (e) => {
+        if (
+            e.currentTarget[0].value === '' ||
+            e.currentTarget[13].value === '' ||
+            (!e.currentTarget[7].checked &&
+                !e.currentTarget[8].checked &&
+                !e.currentTarget[9].checked &&
+                !e.currentTarget[10].checked &&
+                !e.currentTarget[11].checked)
+        ) {
+            setBtnCheck(false);
+        } else if (
+            e.currentTarget[11].checked &&
+            e.currentTarget[12].value === ''
+        ) {
+            setBtnCheck(false);
+        } else {
+            setBtnCheck(true);
+        }
+    };
     return (
         <div className={FormCss.PracticeForm}>
             <div className={FormCss.formWrapper}>
@@ -22,7 +45,11 @@ const PracticeForm = () => {
                         Практический курс “Работа по стандартам IT-компаний”
                     </div>
 
-                    <form className={FormCss.form} action="">
+                    <form
+                        className={FormCss.form}
+                        onChange={(e) => checkBtn(e)}
+                        action=""
+                    >
                         <div className={FormCss.inputWrapper}>
                             <div className={FormCss.inputItem}>
                                 <label htmlFor="name">Ваше имя*</label>{' '}
@@ -143,7 +170,12 @@ const PracticeForm = () => {
                                 ссылке
                             </a>
                         </div>
-                        <a href="/">
+                        <a
+                            href="/"
+                            className={`${
+                                btnCheck ? '' : FormCss.footerBtnDisabled
+                            }`}
+                        >
                             {' '}
                             <div className={FormCss.footerBtn}>
                                 {' '}

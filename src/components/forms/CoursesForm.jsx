@@ -1,6 +1,6 @@
 import FormCss from './Form.module.css';
-import { useState } from 'react';
-import { useRef, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import { useRef } from 'react';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/skyblue';
 import './splide.css';
@@ -12,6 +12,7 @@ import MobileSplider from './spliders/MobileSplider';
 const CourseForm = (props) => {
     props.ScrollTop();
     const slider1 = useRef();
+    const [btnCheck, setBtnCheck] = useState(false);
 
     const [selected, useSelected] = useState(false);
     const [ChoiseModule, setChoiseModule] = useState(1);
@@ -24,6 +25,27 @@ const CourseForm = (props) => {
     };
     const SelectOther = () => {
         useSelected(true);
+    };
+
+    const checkBtn = (e) => {
+        if (
+            e.currentTarget[0].value === '' ||
+            e.currentTarget[8].value === '' ||
+            (!e.currentTarget[2].checked &&
+                !e.currentTarget[3].checked &&
+                !e.currentTarget[4].checked &&
+                !e.currentTarget[5].checked &&
+                !e.currentTarget[6].checked)
+        ) {
+            setBtnCheck(false);
+        } else if (
+            e.currentTarget[6].checked &&
+            e.currentTarget[7].value === ''
+        ) {
+            setBtnCheck(false);
+        } else {
+            setBtnCheck(true);
+        }
     };
 
     return (
@@ -39,6 +61,7 @@ const CourseForm = (props) => {
                         options={{
                             type: 'loop',
                             rewind: true,
+
                             start: props.state.numberSplider,
                             rewindByDrag: true,
                             pagination: false,
@@ -85,9 +108,14 @@ const CourseForm = (props) => {
                             slider1={slider1}
                             ChoiseModule={ChoiseModule}
                             setChoiseModule={setChoiseModule}
+                            numberSplider={props.state.numberSplider}
                         />
                     )}
-                    <form className={FormCss.form} action="">
+                    <form
+                        onChange={(e) => checkBtn(e)}
+                        className={FormCss.form}
+                        action=""
+                    >
                         <div className={FormCss.inputWrapper}>
                             <div className={FormCss.inputItem}>
                                 <label htmlFor="name">Ваше имя*</label>{' '}
@@ -179,7 +207,13 @@ const CourseForm = (props) => {
                                 ссылке
                             </a>
                         </div>
-                        <a href="/">
+                        <a
+                            href="#"
+                            onClick={() => console.log(123)}
+                            className={`${
+                                btnCheck ? '' : FormCss.footerBtnDisabled
+                            }`}
+                        >
                             {' '}
                             <div className={FormCss.footerBtn}>
                                 {' '}

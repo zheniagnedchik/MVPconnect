@@ -269,11 +269,11 @@ const Practice = (props) => {
                             </div>
                         </div>
                     </div>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiCh3CArjEyhaol9fSuC9WGcEUz5bJJk1BjcFK3qahwF3JKg/viewform">
+                    <NavLink to="/PracticeForm">
                         <div className={PracticeCss.resulAdvtBtn}>
                             <p>Использовать все преимущества</p>
                         </div>
-                    </a>
+                    </NavLink>
                     <div className={PracticeCss.costWrapper}>
                         <div className={PracticeCss.titleMVP}>
                             Стоимость практики (аналог стажировки)
@@ -333,9 +333,11 @@ const Practice = (props) => {
                                     </p>
                                 </div>
 
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiCh3CArjEyhaol9fSuC9WGcEUz5bJJk1BjcFK3qahwF3JKg/viewform">
-                                    <div className={PracticeCss.costBtn}></div>
-                                </a>
+                                <NavLink to="/PracticeForm">
+                                    <div className={PracticeCss.costBtn}>
+                                        Зарегистрироваться
+                                    </div>
+                                </NavLink>
                             </div>
                             <div className={PracticeCss.costItem}>
                                 <div className={PracticeCss.cost}>
@@ -381,11 +383,11 @@ const Practice = (props) => {
                                     </p>
                                 </div>
 
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiCh3CArjEyhaol9fSuC9WGcEUz5bJJk1BjcFK3qahwF3JKg/viewform">
+                                <NavLink to="/PracticeForm">
                                     <div className={PracticeCss.costBtn}>
                                         <p>Зарегистрироваться</p>
                                     </div>
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
 
@@ -531,11 +533,11 @@ const Practice = (props) => {
                             </div>
                         </div>
                     </div>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiCh3CArjEyhaol9fSuC9WGcEUz5bJJk1BjcFK3qahwF3JKg/viewform">
+                    <NavLink to="/PracticeForm">
                         <div className={PracticeCss.resulAdvtBtn}>
                             <p>Использовать преимущества</p>
                         </div>
-                    </a>
+                    </NavLink>
 
                     <footer className={PracticeCss.footer}>
                         <div className={PracticeCss.footerWrapper}>

@@ -189,6 +189,7 @@ function App(props) {
                         path="/Designer"
                         element={
                             <Designer
+                                CheckNumberSplider={props.CheckNumberSplider}
                                 ScrollTop={props.ScrollTop}
                                 state={props.state}
                             />
@@ -198,6 +199,7 @@ function App(props) {
                         path="/Python"
                         element={
                             <Python
+                                CheckNumberSplider={props.CheckNumberSplider}
                                 ScrollTop={props.ScrollTop}
                                 state={props.state}
                             />

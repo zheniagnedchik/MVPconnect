@@ -1,6 +1,7 @@
 import CardsCss from './Cards.module.css';
+import { NavLink } from 'react-router-dom';
 
-const Card3 = () => {
+const Card3 = (props) => {
     return (
         <div className={CardsCss.Card}>
             <div className={CardsCss.CardWrapper}>
@@ -38,12 +39,15 @@ const Card3 = () => {
                     Работаем с ЕРИП. <br /> *{' '}
                     <i> - цены в валюте указаны справочно </i>
                 </div>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeASX9u0xCzgvDeLxKqwMXpx2c8qyBCGFN4G17faCjnzT2VSQ/viewform">
+                <NavLink
+                    to="/CourseForm"
+                    onClick={() => props.CheckNumberSplider(1)}
+                >
                     {' '}
                     <div className={CardsCss.cardBtn}>
                         Записаться на курс
                     </div>{' '}
-                </a>
+                </NavLink>
             </div>
         </div>
     );

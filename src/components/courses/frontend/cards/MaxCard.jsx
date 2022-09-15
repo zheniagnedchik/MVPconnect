@@ -37,19 +37,16 @@ const MaxCard = (props) => {
                     Возможна оплата в 7 этапов. <br />
                     Работаем с ЕРИП. <br /> *{' '}
                     <i> - цены в валюте указаны справочно </i>
-                </div>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeASX9u0xCzgvDeLxKqwMXpx2c8qyBCGFN4G17faCjnzT2VSQ/viewform">
+                </div>{' '}
+                <NavLink
+                    to="/CourseForm"
+                    onClick={() => props.CheckNumberSplider(1)}
+                >
                     {' '}
-                    <NavLink
-                        to="/CourseForm"
-                        onClick={() => props.CheckNumberSplider(1)}
-                    >
-                        {' '}
-                        <div className={CardsCss.cardBtn}>
-                            Записаться на курс
-                        </div>{' '}
-                    </NavLink>
-                </a>
+                    <div className={CardsCss.cardBtn}>
+                        Записаться на курс
+                    </div>{' '}
+                </NavLink>
             </div>
         </div>
     );
