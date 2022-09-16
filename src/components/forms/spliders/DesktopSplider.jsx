@@ -26,7 +26,10 @@ const DesktopSplider = (props) => {
                 <div className={MenuCss.dMenu}>
                     <div className={MenuCss.dWrapper}>
                         <div
-                            onClick={() => props.setChoiseModule(1)}
+                            onClick={() => {
+                                props.setChoiseModule(1);
+                                props.setModule('Максимальный');
+                            }}
                             className={` ${
                                 props.ChoiseModule === 1
                                     ? MenuCss.dMenuActive
@@ -36,7 +39,10 @@ const DesktopSplider = (props) => {
                             <p> Максимальный</p>
                         </div>
                         <div
-                            onClick={() => props.setChoiseModule(2)}
+                            onClick={() => {
+                                props.setChoiseModule(2);
+                                props.setModule('Базовый');
+                            }}
                             className={` ${
                                 props.ChoiseModule === 2
                                     ? MenuCss.dMenuActive
@@ -46,7 +52,10 @@ const DesktopSplider = (props) => {
                             <p> Базовый</p>
                         </div>
                         <div
-                            onClick={() => props.setChoiseModule(3)}
+                            onClick={() => {
+                                props.setChoiseModule(3);
+                                props.setModule('Профессиональный');
+                            }}
                             className={` ${
                                 props.ChoiseModule === 3
                                     ? MenuCss.dMenuActive
@@ -56,7 +65,10 @@ const DesktopSplider = (props) => {
                             <p> Профессиональный</p>
                         </div>
                         <div
-                            onClick={() => props.setChoiseModule(4)}
+                            onClick={() => {
+                                props.setChoiseModule(4);
+                                props.setModule('Практический');
+                            }}
                             className={` ${
                                 props.ChoiseModule === 4
                                     ? MenuCss.dMenuActive
@@ -73,7 +85,10 @@ const DesktopSplider = (props) => {
                 <div className={MenuCss.dMenu}>
                     <div className={MenuCss.dWrapper}>
                         <div
-                            onClick={() => props.setChoiseModule(1)}
+                            onClick={() => {
+                                props.setChoiseModule(1);
+                                props.setModule('Максимальный');
+                            }}
                             className={` ${
                                 props.ChoiseModule === 1
                                     ? MenuCss.dMenuActive
@@ -83,7 +98,10 @@ const DesktopSplider = (props) => {
                             <p> Максимальный</p>
                         </div>
                         <div
-                            onClick={() => props.setChoiseModule(2)}
+                            onClick={() => {
+                                props.setChoiseModule(2);
+                                props.setModule('Базовый');
+                            }}
                             className={` ${
                                 props.ChoiseModule === 2
                                     ? MenuCss.dMenuActive
@@ -93,7 +111,10 @@ const DesktopSplider = (props) => {
                             <p> Базовый</p>
                         </div>
                         <div
-                            onClick={() => props.setChoiseModule(3)}
+                            onClick={() => {
+                                props.setChoiseModule(3);
+                                props.setModule('Профессиональный');
+                            }}
                             className={` ${
                                 props.ChoiseModule === 3
                                     ? MenuCss.dMenuActive
@@ -103,7 +124,10 @@ const DesktopSplider = (props) => {
                             <p> Профессиональный</p>
                         </div>
                         <div
-                            onClick={() => props.setChoiseModule(4)}
+                            onClick={() => {
+                                props.setChoiseModule(4);
+                                props.setModule('Практический');
+                            }}
                             className={` ${
                                 props.ChoiseModule === 4
                                     ? MenuCss.dMenuActive
@@ -120,7 +144,10 @@ const DesktopSplider = (props) => {
                 <div className={MenuCss.dMenu}>
                     <div className={MenuCss.dWrapper}>
                         <div
-                            onClick={() => props.setChoiseModule(2)}
+                            onClick={() => {
+                                props.setChoiseModule(2);
+                                props.setModule('Базовый');
+                            }}
                             className={` ${
                                 props.ChoiseModule === 2
                                     ? MenuCss.dMenuActive
@@ -131,7 +158,10 @@ const DesktopSplider = (props) => {
                         </div>
 
                         <div
-                            onClick={() => props.setChoiseModule(4)}
+                            onClick={() => {
+                                props.setChoiseModule(4);
+                                props.setModule('Практический');
+                            }}
                             className={` ${
                                 props.ChoiseModule === 4
                                     ? MenuCss.dMenuActive

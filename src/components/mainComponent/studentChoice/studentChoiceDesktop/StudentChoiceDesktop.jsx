@@ -5,6 +5,7 @@ import icon3 from './img/icon3.svg';
 import icon4 from './img/icon4.svg';
 import icon5 from './img/icon5.svg';
 import icon6 from './img/icon6.svg';
+import { NavLink } from 'react-router-dom';
 
 const StudentChoiceDesktop = () => {
     return (
@@ -118,10 +119,11 @@ const StudentChoiceDesktop = () => {
                     </div>
                 </div>
             </div>
-
-            <div className={StudentChoiceCss.btn}>
-                <p>Записаться</p>
-            </div>
+            <NavLink to="/PracticeForm">
+                <div className={StudentChoiceCss.btn}>
+                    <p>Записаться</p>
+                </div>
+            </NavLink>
         </div>
     );
 };

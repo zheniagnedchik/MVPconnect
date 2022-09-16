@@ -436,9 +436,11 @@
     .costImg {
         width: 50%;
     }
-
+    .costProfWrapper {
+        width: 100%;
+    }
     .costProf {
-        font-size: 2.5vmax;
+        font-size: 2vmax;
     }
 
     .costProg {

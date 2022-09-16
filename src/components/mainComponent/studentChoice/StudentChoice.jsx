@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Icon from './img/icon.svg';
 import Vector from './img/Vector.svg';
 import VectorGold from './img/VectorGold.svg';
+import { NavLink } from 'react-router-dom';
 
 const StudentChoice = () => {
     const [selected, setSelected] = useState(null);
@@ -65,12 +66,12 @@ const StudentChoice = () => {
                     ))}
                 </div>
             </div>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiCh3CArjEyhaol9fSuC9WGcEUz5bJJk1BjcFK3qahwF3JKg/viewform">
+            <NavLink to="/PracticeForm">
                 {' '}
                 <div className={StudentChoiceCss.btn}>
                     <p>Записаться</p>
                 </div>
-            </a>
+            </NavLink>
         </div>
     );
 };

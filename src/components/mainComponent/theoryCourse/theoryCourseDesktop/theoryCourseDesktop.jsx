@@ -7,6 +7,7 @@ import slider3 from './img/slider3.svg';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/skyblue';
 import './splide.css';
+import { NavLink } from 'react-router-dom';
 
 const theoryCourseDesktop = () => {
     return (
@@ -59,11 +60,14 @@ const theoryCourseDesktop = () => {
                                     языки програмирования.Вы изучите
                                     распространенные.
                                 </div>
-                                <div
-                                    className={`${TheoryCourseCss.sliderBtn} sliderBtn`}
-                                >
-                                    Подробнее
-                                </div>
+                                <NavLink to="/Practice">
+                                    {' '}
+                                    <div
+                                        className={`${TheoryCourseCss.sliderBtn} sliderBtn`}
+                                    >
+                                        Подробнее
+                                    </div>{' '}
+                                </NavLink>
                             </div>
                             <br />
                         </SplideSlide>
@@ -81,11 +85,14 @@ const theoryCourseDesktop = () => {
                                     языки програмирования.Вы изучите
                                     распространенные.
                                 </div>
-                                <div
-                                    className={`${TheoryCourseCss.sliderBtn} sliderBtn`}
-                                >
-                                    Подробнее
-                                </div>
+                                <NavLink to="/Practice">
+                                    {' '}
+                                    <div
+                                        className={`${TheoryCourseCss.sliderBtn} sliderBtn`}
+                                    >
+                                        Подробнее
+                                    </div>{' '}
+                                </NavLink>
                             </div>
                             <br />
                         </SplideSlide>
@@ -103,11 +110,14 @@ const theoryCourseDesktop = () => {
                                     языки програмирования.Вы изучите
                                     распространенные.
                                 </div>
-                                <div
-                                    className={`${TheoryCourseCss.sliderBtn} sliderBtn`}
-                                >
-                                    Подробнее
-                                </div>
+                                <NavLink to="/Practice">
+                                    {' '}
+                                    <div
+                                        className={`${TheoryCourseCss.sliderBtn} sliderBtn`}
+                                    >
+                                        Подробнее
+                                    </div>{' '}
+                                </NavLink>
                             </div>
                             <br />
                         </SplideSlide>
@@ -125,11 +135,14 @@ const theoryCourseDesktop = () => {
                                     языки програмирования.Вы изучите
                                     распространенные.
                                 </div>
-                                <div
-                                    className={`${TheoryCourseCss.sliderBtn} sliderBtn`}
-                                >
-                                    Подробнее
-                                </div>
+                                <NavLink to="/Practice">
+                                    {' '}
+                                    <div
+                                        className={`${TheoryCourseCss.sliderBtn} sliderBtn`}
+                                    >
+                                        Подробнее
+                                    </div>{' '}
+                                </NavLink>
                             </div>
                             <br />
                         </SplideSlide>
@@ -147,11 +160,14 @@ const theoryCourseDesktop = () => {
                                     языки програмирования.Вы изучите
                                     распространенные.
                                 </div>
-                                <div
-                                    className={`${TheoryCourseCss.sliderBtn} sliderBtn`}
-                                >
-                                    Подробнее
-                                </div>
+                                <NavLink to="/Practice">
+                                    {' '}
+                                    <div
+                                        className={`${TheoryCourseCss.sliderBtn} sliderBtn`}
+                                    >
+                                        Подробнее
+                                    </div>{' '}
+                                </NavLink>
                             </div>
                             <br />
                         </SplideSlide>
@@ -169,11 +185,14 @@ const theoryCourseDesktop = () => {
                                     языки програмирования.Вы изучите
                                     распространенные.
                                 </div>
-                                <div
-                                    className={`${TheoryCourseCss.sliderBtn} sliderBtn`}
-                                >
-                                    Подробнее
-                                </div>
+                                <NavLink to="/Practice">
+                                    {' '}
+                                    <div
+                                        className={`${TheoryCourseCss.sliderBtn} sliderBtn`}
+                                    >
+                                        Подробнее
+                                    </div>{' '}
+                                </NavLink>
                             </div>
                             <br />
                         </SplideSlide>

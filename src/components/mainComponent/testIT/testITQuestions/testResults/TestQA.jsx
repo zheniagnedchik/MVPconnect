@@ -15,7 +15,17 @@ const TestQA = (props) => {
                     ваш результат
                 </div>
                 <div className={TestResultsCss.title}>You are QA</div>
-                <div className={TestResultsCss.subTitle}>Подзаголовок</div>
+                <div className={TestResultsCss.subTitle}>
+                    {' '}
+                    <NavLink to="/PracticeForm">
+                        <div
+                            onClick={props.clearResult}
+                            className={TestResultsCss.resultBtn}
+                        >
+                            Записаться
+                        </div>
+                    </NavLink>
+                </div>
             </div>
 
             <NavLink to="/">

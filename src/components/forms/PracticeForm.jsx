@@ -1,10 +1,18 @@
 import FormCss from './Form.module.css';
 import { useState } from 'react';
+import axios from 'axios';
+import { NavLink } from 'react-router-dom';
 
 const PracticeForm = (props) => {
     props.ScrollTop();
     const [selected, useSelected] = useState(false);
     const [btnCheck, setBtnCheck] = useState(false);
+    const [inputName, setinputName] = useState('');
+    const [inputTel, setinputTel] = useState('');
+    const [inputNick, setinputNick] = useState('');
+    const [radioSoc, setradioSoc] = useState('');
+    const [radioProf, setradioProf] = useState('');
+    const [inputSoc, setinputSoc] = useState('');
 
     const ChangeState = (e) => {
         useSelected(e.target.value === '' ? true : true);
@@ -36,6 +44,24 @@ const PracticeForm = (props) => {
             setBtnCheck(true);
         }
     };
+
+    const SendData = (e) => {
+        window.scrollTo(0, 0);
+        axios
+            .post('https://mysterious-everglades-24551.herokuapp.com/test/', {
+                Name: inputName,
+                Tel: inputTel,
+                Nick: inputNick,
+                OtherSocNetwork: inputSoc,
+                SocialNetwork: radioSoc,
+                Profession: radioProf,
+            })
+            .then((res) => {
+                console.log(res);
+                console.log(res.data);
+                console.log(res.config.data);
+            });
+    };
     return (
         <div className={FormCss.PracticeForm}>
             <div className={FormCss.formWrapper}>
@@ -53,11 +79,25 @@ const PracticeForm = (props) => {
                         <div className={FormCss.inputWrapper}>
                             <div className={FormCss.inputItem}>
                                 <label htmlFor="name">Ваше имя*</label>{' '}
-                                <input name="name" type="text" />
+                                <input
+                                    value={inputName}
+                                    onChange={(e) =>
+                                        setinputName(e.target.value)
+                                    }
+                                    name="name"
+                                    type="text"
+                                />
                             </div>
                             <div className={FormCss.inputItem}>
                                 <label htmlFor="tel">Телефон для связи</label>{' '}
-                                <input name="tel" type="tel" />
+                                <input
+                                    value={inputTel}
+                                    onChange={(e) =>
+                                        setinputTel(e.target.value)
+                                    }
+                                    name="tel"
+                                    type="tel"
+                                />
                             </div>
                         </div>
                         <div className={FormCss.profWrapper}>
@@ -66,27 +106,66 @@ const PracticeForm = (props) => {
                                 курс (аналог стажировки в IT компании)
                             </div>
                             <div className={FormCss.profItem}>
-                                <input type="radio" name="prof" id="radio1" />
+                                <input
+                                    onClick={() => {
+                                        setradioProf('Business Analyst');
+                                    }}
+                                    type="radio"
+                                    name="prof"
+                                    id="radio1"
+                                />
                                 <label htmlFor="radio1">Business Analyst</label>
                             </div>
                             <div className={FormCss.profItem}>
-                                <input type="radio" name="prof" id="radio2" />
+                                <input
+                                    onClick={() => {
+                                        setradioProf('Project Manager');
+                                    }}
+                                    type="radio"
+                                    name="prof"
+                                    id="radio2"
+                                />
                                 <label htmlFor="radio2">Project Manager</label>
                             </div>
                             <div className={FormCss.profItem}>
-                                <input type="radio" name="prof" id="radio3" />
+                                <input
+                                    onClick={() => {
+                                        setradioProf(
+                                            'Front-end developer (React)'
+                                        );
+                                    }}
+                                    type="radio"
+                                    name="prof"
+                                    id="radio3"
+                                />
                                 <label htmlFor="radio3">
                                     Front-end developer (React)
                                 </label>
                             </div>
                             <div className={FormCss.profItem}>
-                                <input type="radio" name="prof" id="radio4" />
+                                <input
+                                    onClick={() => {
+                                        setradioProf(
+                                            ' Back-end developer (Python)'
+                                        );
+                                    }}
+                                    type="radio"
+                                    name="prof"
+                                    id="radio4"
+                                />
                                 <label htmlFor="radio4">
                                     Back-end developer (Python)
                                 </label>
                             </div>
                             <div className={FormCss.profItem}>
-                                <input type="radio" name="prof" id="radio5" />
+                                <input
+                                    onClick={() => {
+                                        setradioProf(' Product Manager');
+                                    }}
+                                    type="radio"
+                                    name="prof"
+                                    id="radio5"
+                                />
                                 <label htmlFor="radio5">Product Manager</label>
                             </div>
                         </div>
@@ -96,7 +175,10 @@ const PracticeForm = (props) => {
                             </div>
                             <div className={FormCss.profItem}>
                                 <input
-                                    onClick={ClearOther}
+                                    onClick={() => {
+                                        ClearOther();
+                                        setradioSoc('Telegram');
+                                    }}
                                     type="radio"
                                     name="mes"
                                     id="radio6"
@@ -105,7 +187,10 @@ const PracticeForm = (props) => {
                             </div>
                             <div className={FormCss.profItem}>
                                 <input
-                                    onClick={ClearOther}
+                                    onClick={() => {
+                                        ClearOther();
+                                        setradioSoc('WhatsApp');
+                                    }}
                                     type="radio"
                                     name="mes"
                                     id="radio7"
@@ -114,7 +199,10 @@ const PracticeForm = (props) => {
                             </div>
                             <div className={FormCss.profItem}>
                                 <input
-                                    onClick={ClearOther}
+                                    onClick={() => {
+                                        ClearOther();
+                                        setradioSoc('Viber');
+                                    }}
                                     type="radio"
                                     name="mes"
                                     id="radio8"
@@ -124,7 +212,10 @@ const PracticeForm = (props) => {
                             <div className={FormCss.profItem}>
                                 <input
                                     type="radio"
-                                    onClick={ClearOther}
+                                    onClick={() => {
+                                        ClearOther();
+                                        setradioSoc('Facebook Messanger');
+                                    }}
                                     name="mes"
                                     id="radio9"
                                 />
@@ -142,11 +233,14 @@ const PracticeForm = (props) => {
                                 />
                                 <label htmlFor="radio10">Other:</label>
                                 <input
-                                    onChange={(e) => ChangeState(e)}
+                                    onChange={(e) => {
+                                        ChangeState(e);
+                                        setinputSoc(e.target.value);
+                                    }}
                                     type="text"
                                     name="mes"
                                     id="radio10"
-                                    value={selected === false ? '' : null}
+                                    value={selected === false ? '' : inputSoc}
                                 />
                             </div>
                         </div>
@@ -155,7 +249,14 @@ const PracticeForm = (props) => {
                                 Ваш никнейм в выбранном мессенджере, для
                                 возможности связи, с учетом приватности*
                             </label>{' '}
-                            <input name="nick" type="text" />{' '}
+                            <input
+                                value={inputNick}
+                                onChange={(e) => {
+                                    setinputNick(e.target.value);
+                                }}
+                                name="nick"
+                                type="text"
+                            />{' '}
                         </div>
                     </form>
 
@@ -170,8 +271,9 @@ const PracticeForm = (props) => {
                                 ссылке
                             </a>
                         </div>
-                        <a
-                            href="/"
+                        <NavLink
+                            to="/"
+                            onClick={(e) => SendData(e)}
                             className={`${
                                 btnCheck ? '' : FormCss.footerBtnDisabled
                             }`}
@@ -181,7 +283,7 @@ const PracticeForm = (props) => {
                                 {' '}
                                 <p>Записаться</p>
                             </div>
-                        </a>
+                        </NavLink>
                     </div>
                 </div>
             </div>

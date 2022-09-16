@@ -243,12 +243,20 @@ const Designer = (props) => {
                                 </div>
 
                                 <div className={DesignerCss.footerInfo}>
-                                    <div className={DesignerCss.footerNumber}>
-                                        +375 44 780 12 36
-                                    </div>
-                                    <div className={DesignerCss.footerMail}>
-                                        info@mvp.by
-                                    </div>
+                                    <a href="tel:+375447801236">
+                                        {' '}
+                                        <div
+                                            className={DesignerCss.footerNumber}
+                                        >
+                                            +375 44 780 12 36
+                                        </div>{' '}
+                                    </a>
+                                    <a href="mailto:info@mvp.by">
+                                        {' '}
+                                        <div className={DesignerCss.footerMail}>
+                                            info@mvp.by
+                                        </div>{' '}
+                                    </a>
                                     <div className={DesignerCss.footerDescr}>
                                         {' '}
                                         ООО “ЭмВиПи коннект”
@@ -267,19 +275,31 @@ const Designer = (props) => {
                                         {' '}
                                         <img src={Vk} alt="" />{' '}
                                     </a> */}
-                                    <a href="https://www.facebook.com/people/Mvp-connect/100083144028399/">
+                                    <a
+                                        href="https://www.facebook.com/people/Mvp-connect/100083144028399/"
+                                        target="_blank"
+                                    >
                                         {' '}
                                         <img src={Facebook} alt="" />
                                     </a>
-                                    <a href="https://www.instagram.com/mvp.connect/">
+                                    <a
+                                        href="https://www.instagram.com/mvp.connect/"
+                                        target="_blank"
+                                    >
                                         {' '}
                                         <img src={Inst} alt="" />
                                     </a>
-                                    <a href="https://www.linkedin.com/company/mvp-connect/">
+                                    <a
+                                        href="https://www.linkedin.com/company/mvp-connect/"
+                                        target="_blank"
+                                    >
                                         {' '}
                                         <img src={In} alt="" />{' '}
                                     </a>
-                                    <a href="https://t.me/alexander_balodis">
+                                    <a
+                                        href="https://t.me/alexander_balodis"
+                                        target="_blank"
+                                    >
                                         {' '}
                                         <img src={Tel} alt="" />{' '}
                                     </a>

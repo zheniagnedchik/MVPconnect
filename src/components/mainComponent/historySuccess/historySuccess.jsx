@@ -51,6 +51,18 @@ const HistorySuccess = () => {
                         >
                             <img src={Success} />
                         </li>
+                        <li
+                            className="splide__slide splide__Customslide"
+                            data-splide-youtube="https://www.youtube.com/watch?v=VxlWXEsymGM"
+                        >
+                            <img src={Success} />
+                        </li>
+                        <li
+                            className="splide__slide splide__Customslide"
+                            data-splide-youtube="https://www.youtube.com/watch?v=hhFYcnwzWEY"
+                        >
+                            <img src={Success} />
+                        </li>
                     </SplideTrack>
 
                     <div className="splide__arrows splide__arrows" />

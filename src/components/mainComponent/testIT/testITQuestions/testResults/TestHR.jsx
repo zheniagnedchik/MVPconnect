@@ -14,7 +14,17 @@ const TestHR = (props) => {
                     ваш результат
                 </div>
                 <div className={TestResultsCss.title}>You are HR</div>
-                <div className={TestResultsCss.subTitle}>Подзаголовок</div>
+                <div className={TestResultsCss.subTitle}>
+                    {' '}
+                    <NavLink to="/PracticeForm">
+                        <div
+                            onClick={props.clearResult}
+                            className={TestResultsCss.resultBtn}
+                        >
+                            Записаться
+                        </div>
+                    </NavLink>
+                </div>
             </div>
 
             <NavLink to="/">

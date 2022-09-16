@@ -18,27 +18,42 @@ const MvpConnectDesktop = () => {
                         {' '}
                         <img src={MvpConnectImg} alt="" />
                     </div>
-                    <div className={MvpConnectDesktopCss.number}>
-                        +375 44 780 12 36
-                    </div>
+                    <a href="tel:+375447801236">
+                        {' '}
+                        <div className={MvpConnectDesktopCss.number}>
+                            +375 44 780 12 36
+                        </div>
+                    </a>
                     <div className={MvpConnectDesktopCss.socialNetworkIcons}>
                         {/* <a href="https://vk.com/">
                             {' '}
                             <img src={Vk} alt="" />{' '}
                         </a> */}
-                        <a href="https://www.facebook.com/people/Mvp-connect/100083144028399/">
+                        <a
+                            href="https://www.facebook.com/people/Mvp-connect/100083144028399/"
+                            target="_blank"
+                        >
                             {' '}
                             <img src={Facebook} alt="" />
                         </a>
-                        <a href="https://www.instagram.com/mvp.connect/">
+                        <a
+                            href="https://www.instagram.com/mvp.connect/"
+                            target="_blank"
+                        >
                             {' '}
                             <img src={Inst} alt="" />
                         </a>
-                        <a href="https://www.linkedin.com/company/mvp-connect/">
+                        <a
+                            href="https://www.linkedin.com/company/mvp-connect/"
+                            target="_blank"
+                        >
                             {' '}
                             <img src={In} alt="" />{' '}
                         </a>
-                        <a href="https://t.me/alexander_balodis">
+                        <a
+                            href="https://t.me/alexander_balodis"
+                            target="_blank"
+                        >
                             {' '}
                             <img src={Tel} alt="" />{' '}
                         </a>
@@ -77,7 +92,10 @@ const MvpConnectDesktop = () => {
                     {' '}
                     <div className={MvpConnectDesktopCss.job}>
                         {' '}
-                        <img src={Job} alt="" />
+                        <a href="https://itcoty.ru/" target="_blank">
+                            {' '}
+                            <img src={Job} alt="" />
+                        </a>
                     </div>
                 </div>
             </div>

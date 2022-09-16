@@ -22,8 +22,16 @@ const MvpConnect = () => {
                 <img src={MvpConnectImg} alt="" />
             </div>
             <div className={MvpConnectCss.info}>
-                <div className={MvpConnectCss.number}>+375 44 780 12 36</div>
-                <div className={MvpConnectCss.mail}>info@mvp.by</div>
+                <a href="tel:+375447801236">
+                    {' '}
+                    <div className={MvpConnectCss.number}>
+                        +375 44 780 12 36
+                    </div>
+                </a>
+                <a href="mailto:info@mvp.by">
+                    {' '}
+                    <div className={MvpConnectCss.mail}>info@mvp.by</div>{' '}
+                </a>
                 <div className={MvpConnectCss.participant}>
                     <img src={Participants} alt="" />
                 </div>

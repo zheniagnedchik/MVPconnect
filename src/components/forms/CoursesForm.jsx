@@ -8,14 +8,42 @@ import VectorRight from './img/VectorRight.svg';
 import VectorLeft from './img/VectorLeft.svg';
 import DesktopSplider from './spliders/DesktopSplider';
 import MobileSplider from './spliders/MobileSplider';
+import axios from 'axios';
+import { NavLink } from 'react-router-dom';
 
 const CourseForm = (props) => {
     props.ScrollTop();
+
     const slider1 = useRef();
     const [btnCheck, setBtnCheck] = useState(false);
+    const [inputName, setinputName] = useState('');
+    const [inputTel, setinputTel] = useState('');
+    const [inputNick, setinputNick] = useState('');
+    const [radioSoc, setradioSoc] = useState('');
+    const [nameCourses, setnameCourse] = useState(
+        props.state.numberSplider === 0
+            ? 'UX/UI Designer'
+            : props.state.numberSplider === 1
+            ? 'Frontend'
+            : props.state.numberSplider === 2
+            ? 'Python'
+            : null
+    );
 
+    const [inputSoc, setinputSoc] = useState('');
     const [selected, useSelected] = useState(false);
-    const [ChoiseModule, setChoiseModule] = useState(1);
+    const [ChoiseModule, setChoiseModule] = useState(2);
+    const [module, setModule] = useState(
+        ChoiseModule === 1
+            ? 'Максимальный'
+            : ChoiseModule === 2
+            ? 'Базовый'
+            : ChoiseModule === 3
+            ? 'Профессиональный'
+            : ChoiseModule === 4
+            ? 'Практический'
+            : null
+    );
 
     const ChangeState = (e) => {
         useSelected(e.target.value === '' ? true : true);
@@ -24,6 +52,7 @@ const CourseForm = (props) => {
         useSelected(false);
     };
     const SelectOther = () => {
+        setradioSoc('Other');
         useSelected(true);
     };
 
@@ -48,6 +77,25 @@ const CourseForm = (props) => {
         }
     };
 
+    const SendData = (e) => {
+        window.scrollTo(0, 0);
+        axios
+            .post('https://mysterious-everglades-24551.herokuapp.com/test/', {
+                Name: inputName,
+                Tel: inputTel,
+                Nick: inputNick,
+                OtherSocNetwork: inputSoc,
+                SocialNetwork: radioSoc,
+                nameCourse: nameCourses,
+                module: module,
+            })
+            .then((res) => {
+                console.log(res);
+                console.log(res.data);
+                console.log(res.config.data);
+            });
+    };
+
     return (
         <div className={FormCss.PracticeForm}>
             <div className={FormCss.formWrapper}>
@@ -61,6 +109,7 @@ const CourseForm = (props) => {
                         options={{
                             type: 'loop',
                             rewind: true,
+                            drag: false,
 
                             start: props.state.numberSplider,
                             rewindByDrag: true,
@@ -88,16 +137,39 @@ const CourseForm = (props) => {
                             </SplideTrack>
 
                             <div className="splide__arrows splide__CoursesArrows" />
-                            <button className="splide__arrow splide__arrow--prev splide__customFormArrow--prev">
+                            <button
+                                onClick={() =>
+                                    nameCourses === 'UX/UI Designer'
+                                        ? setnameCourse('Python')
+                                        : nameCourses === 'Python'
+                                        ? setnameCourse('Frontend')
+                                        : nameCourses === 'Frontend'
+                                        ? setnameCourse('UX/UI Designer')
+                                        : null
+                                }
+                                className="splide__arrow splide__arrow--prev splide__customFormArrow--prev"
+                            >
                                 <img src={VectorLeft} alt="" />
                             </button>
-                            <button className="splide__arrow splide__arrow--next splide__customFormArrow--next">
+                            <button
+                                onClick={() =>
+                                    nameCourses === 'UX/UI Designer'
+                                        ? setnameCourse('Frontend')
+                                        : nameCourses === 'Frontend'
+                                        ? setnameCourse('Python')
+                                        : nameCourses === 'Python'
+                                        ? setnameCourse('UX/UI Designer')
+                                        : null
+                                }
+                                className="splide__arrow splide__arrow--next splide__customFormArrow--next"
+                            >
                                 <img src={VectorRight} alt="" />
                             </button>
                         </div>
                     </Splide>
                     {props.state.displaySize.isDesktop ? (
                         <DesktopSplider
+                            setModule={setModule}
                             numberSplider={props.state.numberSplider}
                             slider1={slider1}
                             ChoiseModule={ChoiseModule}
@@ -106,6 +178,7 @@ const CourseForm = (props) => {
                     ) : (
                         <MobileSplider
                             slider1={slider1}
+                            setModule={setModule}
                             ChoiseModule={ChoiseModule}
                             setChoiseModule={setChoiseModule}
                             numberSplider={props.state.numberSplider}
@@ -119,11 +192,25 @@ const CourseForm = (props) => {
                         <div className={FormCss.inputWrapper}>
                             <div className={FormCss.inputItem}>
                                 <label htmlFor="name">Ваше имя*</label>{' '}
-                                <input name="name" type="text" />
+                                <input
+                                    value={inputName}
+                                    onChange={(e) =>
+                                        setinputName(e.target.value)
+                                    }
+                                    name="name"
+                                    type="text"
+                                />
                             </div>
                             <div className={FormCss.inputItem}>
                                 <label htmlFor="tel">Телефон для связи</label>{' '}
-                                <input name="tel" type="tel" />
+                                <input
+                                    value={inputTel}
+                                    onChange={(e) =>
+                                        setinputTel(e.target.value)
+                                    }
+                                    name="tel"
+                                    type="tel"
+                                />
                             </div>
                         </div>
 
@@ -133,7 +220,10 @@ const CourseForm = (props) => {
                             </div>
                             <div className={FormCss.profItem}>
                                 <input
-                                    onClick={ClearOther}
+                                    onClick={() => {
+                                        ClearOther();
+                                        setradioSoc('Telegram');
+                                    }}
                                     type="radio"
                                     name="mes"
                                     id="radio6"
@@ -142,7 +232,10 @@ const CourseForm = (props) => {
                             </div>
                             <div className={FormCss.profItem}>
                                 <input
-                                    onClick={ClearOther}
+                                    onClick={() => {
+                                        ClearOther();
+                                        setradioSoc('WhatsApp');
+                                    }}
                                     type="radio"
                                     name="mes"
                                     id="radio7"
@@ -151,7 +244,10 @@ const CourseForm = (props) => {
                             </div>
                             <div className={FormCss.profItem}>
                                 <input
-                                    onClick={ClearOther}
+                                    onClick={() => {
+                                        ClearOther();
+                                        setradioSoc('Viber');
+                                    }}
                                     type="radio"
                                     name="mes"
                                     id="radio8"
@@ -161,7 +257,10 @@ const CourseForm = (props) => {
                             <div className={FormCss.profItem}>
                                 <input
                                     type="radio"
-                                    onClick={ClearOther}
+                                    onClick={() => {
+                                        ClearOther();
+                                        setradioSoc('Facebook Messanger');
+                                    }}
                                     name="mes"
                                     id="radio9"
                                 />
@@ -179,11 +278,14 @@ const CourseForm = (props) => {
                                 />
                                 <label htmlFor="radio10">Other:</label>
                                 <input
-                                    onChange={(e) => ChangeState(e)}
+                                    onChange={(e) => {
+                                        ChangeState(e);
+                                        setinputSoc(e.target.value);
+                                    }}
                                     type="text"
                                     name="mes"
                                     id="radio10"
-                                    value={selected === false ? '' : null}
+                                    value={selected === false ? '' : inputSoc}
                                 />
                             </div>
                         </div>
@@ -192,7 +294,14 @@ const CourseForm = (props) => {
                                 Ваш никнейм в выбранном мессенджере, для
                                 возможности связи, с учетом приватности*
                             </label>{' '}
-                            <input name="nick" type="text" />{' '}
+                            <input
+                                value={inputNick}
+                                onChange={(e) => {
+                                    setinputNick(e.target.value);
+                                }}
+                                name="nick"
+                                type="text"
+                            />{' '}
                         </div>
                     </form>
 
@@ -207,9 +316,9 @@ const CourseForm = (props) => {
                                 ссылке
                             </a>
                         </div>
-                        <a
-                            href="#"
-                            onClick={() => console.log(123)}
+                        <NavLink
+                            to="/"
+                            onClick={(e) => SendData(e)}
                             className={`${
                                 btnCheck ? '' : FormCss.footerBtnDisabled
                             }`}
@@ -219,7 +328,7 @@ const CourseForm = (props) => {
                                 {' '}
                                 <p>Записаться</p>
                             </div>
-                        </a>
+                        </NavLink>
                     </div>
                 </div>
             </div>

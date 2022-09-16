@@ -17,7 +17,17 @@ const TestPrdM = (props) => {
                 <div className={TestResultsCss.title}>
                     You are Product Manager
                 </div>
-                <div className={TestResultsCss.subTitle}>Подзаголовок</div>
+                <div className={TestResultsCss.subTitle}>
+                    {' '}
+                    <NavLink to="/PracticeForm">
+                        <div
+                            onClick={props.clearResult}
+                            className={TestResultsCss.resultBtn}
+                        >
+                            Записаться
+                        </div>
+                    </NavLink>
+                </div>
             </div>
 
             <NavLink to="/">
