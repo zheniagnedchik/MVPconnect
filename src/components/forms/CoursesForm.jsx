@@ -10,6 +10,7 @@ import DesktopSplider from './spliders/DesktopSplider';
 import MobileSplider from './spliders/MobileSplider';
 import axios from 'axios';
 import { NavLink } from 'react-router-dom';
+import Airtable from 'airtable';
 
 const CourseForm = (props) => {
     props.ScrollTop();
@@ -77,23 +78,26 @@ const CourseForm = (props) => {
         }
     };
 
+    const Airtable = require('airtable');
+    const base = new Airtable({ apiKey: 'keyJQ0HEb6WHcjN7t' }).base(
+        'app5JtyuZXRZgEBUO'
+    );
+
     const SendData = (e) => {
         window.scrollTo(0, 0);
-        axios
-            .post('https://mysterious-everglades-24551.herokuapp.com/test/', {
-                Name: inputName,
-                Tel: inputTel,
-                Nick: inputNick,
-                OtherSocNetwork: inputSoc,
-                SocialNetwork: radioSoc,
-                nameCourse: nameCourses,
-                module: module,
-            })
-            .then((res) => {
-                console.log(res);
-                console.log(res.data);
-                console.log(res.config.data);
-            });
+        base('Sheet1').create([
+            {
+                fields: {
+                    inputName: inputName,
+                    inputTel: inputTel,
+                    inputNick: inputNick,
+                    radioSoc: radioSoc,
+                    nameCourses: nameCourses,
+                    module: module,
+                    inputSoc: inputSoc,
+                },
+            },
+        ]);
     };
 
     return (

@@ -2,6 +2,7 @@ import FormCss from './Form.module.css';
 import { useState } from 'react';
 import axios from 'axios';
 import { NavLink } from 'react-router-dom';
+import Airtable from 'airtable';
 
 const PracticeForm = (props) => {
     props.ScrollTop();
@@ -45,22 +46,24 @@ const PracticeForm = (props) => {
         }
     };
 
+    const Airtable = require('airtable');
+    const base = new Airtable({ apiKey: 'keyJQ0HEb6WHcjN7t' }).base(
+        'app5JtyuZXRZgEBUO'
+    );
     const SendData = (e) => {
         window.scrollTo(0, 0);
-        axios
-            .post('https://mysterious-everglades-24551.herokuapp.com/test/', {
-                Name: inputName,
-                Tel: inputTel,
-                Nick: inputNick,
-                OtherSocNetwork: inputSoc,
-                SocialNetwork: radioSoc,
-                Profession: radioProf,
-            })
-            .then((res) => {
-                console.log(res);
-                console.log(res.data);
-                console.log(res.config.data);
-            });
+        base('Sheet1').create([
+            {
+                fields: {
+                    inputName: inputName,
+                    inputTel: inputTel,
+                    inputNick: inputNick,
+                    radioSoc: radioSoc,
+                    radioProf: radioProf,
+                    inputSoc: inputSoc,
+                },
+            },
+        ]);
     };
     return (
         <div className={FormCss.PracticeForm}>
@@ -146,7 +149,7 @@ const PracticeForm = (props) => {
                                 <input
                                     onClick={() => {
                                         setradioProf(
-                                            ' Back-end developer (Python)'
+                                            'Back-end developer (Python)'
                                         );
                                     }}
                                     type="radio"
@@ -160,7 +163,7 @@ const PracticeForm = (props) => {
                             <div className={FormCss.profItem}>
                                 <input
                                     onClick={() => {
-                                        setradioProf(' Product Manager');
+                                        setradioProf('Product Manager');
                                     }}
                                     type="radio"
                                     name="prof"
