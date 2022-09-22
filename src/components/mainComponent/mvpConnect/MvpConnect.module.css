@@ -67,6 +67,12 @@
     }
 }
 
+@media (max-width: 450px) {
+    .mvpConnect {
+        height: 45vh;
+    }
+}
+
 @media (min-width: 480px) {
     .mvpConnect {
         height: 60vh;

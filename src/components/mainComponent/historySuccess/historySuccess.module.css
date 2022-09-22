@@ -47,6 +47,12 @@
     height: 55.08vh;
 }
 
+@media (max-width: 450px) {
+    .historySuccess {
+        height: 80vh;
+    }
+}
+
 /* mobile with rotate */
 @media (max-height: 500px) {
     .historySuccess {

@@ -34,7 +34,7 @@
 
 .icon {
     float: left;
-    padding-top: 10px;
+    padding-top: 3vh;
 }
 
 .title {
@@ -111,6 +111,11 @@
     color: #000000;
 }
 
+@media (max-width: 450px) {
+    .studentChoice {
+        height: 110vh;
+    }
+}
 /* mobile with rotate */
 @media (max-height: 500px) {
     .btn {

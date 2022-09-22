@@ -116,3 +116,29 @@
         font-size: 1.45vmax;
     }
 }
+
+@media (min-width: 2100px) {
+    .resultImg img {
+        width: 30vw;
+    }
+
+    .titleOverhead {
+        font-size: 1vmax;
+    }
+    .title {
+        font-size: 1.2vmax;
+    }
+    .resultImg img {
+        height: 40vh;
+    }
+
+    .subTitle {
+        font-size: 1vmax;
+    }
+    .resultBtn {
+        width: 12.75vw;
+        height: 3.76vh;
+        margin: 8.63vh auto 0;
+        font-size: 1vmax;
+    }
+}

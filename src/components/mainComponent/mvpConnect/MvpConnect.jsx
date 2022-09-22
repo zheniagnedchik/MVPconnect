@@ -32,9 +32,9 @@ const MvpConnect = () => {
                     {' '}
                     <div className={MvpConnectCss.mail}>info@mvp.by</div>{' '}
                 </a>
-                <div className={MvpConnectCss.participant}>
+                {/* <div className={MvpConnectCss.participant}>
                     <img src={Participants} alt="" />
-                </div>
+                </div> */}
             </div>
         </div>
     );

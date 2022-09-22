@@ -135,3 +135,26 @@
         margin-bottom: 12.28%;
     }
 }
+
+@media (min-width: 2100px) {
+    .slider {
+        width: 15.75vw;
+    }
+
+    .sliderImg img {
+        width: 12.75vw;
+    }
+    .sliderTitle {
+        font-size: 1vmax;
+    }
+
+    .sliderSubTitle {
+        font-size: 0.7vmax;
+    }
+
+    .sliderBtn {
+        width: 10.75vw;
+
+        font-size: 0.9vmax;
+    }
+}

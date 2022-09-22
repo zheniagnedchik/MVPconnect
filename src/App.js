@@ -21,7 +21,7 @@ import TestITQuestion10 from './components/mainComponent/testIT/testITQuestions/
 import TestDesigner from './components/mainComponent/testIT/testITQuestions/testResults/TestDesigner';
 import TestHR from './components/mainComponent/testIT/testITQuestions/testResults/TestHR';
 import TestPrdM from './components/mainComponent/testIT/testITQuestions/testResults/TestPrdM';
-import TestQA from './components/mainComponent/testIT/testITQuestions/testResults/TestQA';
+import TestFront from './components/mainComponent/testIT/testITQuestions/testResults/TestFront';
 import './components/mainComponent/splide.css';
 import TestITDesktop from './components/mainComponent/testIT/testITDesktop/TestITDesktop';
 import Practice from './components/practice/Practice';
@@ -163,7 +163,9 @@ function App(props) {
                         />
                         <Route
                             path="/QA"
-                            element={<TestQA clearResult={props.clearResult} />}
+                            element={
+                                <TestFront clearResult={props.clearResult} />
+                            }
                         />
                     </Route>
                     <Route

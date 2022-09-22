@@ -1,6 +1,6 @@
 import TestResultsCss from './TestResults.module.css';
 
-import Slide4 from './img/slide4.svg';
+import Slide4 from './img/characters/HR.jpg';
 import { NavLink } from 'react-router-dom';
 
 const TestHR = (props) => {

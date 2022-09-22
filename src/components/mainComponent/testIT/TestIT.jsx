@@ -3,10 +3,14 @@ import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 import '@splidejs/react-splide/css/skyblue';
 import './splide.css';
-import Slide1 from './img/slide1.svg';
-import Slide2 from './img/slide2.svg';
-import Slide3 from './img/slide3.svg';
-import Slide4 from './img/slide4.svg';
+import Slide1 from './img/characters/Front-end.jpg';
+import Slide2 from './img/characters/UXUI.jpg';
+import Slide3 from './img/characters/HR.jpg';
+import Slide4 from './img/characters/PrdM.jpg';
+import Slide5 from './img/characters/Marketer.jpg';
+import Slide6 from './img/characters/Back-end.jpg';
+import Slide7 from './img/characters/QA.jpg';
+import Slide8 from './img/characters/PM.jpg';
 import VectorRight from './img/VectorRight.svg';
 import VectorLeft from './img/VectorLeft.svg';
 
@@ -30,6 +34,7 @@ const TestIT = () => {
                         pauseOnHover: false,
                         pauseOnFocus: false,
                         rewind: false,
+
                         speed: 1,
                     },
                 }}
@@ -37,46 +42,112 @@ const TestIT = () => {
                 aria-label="..."
             >
                 <div className={TestITCss.splideWrapper}>
-                    <SplideTrack>
-                        <SplideSlide>
+                    <SplideTrack className={TestITCss.splideItems}>
+                        <SplideSlide className={TestITCss.splideItem}>
                             {' '}
                             <div className={TestITCss.slider}>
                                 <div className={TestITCss.sliderTitle}>
                                     UX/UI
                                 </div>
-                                <div className={TestITCss.sliderImg}>
-                                    <img src={Slide1} alt="" />
-                                </div>
+                                <NavLink to="/TestITQuestions/Question1">
+                                    {' '}
+                                    <div className={TestITCss.sliderImg}>
+                                        <img src={Slide2} alt="" />
+                                    </div>{' '}
+                                </NavLink>
                             </div>
                             <br />
                         </SplideSlide>
-                        <SplideSlide>
+                        <SplideSlide className={TestITCss.splideItem}>
+                            {' '}
+                            <div className={TestITCss.slider}>
+                                <div className={TestITCss.sliderTitle}>
+                                    Frontend
+                                </div>
+                                <NavLink to="/TestITQuestions/Question1">
+                                    {' '}
+                                    <div className={TestITCss.sliderImg}>
+                                        <img src={Slide1} alt="" />
+                                    </div>{' '}
+                                </NavLink>
+                            </div>
+                        </SplideSlide>
+                        <SplideSlide className={TestITCss.splideItem}>
+                            {' '}
+                            <div className={TestITCss.slider}>
+                                <div className={TestITCss.sliderTitle}>HR</div>
+                                <NavLink to="/TestITQuestions/Question1">
+                                    {' '}
+                                    <div className={TestITCss.sliderImg}>
+                                        <img src={Slide3} alt="" />
+                                    </div>
+                                </NavLink>
+                            </div>
+                        </SplideSlide>
+                        <SplideSlide className={TestITCss.splideItem}>
                             {' '}
                             <div className={TestITCss.slider}>
                                 <div className={TestITCss.sliderTitle}>
                                     PrdM
                                 </div>
-                                <div className={TestITCss.sliderImg}>
-                                    <img src={Slide2} alt="" />
-                                </div>
+                                <NavLink to="/TestITQuestions/Question1">
+                                    {' '}
+                                    <div className={TestITCss.sliderImg}>
+                                        <img src={Slide4} alt="" />
+                                    </div>
+                                </NavLink>
                             </div>
                         </SplideSlide>
-                        <SplideSlide>
+                        <SplideSlide className={TestITCss.splideItem}>
+                            {' '}
+                            <div className={TestITCss.slider}>
+                                <div className={TestITCss.sliderTitle}>
+                                    Marketer
+                                </div>
+                                <NavLink to="/TestITQuestions/Question1">
+                                    {' '}
+                                    <div className={TestITCss.sliderImg}>
+                                        <img src={Slide5} alt="" />
+                                    </div>
+                                </NavLink>
+                            </div>
+                        </SplideSlide>
+                        <SplideSlide className={TestITCss.splideItem}>
+                            {' '}
+                            <div className={TestITCss.slider}>
+                                <div className={TestITCss.sliderTitle}>
+                                    Back-end
+                                </div>
+                                <NavLink to="/TestITQuestions/Question1">
+                                    {' '}
+                                    <div className={TestITCss.sliderImg}>
+                                        <img src={Slide6} alt="" />
+                                    </div>
+                                </NavLink>
+                            </div>
+                        </SplideSlide>
+                        <SplideSlide className={TestITCss.splideItem}>
                             {' '}
                             <div className={TestITCss.slider}>
                                 <div className={TestITCss.sliderTitle}>QA</div>
-                                <div className={TestITCss.sliderImg}>
-                                    <img src={Slide3} alt="" />
-                                </div>
+                                <NavLink to="/TestITQuestions/Question1">
+                                    {' '}
+                                    <div className={TestITCss.sliderImg}>
+                                        <img src={Slide7} alt="" />
+                                    </div>
+                                </NavLink>
                             </div>
                         </SplideSlide>
-                        <SplideSlide>
+                        <SplideSlide className={TestITCss.splideItem}>
                             {' '}
                             <div className={TestITCss.slider}>
-                                <div className={TestITCss.sliderTitle}>HR</div>
-                                <div className={TestITCss.sliderImg}>
-                                    <img src={Slide4} alt="" />
-                                </div>
+                                <div className={TestITCss.sliderTitle}>PM</div>
+                                <NavLink to="/TestITQuestions/Question1">
+                                    {' '}
+                                    <div className={TestITCss.sliderImg}>
+                                        <img src={Slide8} alt="" />
+                                    </div>
+                                </NavLink>
                             </div>
                         </SplideSlide>
                     </SplideTrack>

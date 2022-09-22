@@ -51,7 +51,9 @@
     line-height: 140%;
     text-shadow: 0px 0px 10px #2692ec;
 }
-
+.splideItems li {
+    width: 70vw !important;
+}
 .sliderBtn {
     width: 58.75vw;
     height: 5.96vh;
@@ -74,6 +76,12 @@
 @media (min-width: 434px) {
     .title {
         margin-top: 8.28vh;
+    }
+}
+
+@media (max-width: 450px) {
+    .testIT {
+        height: 84vh;
     }
 }
 

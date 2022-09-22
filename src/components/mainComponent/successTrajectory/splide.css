@@ -19,6 +19,16 @@
     z-index: 1;
 }
 
+.lala.is-active {
+    border: 3px solid green !important;
+    background-image: url(./img/characters/Back-end_selected.jpg);
+    background-size: contain;
+}
+
+.lala.is-active img {
+    display: none;
+}
+
 .splide__customArrow--prev {
     left: 0.5em;
 }

@@ -24,6 +24,11 @@
     text-align: center;
     text-shadow: 0px 0px 10px #2692ec;
 }
+
+.slideTitle {
+    color: white;
+    margin-bottom: 2vh;
+}
 .subTitle {
     color: white;
     margin-top: 1.75vh;
@@ -57,6 +62,16 @@
 @media (min-width: 380px) {
     .theoryCourse {
         margin-top: 23.28%;
+    }
+}
+
+@media (max-width: 450px) {
+    .splide {
+        height: 20vh;
+    }
+
+    .SuccessTrajectory {
+        height: 92vh;
     }
 }
 

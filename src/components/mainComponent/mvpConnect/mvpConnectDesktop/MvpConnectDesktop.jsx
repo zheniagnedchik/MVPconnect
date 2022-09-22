@@ -99,9 +99,9 @@ const MvpConnectDesktop = () => {
                     </div>
                 </div>
             </div>
-            <div className={MvpConnectDesktopCss.participant}>
+            {/* <div className={MvpConnectDesktopCss.participant}>
                 <img src={Participants} alt="" />
-            </div>
+            </div> */}
         </div>
     );
 };

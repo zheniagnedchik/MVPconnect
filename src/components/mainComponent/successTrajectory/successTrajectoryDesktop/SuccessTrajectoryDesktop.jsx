@@ -2,17 +2,31 @@ import SuccessTrajectoryCss from './SuccessTrajectoryDesktop.module.css';
 import VectorRight from './img/VectorRight.svg';
 import VectorLeft from './img/VectorLeft.svg';
 import { useRef, useEffect } from 'react';
-import slide1 from './img/slide1.svg';
-import slide2 from './img/slide2.svg';
-import slide3 from './img/slide3.svg';
+import slide1 from './img/characters/Back-end.jpg';
+import slide1blue from './img/characters/Back-end_selected.jpg';
+import slide2 from './img/characters/Front-end.jpg';
+import slide2blue from './img/characters/Front-end_selected.jpg';
+import slide3 from './img/characters/HR.jpg';
+import slide3blue from './img/characters/HR_selected.jpg';
+import slide4 from './img/characters/Marketer.jpg';
+import slide4blue from './img/characters/Marketer_selected.jpg';
+import slide5 from './img/characters/PM.jpg';
+import slide5blue from './img/characters/PM_selected.jpg';
+import slide6 from './img/characters/PrdM.jpg';
+import slide6blue from './img/characters/PrdM_selected.jpg';
+import slide7 from './img/characters/QA.jpg';
+import slide7blue from './img/characters/QA_selected.jpg';
+import slide8 from './img/characters/UXUI.jpg';
+import slide8blue from './img/characters/UXUI_selected.jpg';
 import table from './img/table.svg';
-import slide4 from './img/slide4.svg';
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/skyblue';
 import './splide.css';
 
 const SuccessTrajectoryDesktop = () => {
+    const [changeImg, setChangeImg] = useState(null);
     const slider1 = useRef();
     const slider2 = useRef();
 
@@ -35,6 +49,9 @@ const SuccessTrajectoryDesktop = () => {
                 </div>
             </div>
             <Splide
+                onActive={(splide, Slide) => {
+                    setChangeImg(Slide.slideIndex);
+                }}
                 ref={(slider) => (slider1.current = slider)}
                 hasTrack={false}
                 options={{
@@ -42,6 +59,7 @@ const SuccessTrajectoryDesktop = () => {
                     gap: 0,
                     perPage: 3,
                     rewind: true,
+
                     rewindByDrag: true,
                     isNavigation: true,
                     pagination: false,
@@ -76,7 +94,14 @@ const SuccessTrajectoryDesktop = () => {
                                     UX
                                 </div>
                                 <div className={SuccessTrajectoryCss.sliderImg}>
-                                    <img src={slide1} alt="" />
+                                    <img
+                                        src={
+                                            changeImg === 0
+                                                ? slide8blue
+                                                : slide8
+                                        }
+                                        alt=""
+                                    />
                                 </div>
                             </div>
                         </SplideSlide>
@@ -90,7 +115,14 @@ const SuccessTrajectoryDesktop = () => {
                                     PM
                                 </div>
                                 <div className={SuccessTrajectoryCss.sliderImg}>
-                                    <img src={slide2} alt="" />
+                                    <img
+                                        src={
+                                            changeImg === 1
+                                                ? slide5blue
+                                                : slide5
+                                        }
+                                        alt=""
+                                    />
                                 </div>
                             </div>
                         </SplideSlide>
@@ -104,7 +136,14 @@ const SuccessTrajectoryDesktop = () => {
                                     QA
                                 </div>
                                 <div className={SuccessTrajectoryCss.sliderImg}>
-                                    <img src={slide3} alt="" />
+                                    <img
+                                        src={
+                                            changeImg === 2
+                                                ? slide7blue
+                                                : slide7
+                                        }
+                                        alt=""
+                                    />
                                 </div>
                             </div>
                         </SplideSlide>
@@ -118,7 +157,14 @@ const SuccessTrajectoryDesktop = () => {
                                     HR
                                 </div>
                                 <div className={SuccessTrajectoryCss.sliderImg}>
-                                    <img src={slide4} alt="" />
+                                    <img
+                                        src={
+                                            changeImg === 3
+                                                ? slide3blue
+                                                : slide3
+                                        }
+                                        alt=""
+                                    />
                                 </div>
                             </div>
                         </SplideSlide>
@@ -129,10 +175,17 @@ const SuccessTrajectoryDesktop = () => {
                                 <div
                                     className={`${SuccessTrajectoryCss.sliderTitle} titleTest`}
                                 >
-                                    UX
+                                    Frontend
                                 </div>
                                 <div className={SuccessTrajectoryCss.sliderImg}>
-                                    <img src={slide1} alt="" />
+                                    <img
+                                        src={
+                                            changeImg === 4
+                                                ? slide2blue
+                                                : slide2
+                                        }
+                                        alt=""
+                                    />
                                 </div>
                             </div>
                         </SplideSlide>
@@ -143,10 +196,17 @@ const SuccessTrajectoryDesktop = () => {
                                 <div
                                     className={`${SuccessTrajectoryCss.sliderTitle} titleTest`}
                                 >
-                                    PM
+                                    Back-end
                                 </div>
                                 <div className={SuccessTrajectoryCss.sliderImg}>
-                                    <img src={slide2} alt="" />
+                                    <img
+                                        src={
+                                            changeImg === 5
+                                                ? slide1blue
+                                                : slide1
+                                        }
+                                        alt=""
+                                    />
                                 </div>
                             </div>
                         </SplideSlide>
@@ -157,10 +217,17 @@ const SuccessTrajectoryDesktop = () => {
                                 <div
                                     className={`${SuccessTrajectoryCss.sliderTitle} titleTest`}
                                 >
-                                    QA
+                                    PrdM
                                 </div>
                                 <div className={SuccessTrajectoryCss.sliderImg}>
-                                    <img src={slide3} alt="" />
+                                    <img
+                                        src={
+                                            changeImg === 6
+                                                ? slide6blue
+                                                : slide6
+                                        }
+                                        alt=""
+                                    />
                                 </div>
                             </div>
                         </SplideSlide>
@@ -171,10 +238,17 @@ const SuccessTrajectoryDesktop = () => {
                                 <div
                                     className={`${SuccessTrajectoryCss.sliderTitle} titleTest`}
                                 >
-                                    HR
+                                    Marketer
                                 </div>
                                 <div className={SuccessTrajectoryCss.sliderImg}>
-                                    <img src={slide4} alt="" />
+                                    <img
+                                        src={
+                                            changeImg === 7
+                                                ? slide4blue
+                                                : slide4
+                                        }
+                                        alt=""
+                                    />
                                 </div>
                             </div>
                         </SplideSlide>
@@ -199,9 +273,6 @@ const SuccessTrajectoryDesktop = () => {
                         arrows: false,
                     }}
                 >
-                    <SplideSlide className={SuccessTrajectoryCss.table}>
-                        <img src={table} alt="" />
-                    </SplideSlide>
                     <SplideSlide className={SuccessTrajectoryCss.table}>
                         <img src={table} alt="" />
                     </SplideSlide>

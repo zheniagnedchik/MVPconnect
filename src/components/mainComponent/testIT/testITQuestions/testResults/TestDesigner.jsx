@@ -1,6 +1,6 @@
 import TestResultsCss from './TestResults.module.css';
 
-import Slide1 from './img/slide1.svg';
+import Slide1 from './img/characters/UXUI.jpg';
 
 import { NavLink } from 'react-router-dom';
 

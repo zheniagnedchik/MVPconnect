@@ -94,31 +94,6 @@ const Practice = (props) => {
                                 </div>
                                 <div className={PracticeCss.resultWrapper}>
                                     <div className={PracticeCss.resultImg}>
-                                        <img src={result3} alt="" />
-                                    </div>
-
-                                    <div className={PracticeCss.result2}>
-                                        {' '}
-                                        <p>
-                                            Трудоустройство к партнерам MVP
-                                            connect
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className={PracticeCss.resultWrapper}>
-                                    <div className={PracticeCss.resultImg}>
-                                        <img src={result4} alt="" />
-                                    </div>
-
-                                    <div className={PracticeCss.result2}>
-                                        {' '}
-                                        <p>Трудоустройство в стартапы</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className={PracticeCss.resultItem}>
-                                <div className={PracticeCss.resultWrapper}>
-                                    <div className={PracticeCss.resultImg}>
                                         <img src={result5} alt="" />
                                     </div>
 
@@ -135,8 +110,35 @@ const Practice = (props) => {
                                     <div className={PracticeCss.result1}>
                                         {' '}
                                         <p>
+                                            {' '}
                                             Рекомендательное письмо от ментора
                                         </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={PracticeCss.resultItem}>
+                                <div className={PracticeCss.resultWrapper}>
+                                    <div className={PracticeCss.resultImg}>
+                                        <img src={result3} alt="" />
+                                    </div>
+
+                                    <div className={PracticeCss.result2}>
+                                        {' '}
+                                        <p>
+                                            {' '}
+                                            Трудоустройство к партнерам MVP
+                                            connect
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className={PracticeCss.resultWrapper}>
+                                    <div className={PracticeCss.resultImg}>
+                                        <img src={result4} alt="" />
+                                    </div>
+
+                                    <div className={PracticeCss.result2}>
+                                        {' '}
+                                        <p>Трудоустройство в стартапы</p>
                                     </div>
                                 </div>
                                 <div className={PracticeCss.resultWrapper}>
@@ -158,7 +160,10 @@ const Practice = (props) => {
 
                                     <div className={PracticeCss.result2}>
                                         {' '}
-                                        <p>Карта скилов</p>
+                                        <p>
+                                            Собственная платформа для
+                                            трудоустройства
+                                        </p>
                                     </div>
                                 </div>
                             </div>

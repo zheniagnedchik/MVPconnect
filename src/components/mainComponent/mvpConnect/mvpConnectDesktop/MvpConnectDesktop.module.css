@@ -135,3 +135,31 @@
         margin-top: 5%;
     }
 }
+
+@media (min-width: 2100px) {
+    .mvpImg img {
+        width: 8vw;
+    }
+
+    .info {
+        font-size: 1.5vmin;
+    }
+
+    .participant img {
+        width: 10vw;
+    }
+    .socialNetworkIcons img {
+        width: 2vw;
+    }
+
+    .number {
+        font-size: 1vmax;
+    }
+    .job img {
+        width: 10vw;
+    }
+
+    .buttonWrapper a {
+        width: 15%;
+    }
+}

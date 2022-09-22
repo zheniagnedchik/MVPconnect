@@ -126,3 +126,11 @@
         font-size: 1.8vmin;
     }
 }
+
+@media (min-width: 2100px) {
+    .btn {
+        width: 13.75vw;
+
+        font-size: 1vmax;
+    }
+}

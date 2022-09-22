@@ -187,3 +187,38 @@
         font-size: 1.5vmax;
     }
 }
+
+@media (min-width: 2100px) {
+    .btnBack p {
+        font-size: 1vmax;
+    }
+
+    .title {
+        font-size: 2vmax;
+    }
+
+    .subTitle {
+        font-size: 1.4vmax;
+    }
+
+    .questionNumber {
+        font-size: 1.5vmax;
+    }
+
+    .question {
+        font-size: 1.2vmax;
+    }
+
+    .options {
+        font-size: 1vmax !important;
+    }
+    .allQuestionNumbers {
+        font-size: 1.45vmax;
+    }
+    .testBtn {
+        width: 12.75vw;
+        height: 5.96vh;
+
+        font-size: 1.45vmax;
+    }
+}

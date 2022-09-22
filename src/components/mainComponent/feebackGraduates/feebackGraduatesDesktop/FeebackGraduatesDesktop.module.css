@@ -285,3 +285,17 @@
         width: 13vw;
     }
 }
+
+@media (min-width: 2100px) {
+    .sliderImg img {
+        width: 9vw;
+    }
+
+    .sliderTitle {
+        font-size: 1.3vmax;
+    }
+
+    .slider {
+        width: 18.75vw;
+    }
+}

@@ -167,12 +167,17 @@
         height: 75.55%;
     }
 }
-
+@media (max-width: 450px) {
+    .FeebackGraduates {
+        height: 84vh;
+    }
+}
 @media (min-width: 500px) {
     .slider {
         height: 75%;
     }
 }
+
 @media (min-width: 550px) {
     .slider {
         height: 75%;

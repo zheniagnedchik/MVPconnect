@@ -281,6 +281,11 @@
     font-size: 1.5vmax;
 }
 
+@media (max-width: 450px) {
+    .titleWrapper {
+        width: 70%;
+    }
+}
 @media (max-width: 800px) {
     .titleBtn {
         width: 62%;

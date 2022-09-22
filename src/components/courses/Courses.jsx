@@ -30,9 +30,12 @@ const Courses = (props) => {
                     </div>
                     <div className={CoursesCss.itemWrapper}>
                         <div className={CoursesCss.item}>
-                            <div className={CoursesCss.img}>
-                                <img src={front} alt="" />
-                            </div>
+                            <NavLink to="/Frontend">
+                                {' '}
+                                <div className={CoursesCss.img}>
+                                    <img src={front} alt="" />
+                                </div>{' '}
+                            </NavLink>
                             <div className={CoursesCss.itemTitle}>
                                 Front-end разработчик
                             </div>
@@ -44,9 +47,12 @@ const Courses = (props) => {
                             </NavLink>
                         </div>
                         <div className={CoursesCss.item}>
-                            <div className={CoursesCss.img}>
-                                <img src={ux} alt="" />
-                            </div>
+                            <NavLink to="/Designer">
+                                {' '}
+                                <div className={CoursesCss.img}>
+                                    <img src={ux} alt="" />
+                                </div>
+                            </NavLink>
                             <div className={CoursesCss.itemTitle}>
                                 UX/UI designer
                             </div>
@@ -59,9 +65,12 @@ const Courses = (props) => {
                         </div>
 
                         <div className={CoursesCss.item}>
-                            <div className={CoursesCss.imgPy}>
-                                <img src={Py} alt="" />
-                            </div>
+                            <NavLink to="/Python">
+                                {' '}
+                                <div className={CoursesCss.imgPy}>
+                                    <img src={Py} alt="" />
+                                </div>{' '}
+                            </NavLink>
                             <div className={CoursesCss.itemTitle}>Python</div>
                             <NavLink to="/Python">
                                 {' '}
