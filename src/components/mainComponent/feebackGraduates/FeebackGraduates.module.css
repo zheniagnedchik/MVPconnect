@@ -167,6 +167,11 @@
         height: 75.55%;
     }
 }
+@media (min-width: 390px) and (max-width: 440px) {
+    .titleWrapper {
+        margin-top: 33.28%;
+    }
+}
 @media (max-width: 450px) {
     .FeebackGraduates {
         height: 84vh;
