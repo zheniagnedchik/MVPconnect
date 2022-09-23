@@ -11,10 +11,12 @@ const Practice = () => {
     return (
         <div className={PracticeCss.Practice}>
             <div className={PracticeCss.titleWrapper}>
-                <div className={PracticeCss.title}>Практика</div>
+                <div className={PracticeCss.title}>
+                    Boot camp (практический курс)
+                </div>
                 <div className={PracticeCss.subTitle}>
-                    Большие проекты, смелые идеи и новые технологии станут
-                    частью твоей работы!
+                    Присоединись к команде, возьми в работу настоящий проект.
+                    Получи свой опыт!
                 </div>
             </div>
             <Splide

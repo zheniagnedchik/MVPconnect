@@ -2,9 +2,9 @@ import HistorySuccessDesktopCss from './HistorySuccessDesktop.module.css';
 import VectorRight from './img/VectorRight.svg';
 import VectorLeft from './img/VectorLeft.svg';
 
-import slider2 from './img/slider2.svg';
-import slider3 from './img/slider3.svg';
-import slider4 from './img/slider3.svg';
+import David from './img/David.svg';
+import Novikow from './img/Novikow.svg';
+import Ruslan from './img/Ruslan.svg';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import { Video } from '@splidejs/splide-extension-video';
 import '@splidejs/react-splide/css/skyblue';
@@ -65,19 +65,19 @@ const HistorySuccessDesktop = () => {
                             className="splide__slide splide__Customslide"
                             data-splide-youtube="https://www.youtube.com/watch?v=KST8GEDhmBI"
                         >
-                            <img src={slider2} />
+                            <img src={Ruslan} />
                         </li>
                         <li
                             className="splide__slide splide__Customslide"
                             data-splide-youtube="https://www.youtube.com/watch?v=VxlWXEsymGM"
                         >
-                            <img src={slider2} />
+                            <img src={David} />
                         </li>
                         <li
                             className="splide__slide splide__Customslide"
                             data-splide-youtube="https://www.youtube.com/watch?v=hhFYcnwzWEY"
                         >
-                            <img src={slider2} />
+                            <img src={Novikow} />
                         </li>
                     </SplideTrack>
                 </div>

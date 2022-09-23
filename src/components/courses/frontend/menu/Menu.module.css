@@ -50,3 +50,16 @@
     font-family: 'Roboto', Arial, sans-serif;
     border-radius: 10px;
 }
+
+@media (min-width: 2100px) {
+    .dMenu {
+        font-size: 1.2vmax;
+    }
+
+    .dWrapper {
+        width: 45%;
+    }
+    .dWrapper div {
+        height: 7vh;
+    }
+}

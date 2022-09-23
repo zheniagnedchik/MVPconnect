@@ -97,3 +97,22 @@
         width: 80%;
     }
 }
+
+@media (min-width: 2100px) {
+    .title {
+        font-size: 2vmax;
+    }
+
+    .subTitle p {
+        font-size: 1vmax;
+    }
+    .subTitle {
+        font-size: 1.4vmax;
+    }
+    .accordionWrapper {
+        font-size: 1.2vmax;
+    }
+    .accordionPlus {
+        font-size: 2vmax;
+    }
+}

@@ -13,12 +13,14 @@ const PracticeDesktop = () => {
     return (
         <div className={PracticeDesktopCss.PracticeDesktop}>
             <div className={PracticeDesktopCss.titleWrapper}>
-                <div className={PracticeDesktopCss.title}>Практика</div>
+                <div className={PracticeDesktopCss.title}>
+                    Boot camp (практический курс)
+                </div>
                 <div className={PracticeDesktopCss.subTitle}>
                     {' '}
                     <p>
-                        Большие проекты, смелые идеи и новые технологии станут
-                        частью твоей работы!
+                        Присоединись к команде, возьми в работу настоящий
+                        проект. Получи свой опыт!
                     </p>
                 </div>
             </div>

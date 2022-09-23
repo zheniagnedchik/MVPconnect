@@ -93,7 +93,10 @@
 .option p {
     margin-left: 3.12vw;
 }
-
+.option input {
+    width: 25px;
+    height: 25px;
+}
 .allQuestionNumbers {
     font-family: 'Open Sans';
     font-style: normal;

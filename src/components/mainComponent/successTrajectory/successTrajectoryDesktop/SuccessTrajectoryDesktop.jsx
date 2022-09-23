@@ -18,7 +18,15 @@ import slide7 from './img/characters/QA.jpg';
 import slide7blue from './img/characters/QA_selected.jpg';
 import slide8 from './img/characters/UXUI.jpg';
 import slide8blue from './img/characters/UXUI_selected.jpg';
-import table from './img/table.svg';
+
+import Back from './img/Back.svg';
+import Front from './img/Front.svg';
+import HR from './img/HR.svg';
+import Marketer from './img/Marketer.svg';
+import PM from './img/PM.svg';
+import PrdM from './img/PrdM.svg';
+import QA from './img/QA.svg';
+import UI from './img/UI.svg';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
@@ -274,28 +282,28 @@ const SuccessTrajectoryDesktop = () => {
                     }}
                 >
                     <SplideSlide className={SuccessTrajectoryCss.table}>
-                        <img src={table} alt="" />
+                        <img src={UI} alt="" />
                     </SplideSlide>
                     <SplideSlide className={SuccessTrajectoryCss.table}>
-                        <img src={table} alt="" />
+                        <img src={PM} alt="" />
                     </SplideSlide>
                     <SplideSlide className={SuccessTrajectoryCss.table}>
-                        <img src={table} alt="" />
+                        <img src={QA} alt="" />
                     </SplideSlide>
                     <SplideSlide className={SuccessTrajectoryCss.table}>
-                        <img src={table} alt="" />
+                        <img src={HR} alt="" />
                     </SplideSlide>
                     <SplideSlide className={SuccessTrajectoryCss.table}>
-                        <img src={table} alt="" />
+                        <img src={Front} alt="" />
                     </SplideSlide>
                     <SplideSlide className={SuccessTrajectoryCss.table}>
-                        <img src={table} alt="" />
+                        <img src={Back} alt="" />
                     </SplideSlide>
                     <SplideSlide className={SuccessTrajectoryCss.table}>
-                        <img src={table} alt="" />
+                        <img src={PrdM} alt="" />
                     </SplideSlide>
                     <SplideSlide className={SuccessTrajectoryCss.table}>
-                        <img src={table} alt="" />
+                        <img src={Marketer} alt="" />
                     </SplideSlide>
                 </Splide>
             </div>

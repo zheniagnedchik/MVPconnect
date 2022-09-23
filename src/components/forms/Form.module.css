@@ -346,4 +346,50 @@
     .coursesTitle {
         font-size: 3.5vmax;
     }
-} ;
+}
+
+@media (min-width: 2100px) {
+    .inputWrapper input {
+        font-size: 1vmax;
+    }
+    .overhead {
+        font-size: 1vmax;
+    }
+    .title {
+        font-size: 2vmax;
+    }
+
+    .inputWrapper label {
+        font-size: 1vmax;
+    }
+    .inputWrapper input {
+        font-size: 1vmax;
+    }
+    .profTitle {
+        font-size: 1vmax;
+    }
+    .profWrapper label {
+        font-size: 1vmax;
+    }
+    .footerInfo {
+        font-size: 1vmax;
+    }
+    .footerBtn {
+        font-size: 1vmax;
+    }
+
+    .profWrapper input[type='text'] {
+        font-size: 1vmax;
+    }
+    .coursesTitle {
+        font-size: 2vmax;
+    }
+
+    .footerBtn {
+        width: 80%;
+        height: 5vh;
+
+        margin: 0 auto;
+        font-size: 1vmax;
+    }
+}

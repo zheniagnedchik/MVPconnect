@@ -85,3 +85,51 @@
         font-size: 2vmax;
     }
 }
+
+@media (min-width: 900px) and (max-width: 1200px) {
+    .cardBtn {
+        height: 6vh;
+    }
+    .currency1,
+    .currency2,
+    .currency3 {
+        font-size: 2vmax;
+    }
+}
+
+@media (min-width: 2100px) {
+    .CardWrapper {
+        width: 25%;
+    }
+    .CardWrapper p {
+        display: inline;
+    }
+    .monthPrice {
+        font-size: 2vmax;
+    }
+
+    .monthPrice p {
+        font-size: 2vmax;
+    }
+
+    .currency1 {
+        font-size: 2vmax;
+    }
+    .currency2 {
+        font-size: 2vmax;
+    }
+    .currency3 {
+        font-size: 2vmax;
+    }
+
+    .allPrice {
+        color: white;
+        font-size: 1.2vmax;
+    }
+
+    .cardBtn {
+        height: 5vh;
+
+        font-size: 1vmax;
+    }
+}

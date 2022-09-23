@@ -2,7 +2,7 @@
 
 .SuccessTrajectory {
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     background: black;
     margin-top: 6.28%;
 }
@@ -71,7 +71,7 @@
     }
 
     .SuccessTrajectory {
-        height: 92vh;
+        height: 75vh;
     }
 }
 

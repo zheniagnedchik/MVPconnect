@@ -391,3 +391,99 @@
         height: 5vh;
     }
 }
+
+@media (min-width: 2100px) {
+    .title {
+        font-size: 3.5vmax;
+    }
+    .subTitle {
+        font-size: 1.4vmax;
+    }
+
+    .titleBtn {
+        width: 30%;
+        height: 5vh;
+    }
+
+    .stagesTitle {
+        font-size: 2vmax;
+    }
+
+    .stagesSubTitle {
+        font-size: 1.5vmax;
+    }
+
+    .month p,
+    .month2 p,
+    .month3 p {
+        font-size: 1.5vmax;
+    }
+
+    .courseTitle {
+        font-size: 1.7vmax;
+    }
+
+    .courseSubTitle {
+        font-size: 1vmax;
+    }
+
+    .courseInfo {
+        font-size: 1vmax;
+    }
+
+    .courseShedule {
+        font-size: 1vmax;
+    }
+
+    .coursesBtn {
+        width: 15%;
+
+        height: 5vh;
+
+        font-size: 1vmax;
+    }
+
+    .mentor {
+        width: 37%;
+    }
+    .mentor img {
+        width: 100%;
+    }
+
+    .mentorInfo {
+        width: 40%;
+    }
+
+    .mentorName {
+        font-size: 1.5vmax;
+    }
+
+    .mentorProf {
+        font-size: 1vmax;
+    }
+
+    .mentorDescr {
+        font-size: 1vmax;
+    }
+
+    .programTitle {
+        font-size: 2vmax;
+    }
+
+    .footerNumber,
+    .footerMail {
+        font-size: 1.2vmax;
+    }
+
+    .footerDescr {
+        font-size: 1.2vmax;
+    }
+
+    .footerImg img {
+        width: 45%;
+    }
+
+    .socialNetworkIcons img {
+        width: 100%;
+    }
+}

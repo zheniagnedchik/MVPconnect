@@ -130,3 +130,39 @@
         width: 3.5vw;
     }
 }
+
+@media (min-width: 2100px) {
+    .img img {
+        width: 15vw;
+    }
+    .imgPy img {
+        width: 10.6vw;
+    }
+    .itemTitle {
+        font-size: 1.2vmax;
+    }
+
+    .btn {
+        font-size: 1.2vmax;
+    }
+    .subTitle {
+        font-size: 1.3vmax;
+    }
+    .title {
+        font-size: 2vmax;
+    }
+    .number,
+    .mail {
+        font-size: 1vmax;
+    }
+
+    .descr {
+        font-size: 1vmax;
+    }
+    .imgWrapper img {
+        width: 8vw;
+    }
+    .socialNetworkIcons img {
+        width: 2vw;
+    }
+}
