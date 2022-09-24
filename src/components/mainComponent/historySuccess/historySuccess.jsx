@@ -17,7 +17,7 @@ const HistorySuccess = () => {
             <div className={HistorySuccessCss.titleWrapper}>
                 <div className={HistorySuccessCss.title}>Истории успеха</div>
                 <div className={HistorySuccessCss.subTitle}>
-                    Как я стала айтишницей и заработала первый миллион...
+                    Как я стал айтишником и заработал первый миллион...
                 </div>
             </div>
             <Splide

@@ -379,16 +379,24 @@
     .titleBtn2 {
         font-size: 2vmax;
     }
+    .resultWrapper {
+        width: 100%;
+    }
     .resultImg {
-        width: 20%;
+        width: 10%;
     }
     .resultImg img {
         width: 100%;
     }
+
     .resultItem {
         width: 100%;
     }
     .result1 {
+        font-size: 2vmax;
+    }
+    .result2 {
+        width: 85%;
         font-size: 2vmax;
     }
     .allResults {

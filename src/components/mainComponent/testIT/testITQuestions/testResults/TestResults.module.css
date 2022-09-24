@@ -1,10 +1,10 @@
 .TestResults {
     width: 100%;
-    height: 105vh;
+    height: 100vh;
 }
 
 .resultImg {
-    margin-top: 5.52vh;
+    margin-top: 20.52vh;
 }
 .resultImg img {
     width: 90vw;
@@ -45,7 +45,7 @@
     background: #ffb81a;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
-    margin: 9.54vh auto 0;
+    margin: 5.54vh auto 0;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -96,13 +96,13 @@
     .resultBtn {
         width: 14.75vw;
         height: 4.76vh;
-        margin: 8.63vh auto 0;
+        margin: 5.63vh auto 0;
         font-size: 1.4vmax;
     }
 
     .resultImg img {
-        width: 30%;
-        margin-top: 4vh;
+        width: 25%;
+        margin-top: 24vh;
     }
 
     .titleOverhead {
@@ -114,6 +114,9 @@
 
     .subTitle {
         font-size: 1.45vmax;
+    }
+    .resultImg {
+        margin-top: 1.52vh;
     }
 }
 
