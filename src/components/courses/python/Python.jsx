@@ -58,12 +58,10 @@ const Python = (props) => {
             )}
             <div className={PythonCss.titleBack}>
                 <div className={PythonCss.titleWrapper}>
-                    <div className={PythonCss.title}>
-                        Курс Frontend разработчик
-                    </div>
+                    <div className={PythonCss.title}>Back-end разработчик</div>
                     <div className={PythonCss.subTitle}>
                         Теоретические и практические курсы по подготовке
-                        Frontend разработчиков на реальных проектах (стартапах)
+                        Back-end разработчиков на реальных проектах (стартапах)
                     </div>
                     <NavLink
                         to="/CourseForm"
@@ -77,7 +75,7 @@ const Python = (props) => {
                 <div className={PythonCss.blackBack}>
                     <div className={PythonCss.stagesTitleWrapper}>
                         <div className={PythonCss.stagesTitle}>
-                            Стадии подготовки Front-end разработчика в MVP
+                            Стадии подготовки Back-end разработчика в MVP
                             connect
                         </div>
                         <div className={PythonCss.stagesSubTitle}>
@@ -87,63 +85,40 @@ const Python = (props) => {
 
                     <div className={PythonCss.courses}>
                         <div className={PythonCss.month}>
-                            <p>1 месяц</p>
+                            <p>3 месяца</p>
                         </div>
                         <div className={PythonCss.course}>
                             <div className={PythonCss.courseTitle}>
                                 Базовый курс
                             </div>
                             <div className={PythonCss.courseSubTitle}>
-                                Javascript разработчик
+                                Back-end Python разработчик начальниый уровень
                             </div>
                             <div className={PythonCss.courseInfo}>
-                                Получите базовые знания о верстке сайтов.
-                                Изучите HTML5 и CSS3, освоите создание структуры
-                                сайта и работу с макетом, научитесь создавать
-                                адаптивные сайты.
+                                Получите базовые знания о работе с Python.
+                                Изучите кортежи, словари, циклы, функции,
+                                модули, пакеты и многое другое. Познакомитесь с
+                                базами данных и окружением Python
                             </div>
                             <div className={PythonCss.courseShedule}>
                                 Занятия каждую неделю по{' '}
-                                <b>Вторникам и Четвергам</b> <br /> с 18:30 до
-                                21:30
+                                <b>Вторникам и Четвергам</b> <br /> с 19:00 до
+                                21:15
                                 <br /> Формат - <b>online</b>
                             </div>
                         </div>
                         <div className={PythonCss.month2}>
-                            <p>1 месяц</p>
-                        </div>
-                        <div className={PythonCss.course2}>
-                            <div className={PythonCss.courseTitle}>
-                                Профессиональный курс React & React native
-                            </div>
-                            <div className={PythonCss.courseSubTitle}>
-                                Frontend разработчик
-                            </div>
-                            <div className={PythonCss.courseInfo}>
-                                Узнаете как проектировать клиентские приложения
-                                с использованием React, освоите настройки
-                                окружения. Поймёте, где есть смысл в
-                                использовании React, а где можно обойтись
-                                другими инструментами.
-                            </div>
-                            <div className={PythonCss.courseShedule}>
-                                Занятия каждую неделю по{' '}
-                                <b>Вторникам и Четвергам</b> <br /> с 18:30 до
-                                21:30
-                                <br /> Формат - <b>online</b>
-                            </div>
-                        </div>
-                        <div className={PythonCss.month3}>
                             <p>3 месяца</p>
                         </div>
-                        <div className={PythonCss.course3}>
+                        <div className={PythonCss.course2}>
                             <div className={PythonCss.courseTitle}>
                                 Практический курс (аналог стажировки в IT
                                 компании)
                             </div>
                             <div className={PythonCss.courseSubTitle}>
-                                Frontend разработчик <p> с опытом</p> командной
-                                работы на IT-проекте
+                                Junior Back-end Python разработчик
+                                <ins> с опытом</ins> командной работы на
+                                IT-проекте
                             </div>
                             <div className={PythonCss.courseInfo}>
                                 Закрепите полученный теоретический опыт,
@@ -152,15 +127,15 @@ const Python = (props) => {
                                 качественный продукт. Узнайте как на практике
                                 работают гибкие методологии и чем они помогают
                                 проектам.
-                            </div>
-                            <div className={PythonCss.courseShedule}>
-                                Занятия в <b> свободное время</b> <br />
+                                <br />
+                                <br />
+                                Занятия в <b> свободное время </b>
                                 связь с ментором ежедневно, в течении недели, по
-                                согласованию.
+                                согласованию. <br />
                                 <b>Суббота</b> - демонстрация результатов
                                 работы, их анализ, планирование нового спринта и
-                                проведение ретроспективы спринта.
-                                <br /> Формат - <b>online</b>
+                                проведение ретроспективы спринта. Формат -{' '}
+                                <b> online</b>
                             </div>
                         </div>
                     </div>
