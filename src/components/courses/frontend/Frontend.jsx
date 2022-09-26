@@ -19,6 +19,8 @@ import Card3 from './cards/Card3';
 import MenuDesktop from './menu/MenuDesktop';
 import { useState } from 'react';
 import MenuMobile from './menu/MenuMobile';
+import MvpConnect from '../../mainComponent/mvpConnect/MvpConnect';
+import MvpConnectDesktop from '../../mainComponent/mvpConnect/mvpConnectDesktop/MvpConnectDesktop';
 
 const Frontend = (props) => {
     props.ScrollTop();
@@ -226,77 +228,11 @@ const Frontend = (props) => {
 
                     {modules}
 
-                    <footer className={FrontendCss.footer}>
-                        <div className={FrontendCss.footerWrapper}>
-                            <div className={FrontendCss.footerImg}>
-                                <NavLink to="/">
-                                    {' '}
-                                    <img src={mvp} alt="" />
-                                </NavLink>
-                            </div>
-
-                            <div className={FrontendCss.footerInfo}>
-                                <a href="tel:+375447801236">
-                                    {' '}
-                                    <div className={FrontendCss.footerNumber}>
-                                        +375 44 780 12 36
-                                    </div>
-                                </a>
-                                <a href="mailto:info@mvp.by">
-                                    {' '}
-                                    <div className={FrontendCss.footerMail}>
-                                        info@mvp.by
-                                    </div>{' '}
-                                </a>
-                                <div className={FrontendCss.footerDescr}>
-                                    {' '}
-                                    ООО “ЭмВиПи коннект”
-                                    <br /> 220051, г. Минск, ул. Сергея Есенина,
-                                    130, кабинет 3
-                                    <br />
-                                    УНП: 193620230, ОКПО: 505945425000 BY06{' '}
-                                    <br />
-                                    ALFA 3012 2B99 8900 1027 0000, БИК: ALFABY2X{' '}
-                                    <br /> в ЗАО "Альфа-Банк", 220013 г.Минск,
-                                    ул.Сурганова, 43-47.
-                                </div>
-                            </div>
-                            <div className={FrontendCss.socialNetworkIcons}>
-                                {/* <a href="https://vk.com/">
-                                    {' '}
-                                    <img src={Vk} alt="" />{' '}
-                                </a> */}
-                                <a
-                                    href="https://www.facebook.com/people/Mvp-connect/100083144028399/"
-                                    target="_blank"
-                                >
-                                    {' '}
-                                    <img src={Facebook} alt="" />
-                                </a>
-                                <a
-                                    href="https://www.instagram.com/mvp.connect/"
-                                    target="_blank"
-                                >
-                                    {' '}
-                                    <img src={Inst} alt="" />
-                                </a>
-                                <a
-                                    href="https://www.linkedin.com/company/mvp-connect/"
-                                    target="_blank"
-                                >
-                                    {' '}
-                                    <img src={In} alt="" />{' '}
-                                </a>
-                                <a
-                                    href="https://t.me/alexander_balodis"
-                                    target="_blank"
-                                >
-                                    {' '}
-                                    <img src={Tel} alt="" />{' '}
-                                </a>
-                            </div>
-                        </div>
-                    </footer>
+                    {props.state.displaySize.isDesktop ? (
+                        <MvpConnectDesktop />
+                    ) : (
+                        <MvpConnect />
+                    )}
                 </div>
             </div>
         </div>

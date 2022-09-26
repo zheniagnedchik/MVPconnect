@@ -8,7 +8,7 @@ const MvpConnect = () => {
     return (
         <div className={MvpConnectCss.mvpConnect}>
             <div className={MvpConnectCss.linkWrapper}>
-                <Link to="#mainPage" smooth style={{ textDecoration: 'none' }}>
+                <Link to="#Up" smooth style={{ textDecoration: 'none' }}>
                     <div className={MvpConnectCss.down}>
                         <div className={MvpConnectCss.arrow}>
                             <img src={Vector} alt="" />

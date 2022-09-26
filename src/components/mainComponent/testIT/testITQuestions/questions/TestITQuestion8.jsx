@@ -23,8 +23,9 @@ const TestITQuestion8 = (props) => {
                         onClick={() => checkBtn(1)}
                         name="option"
                         type="radio"
+                        id="option0"
                     />
-                    <label htmlFor="option">выдумали интересный конкурс</label>
+                    <label htmlFor="option0">выдумали интересный конкурс</label>
                 </div>
 
                 <div className={TestITStartCss.option}>
@@ -32,16 +33,20 @@ const TestITQuestion8 = (props) => {
                         onClick={() => checkBtn(4)}
                         name="option"
                         type="radio"
+                        id="option1"
                     />
-                    <label htmlFor="option">приняли участие в состязании</label>
+                    <label htmlFor="option1">
+                        приняли участие в состязании
+                    </label>
                 </div>
                 <div className={TestITStartCss.option}>
                     <input
                         onClick={() => checkBtn(2)}
                         name="option"
                         type="radio"
+                        id="option2"
                     />
-                    <label htmlFor="option">
+                    <label htmlFor="option2">
                         оформили декорации для соревнований
                     </label>
                 </div>
@@ -50,8 +55,9 @@ const TestITQuestion8 = (props) => {
                         onClick={() => checkBtn(3)}
                         name="option"
                         type="radio"
+                        id="option3"
                     />
-                    <label htmlFor="option">
+                    <label htmlFor="option3">
                         организовали конкурс и управляли им{' '}
                     </label>
                 </div>

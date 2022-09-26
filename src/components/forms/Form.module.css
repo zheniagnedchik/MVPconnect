@@ -3,11 +3,20 @@
     color: white;
 }
 .formWrapper {
-    padding: 10% 0;
+    padding: 5% 0;
 
     width: 60%;
 
     margin: 0 auto;
+}
+
+.cross {
+    width: 5%;
+    margin-left: 95%;
+    margin-bottom: 5%;
+}
+.cross img {
+    width: 100%;
 }
 .formItem {
     display: flex;
@@ -219,6 +228,11 @@
 }
 
 @media (max-width: 800px) {
+    .cross {
+        width: 10%;
+        margin-left: 90%;
+        margin-bottom: 5%;
+    }
     .formWrapper {
         width: 80%;
     }
@@ -349,6 +363,14 @@
 }
 
 @media (min-width: 2100px) {
+    .cross {
+        width: 3%;
+        margin-left: 95%;
+        margin-bottom: 5%;
+    }
+    .cross img {
+        width: 100%;
+    }
     .inputWrapper input {
         font-size: 1vmax;
     }

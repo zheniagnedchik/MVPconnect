@@ -24,8 +24,9 @@ const TestITQuestion1 = (props) => {
                         onClick={() => checkBtn(1)}
                         name="option"
                         type="radio"
+                        id="option0"
                     />
-                    <label htmlFor="option">
+                    <label htmlFor="option0">
                         анализировать информацию и принимать нестандартные
                         решения{' '}
                     </label>
@@ -35,8 +36,9 @@ const TestITQuestion1 = (props) => {
                         onClick={() => checkBtn(2)}
                         name="option"
                         type="radio"
+                        id="option1"
                     />
-                    <label htmlFor="option">
+                    <label htmlFor="option1">
                         работать нестандартно и находить новые методы и подходы{' '}
                     </label>
                 </div>
@@ -45,8 +47,9 @@ const TestITQuestion1 = (props) => {
                         onClick={() => checkBtn(3)}
                         name="option"
                         type="radio"
+                        id="option2"
                     />
-                    <label htmlFor="option">
+                    <label htmlFor="option2">
                         много общаться и вести взаимодействие с другими людьми{' '}
                     </label>
                 </div>
@@ -55,8 +58,9 @@ const TestITQuestion1 = (props) => {
                         onClick={() => checkBtn(4)}
                         name="option"
                         type="radio"
+                        id="option3"
                     />
-                    <label htmlFor="option">
+                    <label htmlFor="option3">
                         сделать карьеру и увеличить социальный статус
                     </label>
                 </div>

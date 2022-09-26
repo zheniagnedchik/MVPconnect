@@ -23,8 +23,9 @@ const TestITQuestion5 = (props) => {
                         onClick={() => checkBtn(1)}
                         name="option"
                         type="radio"
+                        id="option0"
                     />
-                    <label htmlFor="option">
+                    <label htmlFor="option0">
                         скрупулезно все проверить и взвесить{' '}
                     </label>
                 </div>
@@ -33,8 +34,9 @@ const TestITQuestion5 = (props) => {
                         onClick={() => checkBtn(4)}
                         name="option"
                         type="radio"
+                        id="option1"
                     />
-                    <label htmlFor="option">
+                    <label htmlFor="option1">
                         отыскать необычное решение, придумать новый способ{' '}
                     </label>
                 </div>
@@ -44,8 +46,9 @@ const TestITQuestion5 = (props) => {
                         onClick={() => checkBtn(3)}
                         name="option"
                         type="radio"
+                        id="option2"
                     />
-                    <label htmlFor="option">
+                    <label htmlFor="option2">
                         стараетесь выслушать всех и выбрать оптимальный вариант
                     </label>
                 </div>
@@ -54,8 +57,9 @@ const TestITQuestion5 = (props) => {
                         onClick={() => checkBtn(2)}
                         name="option"
                         type="radio"
+                        id="option3"
                     />
-                    <label htmlFor="option">
+                    <label htmlFor="option3">
                         изучить всю информацию и принять решение самостоятельно{' '}
                     </label>
                 </div>

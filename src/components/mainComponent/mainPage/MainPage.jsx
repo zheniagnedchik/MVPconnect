@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom';
 
 const MainPage = (props) => {
     return (
-        <div className={MainPageCss.mainWrapper} id="mainPage">
+        <div className={MainPageCss.mainWrapper}>
             <div className={MainPageCss.mainPage}>
                 {props.displaySize.isDesktop ? (
                     <BurgerMenuDesktop />

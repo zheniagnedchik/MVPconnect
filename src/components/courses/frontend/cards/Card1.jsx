@@ -6,8 +6,7 @@ const Card1 = (props) => {
         <div className={CardsCss.Card}>
             <div className={CardsCss.CardWrapper}>
                 <div className={CardsCss.monthPrice}>
-                    В месяц <br />
-                    475 <p> BYN</p>
+                    В месяц 475 <p> BYN</p>
                 </div>
                 <div className={CardsCss.currency}>
                     <p className={CardsCss.currency1}>11 000 RUB</p>{' '}

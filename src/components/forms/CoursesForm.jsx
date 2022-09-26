@@ -6,6 +6,7 @@ import '@splidejs/react-splide/css/skyblue';
 import './splide.css';
 import VectorRight from './img/VectorRight.svg';
 import VectorLeft from './img/VectorLeft.svg';
+import X from './img/X.webp';
 import DesktopSplider from './spliders/DesktopSplider';
 import MobileSplider from './spliders/MobileSplider';
 import axios from 'axios';
@@ -17,7 +18,6 @@ const CourseForm = (props) => {
 
     const slider1 = useRef();
     const [btnCheck, setBtnCheck] = useState(false);
-    const [inputName, setinputName] = useState('');
     const [inputTel, setinputTel] = useState('');
     const [inputNick, setinputNick] = useState('');
     const [radioSoc, setradioSoc] = useState('');
@@ -59,18 +59,17 @@ const CourseForm = (props) => {
 
     const checkBtn = (e) => {
         if (
-            e.currentTarget[0].value === '' ||
-            e.currentTarget[8].value === '' ||
-            (!e.currentTarget[2].checked &&
+            e.currentTarget[7].value === '' ||
+            (!e.currentTarget[1].checked &&
+                !e.currentTarget[2].checked &&
                 !e.currentTarget[3].checked &&
                 !e.currentTarget[4].checked &&
-                !e.currentTarget[5].checked &&
-                !e.currentTarget[6].checked)
+                !e.currentTarget[5].checked)
         ) {
             setBtnCheck(false);
         } else if (
-            e.currentTarget[6].checked &&
-            e.currentTarget[7].value === ''
+            e.currentTarget[5].checked &&
+            e.currentTarget[6].value === ''
         ) {
             setBtnCheck(false);
         } else {
@@ -88,7 +87,6 @@ const CourseForm = (props) => {
         base('Sheet1').create([
             {
                 fields: {
-                    inputName: inputName,
                     inputTel: inputTel,
                     inputNick: inputNick,
                     radioSoc: radioSoc,
@@ -103,6 +101,12 @@ const CourseForm = (props) => {
     return (
         <div className={FormCss.PracticeForm}>
             <div className={FormCss.formWrapper}>
+                <div className={FormCss.cross}>
+                    <NavLink to="/">
+                        {' '}
+                        <img src={X} alt="" />{' '}
+                    </NavLink>
+                </div>
                 <div className={FormCss.formItem}>
                     <div className={FormCss.overhead}>Форма записи на</div>
 
@@ -194,17 +198,6 @@ const CourseForm = (props) => {
                         action=""
                     >
                         <div className={FormCss.inputWrapper}>
-                            <div className={FormCss.inputItem}>
-                                <label htmlFor="name">Ваше имя*</label>{' '}
-                                <input
-                                    value={inputName}
-                                    onChange={(e) =>
-                                        setinputName(e.target.value)
-                                    }
-                                    name="name"
-                                    type="text"
-                                />
-                            </div>
                             <div className={FormCss.inputItem}>
                                 <label htmlFor="tel">Телефон для связи</label>{' '}
                                 <input
@@ -315,7 +308,10 @@ const CourseForm = (props) => {
                             договора и даете согласие на обработку своих
                             персональных данных. С договором можно ознакомиться
                             по{' '}
-                            <a href="https://drive.google.com/file/d/1Epnq1yeZ_ePRwbIPsAwxi1kFXwOZFxoo/view?usp=sharing">
+                            <a
+                                target="_blank"
+                                href="https://drive.google.com/file/d/1Epnq1yeZ_ePRwbIPsAwxi1kFXwOZFxoo/view?usp=sharing"
+                            >
                                 {' '}
                                 ссылке
                             </a>

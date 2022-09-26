@@ -23,32 +23,36 @@ const TestITQuestion9 = (props) => {
                         onClick={() => checkBtn(1)}
                         name="option"
                         type="radio"
+                        id="option0"
                     />
-                    <label htmlFor="option">гуманитарной</label>
+                    <label htmlFor="option0">гуманитарной</label>
                 </div>
                 <div className={TestITStartCss.option}>
                     <input
                         onClick={() => checkBtn(2)}
                         name="option"
                         type="radio"
+                        id="option1"
                     />
-                    <label htmlFor="option">творческой</label>
+                    <label htmlFor="option1">творческой</label>
                 </div>
                 <div className={TestITStartCss.option}>
                     <input
                         onClick={() => checkBtn(3)}
                         name="option"
                         type="radio"
+                        id="option2"
                     />
-                    <label htmlFor="option">управления/ менеджмента </label>
+                    <label htmlFor="option2">управления/ менеджмента </label>
                 </div>
                 <div className={TestITStartCss.option}>
                     <input
                         onClick={() => checkBtn(4)}
                         name="option"
                         type="radio"
+                        id="option3"
                     />
-                    <label htmlFor="option">технической</label>
+                    <label htmlFor="option3">технической</label>
                 </div>
             </div>
 
