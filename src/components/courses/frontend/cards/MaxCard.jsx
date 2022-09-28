@@ -20,7 +20,11 @@ const MaxCard = (props) => {
                         {' '}
                         <b>
                             {' '}
-                            2 499 BYN <br /> 58 100 RUB / 987 USD{' '}
+                            {/* {Math.round(
+                                props.Prices.frontend.max * props.actualCurrency
+                            )}{' '} */}
+                            2 499 {props.localCurrency} <br /> 58 100 RUB / 987
+                            USD
                         </b>{' '}
                     </p>
                     <br />

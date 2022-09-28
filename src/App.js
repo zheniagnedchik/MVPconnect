@@ -27,9 +27,30 @@ import TestITDesktop from './components/mainComponent/testIT/testITDesktop/TestI
 import Practice from './components/practice/Practice';
 import PracticeForm from './components/forms/PracticeForm';
 import CourseForm from './components/forms/CoursesForm';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import axios, { Axios } from 'axios';
 
 function App(props) {
     CheckWindowSize();
+
+    // Check IP User 'ipdata.co' (local currency) and fresh world currency data 'openexchangerates.org'
+    const [localCurrency, setLocalCurrency] = useState('');
+    const [infoUser, setInfoUser] = useState('');
+    useEffect(() => {
+        getData();
+    }, []);
+    async function getData() {
+        const result = await axios.get(
+            'https://api.ipdata.co?api-key=c082aec605ba6d37589594f514076ad25d5937dea099a05dd2df9695'
+        );
+        const result2 = await axios.get(
+            'https://openexchangerates.org/api/latest.json?app_id=5a3a240743d14c69b56d99b304d620a6'
+        );
+
+        setInfoUser(result2.data.rates);
+        setLocalCurrency(result.data.currency.code);
+    }
 
     return (
         <BrowserRouter>
@@ -43,6 +64,9 @@ function App(props) {
                                 creatingResult={props.creatingResult}
                                 clearResult={props.clearResult}
                                 linkResultTest={props.linkResultTest}
+                                Comments={props.Comments}
+                                Stars={props.Stars}
+                                Videos={props.Videos}
                             />
                         }
                     >
@@ -184,6 +208,9 @@ function App(props) {
                                 CheckNumberSplider={props.CheckNumberSplider}
                                 ScrollTop={props.ScrollTop}
                                 state={props.state}
+                                localCurrency={localCurrency}
+                                worldCurrency={infoUser}
+                                Prices={props.Prices}
                             />
                         }
                     />
@@ -194,6 +221,9 @@ function App(props) {
                                 CheckNumberSplider={props.CheckNumberSplider}
                                 ScrollTop={props.ScrollTop}
                                 state={props.state}
+                                localCurrency={localCurrency}
+                                worldCurrency={infoUser}
+                                Prices={props.Prices}
                             />
                         }
                     />
@@ -204,6 +234,9 @@ function App(props) {
                                 CheckNumberSplider={props.CheckNumberSplider}
                                 ScrollTop={props.ScrollTop}
                                 state={props.state}
+                                localCurrency={localCurrency}
+                                worldCurrency={infoUser}
+                                Prices={props.Prices}
                             />
                         }
                     />

@@ -36,6 +36,9 @@
 .splideWrapper {
     margin-top: 5.26vh;
 }
+.splideWrapper img {
+    width: 80%;
+}
 .slider {
     margin: auto;
     margin-top: 5.26vh;

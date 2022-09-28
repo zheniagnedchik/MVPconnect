@@ -43,14 +43,17 @@ const MainComponent = (props) => {
                     <Practice />
                 )}
                 {props.state.displaySize.isDesktop ? (
-                    <FeebackGraduatesDesktop />
+                    <FeebackGraduatesDesktop
+                        Comments={props.Comments}
+                        Stars={props.Stars}
+                    />
                 ) : (
-                    <FeebackGraduates />
+                    <FeebackGraduates Comments={props.Comments} />
                 )}
                 {props.state.displaySize.isDesktop ? (
-                    <HistorySuccessDesktop />
+                    <HistorySuccessDesktop Videos={props.Videos} />
                 ) : (
-                    <HistorySuccess />
+                    <HistorySuccess Videos={props.Videos} />
                 )}
                 {props.state.displaySize.isDesktop ? (
                     <SuccessTrajectoryDesktop />

@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import State from './states/state';
+import Prices from './states/Prices';
+import Comments from './states/Comments';
 import { creatingResult } from './states/state';
 import { clearResult } from './states/state';
 import { linkResultTest } from './states/state';
@@ -18,10 +20,14 @@ root.render(
         <App
             CheckNumberSplider={CheckNumberSplider}
             ScrollTop={ScrollTop}
+            Prices={Prices}
             state={State}
             creatingResult={creatingResult}
             clearResult={clearResult}
             linkResultTest={linkResultTest}
+            Comments={Comments.comments}
+            Stars={Comments.stars}
+            Videos={Comments.videos}
         />
     </React.StrictMode>
 );

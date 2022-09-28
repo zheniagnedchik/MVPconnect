@@ -19,35 +19,64 @@ import MvpConnectDesktop from '../../mainComponent/mvpConnect/mvpConnectDesktop/
 
 const Designer = (props) => {
     props.ScrollTop();
+    const [actualCurrency, setCurrency] = useState(
+        new Map(Object.entries(props.worldCurrency)).get(props.localCurrency)
+    );
+
     const [ChoiseModule, setChoiseModule] = useState(1);
 
     let modules = [
         <Accordion1 />,
         <Accordion2 />,
         <Accordion3 />,
-        <MaxCard CheckNumberSplider={props.CheckNumberSplider} />,
+        <MaxCard
+            CheckNumberSplider={props.CheckNumberSplider}
+            localCurrency={props.localCurrency}
+            actualCurrency={actualCurrency}
+            Prices={props.Prices}
+        />,
     ];
     if (ChoiseModule === 2) {
         modules = [
             <Accordion1 />,
-            <Card1 CheckNumberSplider={props.CheckNumberSplider} />,
+            <Card1
+                CheckNumberSplider={props.CheckNumberSplider}
+                localCurrency={props.localCurrency}
+                actualCurrency={actualCurrency}
+                Prices={props.Prices}
+            />,
         ];
     } else if (ChoiseModule === 3) {
         modules = [
             <Accordion2 />,
-            <Card2 CheckNumberSplider={props.CheckNumberSplider} />,
+            <Card2
+                CheckNumberSplider={props.CheckNumberSplider}
+                localCurrency={props.localCurrency}
+                actualCurrency={actualCurrency}
+                Prices={props.Prices}
+            />,
         ];
     } else if (ChoiseModule === 4) {
         modules = [
             <Accordion3 />,
-            <Card3 CheckNumberSplider={props.CheckNumberSplider} />,
+            <Card3
+                CheckNumberSplider={props.CheckNumberSplider}
+                localCurrency={props.localCurrency}
+                actualCurrency={actualCurrency}
+                Prices={props.Prices}
+            />,
         ];
     } else {
         modules = [
             <Accordion1 />,
             <Accordion2 />,
             <Accordion3 />,
-            <MaxCard CheckNumberSplider={props.CheckNumberSplider} />,
+            <MaxCard
+                CheckNumberSplider={props.CheckNumberSplider}
+                localCurrency={props.localCurrency}
+                actualCurrency={actualCurrency}
+                Prices={props.Prices}
+            />,
         ];
     }
     return (

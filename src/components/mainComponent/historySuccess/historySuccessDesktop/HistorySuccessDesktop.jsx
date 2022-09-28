@@ -2,14 +2,12 @@ import HistorySuccessDesktopCss from './HistorySuccessDesktop.module.css';
 import VectorRight from './img/VectorRight.svg';
 import VectorLeft from './img/VectorLeft.svg';
 
-import David from './img/David.svg';
-import Novikow from './img/Novikow.svg';
-import Ruslan from './img/Ruslan.svg';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import { Video } from '@splidejs/splide-extension-video';
 import '@splidejs/react-splide/css/skyblue';
 
-const HistorySuccessDesktop = () => {
+const HistorySuccessDesktop = (props) => {
+    console.log(props.Videos);
     return (
         <div className={HistorySuccessDesktopCss.HistorySuccessDesktop}>
             <div className={HistorySuccessDesktopCss.titleWrapper}>
@@ -61,24 +59,14 @@ const HistorySuccessDesktop = () => {
                 {' '}
                 <div className={HistorySuccessDesktopCss.splideWrapper}>
                     <SplideTrack>
-                        <li
-                            className="splide__slide splide__Customslide"
-                            data-splide-youtube="https://www.youtube.com/watch?v=KST8GEDhmBI"
-                        >
-                            <img src={Ruslan} />
-                        </li>
-                        <li
-                            className="splide__slide splide__Customslide"
-                            data-splide-youtube="https://www.youtube.com/watch?v=VxlWXEsymGM"
-                        >
-                            <img src={David} />
-                        </li>
-                        <li
-                            className="splide__slide splide__Customslide"
-                            data-splide-youtube="https://www.youtube.com/watch?v=hhFYcnwzWEY"
-                        >
-                            <img src={Novikow} />
-                        </li>
+                        {props.Videos.map((item, i) => (
+                            <li
+                                className="splide__slide splide__Customslide"
+                                data-splide-youtube={item.link}
+                            >
+                                <img src={item.img} />
+                            </li>
+                        ))}
                     </SplideTrack>
                 </div>
                 <div className="splide__arrows splide__arrows" />

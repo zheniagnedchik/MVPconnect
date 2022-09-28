@@ -27,6 +27,10 @@
     line-height: 140%;
 }
 
+.splideTrack {
+    height: 50vh;
+}
+
 .subTitle p {
     padding-top: 1.75vh;
     display: inline-block;

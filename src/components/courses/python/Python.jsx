@@ -2,12 +2,7 @@ import BurgerMenu from '../../mainComponent/mainPage/burgerMenu/BurgerMenu';
 import BurgerMenuDesktop from '../../mainComponent/mainPage/burgerMenuDesktop/BurgerMenuDesktop';
 import PythonCss from './Python.module.css';
 import mentor from './img/mentor.jpg';
-import mvp from './img/MvpConnect.svg';
-import Vk from './img/socialNetwork/vk.svg';
-import Facebook from './img/socialNetwork/f.svg';
-import Inst from './img/socialNetwork/inst.svg';
-import In from './img/socialNetwork/in.svg';
-import Tel from './img/socialNetwork/teleg.svg';
+
 import { NavLink } from 'react-router-dom';
 import Accordion1 from './accordions/Accordion1';
 import Accordion2 from './accordions/Accordion2';
@@ -24,31 +19,60 @@ import MvpConnectDesktop from '../../mainComponent/mvpConnect/mvpConnectDesktop/
 
 const Python = (props) => {
     props.ScrollTop();
+    const [actualCurrency, setCurrency] = useState(
+        new Map(Object.entries(props.worldCurrency)).get(props.localCurrency)
+    );
+
     const [ChoiseModule, setChoiseModule] = useState(2);
 
     let modules = [
         <Accordion1 />,
-        <Card1 CheckNumberSplider={props.CheckNumberSplider} />,
+        <Card1
+            CheckNumberSplider={props.CheckNumberSplider}
+            localCurrency={props.localCurrency}
+            actualCurrency={actualCurrency}
+            Prices={props.Prices}
+        />,
     ];
     if (ChoiseModule === 2) {
         modules = [
             <Accordion1 />,
-            <Card1 CheckNumberSplider={props.CheckNumberSplider} />,
+            <Card1
+                CheckNumberSplider={props.CheckNumberSplider}
+                localCurrency={props.localCurrency}
+                actualCurrency={actualCurrency}
+                Prices={props.Prices}
+            />,
         ];
     } else if (ChoiseModule === 3) {
         modules = [
             <Accordion2 />,
-            <Card2 CheckNumberSplider={props.CheckNumberSplider} />,
+            <Card2
+                CheckNumberSplider={props.CheckNumberSplider}
+                localCurrency={props.localCurrency}
+                actualCurrency={actualCurrency}
+                Prices={props.Prices}
+            />,
         ];
     } else if (ChoiseModule === 4) {
         modules = [
             <Accordion3 />,
-            <Card3 CheckNumberSplider={props.CheckNumberSplider} />,
+            <Card3
+                CheckNumberSplider={props.CheckNumberSplider}
+                localCurrency={props.localCurrency}
+                actualCurrency={actualCurrency}
+                Prices={props.Prices}
+            />,
         ];
     } else {
         modules = [
             <Accordion1 />,
-            <Card1 CheckNumberSplider={props.CheckNumberSplider} />,
+            <Card1
+                CheckNumberSplider={props.CheckNumberSplider}
+                localCurrency={props.localCurrency}
+                actualCurrency={actualCurrency}
+                Prices={props.Prices}
+            />,
         ];
     }
     return (

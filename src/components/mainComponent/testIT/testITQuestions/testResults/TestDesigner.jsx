@@ -33,7 +33,7 @@ const TestDesigner = (props) => {
                     onClick={props.clearResult}
                     className={TestResultsCss.resultBtn}
                 >
-                    На главную
+                    Пройти заново
                 </div>
             </NavLink>
         </div>
