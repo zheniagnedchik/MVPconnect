@@ -246,6 +246,12 @@
     }
 }
 
+@media (min-width: 600px) and (max-width: 800px) {
+    .FeebackGraduates {
+        height: 90vh;
+    }
+}
+
 /* mobile with rotate */
 @media (max-height: 500px) {
     .sliderImg {

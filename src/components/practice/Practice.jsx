@@ -17,9 +17,14 @@ import { NavLink } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 import MvpConnect from '../mainComponent/mvpConnect/MvpConnect';
 import MvpConnectDesktop from '../mainComponent/mvpConnect/mvpConnectDesktop/MvpConnectDesktop';
+import { useState } from 'react';
 
 const Practice = (props) => {
     props.ScrollTop();
+    const [actualCurrency, setCurrency] = useState(
+        new Map(Object.entries(props.worldCurrency)).get(props.localCurrency)
+    );
+
     return (
         <div className={PracticeCss.Practice}>
             {props.state.displaySize.isDesktop ? (
@@ -284,19 +289,15 @@ const Practice = (props) => {
                         <div className={PracticeCss.costItemWrapper}>
                             <div className={PracticeCss.costItem}>
                                 <div className={PracticeCss.cost}>
-                                    400 BYN в месяц
+                                    {Math.round(
+                                        props.Prices.prices.practice.twoMonth *
+                                            actualCurrency *
+                                            (1 + 2 / 100)
+                                    )}{' '}
+                                    {props.localCurrency} в месяц
                                 </div>
 
                                 <div className={PracticeCss.costProfWrapper}>
-                                    <div className={PracticeCss.costProvItem}>
-                                        <div className={PracticeCss.costImg}>
-                                            <img src={star} alt="" />
-                                        </div>
-
-                                        <div className={PracticeCss.costProf}>
-                                            Frontend
-                                        </div>
-                                    </div>
                                     <div className={PracticeCss.costProvItem}>
                                         <div className={PracticeCss.costImg}>
                                             <img src={star} alt="" />
@@ -321,6 +322,15 @@ const Practice = (props) => {
                                         </div>
 
                                         <div className={PracticeCss.costProf}>
+                                            Frontend
+                                        </div>
+                                    </div>
+                                    <div className={PracticeCss.costProvItem}>
+                                        <div className={PracticeCss.costImg}>
+                                            <img src={star} alt="" />
+                                        </div>
+
+                                        <div className={PracticeCss.costProf}>
                                             QA
                                         </div>
                                     </div>
@@ -331,7 +341,18 @@ const Practice = (props) => {
                                         Продолжительность <b> 2 месяца </b>
                                     </p>
                                     <p>
-                                        Стоимость программы - <b> 800 BYN </b>
+                                        Стоимость программы -{' '}
+                                        <b>
+                                            {' '}
+                                            {Math.round(
+                                                props.Prices.prices.practice
+                                                    .twoMonth *
+                                                    actualCurrency *
+                                                    (1 + 2 / 100) *
+                                                    2
+                                            )}{' '}
+                                            {props.localCurrency}{' '}
+                                        </b>
                                     </p>
                                 </div>
 
@@ -343,7 +364,13 @@ const Practice = (props) => {
                             </div>
                             <div className={PracticeCss.costItem}>
                                 <div className={PracticeCss.cost}>
-                                    500 BYN в месяц
+                                    {Math.round(
+                                        props.Prices.prices.practice
+                                            .twoHalfMonth *
+                                            actualCurrency *
+                                            (1 + 2 / 100)
+                                    )}{' '}
+                                    {props.localCurrency} в месяц
                                 </div>
 
                                 <div className={PracticeCss.costProfWrapper}>
@@ -381,7 +408,18 @@ const Practice = (props) => {
                                         Продолжительность <b> 2,5 месяца</b>
                                     </p>
                                     <p>
-                                        Стоимость программы - <b> 1000 BYN</b>
+                                        Стоимость программы -{' '}
+                                        <b>
+                                            {' '}
+                                            {Math.round(
+                                                props.Prices.prices.practice
+                                                    .twoHalfMonth *
+                                                    actualCurrency *
+                                                    (1 + 2 / 100) *
+                                                    2.5
+                                            )}{' '}
+                                            {props.localCurrency}
+                                        </b>
                                     </p>
                                 </div>
 

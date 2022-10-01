@@ -56,9 +56,9 @@ const MainComponent = (props) => {
                     <HistorySuccess Videos={props.Videos} />
                 )}
                 {props.state.displaySize.isDesktop ? (
-                    <SuccessTrajectoryDesktop />
+                    <SuccessTrajectoryDesktop Prices={props.Prices} />
                 ) : (
-                    <SuccessTrajectory />
+                    <SuccessTrajectory Prices={props.Prices} />
                 )}
                 {props.state.displaySize.isDesktop ? (
                     <OurPartnersDesktop />

@@ -53,6 +53,10 @@
 
     margin: 0 auto;
 }
+.chart {
+    width: 90%;
+    margin: -5% auto 0;
+}
 
 .characters img {
     width: 25.5vw;
@@ -74,11 +78,19 @@
         height: 75vh;
     }
 }
+@media (min-width: 600px) and (max-width: 800px) {
+    .chart {
+        margin: 0 auto 0;
+    }
+    .SuccessTrajectory {
+        height: 75vh;
+    }
+}
 
 /* mobile with rotate */
 @media (max-height: 500px) {
     .SuccessTrajectory {
-        margin-top: 10.28%;
+        margin-top: 30.28%;
     }
 
     .characters {
@@ -93,6 +105,9 @@
         height: 75vh;
     }
     .SuccessTrajectory {
-        height: 160vh;
+        height: 115vh;
+    }
+    .chart {
+        margin: 0 auto 0;
     }
 }

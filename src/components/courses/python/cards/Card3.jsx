@@ -4,38 +4,64 @@ const Card3 = (props) => {
     return (
         <div className={CardsCss.Card}>
             <div className={CardsCss.CardWrapper}>
-                <div className={CardsCss.monthPrice}>
-                    В месяц 400 <p> BYN</p>
+                <div
+                    className={`${CardsCss.stock} ${
+                        props.Prices.prices.pythone.stock === false
+                            ? CardsCss.active
+                            : ''
+                    }`}
+                >
+                    Акция!
                 </div>
-                <div className={CardsCss.currency}>
-                    <p className={CardsCss.currency1}>9 270 RUB</p>{' '}
-                    <p className={CardsCss.currency2}> /</p>{' '}
-                    <p className={CardsCss.currency3}> 159 USD *</p>{' '}
+                <div
+                    className={`${CardsCss.discount} ${
+                        props.Prices.prices.pythone.stock === false
+                            ? CardsCss.active
+                            : ''
+                    }`}
+                >
+                    Скидка - {props.Prices.prices.pythone.discount}%
                 </div>
-                <div className={CardsCss.allPrice}>
-                    Полная стоимость курса со скидкой:
-                    <br />
-                    <p>
-                        {' '}
-                        <b>
-                            {' '}
-                            1200 BYN <br /> 27 810 RUB / 477 USD{' '}
-                        </b>{' '}
-                    </p>
-                    Продолжительность - 3 месяца. <br />
-                    Возможна оплата в 3 этапа. <br />
-                    При приобретении нескольких модулей курса предоставляются
-                    скидки:
-                    <br />
-                    Скидка за 2 модуля -{' '}
-                    <p className={CardsCss.redPrice}> 200</p> BYN
-                    <br />
-                    Скидка за 3 модуля -{' '}
-                    <p className={CardsCss.redPrice}> 500</p> BYN
-                    <br />
-                    <br />
-                    Работаем с ЕРИП. <br /> *{' '}
-                    <i> - цены в валюте указаны справочно </i>
+                <div
+                    className={`${CardsCss.wrapperPrice} ${
+                        props.Prices.prices.pythone.stock === false
+                            ? CardsCss.PriceActive
+                            : ''
+                    }`}
+                >
+                    {' '}
+                    <div className={CardsCss.commonPrice}>
+                        <p>Обычная цена:</p>
+                        <div className={CardsCss.Price}>
+                            {Math.round(
+                                props.Prices.prices.pythone.practical *
+                                    props.actualCurrency *
+                                    (1 + 2 / 100)
+                            )}
+                        </div>{' '}
+                    </div>
+                    <div className={CardsCss.discountPrice}>
+                        <p>Цена по акции:</p>
+                        <div className={CardsCss.monthPrice}>
+                            {Math.round(
+                                Math.round(
+                                    props.Prices.prices.pythone.practical *
+                                        props.actualCurrency
+                                ) *
+                                    (1 -
+                                        props.Prices.prices.pythone.discount /
+                                            100) *
+                                    (1 + 2 / 100)
+                            )}{' '}
+                        </div>{' '}
+                    </div>
+                </div>
+                <div className={CardsCss.monthCurrency}>BYN/в месяц</div>
+                <div className={CardsCss.descr}>
+                    <ul>
+                        <li>Оплата в 2 этапа</li>
+                        <li>Скидки за нескольких модулей</li>
+                    </ul>
                 </div>
                 <NavLink
                     to="/CourseForm"

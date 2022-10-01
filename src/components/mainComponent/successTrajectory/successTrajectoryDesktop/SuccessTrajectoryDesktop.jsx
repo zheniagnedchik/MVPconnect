@@ -18,22 +18,66 @@ import slide7 from './img/characters/QA.jpg';
 import slide7blue from './img/characters/QA_selected.jpg';
 import slide8 from './img/characters/UXUI.jpg';
 import slide8blue from './img/characters/UXUI_selected.jpg';
-
-import Back from './img/Back.svg';
-import Front from './img/Front.svg';
-import HR from './img/HR.svg';
-import Marketer from './img/Marketer.svg';
-import PM from './img/PM.svg';
-import PrdM from './img/PrdM.svg';
-import QA from './img/QA.svg';
-import UI from './img/UI.svg';
+import {
+    Chart,
+    ArcElement,
+    LineElement,
+    BarElement,
+    PointElement,
+    BarController,
+    BubbleController,
+    DoughnutController,
+    LineController,
+    PieController,
+    PolarAreaController,
+    RadarController,
+    ScatterController,
+    CategoryScale,
+    LinearScale,
+    LogarithmicScale,
+    RadialLinearScale,
+    TimeScale,
+    TimeSeriesScale,
+    Decimation,
+    Filler,
+    Legend,
+    Title,
+    Tooltip,
+} from 'chart.js';
+import { Bar } from 'react-chartjs-2';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/skyblue';
 import './splide.css';
 
-const SuccessTrajectoryDesktop = () => {
+Chart.register(
+    ArcElement,
+    LineElement,
+    BarElement,
+    PointElement,
+    BarController,
+    BubbleController,
+    DoughnutController,
+    LineController,
+    PieController,
+    PolarAreaController,
+    RadarController,
+    ScatterController,
+    CategoryScale,
+    LinearScale,
+    LogarithmicScale,
+    RadialLinearScale,
+    TimeScale,
+    TimeSeriesScale,
+    Decimation,
+    Filler,
+    Legend,
+    Title,
+    Tooltip
+);
+
+const SuccessTrajectoryDesktop = (props) => {
     const [changeImg, setChangeImg] = useState(null);
     const slider1 = useRef();
     const slider2 = useRef();
@@ -48,6 +92,7 @@ const SuccessTrajectoryDesktop = () => {
                 <div className={SuccessTrajectoryCss.title}>
                     Траектория вашего успеха
                 </div>
+
                 <div className={SuccessTrajectoryCss.subTitle}>
                     {' '}
                     <p>
@@ -56,6 +101,7 @@ const SuccessTrajectoryDesktop = () => {
                     </p>
                 </div>
             </div>
+
             <Splide
                 onActive={(splide, Slide) => {
                     setChangeImg(Slide.slideIndex);
@@ -281,30 +327,66 @@ const SuccessTrajectoryDesktop = () => {
                         arrows: false,
                     }}
                 >
-                    <SplideSlide className={SuccessTrajectoryCss.table}>
-                        <img src={UI} alt="" />
-                    </SplideSlide>
-                    <SplideSlide className={SuccessTrajectoryCss.table}>
-                        <img src={PM} alt="" />
-                    </SplideSlide>
-                    <SplideSlide className={SuccessTrajectoryCss.table}>
-                        <img src={QA} alt="" />
-                    </SplideSlide>
-                    <SplideSlide className={SuccessTrajectoryCss.table}>
-                        <img src={HR} alt="" />
-                    </SplideSlide>
-                    <SplideSlide className={SuccessTrajectoryCss.table}>
-                        <img src={Front} alt="" />
-                    </SplideSlide>
-                    <SplideSlide className={SuccessTrajectoryCss.table}>
-                        <img src={Back} alt="" />
-                    </SplideSlide>
-                    <SplideSlide className={SuccessTrajectoryCss.table}>
-                        <img src={PrdM} alt="" />
-                    </SplideSlide>
-                    <SplideSlide className={SuccessTrajectoryCss.table}>
-                        <img src={Marketer} alt="" />
-                    </SplideSlide>
+                    {props.Prices.successTrajectoryPrices.map((item, i) => (
+                        <SplideSlide>
+                            <div className={SuccessTrajectoryCss.chart}>
+                                <div>
+                                    <Bar
+                                        data={{
+                                            datasets: [
+                                                {
+                                                    data: [
+                                                        item.data[0],
+                                                        item.data[1],
+                                                        item.data[2],
+                                                    ],
+                                                    backgroundColor: [
+                                                        'white',
+                                                        'yellow',
+                                                        'green',
+                                                    ],
+                                                    barThickness: 25,
+                                                },
+                                            ],
+                                            labels: [
+                                                'Junior',
+                                                'Middle',
+                                                'Senior',
+                                            ],
+                                        }}
+                                        options={{
+                                            indexAxis: 'y',
+                                            maintainAspectRatio: false,
+
+                                            plugins: {
+                                                legend: {
+                                                    display: false,
+                                                },
+                                            },
+                                            scales: {
+                                                y: {
+                                                    ticks: {
+                                                        font: {
+                                                            size: 22,
+                                                        },
+                                                    },
+                                                },
+
+                                                x: {
+                                                    ticks: {
+                                                        font: {
+                                                            size: 12,
+                                                        },
+                                                    },
+                                                },
+                                            },
+                                        }}
+                                        height={300}
+                                    />
+                                </div>
+                            </div>
+                        </SplideSlide>
+                    ))}
                 </Splide>
             </div>
         </div>

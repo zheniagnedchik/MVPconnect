@@ -7,7 +7,6 @@ import { Video } from '@splidejs/splide-extension-video';
 import '@splidejs/react-splide/css/skyblue';
 
 const HistorySuccessDesktop = (props) => {
-    console.log(props.Videos);
     return (
         <div className={HistorySuccessDesktopCss.HistorySuccessDesktop}>
             <div className={HistorySuccessDesktopCss.titleWrapper}>

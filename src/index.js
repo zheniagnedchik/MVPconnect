@@ -15,6 +15,7 @@ import { CheckNumberSplider } from './states/state';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 CheckWindowStart();
+
 root.render(
     <React.StrictMode>
         <App

@@ -67,6 +67,7 @@ function App(props) {
                                 Comments={props.Comments}
                                 Stars={props.Stars}
                                 Videos={props.Videos}
+                                Prices={props.Prices}
                             />
                         }
                     >
@@ -246,6 +247,9 @@ function App(props) {
                             <Practice
                                 ScrollTop={props.ScrollTop}
                                 state={props.state}
+                                localCurrency={localCurrency}
+                                worldCurrency={infoUser}
+                                Prices={props.Prices}
                             />
                         }
                     />

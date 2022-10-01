@@ -116,6 +116,12 @@
         height: 110vh;
     }
 }
+
+@media (min-width: 600px) and (max-width: 800px) {
+    .studentChoice {
+        height: 100vh;
+    }
+}
 /* mobile with rotate */
 @media (max-height: 500px) {
     .btn {

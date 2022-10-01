@@ -19,7 +19,7 @@ const Accordion1 = () => {
                     Модуль 1. “Frontend базовый”
                 </div>
                 <div className={AccordionCss.subTitle}>
-                    10 занятий по 3 часа (30 часов) - 2,5 месяца
+                    10 занятий (30 часов)
                 </div>
             </div>
 

@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@300;400&display=swap');
 .CardWrapper {
-    border: 2px solid white;
     width: 30%;
     margin: 8% auto;
     text-align: center;
@@ -9,43 +7,54 @@
 .CardWrapper p {
     display: inline;
 }
+
+.stock {
+    color: #ff0606;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.3vmax;
+    margin-bottom: 3%;
+}
+.discount {
+    color: #ffffff;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.3vmax;
+    margin-bottom: 5%;
+}
 .monthPrice {
-    color: rgb(246, 195, 80);
-    font-size: 3vmax;
+    color: #73ff81;
+    font-size: 4vmax;
     font-weight: 700;
-    margin: 5%;
 }
-
-.monthPrice p {
-    display: inline;
-    font-size: 2.2vmax;
+.wrapperPrice {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
-
-.currency1 {
-    color: rgb(6, 146, 236);
-    font-size: 2vmax;
+.monthCurrency {
+    color: #73ff81;
+    font-size: 1.5vmax;
+    margin-top: 2%;
 }
-.currency2 {
-    color: rgb(246, 195, 80);
-    font-size: 2vmax;
-}
-.currency3 {
-    color: rgb(2, 189, 108);
-    font-size: 2vmax;
-}
-
-.allPrice {
+.Price {
     color: white;
-    font-size: 1.4vmax;
-    margin: 5% 8%;
-    line-height: 140%;
-    font-family: 'Roboto', Arial, sans-serif;
-    font-weight: 300;
+    font-size: 4vmax;
+    font-weight: 400;
+    text-decoration: line-through;
 }
-
-.redPrice {
-    color: rgb(247, 99, 99);
-    font-weight: 700;
+.commonPrice p,
+.discountPrice p {
+    color: white;
+    font-size: 1.5vmax;
+}
+.descr {
+    color: white;
+    font-size: 1.5vmax;
+    text-align: start;
+    margin: 10%;
 }
 
 .cardBtn {
@@ -55,11 +64,27 @@
     width: 60%;
     margin: 5% auto 5%;
     height: 8vh;
-    background: #f6c350;
+    background: #d16eff;
     border-radius: 6px;
 
     font-size: 1.2vmax;
     font-weight: 700;
+}
+
+.active {
+    display: none;
+}
+
+.PriceActive .discountPrice,
+.PriceActive .commonPrice p {
+    display: none;
+}
+
+.PriceActive .Price {
+    color: #73ff81;
+    font-size: 4vmax;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 @media (max-width: 800px) {
@@ -67,12 +92,10 @@
         width: 60%;
     }
 
-    .allPrice {
-        font-size: 2vmax;
-    }
     .cardBtn {
-        font-size: 1.6vmax;
-        height: 6vh;
+        height: 5vh;
+
+        font-size: 1.5vmax;
     }
 }
 
@@ -80,41 +103,15 @@
     .cardBtn {
         height: 6vh;
     }
-    .currency1,
-    .currency2,
-    .currency3 {
-        font-size: 2vmax;
-    }
 }
 
 @media (min-width: 2100px) {
     .CardWrapper {
         width: 25%;
     }
-    .CardWrapper p {
-        display: inline;
-    }
+
     .monthPrice {
         font-size: 2vmax;
-    }
-
-    .monthPrice p {
-        font-size: 2vmax;
-    }
-
-    .currency1 {
-        font-size: 2vmax;
-    }
-    .currency2 {
-        font-size: 2vmax;
-    }
-    .currency3 {
-        font-size: 2vmax;
-    }
-
-    .allPrice {
-        color: white;
-        font-size: 1.2vmax;
     }
 
     .cardBtn {

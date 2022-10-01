@@ -28,7 +28,7 @@ const Accordion1 = () => {
                     Модуль 1. “Python базовый”
                 </div>
                 <div className={AccordionCss.subTitle}>
-                    19 занятий по 2-4 часа (54 часа) - 3 месяца
+                    19 занятий (54 часа)
                 </div>
             </div>
 

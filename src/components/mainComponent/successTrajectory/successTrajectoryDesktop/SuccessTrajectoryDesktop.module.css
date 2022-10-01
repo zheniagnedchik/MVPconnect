@@ -70,24 +70,20 @@
     transition: 0.3s;
 }
 
-.table img {
-    width: 45vw;
+.chart {
+    width: 40%;
+    margin: 3% auto;
 }
 
 @media (max-width: 1100px) {
-    .table img {
-        width: 70vw;
-    }
-}
-@media (max-width: 900px) {
-    .table img {
-        width: 80vw;
+    .SuccessTrajectory {
+        height: 150vh;
     }
 }
 
 @media (max-height: 600px) {
-    .table img {
-        width: 60vw;
+    .SuccessTrajectory {
+        height: 150vh;
     }
 }
 
@@ -98,8 +94,5 @@
 
     .sliderTitle {
         font-size: 1vmax;
-    }
-    .table img {
-        width: 30vw;
     }
 }

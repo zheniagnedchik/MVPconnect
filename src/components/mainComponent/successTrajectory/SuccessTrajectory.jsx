@@ -30,8 +30,61 @@ import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/skyblue';
 import './splide.css';
 import { useState } from 'react';
+import {
+    Chart,
+    ArcElement,
+    LineElement,
+    BarElement,
+    PointElement,
+    BarController,
+    BubbleController,
+    DoughnutController,
+    LineController,
+    PieController,
+    PolarAreaController,
+    RadarController,
+    ScatterController,
+    CategoryScale,
+    LinearScale,
+    LogarithmicScale,
+    RadialLinearScale,
+    TimeScale,
+    TimeSeriesScale,
+    Decimation,
+    Filler,
+    Legend,
+    Title,
+    Tooltip,
+} from 'chart.js';
+import { Bar } from 'react-chartjs-2';
 
-const SuccessTrajectory = () => {
+Chart.register(
+    ArcElement,
+    LineElement,
+    BarElement,
+    PointElement,
+    BarController,
+    BubbleController,
+    DoughnutController,
+    LineController,
+    PieController,
+    PolarAreaController,
+    RadarController,
+    ScatterController,
+    CategoryScale,
+    LinearScale,
+    LogarithmicScale,
+    RadialLinearScale,
+    TimeScale,
+    TimeSeriesScale,
+    Decimation,
+    Filler,
+    Legend,
+    Title,
+    Tooltip
+);
+
+const SuccessTrajectory = (props) => {
     const [changeImg, setChangeImg] = useState(null);
 
     const slider1 = useRef();
@@ -218,30 +271,66 @@ const SuccessTrajectory = () => {
                             arrows: false,
                         }}
                     >
-                        <SplideSlide className={SuccessTrajectoryCss.table}>
-                            <img src={UI} alt="" />
-                        </SplideSlide>
-                        <SplideSlide className={SuccessTrajectoryCss.table}>
-                            <img src={PM} alt="" />
-                        </SplideSlide>
-                        <SplideSlide className={SuccessTrajectoryCss.table}>
-                            <img src={QA} alt="" />
-                        </SplideSlide>
-                        <SplideSlide className={SuccessTrajectoryCss.table}>
-                            <img src={HR} alt="" />
-                        </SplideSlide>
-                        <SplideSlide className={SuccessTrajectoryCss.table}>
-                            <img src={Front} alt="" />
-                        </SplideSlide>
-                        <SplideSlide className={SuccessTrajectoryCss.table}>
-                            <img src={Back} alt="" />
-                        </SplideSlide>
-                        <SplideSlide className={SuccessTrajectoryCss.table}>
-                            <img src={PrdM} alt="" />
-                        </SplideSlide>
-                        <SplideSlide className={SuccessTrajectoryCss.table}>
-                            <img src={Marketer} alt="" />
-                        </SplideSlide>
+                        {props.Prices.successTrajectoryPrices.map((item, i) => (
+                            <SplideSlide>
+                                <div className={SuccessTrajectoryCss.chart}>
+                                    <div>
+                                        <Bar
+                                            data={{
+                                                datasets: [
+                                                    {
+                                                        data: [
+                                                            item.data[0],
+                                                            item.data[1],
+                                                            item.data[2],
+                                                        ],
+                                                        backgroundColor: [
+                                                            'white',
+                                                            'yellow',
+                                                            'green',
+                                                        ],
+                                                        barThickness: 25,
+                                                    },
+                                                ],
+                                                labels: [
+                                                    'Junior',
+                                                    'Middle',
+                                                    'Senior',
+                                                ],
+                                            }}
+                                            options={{
+                                                indexAxis: 'y',
+                                                maintainAspectRatio: false,
+
+                                                plugins: {
+                                                    legend: {
+                                                        display: false,
+                                                    },
+                                                },
+                                                scales: {
+                                                    y: {
+                                                        ticks: {
+                                                            font: {
+                                                                size: 22,
+                                                            },
+                                                        },
+                                                    },
+
+                                                    x: {
+                                                        ticks: {
+                                                            font: {
+                                                                size: 12,
+                                                            },
+                                                        },
+                                                    },
+                                                },
+                                            }}
+                                            height={180}
+                                        />
+                                    </div>
+                                </div>
+                            </SplideSlide>
+                        ))}
                     </Splide>
                 </div>
             </div>

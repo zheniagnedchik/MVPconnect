@@ -5,39 +5,66 @@ const Card1 = (props) => {
     return (
         <div className={CardsCss.Card}>
             <div className={CardsCss.CardWrapper}>
-                <div className={CardsCss.monthPrice}>
-                    В месяц 475 <p> BYN</p>
+                <div
+                    className={`${CardsCss.stock} ${
+                        props.Prices.prices.frontend.stock === false
+                            ? CardsCss.active
+                            : ''
+                    }`}
+                >
+                    Акция!
                 </div>
-                <div className={CardsCss.currency}>
-                    <p className={CardsCss.currency1}>11 000 RUB</p>{' '}
-                    <p className={CardsCss.currency2}> /</p>{' '}
-                    <p className={CardsCss.currency3}> 190 USD *</p>{' '}
+                <div
+                    className={`${CardsCss.discount} ${
+                        props.Prices.prices.frontend.stock === false
+                            ? CardsCss.active
+                            : ''
+                    }`}
+                >
+                    Скидка - {props.Prices.prices.frontend.discount}%
                 </div>
-                <div className={CardsCss.allPrice}>
-                    Полная стоимость курса со скидкой:
-                    <br />
-                    <p>
-                        {' '}
-                        <b>
-                            {' '}
-                            950 BYN <br /> 22 000 RUB / 380 USD{' '}
-                        </b>{' '}
-                    </p>
-                    Продолжительность - 2,5 месяца. <br />
-                    Возможна оплата в 2 этапа. <br />
-                    При приобретении нескольких модулей курса предоставляются
-                    скидки:
-                    <br />
-                    Скидка за 2 модуля -{' '}
-                    <p className={CardsCss.redPrice}> 200</p> BYN
-                    <br />
-                    Скидка за 3 модуля -{' '}
-                    <p className={CardsCss.redPrice}> 500</p> BYN
-                    <br />
-                    <br />
-                    Работаем с ЕРИП. <br /> *{' '}
-                    <i> - цены в валюте указаны справочно </i>
+                <div
+                    className={`${CardsCss.wrapperPrice} ${
+                        props.Prices.prices.frontend.stock === false
+                            ? CardsCss.PriceActive
+                            : ''
+                    }`}
+                >
+                    {' '}
+                    <div className={CardsCss.commonPrice}>
+                        <p>Обычная цена:</p>
+                        <div className={CardsCss.Price}>
+                            {Math.round(
+                                props.Prices.prices.frontend.base *
+                                    props.actualCurrency *
+                                    (1 + 2 / 100)
+                            )}
+                        </div>{' '}
+                    </div>
+                    <div className={CardsCss.discountPrice}>
+                        <p>Цена по акции:</p>
+                        <div className={CardsCss.monthPrice}>
+                            {Math.round(
+                                Math.round(
+                                    props.Prices.prices.frontend.base *
+                                        props.actualCurrency
+                                ) *
+                                    (1 -
+                                        props.Prices.prices.frontend.discount /
+                                            100) *
+                                    (1 + 2 / 100)
+                            )}{' '}
+                        </div>{' '}
+                    </div>
                 </div>
+                <div className={CardsCss.monthCurrency}>BYN/в месяц</div>
+                <div className={CardsCss.descr}>
+                    <ul>
+                        <li>Оплата в 2 этапа</li>
+                        <li>Скидки за нескольких модулей</li>
+                    </ul>
+                </div>
+
                 <NavLink
                     to="/CourseForm"
                     onClick={() => props.CheckNumberSplider(1)}
