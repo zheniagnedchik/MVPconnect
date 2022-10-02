@@ -1,12 +1,7 @@
 import MvpConnectDesktopCss from './MvpConnectDesktop.module.css';
-import Vk from './img/socialNetwork/vk.svg';
-import Facebook from './img/socialNetwork/f.svg';
-import Inst from './img/socialNetwork/inst.svg';
-import In from './img/socialNetwork/in.svg';
-import Tel from './img/socialNetwork/teleg.svg';
+
 import MvpConnectImg from './img/MvpConnect.svg';
-import Participants from './img/participants.svg';
-import Job from './img/job.svg';
+
 import { NavLink } from 'react-router-dom';
 
 const MvpConnectDesktop = () => {
@@ -18,90 +13,59 @@ const MvpConnectDesktop = () => {
                         {' '}
                         <img src={MvpConnectImg} alt="" />
                     </div>
-                    <a href="tel:+375447801236">
-                        {' '}
-                        <div className={MvpConnectDesktopCss.number}>
-                            +375 44 780 12 36
-                        </div>
-                    </a>
-                    <div className={MvpConnectDesktopCss.socialNetworkIcons}>
-                        {/* <a href="https://vk.com/">
-                            {' '}
-                            <img src={Vk} alt="" />{' '}
-                        </a> */}
-                        <a
-                            href="https://www.facebook.com/people/Mvp-connect/100083144028399/"
-                            target="_blank"
-                        >
-                            {' '}
-                            <img src={Facebook} alt="" />
-                        </a>
-                        <a
-                            href="https://www.instagram.com/mvp.connect/"
-                            target="_blank"
-                        >
-                            {' '}
-                            <img src={Inst} alt="" />
-                        </a>
-                        <a
-                            href="https://www.linkedin.com/company/mvp-connect/"
-                            target="_blank"
-                        >
-                            {' '}
-                            <img src={In} alt="" />{' '}
-                        </a>
-                        <a
-                            href="https://t.me/alexander_balodis"
-                            target="_blank"
-                        >
-                            {' '}
-                            <img src={Tel} alt="" />{' '}
-                        </a>
-                    </div>
                 </div>
                 <div className={MvpConnectDesktopCss.infoWrapper}>
-                    <div className={MvpConnectDesktopCss.info}>
-                        ООО “ЭмВиПи коннект”
-                        <br /> 220051, г. Минск, ул. Сергея Есенина, 130,
-                        кабинет 3
-                        <br />
-                        УНП: 193620230, ОКПО: 505945425000 BY06 <br />
-                        ALFA 3012 2B99 8900 1027 0000, БИК: ALFABY2X <br /> в
-                        ЗАО "Альфа-Банк", 220013 г.Минск, ул.Сурганова, 43-47.
-                    </div>
-
                     <div className={MvpConnectDesktopCss.buttonWrapper}>
-                        <NavLink to="/Courses">
-                            {' '}
-                            <div className={MvpConnectDesktopCss.buttonCourse}>
-                                <p> Курсы</p>
-                            </div>
-                        </NavLink>
-                        <NavLink to="/Practice">
-                            {' '}
-                            <div
-                                className={MvpConnectDesktopCss.buttonPractise}
-                            >
+                        <div className={MvpConnectDesktopCss.itemButton}>
+                            <NavLink to="/Courses">
                                 {' '}
-                                <p> Практика</p>
+                                <div
+                                    className={
+                                        MvpConnectDesktopCss.buttonCourse
+                                    }
+                                >
+                                    <p> Курсы</p>
+                                </div>
+                            </NavLink>
+                            <div className={MvpConnectDesktopCss.job}>
+                                {' '}
+                                <a href="https://itcoty.ru/" target="_blank">
+                                    {' '}
+                                    <p>Найти работу</p>
+                                </a>
                             </div>
-                        </NavLink>
+                        </div>
+                        <div className={MvpConnectDesktopCss.itemButton}>
+                            <NavLink to="/Practice">
+                                {' '}
+                                <div
+                                    className={
+                                        MvpConnectDesktopCss.buttonPractise
+                                    }
+                                >
+                                    {' '}
+                                    <p> Практика</p>
+                                </div>
+                            </NavLink>
+                            <div className={MvpConnectDesktopCss.participant}>
+                                <a href="#">
+                                    {' '}
+                                    <p>Участники проекта</p>{' '}
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div className={MvpConnectDesktopCss.jobWrapper}>
+                <a href="tel:+375447801236">
                     {' '}
-                    <div className={MvpConnectDesktopCss.job}>
-                        {' '}
-                        <a href="https://itcoty.ru/" target="_blank">
-                            {' '}
-                            <img src={Job} alt="" />
-                        </a>
+                    <div className={MvpConnectDesktopCss.number}>
+                        +375 44 780 12 36
                     </div>
-                </div>
+                </a>
             </div>
-            {/* <div className={MvpConnectDesktopCss.participant}>
-                <img src={Participants} alt="" />
-            </div> */}
+            <div className={MvpConnectDesktopCss.info}>
+                ООО “ЭмВиПи коннект” УНП: 193620230, ОКПО: 505945425000 BY06
+            </div>
         </div>
     );
 };

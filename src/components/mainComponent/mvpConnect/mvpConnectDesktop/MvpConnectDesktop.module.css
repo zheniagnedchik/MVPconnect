@@ -2,12 +2,12 @@
     background: url(./img/footer.svg) no-repeat;
     background-size: cover;
     width: 100%;
-    height: 55vh;
+    height: 30vh;
 }
 .MvpConnectDesktopWrapper {
     display: grid;
-    grid-template-columns: 1.5fr 2fr 1fr;
-    margin-top: 8vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding-top: 4vh;
 }
 .mvpImg {
     width: 15vw;
@@ -27,21 +27,12 @@
     color: #ffb81a;
     text-align: center;
 }
-
-.socialNetworkIcons {
-    margin: 3vh auto 0;
-    display: flex;
-    width: 20vw;
-
-    justify-content: space-around;
+.itemButton {
+    width: 50%;
 }
-
-.socialNetworkIcons img {
-    width: 2.5vw;
-}
-
 .infoWrapper {
-    height: 30vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .info {
@@ -49,17 +40,17 @@
     font-style: normal;
     font-weight: 600;
     width: 100%;
-    text-align: start;
-    margin: 0 auto;
+    text-align: center;
+    margin: 3% auto;
     font-size: 2vmin;
     line-height: 140%;
     color: #ffffff;
 }
 
 .buttonWrapper {
-    margin-top: 5vh;
     width: 100%;
     display: flex;
+    justify-content: space-evenly;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
@@ -75,7 +66,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 50%;
+    margin: 0 auto;
     height: 4vh;
     background: #ffffff;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -87,8 +79,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 3vw;
-    width: 100%;
+    margin: 0 auto;
+    width: 50%;
     height: 4vh;
     background: #d16eff;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -98,30 +90,32 @@
 
 .jobWrapper {
     display: flex;
-    height: 100%;
+    width: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-.job img {
-    width: 15vw;
+.job {
+    font-size: 1.5vmax;
+    margin-top: 10%;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: underline;
+    text-shadow: 0px 0px 15px #ffb81a;
 }
 
-.participant img {
-    width: 15vw;
+.participant {
+    margin-top: 10%;
+    text-align: center;
+    font-size: 1.5vmax;
+    color: #ffffff;
+    text-decoration: underline;
+    text-shadow: 0px 0px 15px #ffffff;
 }
 
 @media (max-width: 1300px) {
     .info {
         font-size: 1.5vmin;
-    }
-
-    .participant img {
-        width: 20vw;
-    }
-    .socialNetworkIcons img {
-        width: 4vw;
-        margin-left: 1vw;
     }
 }
 @media (max-width: 900px) {
@@ -146,21 +140,19 @@
         font-size: 1.5vmin;
     }
 
-    .participant img {
-        width: 10vw;
-    }
-    .socialNetworkIcons img {
-        width: 2vw;
-    }
-
     .number {
         font-size: 1vmax;
-    }
-    .job img {
-        width: 10vw;
     }
 
     .buttonWrapper a {
         width: 15%;
+    }
+
+    .job {
+        font-size: 1vmax;
+    }
+
+    .participant {
+        font-size: 1vmax;
     }
 }
