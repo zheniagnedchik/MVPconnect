@@ -57,6 +57,8 @@
     font-weight: 600;
     font-size: 3.15vmax;
     line-height: 140%;
+    margin: 0 2%;
+    width: 96%;
     text-shadow: 0px 0px 10px #2692ec;
 }
 
@@ -76,7 +78,7 @@
 .sliderBtn {
     width: 58.75vw;
     height: 5.96vh;
-    background: #ffb81a;
+    background: #d16eff;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
     margin-top: 2.63vh;
@@ -86,7 +88,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.45vmax;
+    font-size: 2.2vmax;
     line-height: 130%;
     font-family: 'Open Sans';
     font-style: normal;

@@ -18,11 +18,18 @@ import { HashLink as Link } from 'react-router-hash-link';
 import MvpConnect from '../mainComponent/mvpConnect/MvpConnect';
 import MvpConnectDesktop from '../mainComponent/mvpConnect/mvpConnectDesktop/MvpConnectDesktop';
 import { useState } from 'react';
+import { useEffect } from 'react';
 
 const Practice = (props) => {
     props.ScrollTop();
-    const [actualCurrency, setCurrency] = useState(
-        new Map(Object.entries(props.worldCurrency)).get(props.localCurrency)
+    const [actualCurrency, setCurrency] = useState();
+
+    useEffect(() =>
+        setCurrency(
+            new Map(Object.entries(props.worldCurrency)).get(
+                props.localCurrency
+            )
+        )
     );
 
     return (

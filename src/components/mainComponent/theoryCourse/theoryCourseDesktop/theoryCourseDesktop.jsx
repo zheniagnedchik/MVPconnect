@@ -52,15 +52,14 @@ const theoryCourseDesktop = () => {
                                     <img src={slider1} alt="" />
                                 </div>
                                 <div className={TheoryCourseCss.sliderTitle}>
-                                    Введение в програмирование
+                                    Front-end (React) разработчик
                                 </div>
                                 <div className={TheoryCourseCss.sliderSubTitle}>
-                                    Вы изучите распространенные языки
-                                    програмирования.Вы изучите распространенные
-                                    языки програмирования.Вы изучите
-                                    распространенные.
+                                    Научишься верстать сайты, делать адаптив для
+                                    разных устройств, сможешь писать мобильные
+                                    приложения для iOs и Android
                                 </div>
-                                <NavLink to="/Practice">
+                                <NavLink to="/Frontend">
                                     {' '}
                                     <div
                                         className={`${TheoryCourseCss.sliderBtn} sliderBtn`}
@@ -77,15 +76,15 @@ const theoryCourseDesktop = () => {
                                     <img src={slider2} alt="" />
                                 </div>
                                 <div className={TheoryCourseCss.sliderTitle}>
-                                    Введение в програмирование
+                                    Back-end (Python) разработчик
                                 </div>
                                 <div className={TheoryCourseCss.sliderSubTitle}>
-                                    Вы изучите распространенные языки
-                                    програмирования.Вы изучите распространенные
-                                    языки програмирования.Вы изучите
-                                    распространенные.
+                                    Научишься работать с базами данных,
+                                    создавать логику работы продукта, узнаешь
+                                    как сделать парсинг и напишешь собственного
+                                    телеграмм бота
                                 </div>
-                                <NavLink to="/Practice">
+                                <NavLink to="/Python">
                                     {' '}
                                     <div
                                         className={`${TheoryCourseCss.sliderBtn} sliderBtn`}
@@ -102,90 +101,14 @@ const theoryCourseDesktop = () => {
                                     <img src={slider3} alt="" />
                                 </div>
                                 <div className={TheoryCourseCss.sliderTitle}>
-                                    Введение в програмирование
+                                    UX/UI дизайнер
                                 </div>
                                 <div className={TheoryCourseCss.sliderSubTitle}>
-                                    Вы изучите распространенные языки
-                                    програмирования.Вы изучите распространенные
-                                    языки програмирования.Вы изучите
-                                    распространенные.
+                                    Научишься создавать дизайн, делать красивые
+                                    и функциональные сайты и приложения. Узнаешь
+                                    как предугадывать действия пользователей
                                 </div>
-                                <NavLink to="/Practice">
-                                    {' '}
-                                    <div
-                                        className={`${TheoryCourseCss.sliderBtn} sliderBtn`}
-                                    >
-                                        Подробнее
-                                    </div>{' '}
-                                </NavLink>
-                            </div>
-                            <br />
-                        </SplideSlide>
-                        <SplideSlide className="slider_transform">
-                            <div className={`${TheoryCourseCss.slider} slider`}>
-                                <div className={TheoryCourseCss.sliderImg}>
-                                    <img src={slider1} alt="" />
-                                </div>
-                                <div className={TheoryCourseCss.sliderTitle}>
-                                    Введение в програмирование
-                                </div>
-                                <div className={TheoryCourseCss.sliderSubTitle}>
-                                    Вы изучите распространенные языки
-                                    програмирования.Вы изучите распространенные
-                                    языки програмирования.Вы изучите
-                                    распространенные.
-                                </div>
-                                <NavLink to="/Practice">
-                                    {' '}
-                                    <div
-                                        className={`${TheoryCourseCss.sliderBtn} sliderBtn`}
-                                    >
-                                        Подробнее
-                                    </div>{' '}
-                                </NavLink>
-                            </div>
-                            <br />
-                        </SplideSlide>
-                        <SplideSlide className="slider_transform">
-                            <div className={`${TheoryCourseCss.slider} slider`}>
-                                <div className={TheoryCourseCss.sliderImg}>
-                                    <img src={slider2} alt="" />
-                                </div>
-                                <div className={TheoryCourseCss.sliderTitle}>
-                                    Введение в програмирование
-                                </div>
-                                <div className={TheoryCourseCss.sliderSubTitle}>
-                                    Вы изучите распространенные языки
-                                    програмирования.Вы изучите распространенные
-                                    языки програмирования.Вы изучите
-                                    распространенные.
-                                </div>
-                                <NavLink to="/Practice">
-                                    {' '}
-                                    <div
-                                        className={`${TheoryCourseCss.sliderBtn} sliderBtn`}
-                                    >
-                                        Подробнее
-                                    </div>{' '}
-                                </NavLink>
-                            </div>
-                            <br />
-                        </SplideSlide>
-                        <SplideSlide className="slider_transform">
-                            <div className={`${TheoryCourseCss.slider} slider`}>
-                                <div className={TheoryCourseCss.sliderImg}>
-                                    <img src={slider3} alt="" />
-                                </div>
-                                <div className={TheoryCourseCss.sliderTitle}>
-                                    Введение в програмирование
-                                </div>
-                                <div className={TheoryCourseCss.sliderSubTitle}>
-                                    Вы изучите распространенные языки
-                                    програмирования.Вы изучите распространенные
-                                    языки програмирования.Вы изучите
-                                    распространенные.
-                                </div>
-                                <NavLink to="/Practice">
+                                <NavLink to="/Designer">
                                     {' '}
                                     <div
                                         className={`${TheoryCourseCss.sliderBtn} sliderBtn`}

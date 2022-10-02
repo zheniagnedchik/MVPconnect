@@ -37,6 +37,7 @@ function App(props) {
     // Check IP User 'ipdata.co' (local currency) and fresh world currency data 'openexchangerates.org'
     const [localCurrency, setLocalCurrency] = useState('');
     const [infoUser, setInfoUser] = useState('');
+
     useEffect(() => {
         getData();
     }, []);

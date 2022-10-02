@@ -45,8 +45,10 @@
     align-items: center;
     justify-content: center;
     width: 80%;
+    font-family: 'Roboto', Arial, sans-serif;
     height: 6vh;
-    background: #f6c350;
+    font-weight: 700;
+    background: #d16eff;
     border-radius: 4px;
     margin: 3vh auto 0;
 }

@@ -13,14 +13,21 @@ import Card2 from './cards/Card2';
 import Card3 from './cards/Card3';
 import MenuDesktop from './menu/MenuDesktop';
 import { useState } from 'react';
+import { useEffect } from 'react';
 import MenuMobile from './menu/MenuMobile';
 import MvpConnect from '../../mainComponent/mvpConnect/MvpConnect';
 import MvpConnectDesktop from '../../mainComponent/mvpConnect/mvpConnectDesktop/MvpConnectDesktop';
 
 const Python = (props) => {
     props.ScrollTop();
-    const [actualCurrency, setCurrency] = useState(
-        new Map(Object.entries(props.worldCurrency)).get(props.localCurrency)
+    const [actualCurrency, setCurrency] = useState();
+
+    useEffect(() =>
+        setCurrency(
+            new Map(Object.entries(props.worldCurrency)).get(
+                props.localCurrency
+            )
+        )
     );
 
     const [ChoiseModule, setChoiseModule] = useState(2);

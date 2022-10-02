@@ -84,7 +84,7 @@
 .sliderBtn {
     width: 14.75vw;
     height: 3.76vh;
-    background: #ffb81a;
+    background: #d16eff;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
     margin: 1.63vh auto 0;
@@ -138,7 +138,7 @@
 
 @media (max-height: 600px) {
     .SplideTrack {
-        height: 100vh;
+        height: 84vh;
         padding-top: 5vh;
     }
     .theoryCourse {

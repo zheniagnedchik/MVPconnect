@@ -34,7 +34,9 @@
     font-size: 2.8vmax;
     line-height: 140%;
 }
-
+.spliderTrack {
+    height: 65vh;
+}
 .slider {
     margin: auto;
     margin-top: 5.26vh;
@@ -59,15 +61,15 @@
     font-size: 3.15vmax;
     line-height: 140%;
     text-shadow: 0px 0px 10px #2692ec;
-    margin-left: 2.56vw;
-    margin-right: 2.56vw;
+    margin: 0 2%;
+    width: 96%;
 }
 
 .sliderSubTitle {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 2.1vmax;
+    font-size: 1.9vmax;
     line-height: 130%;
     width: 80%;
     margin-left: 10%;
@@ -79,7 +81,7 @@
 .sliderBtn {
     width: 58.75vw;
     height: 5.96vh;
-    background: #ffb81a;
+    background: #d16eff;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
     margin-top: 2.63vh;
@@ -102,7 +104,7 @@
         height: 91%;
     }
     .spliderTrack {
-        height: 63vh;
+        height: 68vh;
     }
 }
 
@@ -119,7 +121,7 @@
     }
 
     .spliderTrack {
-        height: 83.75vh;
+        height: 95vh;
     }
     .theoryCourse {
         height: 130vh;

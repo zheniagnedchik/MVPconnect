@@ -23,10 +23,15 @@ const Frontend = (props) => {
 
     const [ChoiseModule, setChoiseModule] = useState(1);
 
-    const [actualCurrency, setCurrency] = useState(
-        new Map(Object.entries(props.worldCurrency)).get(props.localCurrency)
-    );
+    const [actualCurrency, setCurrency] = useState();
 
+    useEffect(() =>
+        setCurrency(
+            new Map(Object.entries(props.worldCurrency)).get(
+                props.localCurrency
+            )
+        )
+    );
     let modules = [
         <Accordion1 />,
         <Accordion2 />,

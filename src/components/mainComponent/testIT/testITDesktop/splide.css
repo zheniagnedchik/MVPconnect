@@ -29,8 +29,8 @@
 }
 
 .slider_transform .sliderBtn {
-    background: #2692ec;
+    background: #73ff81;
 }
 .slider_transform.is-active .sliderBtn {
-    background: #ffb81a;
+    background: #d16eff;
 }

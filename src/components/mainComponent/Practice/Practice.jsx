@@ -1,7 +1,10 @@
 import PracticeCss from './Practice.module.css';
 import VectorRight from './img/VectorRight.svg';
 import VectorLeft from './img/VectorLeft.svg';
+
 import slider1 from './img/slider1.svg';
+import slider2 from './img/slider2.svg';
+import slider3 from './img/slider3.svg';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/skyblue';
 import './splide.css';
@@ -41,7 +44,7 @@ const Practice = () => {
                                     <img src={slider1} alt="" />
                                 </div>
                                 <div className={PracticeCss.sliderTitle}>
-                                    Frontend разработчик
+                                    Frontend <br /> разработчик
                                 </div>
                                 <div className={PracticeCss.sliderSubTitle}>
                                     Упор на решение реальных задач и
@@ -60,10 +63,10 @@ const Practice = () => {
                             {' '}
                             <div className={PracticeCss.slider}>
                                 <div className={PracticeCss.sliderImg}>
-                                    <img src={slider1} alt="" />
+                                    <img src={slider2} alt="" />
                                 </div>
                                 <div className={PracticeCss.sliderTitle}>
-                                    Python разработчик
+                                    Python <br /> разработчик
                                 </div>
                                 <div className={PracticeCss.sliderSubTitle}>
                                     Упор на решение реальных задач и
@@ -82,10 +85,10 @@ const Practice = () => {
                             {' '}
                             <div className={PracticeCss.slider}>
                                 <div className={PracticeCss.sliderImg}>
-                                    <img src={slider1} alt="" />
+                                    <img src={slider3} alt="" />
                                 </div>
                                 <div className={PracticeCss.sliderTitle}>
-                                    UX/UI дизайнер
+                                    UX/UI <br /> дизайнер
                                 </div>
                                 <div className={PracticeCss.sliderSubTitle}>
                                     Упор на решение реальных задач и

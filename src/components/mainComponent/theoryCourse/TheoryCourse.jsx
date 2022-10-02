@@ -2,6 +2,8 @@ import TheoryCourseCss from './TheoryCourse.module.css';
 import VectorRight from './img/VectorRight.svg';
 import VectorLeft from './img/VectorLeft.svg';
 import slider1 from './img/slider1.svg';
+import slider2 from './img/slider2.svg';
+import slider3 from './img/slider3.svg';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/skyblue';
 import './splide.css';
@@ -38,10 +40,12 @@ const TheoryCourse = () => {
                                     <img src={slider1} alt="" />
                                 </div>
                                 <div className={TheoryCourseCss.sliderTitle}>
-                                    Курс Frontend разработчик
+                                    Курс Frontend <br /> разработчик
                                 </div>
                                 <div className={TheoryCourseCss.sliderSubTitle}>
-                                    От нулевого уровня до специалиста
+                                    Научишься верстать сайты, делать адаптив для
+                                    разных устройств, сможешь писать мобильные
+                                    приложения для iOs и Android
                                 </div>
                                 <NavLink to="/Frontend">
                                     {' '}
@@ -56,13 +60,15 @@ const TheoryCourse = () => {
                             {' '}
                             <div className={TheoryCourseCss.slider}>
                                 <div className={TheoryCourseCss.sliderImg}>
-                                    <img src={slider1} alt="" />
+                                    <img src={slider2} alt="" />
                                 </div>
                                 <div className={TheoryCourseCss.sliderTitle}>
                                     Курс UX/UI <br /> дизайнер
                                 </div>
                                 <div className={TheoryCourseCss.sliderSubTitle}>
-                                    От нулевого уровня до специалиста
+                                    Научишься создавать дизайн, делать красивые
+                                    и функциональные сайты и приложения. Узнаешь
+                                    как предугадывать действия пользователей
                                 </div>
                                 <NavLink to="/Designer">
                                     {' '}
@@ -76,13 +82,16 @@ const TheoryCourse = () => {
                             {' '}
                             <div className={TheoryCourseCss.slider}>
                                 <div className={TheoryCourseCss.sliderImg}>
-                                    <img src={slider1} alt="" />
+                                    <img src={slider3} alt="" />
                                 </div>
                                 <div className={TheoryCourseCss.sliderTitle}>
-                                    Курс Python разработчик
+                                    Курс Python <br /> разработчик
                                 </div>
                                 <div className={TheoryCourseCss.sliderSubTitle}>
-                                    От нулевого уровня до специалиста
+                                    Научишься работать с базами данных,
+                                    создавать логику работы продукта, узнаешь
+                                    как сделать парсинг и напишешь собственного
+                                    телеграмм бота
                                 </div>
                                 <NavLink to="/Python">
                                     {' '}
