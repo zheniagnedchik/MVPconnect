@@ -87,6 +87,15 @@
     }
 }
 
+@media (min-width: 1400px) and (max-width: 1800px) {
+    .chart canvas {
+        height: 200px;
+    }
+    .chart {
+        margin: 1% auto;
+    }
+}
+
 @media (min-width: 2100px) {
     .sliderImg img {
         height: 5.75vw;

@@ -1,0 +1,116 @@
+.info__header-item {
+    color: #787171;
+    font-size: 24px;
+    font-weight: 600;
+}
+.info__header-container {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+.info__container {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+.info__header-item.active {
+    color: #ffb81a;
+}
+.info__block-title {
+    font-size: 16px;
+    font-weight: 400;
+    color: #787171;
+    width: 200px;
+}
+.info {
+    width: 62%;
+    margin-top: 40px;
+}
+.info__block-description-project {
+    color: #ada2a2;
+    font-weight: 700;
+    font-size: 20px;
+    width: 95%;
+}
+.info__block-description-link {
+    color: #4b73ff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+.info__block {
+    display: flex;
+    margin-top: 20px;
+}
+.info__block-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #787171;
+    width: 95%;
+    /* margin-left: 30px; */
+}
+.info__comand-img {
+    width: 30px;
+    border-radius: 100px;
+}
+.info__comand-img-container {
+    margin-left: 20px;
+}
+.info__block-description-comand {
+    font-size: 16px;
+    font-weight: 400;
+    color: #787171;
+    width: 95%;
+    display: flex;
+}
+.info__comand-arrow {
+    width: 15px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.info__comand-list-name {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin-left: 20px;
+}
+.info__comand-list {
+    display: flex;
+    align-items: center;
+}
+.info__attachments {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    width: 30%;
+}
+.info__attachments-name {
+    font-size: 16px;
+    font-weight: 400;
+    color: #787171;
+    text-align: center;
+}
+@media (max-width: 770px) {
+    .info__header-item {
+        font-size: 12px;
+    }
+    .info__header-container {
+        width: 90%;
+    }
+    .info {
+        width: 90%;
+    }
+    .info__block-title {
+        font-size: 12px;
+        width: 110px;
+    }
+    .info__block-description {
+        font-size: 12px;
+    }
+    /* .info__block-description {
+    margin-left: ;
+  } */
+}

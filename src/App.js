@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import { CheckWindowSize } from './states/state';
+
 import MainComponent from './components/mainComponent/MainComponent';
 import Courses from './components/courses/Courses';
 import Frontend from './components/courses/frontend/Frontend';
@@ -30,6 +31,8 @@ import CourseForm from './components/forms/CoursesForm';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import axios, { Axios } from 'axios';
+import Layout from './components/certificate/components/Layout/Layout';
+import CheckSertificate from './components/certificate/components/CheckSrtificate/CheckSertificate';
 
 function App(props) {
     CheckWindowSize();
@@ -271,6 +274,15 @@ function App(props) {
                                 state={props.state}
                             />
                         }
+                    />
+
+                    <Route
+                        path="/cf"
+                        element={<CheckSertificate state={props.state} />}
+                    />
+                    <Route
+                        path="/certificate"
+                        element={<Layout state={props.state} />}
                     />
                 </Routes>
             </div>

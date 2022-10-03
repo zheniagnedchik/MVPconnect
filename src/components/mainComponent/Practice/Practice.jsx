@@ -36,7 +36,7 @@ const Practice = () => {
                 aria-label="..."
             >
                 <div className={PracticeCss.splideWrapper}>
-                    <SplideTrack>
+                    <SplideTrack className={PracticeCss.SplideTrack}>
                         <SplideSlide>
                             {' '}
                             <div className={PracticeCss.slider}>

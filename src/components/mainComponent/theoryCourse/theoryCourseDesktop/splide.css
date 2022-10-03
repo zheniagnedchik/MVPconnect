@@ -3,7 +3,7 @@
     transition: transform 0.3s;
 }
 .slider_transform.is-active .slider {
-    box-shadow: 0px 0px 15px #ffb81a;
+    box-shadow: 0px 0px 15px #d16eff;
     border: 1px solid black;
 }
 .slider_transform {
@@ -12,8 +12,8 @@
 }
 
 .slider_transform .slider {
-    border: 1px solid #2692ec;
-    box-shadow: 0px 0px 15px rgba(255, 184, 26, 0.3);
+    border: 1px solid #73ff81;
+    box-shadow: 0px 0px 15px #73ff81;
 }
 
 .slider_transform .sliderBtn {
