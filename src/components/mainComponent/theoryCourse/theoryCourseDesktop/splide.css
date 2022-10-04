@@ -1,4 +1,4 @@
-.slider_transform.is-active {
+.slider_transform.is-active .slider {
     transform: scale(1.1);
     transition: transform 0.3s;
 }
@@ -6,7 +6,7 @@
     box-shadow: 0px 0px 15px #d16eff;
     border: 1px solid black;
 }
-.slider_transform {
+.slider_transform .slider {
     transform: scale(1);
     transition: transform 0.3s;
 }

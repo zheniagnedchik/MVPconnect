@@ -275,14 +275,13 @@ function App(props) {
                             />
                         }
                     />
-
-                    <Route
-                        path="/cf"
-                        element={<CheckSertificate state={props.state} />}
-                    />
                     <Route
                         path="/certificate"
                         element={<Layout state={props.state} />}
+                    />
+                    <Route
+                        path="/cf"
+                        element={<CheckSertificate state={props.state} />}
                     />
                 </Routes>
             </div>

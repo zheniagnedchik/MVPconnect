@@ -1,6 +1,6 @@
 .TestITStartCss {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
 }
 .btnBackWrapper {
     margin-top: 8vh;
@@ -16,7 +16,7 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 1.75vmax;
+    font-size: 1.3vmax;
     line-height: 130%;
 }
 
@@ -62,7 +62,7 @@
     font-style: normal;
     font-weight: 400;
     width: 80%;
-    margin: 10% auto 0;
+    margin: 2% auto 0;
     font-size: 2.45vmax;
     line-height: 130%;
     color: white;
@@ -158,7 +158,7 @@
     .testBtn {
         width: 14.75vw;
         height: 3.76vh;
-        margin: 8.63vh auto 0;
+        margin: 5.63vh auto 0;
         font-size: 1.4vmax;
     }
 
@@ -217,9 +217,9 @@
         font-size: 1.45vmax;
     }
     .testBtn {
-        width: 12.75vw;
-        height: 5.96vh;
+        width: 10.75vw;
+        height: 3.96vh;
 
-        font-size: 1.45vmax;
+        font-size: 1vmax;
     }
 }

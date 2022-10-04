@@ -17,17 +17,16 @@
 }
 
 .burgerIcon {
-    margin: 4vh 5vw 4.82vh 86.56vw;
+    margin: 4vh 5vw 4vh 86.56vw;
 }
 
 .fixed {
     position: fixed;
-    height: 9.43vh;
+    height: 8.43vh;
 }
 
 .fixedImg {
     width: 15.62vw;
-    height: 8.77vh;
 }
 .fixedIcon {
     width: 22.18vw;
@@ -36,7 +35,7 @@
 }
 
 .fixedBurgerIcon {
-    margin: 3.82vh 5vw 4.82vh 86.56vw;
+    margin: 3vh 5vw 3vh 86.56vw;
 }
 
 /* mobile  */

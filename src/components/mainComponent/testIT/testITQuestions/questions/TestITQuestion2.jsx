@@ -13,33 +13,30 @@ const TestITQuestion2 = (props) => {
             <div className={TestITStartCss.questionWrapper}>
                 <div className={TestITStartCss.questionNumber}>Вопрос 2</div>
                 <div className={TestITStartCss.question}>
-                    Для Вас принципиально, чтобы в Вашей работе была
-                    возможность?
+                    При общении с людьми Вы?
                 </div>
             </div>
 
             <div className={TestITStartCss.options}>
                 <div className={TestITStartCss.option}>
                     <input
-                        onClick={() => checkBtn(2)}
+                        onClick={() => checkBtn(1)}
                         name="option"
                         type="radio"
                         id="option0"
                     />
                     <label htmlFor="option0">
-                        проявлять фантазию и творческий подход
+                        с радостью вступаете в разговор
                     </label>
                 </div>
                 <div className={TestITStartCss.option}>
                     <input
-                        onClick={() => checkBtn(1)}
+                        onClick={() => checkBtn(2)}
                         name="option"
                         type="radio"
                         id="option1"
                     />
-                    <label htmlFor="option1">
-                        создавать порядок, структурировать информацию и процессы{' '}
-                    </label>
+                    <label htmlFor="option1">нечто среднее</label>
                 </div>
 
                 <div className={TestITStartCss.option}>
@@ -50,8 +47,7 @@ const TestITQuestion2 = (props) => {
                         id="option2"
                     />
                     <label htmlFor="option2">
-                        четко понимать свои обязанности и возможности для
-                        развития{' '}
+                        предпочитаете спокойно оставаться в стороне
                     </label>
                 </div>
                 <div className={TestITStartCss.option}>
@@ -62,7 +58,7 @@ const TestITQuestion2 = (props) => {
                         id="option3"
                     />
                     <label htmlFor="option3">
-                        общаться с клиентами, влиять на других людей{' '}
+                        предпочитаете брать инициативу на себя
                     </label>
                 </div>
             </div>

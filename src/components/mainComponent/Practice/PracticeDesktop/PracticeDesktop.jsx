@@ -31,6 +31,7 @@ const PracticeDesktop = () => {
                     gap: 0,
                     perPage: 3,
                     rewind: true,
+
                     rewindByDrag: true,
                     isNavigation: true,
                     pagination: true,

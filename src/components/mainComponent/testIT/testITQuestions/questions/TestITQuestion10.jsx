@@ -14,7 +14,8 @@ const TestITQuestion10 = (props) => {
             <div className={TestITStartCss.questionWrapper}>
                 <div className={TestITStartCss.questionNumber}>Вопрос 10</div>
                 <div className={TestITStartCss.question}>
-                    При общении с людьми Вы?
+                    Для Вас принципиально, чтобы в Вашей работе была
+                    возможность?
                 </div>
             </div>
 
@@ -27,7 +28,7 @@ const TestITQuestion10 = (props) => {
                         id="option0"
                     />
                     <label htmlFor="option0">
-                        с радостью вступаете в разговор{' '}
+                        проявлять фантазию и творческий подход{' '}
                     </label>
                 </div>
                 <div className={TestITStartCss.option}>
@@ -37,7 +38,10 @@ const TestITQuestion10 = (props) => {
                         type="radio"
                         id="option1"
                     />
-                    <label htmlFor="option1">нечто среднее</label>
+                    <label htmlFor="option1">
+                        {' '}
+                        создавать порядок, структурировать информацию и процессы{' '}
+                    </label>
                 </div>
                 <div className={TestITStartCss.option}>
                     <input
@@ -48,7 +52,8 @@ const TestITQuestion10 = (props) => {
                     />
                     <label htmlFor="option2">
                         {' '}
-                        предпочитаете спокойно оставаться в стороне
+                        четко понимать свои обязанности и возможности для
+                        развития{' '}
                     </label>
                 </div>
                 <div className={TestITStartCss.option}>
@@ -59,7 +64,7 @@ const TestITQuestion10 = (props) => {
                         id="option3"
                     />
                     <label htmlFor="option3">
-                        предпочитаете брать инициативу на себя
+                        общаться с клиентами, влиять на других людей{' '}
                     </label>
                 </div>
             </div>

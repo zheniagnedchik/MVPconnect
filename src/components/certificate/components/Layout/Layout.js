@@ -9,7 +9,7 @@ import { useLocation } from 'react-router-dom';
 import BurgerMenuDesktop from '../../../mainComponent/mainPage/burgerMenuDesktop/BurgerMenuDesktop';
 import BurgerMenu from '../../../mainComponent/mainPage/burgerMenu/BurgerMenu';
 import MvpConnectDesktop from '../../../mainComponent/mvpConnect/mvpConnectDesktop/MvpConnectDesktop';
-import MvpConnect from '../../../mainComponent/mvpConnect/MvpConnect';
+import MvpConnectMobile from './mvpConnectMobile/MvpConnectMobile';
 
 const Layout = (props) => {
     const { state } = useLocation();
@@ -29,7 +29,7 @@ const Layout = (props) => {
                     {props.state.displaySize.isDesktop ? (
                         <MvpConnectDesktop />
                     ) : (
-                        <MvpConnect />
+                        <MvpConnectMobile />
                     )}
                     {/* <div style={{ width: '100%', height: '40px' }}></div> */}
                 </div>
