@@ -134,6 +134,12 @@
     background: rgb(207, 198, 198);
 }
 
+@media (max-width: 330px) {
+    .TestITStartCss {
+        height: 110vh;
+    }
+}
+
 /* mobile with rotate */
 @media (max-height: 500px) {
     .testBtn {
@@ -143,7 +149,7 @@
         margin-right: 35%;
     }
     .TestITStartCss {
-        height: 130vh;
+        height: 100vh;
     }
     .options {
         font-size: 2vmax !important;
