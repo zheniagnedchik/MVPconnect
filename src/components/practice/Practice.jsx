@@ -19,6 +19,7 @@ import MvpConnect from '../mainComponent/mvpConnect/MvpConnect';
 import MvpConnectDesktop from '../mainComponent/mvpConnect/mvpConnectDesktop/MvpConnectDesktop';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import PracticeForm from '../forms/PracticeForm';
 
 const Practice = (props) => {
     props.ScrollTop();
@@ -39,6 +40,10 @@ const Practice = (props) => {
             ) : (
                 <BurgerMenu />
             )}
+            <PracticeForm
+                changePracticeCourses={props.changePracticeCourses}
+                formPracticeActive={props.formPracticeActive}
+            />
             <div className={PracticeCss.titleBack}>
                 <div className={PracticeCss.titleWrapper}>
                     <div className={PracticeCss.title}>MVP connect</div>
@@ -178,11 +183,13 @@ const Practice = (props) => {
                             </div>
                         </div>
                     </div>
-                    <NavLink to="/PracticeForm">
-                        <div className={PracticeCss.resultBtn}>
-                            <p>Прокачаться</p>
-                        </div>
-                    </NavLink>
+
+                    <div
+                        onClick={() => props.changePracticeCourses()}
+                        className={PracticeCss.resultBtn}
+                    >
+                        <p>Прокачаться</p>
+                    </div>
 
                     <div className={PracticeCss.resultsWrapper}>
                         <div className={PracticeCss.titleMVP}>
@@ -283,11 +290,14 @@ const Practice = (props) => {
                             </div>
                         </div>
                     </div>
-                    <NavLink to="/PracticeForm">
-                        <div className={PracticeCss.resulAdvtBtn}>
-                            <p>Использовать все преимущества</p>
-                        </div>
-                    </NavLink>
+
+                    <div
+                        onClick={() => props.changePracticeCourses()}
+                        className={PracticeCss.resulAdvtBtn}
+                    >
+                        <p>Использовать все преимущества</p>
+                    </div>
+
                     <div className={PracticeCss.costWrapper}>
                         <div className={PracticeCss.titleMVP}>
                             Стоимость практики (аналог стажировки)
@@ -363,11 +373,14 @@ const Practice = (props) => {
                                     </p>
                                 </div>
 
-                                <NavLink to="/PracticeForm">
-                                    <div className={PracticeCss.costBtn}>
-                                        Зарегистрироваться
-                                    </div>
-                                </NavLink>
+                                <div
+                                    onClick={() =>
+                                        props.changePracticeCourses()
+                                    }
+                                    className={PracticeCss.costBtn}
+                                >
+                                    Зарегистрироваться
+                                </div>
                             </div>
                             <div className={PracticeCss.costItem}>
                                 <div className={PracticeCss.cost}>
@@ -430,11 +443,14 @@ const Practice = (props) => {
                                     </p>
                                 </div>
 
-                                <NavLink to="/PracticeForm">
-                                    <div className={PracticeCss.costBtn}>
-                                        <p>Зарегистрироваться</p>
-                                    </div>
-                                </NavLink>
+                                <div
+                                    onClick={() =>
+                                        props.changePracticeCourses()
+                                    }
+                                    className={PracticeCss.costBtn}
+                                >
+                                    <p>Зарегистрироваться</p>
+                                </div>
                             </div>
                         </div>
 
@@ -580,11 +596,14 @@ const Practice = (props) => {
                             </div>
                         </div>
                     </div>
-                    <NavLink to="/PracticeForm">
-                        <div className={PracticeCss.resulAdvtBtn}>
-                            <p>Использовать преимущества</p>
-                        </div>
-                    </NavLink>
+
+                    <div
+                        onClick={() => props.changePracticeCourses()}
+                        className={PracticeCss.resulAdvtBtn}
+                    >
+                        <p>Использовать преимущества</p>
+                    </div>
+
                     {props.state.displaySize.isDesktop ? (
                         <MvpConnectDesktop />
                     ) : (

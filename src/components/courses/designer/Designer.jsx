@@ -17,6 +17,7 @@ import { useEffect } from 'react';
 import MenuMobile from './menu/MenuMobile';
 import MvpConnect from '../../mainComponent/mvpConnect/MvpConnect';
 import MvpConnectDesktop from '../../mainComponent/mvpConnect/mvpConnectDesktop/MvpConnectDesktop';
+import CourseForm from '../../forms/CoursesForm';
 
 const Designer = (props) => {
     props.ScrollTop();
@@ -41,6 +42,7 @@ const Designer = (props) => {
             localCurrency={props.localCurrency}
             actualCurrency={actualCurrency}
             Prices={props.Prices}
+            changeActiveCourses={props.changeActiveCourses}
         />,
     ];
     if (ChoiseModule === 2) {
@@ -51,6 +53,7 @@ const Designer = (props) => {
                 localCurrency={props.localCurrency}
                 actualCurrency={actualCurrency}
                 Prices={props.Prices}
+                changeActiveCourses={props.changeActiveCourses}
             />,
         ];
     } else if (ChoiseModule === 3) {
@@ -61,6 +64,7 @@ const Designer = (props) => {
                 localCurrency={props.localCurrency}
                 actualCurrency={actualCurrency}
                 Prices={props.Prices}
+                changeActiveCourses={props.changeActiveCourses}
             />,
         ];
     } else if (ChoiseModule === 4) {
@@ -71,6 +75,7 @@ const Designer = (props) => {
                 localCurrency={props.localCurrency}
                 actualCurrency={actualCurrency}
                 Prices={props.Prices}
+                changeActiveCourses={props.changeActiveCourses}
             />,
         ];
     } else {
@@ -83,9 +88,11 @@ const Designer = (props) => {
                 localCurrency={props.localCurrency}
                 actualCurrency={actualCurrency}
                 Prices={props.Prices}
+                changeActiveCourses={props.changeActiveCourses}
             />,
         ];
     }
+
     return (
         <div className={DesignerCss.DesignerWrapper}>
             <div className={DesignerCss.Designer}>
@@ -93,6 +100,15 @@ const Designer = (props) => {
                     <BurgerMenuDesktop />
                 ) : (
                     <BurgerMenu />
+                )}
+                {props.formCoursesActive ? (
+                    <CourseForm
+                        state={props.state}
+                        changeActiveCourses={props.changeActiveCourses}
+                        formCoursesActive={props.formCoursesActive}
+                    />
+                ) : (
+                    ''
                 )}
                 <div className={DesignerCss.titleBack}>
                     <div className={DesignerCss.titleWrapper}>
@@ -103,15 +119,17 @@ const Designer = (props) => {
                             Теоретические и практические курсы по подготовке
                             UX/UI дизайнеров на реальных проектах (стартапах)
                         </div>
-                        <NavLink
-                            to="/CourseForm"
-                            onClick={() => props.CheckNumberSplider(0)}
+                        <div
+                            onClick={() => {
+                                props.CheckNumberSplider(0);
+                                props.changeActiveCourses();
+                            }}
                         >
                             {' '}
                             <div className={DesignerCss.titleBtn}>
                                 <p>Записаться на курс</p>
                             </div>
-                        </NavLink>
+                        </div>
                     </div>
                     <div className={DesignerCss.blackBack}>
                         <div className={DesignerCss.stagesTitleWrapper}>
@@ -206,14 +224,16 @@ const Designer = (props) => {
                             </div>
                         </div>
 
-                        <NavLink
-                            to="/CourseForm"
-                            onClick={() => props.CheckNumberSplider(0)}
+                        <div
+                            onClick={() => {
+                                props.CheckNumberSplider(0);
+                                props.changeActiveCourses();
+                            }}
                         >
                             <div className={DesignerCss.coursesBtn}>
                                 Записаться на курс
                             </div>{' '}
-                        </NavLink>
+                        </div>
                         <div className={DesignerCss.mentorWrapper}>
                             <div className={DesignerCss.mentor}>
                                 <img src={mentor} alt="" />
@@ -256,11 +276,13 @@ const Designer = (props) => {
                             <MenuDesktop
                                 ChoiseModule={ChoiseModule}
                                 setChoiseModule={setChoiseModule}
+                                ChangNumberModule={props.ChangNumberModule}
                             />
                         ) : (
                             <MenuMobile
                                 ChoiseModule={ChoiseModule}
                                 setChoiseModule={setChoiseModule}
+                                ChangNumberModule={props.ChangNumberModule}
                             />
                         )}
 

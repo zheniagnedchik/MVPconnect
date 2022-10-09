@@ -12,6 +12,7 @@ import { linkResultTest } from './states/state';
 import { CheckWindowStart } from './states/state';
 import { ScrollTop } from './states/state';
 import { CheckNumberSplider } from './states/state';
+import { ChangNumberModule } from './states/state';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 CheckWindowStart();
@@ -29,6 +30,7 @@ root.render(
             Comments={Comments.comments}
             Stars={Comments.stars}
             Videos={Comments.videos}
+            ChangNumberModule={ChangNumberModule}
         />
     </React.StrictMode>
 );

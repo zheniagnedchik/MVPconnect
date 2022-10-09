@@ -1,6 +1,7 @@
 import { check } from 'prettier';
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
+
 let state = {
     testITResults: [0, 0, 0, 0], // All points
     linkResult: '', // Link for NavLink in question/TestITQuestion10.jsx
@@ -9,6 +10,7 @@ let state = {
         isDesktop: Boolean,
     },
     numberSplider: 0,
+    numberModule: 2,
 };
 export default state;
 
@@ -90,8 +92,11 @@ export const ScrollTop = () => {
     return null;
 };
 
-// check number splider in forms for splider (forms/CoursesForm and forms/splider/DesktopSplider, MobileSplider). CallBack for all NavLink buttons which have link './CoursesForm'.
+// check number splider and module in Courses for  spliders in Form (forms/CoursesForm and forms/splider/DesktopSplider, MobileSplider and (menuDesktop, menuMobile for modules)). CallBack for all buttons which open CoursesForm
 
 export const CheckNumberSplider = (e) => {
     state.numberSplider = e;
+};
+export const ChangNumberModule = (e) => {
+    state.numberModule = e;
 };

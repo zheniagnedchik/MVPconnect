@@ -23,13 +23,22 @@ import MvpConnectDesktop from './mvpConnect/mvpConnectDesktop/MvpConnectDesktop'
 const MainComponent = (props) => {
     return (
         <div className={MainComponentCss.mainComponent}>
-            <MainPage displaySize={props.state.displaySize} />
+            <MainPage
+                displaySize={props.state.displaySize}
+                changePracticeCourses={props.changePracticeCourses}
+                formPracticeActive={props.formPracticeActive}
+            />
             <div className={MainComponentCss.wrapper}>
                 {props.state.displaySize.isDesktop ? (
-                    <StudentChoiceDesktop />
+                    <StudentChoiceDesktop
+                        changePracticeCourses={props.changePracticeCourses}
+                    />
                 ) : (
-                    <StudentChoice />
+                    <StudentChoice
+                        changePracticeCourses={props.changePracticeCourses}
+                    />
                 )}
+
                 {props.state.displaySize.isDesktop ? (
                     <TheoryCourseDesktop />
                 ) : (

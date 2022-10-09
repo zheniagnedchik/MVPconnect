@@ -58,6 +58,7 @@
     font-size: 1vmax;
     font-weight: 700;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .titleBtn2 {
@@ -72,6 +73,7 @@
     font-size: 1vmax;
     font-weight: 700;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .blackBack {
@@ -180,6 +182,7 @@
     font-weight: 700;
     border-radius: 10px;
     text-align: center;
+    cursor: pointer;
 }
 .resulAdvtBtn {
     display: flex;
@@ -194,6 +197,7 @@
     font-weight: 700;
     border-radius: 10px;
     text-align: center;
+    cursor: pointer;
 }
 
 .costItemWrapper {
@@ -267,7 +271,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 40%;
     height: 6vh;
     background: #d16eff;
     border-radius: 6px;
@@ -276,6 +280,7 @@
     font-weight: 700;
     border-radius: 10px;
     text-align: center;
+    cursor: pointer;
 }
 .costInfo {
     margin: 0 auto 7%;
@@ -457,6 +462,7 @@
 
     .costBtn {
         font-size: 1.8vmax;
+        width: 55%;
     }
     .costItem a {
         width: 50%;

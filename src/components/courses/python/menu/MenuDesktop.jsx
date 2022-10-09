@@ -13,7 +13,10 @@ const MenuDesktop = (props) => {
                     <p> Максимальный</p>
                 </div> */}
                 <div
-                    onClick={() => props.setChoiseModule(2)}
+                    onClick={() => {
+                        props.setChoiseModule(2);
+                        props.ChangNumberModule(2);
+                    }}
                     className={` ${
                         props.ChoiseModule === 2 ? MenuCss.dMenuActive : ''
                     }`}
@@ -29,7 +32,10 @@ const MenuDesktop = (props) => {
                     <p> Профессиональный</p>
                 </div> */}
                 <div
-                    onClick={() => props.setChoiseModule(4)}
+                    onClick={() => {
+                        props.setChoiseModule(4);
+                        props.ChangNumberModule(4);
+                    }}
                     className={` ${
                         props.ChoiseModule === 4 ? MenuCss.dMenuActive : ''
                     }`}

@@ -17,6 +17,7 @@ import MenuMobile from './menu/MenuMobile';
 import MvpConnect from '../../mainComponent/mvpConnect/MvpConnect';
 import MvpConnectDesktop from '../../mainComponent/mvpConnect/mvpConnectDesktop/MvpConnectDesktop';
 import { useEffect } from 'react';
+import CourseForm from '../../forms/CoursesForm';
 
 const Frontend = (props) => {
     props.ScrollTop();
@@ -41,6 +42,7 @@ const Frontend = (props) => {
             localCurrency={props.localCurrency}
             actualCurrency={actualCurrency}
             Prices={props.Prices}
+            changeActiveCourses={props.changeActiveCourses}
         />,
     ];
     if (ChoiseModule === 2) {
@@ -51,6 +53,7 @@ const Frontend = (props) => {
                 localCurrency={props.localCurrency}
                 actualCurrency={actualCurrency}
                 Prices={props.Prices}
+                changeActiveCourses={props.changeActiveCourses}
             />,
         ];
     } else if (ChoiseModule === 3) {
@@ -61,6 +64,7 @@ const Frontend = (props) => {
                 localCurrency={props.localCurrency}
                 actualCurrency={actualCurrency}
                 Prices={props.Prices}
+                changeActiveCourses={props.changeActiveCourses}
             />,
         ];
     } else if (ChoiseModule === 4) {
@@ -71,6 +75,7 @@ const Frontend = (props) => {
                 localCurrency={props.localCurrency}
                 actualCurrency={actualCurrency}
                 Prices={props.Prices}
+                changeActiveCourses={props.changeActiveCourses}
             />,
         ];
     } else {
@@ -83,6 +88,7 @@ const Frontend = (props) => {
                 localCurrency={props.localCurrency}
                 actualCurrency={actualCurrency}
                 Prices={props.Prices}
+                changeActiveCourses={props.changeActiveCourses}
             />,
         ];
     }
@@ -94,6 +100,15 @@ const Frontend = (props) => {
             ) : (
                 <BurgerMenu />
             )}
+            {props.formCoursesActive ? (
+                <CourseForm
+                    state={props.state}
+                    changeActiveCourses={props.changeActiveCourses}
+                    formCoursesActive={props.formCoursesActive}
+                />
+            ) : (
+                ''
+            )}
             <div className={FrontendCss.titleBack}>
                 <div className={FrontendCss.titleWrapper}>
                     <div className={FrontendCss.title}>
@@ -103,15 +118,17 @@ const Frontend = (props) => {
                         Теоретические и практические курсы по подготовке
                         Frontend разработчиков на реальных проектах (стартапах)
                     </div>
-                    <NavLink
-                        to="/CourseForm"
-                        onClick={() => props.CheckNumberSplider(1)}
+                    <div
+                        onClick={() => {
+                            props.CheckNumberSplider(1);
+                            props.changeActiveCourses();
+                        }}
                     >
                         {' '}
                         <div className={FrontendCss.titleBtn}>
                             <p>Записаться на курс</p>
                         </div>
-                    </NavLink>
+                    </div>
                 </div>
                 <div className={FrontendCss.blackBack}>
                     <div className={FrontendCss.stagesTitleWrapper}>
@@ -204,15 +221,17 @@ const Frontend = (props) => {
                         </div>
                     </div>
 
-                    <NavLink
-                        to="/CourseForm"
-                        onClick={() => props.CheckNumberSplider(1)}
+                    <div
+                        onClick={() => {
+                            props.CheckNumberSplider(1);
+                            props.changeActiveCourses();
+                        }}
                     >
                         {' '}
                         <div className={FrontendCss.coursesBtn}>
                             Записаться на курс
                         </div>{' '}
-                    </NavLink>
+                    </div>
                     <div className={FrontendCss.mentorWrapper}>
                         <div className={FrontendCss.mentor}>
                             <img src={mentor} alt="" />
@@ -250,11 +269,13 @@ const Frontend = (props) => {
                         <MenuDesktop
                             ChoiseModule={ChoiseModule}
                             setChoiseModule={setChoiseModule}
+                            ChangNumberModule={props.ChangNumberModule}
                         />
                     ) : (
                         <MenuMobile
                             ChoiseModule={ChoiseModule}
                             setChoiseModule={setChoiseModule}
+                            ChangNumberModule={props.ChangNumberModule}
                         />
                     )}
 

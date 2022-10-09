@@ -1,26 +1,37 @@
 .PracticeForm {
-    background: black;
     color: white;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 500;
+    background: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+    display: none;
 }
 .formWrapper {
-    padding: 5% 0;
-
-    width: 60%;
-
+    width: 100%;
+    padding-top: 2%;
     margin: 0 auto;
+    display: flex;
 }
-
+.formActive {
+    display: block;
+}
 .cross {
-    width: 5%;
-    margin-left: 95%;
-    margin-bottom: 5%;
+    width: 4%;
+    margin-left: 96%;
+    padding-top: 4%;
+    cursor: pointer;
 }
 .cross img {
     width: 100%;
 }
 .formItem {
+    background: black;
+    width: 50%;
+
     display: flex;
-    padding: 5% 10%;
+    padding: 1% 5%;
     margin: 0 auto;
     height: 50%;
     flex-direction: column;
@@ -31,12 +42,12 @@
 }
 
 .overhead {
-    font-size: 1.5vmax;
+    font-size: 1.3vmax;
     line-height: 130%;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    margin-bottom: 3%;
+    margin-bottom: 1%;
 }
 
 .title {
@@ -45,7 +56,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 140%;
-    font-size: 2vmax;
+    font-size: 1.8vmax;
     text-align: center;
 }
 
@@ -59,16 +70,17 @@
 }
 
 .inputWrapper label {
-    margin-top: 3%;
+    margin-top: 1%;
     color: #ffb81a;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
-    font-size: 1.2vmax;
+    font-size: 1.1vmax;
 }
 
 .inputWrapper {
-    margin-top: 3%;
+    margin-top: 1%;
+    text-align: start;
 }
 
 .inputWrapper input {
@@ -76,12 +88,12 @@
     background: black;
     border: 1px solid #1c6db1;
     color: white;
-    height: 4vh;
+    height: 3vh;
     font-size: 1.2vmax;
 }
 
 .inputItem {
-    margin-bottom: 3%;
+    margin-bottom: 1%;
 }
 
 .profWrapper {
@@ -105,6 +117,7 @@
     font-style: normal;
     font-weight: 300;
     font-size: 1.2vmax;
+    text-align: start;
 }
 .profWrapper input {
     position: relative;
@@ -140,7 +153,7 @@
     visibility: visible;
 }
 .profItem {
-    margin-top: 3%;
+    margin-top: 2%;
     display: flex;
     align-items: center;
 }
@@ -156,7 +169,7 @@
 .footer {
     display: flex;
     flex-direction: column;
-    margin: 3% auto;
+    margin: 1% auto;
     text-align: center;
 }
 .footer a {
@@ -170,7 +183,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 1.1vmax;
-    margin-top: 3%;
+    margin-top: 1%;
 }
 
 .footerInfo a {
@@ -184,11 +197,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 6vh;
+    margin: 3% auto;
+    width: 60%;
+    height: 5vh;
     background: #ffb81a;
     border-radius: 6px;
-
+    cursor: pointer;
     font-size: 1.3vmax;
     font-weight: 700;
     border-radius: 10px;
@@ -200,8 +214,8 @@
 }
 
 .splideTrack {
-    width: 50%;
-    margin: 5% auto;
+    width: 80%;
+    margin: 3% auto;
 }
 .splideWrapper {
     width: 100%;
@@ -228,32 +242,34 @@
 }
 
 @media (max-width: 800px) {
+    .formItem {
+        width: 90%;
+    }
     .cross {
         width: 10%;
-        margin-left: 90%;
-        margin-bottom: 5%;
+        margin-right: 1%;
     }
     .formWrapper {
         width: 80%;
     }
     .overhead {
-        font-size: 2vmax;
+        font-size: 1.7vmax;
     }
     .title {
         font-size: 2.5vmax;
     }
 
     .inputWrapper label {
-        font-size: 2vmax;
+        font-size: 1.7vmax;
     }
     .inputWrapper input {
-        font-size: 2vmax;
+        font-size: 1.7vmax;
     }
     .profTitle {
-        font-size: 2vmax;
+        font-size: 1.7vmax;
     }
     .profWrapper label {
-        font-size: 2vmax;
+        font-size: 1.7vmax;
     }
 
     .profWrapper input::before {
@@ -285,7 +301,7 @@
     .inputItem,
     .footer,
     .profWrapper {
-        margin-bottom: 7%;
+        margin-bottom: 2%;
     }
 
     .inputWrapper label,
@@ -293,10 +309,10 @@
     .profItem,
     .footerInfo,
     .footer {
-        margin-top: 7%;
+        margin-top: 2%;
     }
     .footer a {
-        margin: 7% auto;
+        margin: 4% auto;
     }
     .footerInfo a {
         display: inline-block;

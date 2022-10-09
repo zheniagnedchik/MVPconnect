@@ -4,10 +4,15 @@ import MainPageCss from './MainPage.module.css';
 import Vector from './img/Vector.svg';
 import { HashLink as Link } from 'react-router-hash-link';
 import { NavLink } from 'react-router-dom';
+import PracticeForm from '../../forms/PracticeForm';
 
 const MainPage = (props) => {
     return (
         <div className={MainPageCss.mainWrapper}>
+            <PracticeForm
+                changePracticeCourses={props.changePracticeCourses}
+                formPracticeActive={props.formPracticeActive}
+            />
             <div className={MainPageCss.mainPage}>
                 {props.displaySize.isDesktop ? (
                     <BurgerMenuDesktop />
