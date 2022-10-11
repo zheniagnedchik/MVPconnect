@@ -7,7 +7,7 @@ import icon5 from './img/icon5.svg';
 import icon6 from './img/icon6.svg';
 import { NavLink } from 'react-router-dom';
 
-const StudentChoiceDesktop = () => {
+const StudentChoiceDesktop = (props) => {
     return (
         <div className={StudentChoiceCss.studentChoice}>
             <div className={StudentChoiceCss.mainTitle}>
@@ -27,9 +27,9 @@ const StudentChoiceDesktop = () => {
                             Коммерческие проекты
                         </div>
                         <div className={StudentChoiceCss.subTitle}>
-                            Коммерческие проекты - практика только на
-                            коммерческих проектах и стартапах. Никаких
-                            Pet-проектов и домашних заготовок.
+                            практика только на коммерческих проектах и
+                            стартапах. Никаких Pet-проектов и домашних
+                            заготовок.
                         </div>
                     </div>
                 </div>
@@ -44,10 +44,9 @@ const StudentChoiceDesktop = () => {
                             Ментор для каждой профессии
                         </div>
                         <div className={StudentChoiceCss.subTitle}>
-                            Ментор для каждой профессии - на практической части
-                            за вами будет закреплен ментор, который в течении
-                            всего обучения будет помогать с постановкой и
-                            реализацией задач.
+                            на практической части за вами будет закреплен
+                            ментор, который в течении всего обучения будет
+                            помогать с постановкой и реализацией задач.
                         </div>
                     </div>
                 </div>
@@ -62,10 +61,10 @@ const StudentChoiceDesktop = () => {
                             Совмещай работу и учёбу
                         </div>
                         <div className={StudentChoiceCss.subTitle}>
-                            Совмещай работу и учебу - вы можете получать
-                            теоретические и практические знания во время работы
-                            с проектом, без ущерба для основной работы/обучения.
-                            "Мягкий" вход в новую специальность.
+                            вы можете получать теоретические и практические
+                            знания во время работы с проектом, без ущерба для
+                            основной работы/обучения. "Мягкий" вход в новую
+                            специальность.
                         </div>
                     </div>
                 </div>
@@ -80,10 +79,10 @@ const StudentChoiceDesktop = () => {
                             Полноценные команды
                         </div>
                         <div className={StudentChoiceCss.subTitle}>
-                            Полноценные команды - вы не работаете в одиночку или
-                            в моно-команде (одного типа). Мы предлагаем команду
-                            из UX/UI, Front&Back-end developers, PM, QA. Только
-                            так можно получить полноценный опыт работы.
+                            вы не работаете в одиночку или в моно-команде
+                            (одного типа). Мы предлагаем команду из UX/UI,
+                            Front&Back-end developers, PM, QA. Только так можно
+                            получить полноценный опыт работы.
                         </div>
                     </div>
                 </div>
@@ -95,13 +94,12 @@ const StudentChoiceDesktop = () => {
                     </div>
                     <div className={StudentChoiceCss.titleWrapper}>
                         <div className={StudentChoiceCss.title}>
-                            Стоимость обучения
+                            Лучшие программы
                         </div>
                         <div className={StudentChoiceCss.subTitle}>
-                            Лучшие программы - мы не предлагаем стать сеньором
-                            за день и заработать миллион за час. Все программы
-                            обеспечивают максимальное качество подготовки, в
-                            реальные сроки.
+                            мы не предлагаем стать сеньором за день и заработать
+                            миллион за час. Все программы обеспечивают
+                            максимальное качество подготовки, в реальные сроки.
                         </div>
                     </div>
                 </div>
@@ -113,21 +111,23 @@ const StudentChoiceDesktop = () => {
                     </div>
                     <div className={StudentChoiceCss.titleWrapper}>
                         <div className={StudentChoiceCss.title}>
-                            Ментор для каждой профессии
+                            Программа трудоустройства
                         </div>
                         <div className={StudentChoiceCss.subTitle}>
-                            Программа трудоустройства - вам будут доступны все
-                            наши инструменты - чаты и сайт с поиском работ и
-                            фриланс проектов, а также предложения от партнеров.
+                            вам будут доступны все наши инструменты - чаты и
+                            сайт с поиском работ и фриланс проектов, а также
+                            предложения от партнеров.
                         </div>
                     </div>
                 </div>
             </div>
-            <NavLink to="/PracticeForm">
-                <div className={StudentChoiceCss.btn}>
-                    <p>Записаться</p>
-                </div>
-            </NavLink>
+
+            <div
+                onClick={() => props.changePracticeCourses()}
+                className={StudentChoiceCss.btn}
+            >
+                <p>Записаться</p>
+            </div>
         </div>
     );
 };

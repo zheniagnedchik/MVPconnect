@@ -17,6 +17,7 @@ import { useEffect } from 'react';
 import MenuMobile from './menu/MenuMobile';
 import MvpConnect from '../../mainComponent/mvpConnect/MvpConnect';
 import MvpConnectDesktop from '../../mainComponent/mvpConnect/mvpConnectDesktop/MvpConnectDesktop';
+import CourseForm from '../../forms/CoursesForm';
 
 const Python = (props) => {
     props.ScrollTop();
@@ -39,6 +40,7 @@ const Python = (props) => {
             localCurrency={props.localCurrency}
             actualCurrency={actualCurrency}
             Prices={props.Prices}
+            changeActiveCourses={props.changeActiveCourses}
         />,
     ];
     if (ChoiseModule === 2) {
@@ -49,6 +51,7 @@ const Python = (props) => {
                 localCurrency={props.localCurrency}
                 actualCurrency={actualCurrency}
                 Prices={props.Prices}
+                changeActiveCourses={props.changeActiveCourses}
             />,
         ];
     } else if (ChoiseModule === 3) {
@@ -59,6 +62,7 @@ const Python = (props) => {
                 localCurrency={props.localCurrency}
                 actualCurrency={actualCurrency}
                 Prices={props.Prices}
+                changeActiveCourses={props.changeActiveCourses}
             />,
         ];
     } else if (ChoiseModule === 4) {
@@ -69,6 +73,7 @@ const Python = (props) => {
                 localCurrency={props.localCurrency}
                 actualCurrency={actualCurrency}
                 Prices={props.Prices}
+                changeActiveCourses={props.changeActiveCourses}
             />,
         ];
     } else {
@@ -79,6 +84,7 @@ const Python = (props) => {
                 localCurrency={props.localCurrency}
                 actualCurrency={actualCurrency}
                 Prices={props.Prices}
+                changeActiveCourses={props.changeActiveCourses}
             />,
         ];
     }
@@ -89,6 +95,15 @@ const Python = (props) => {
             ) : (
                 <BurgerMenu />
             )}
+            {props.formCoursesActive ? (
+                <CourseForm
+                    state={props.state}
+                    changeActiveCourses={props.changeActiveCourses}
+                    formCoursesActive={props.formCoursesActive}
+                />
+            ) : (
+                ''
+            )}
             <div className={PythonCss.titleBack}>
                 <div className={PythonCss.titleWrapper}>
                     <div className={PythonCss.title}>Back-end разработчик</div>
@@ -96,14 +111,16 @@ const Python = (props) => {
                         Теоретические и практические курсы по подготовке
                         Back-end разработчиков на реальных проектах (стартапах)
                     </div>
-                    <NavLink
-                        to="/CourseForm"
-                        onClick={() => props.CheckNumberSplider(2)}
+                    <div
+                        onClick={() => {
+                            props.CheckNumberSplider(2);
+                            props.changeActiveCourses();
+                        }}
                     >
                         <div className={PythonCss.titleBtn}>
                             <p>Записаться на курс</p>
                         </div>
-                    </NavLink>
+                    </div>
                 </div>
                 <div className={PythonCss.blackBack}>
                     <div className={PythonCss.stagesTitleWrapper}>
@@ -173,15 +190,17 @@ const Python = (props) => {
                         </div>
                     </div>
 
-                    <NavLink
-                        to="/CourseForm"
-                        onClick={() => props.CheckNumberSplider(2)}
+                    <div
+                        onClick={() => {
+                            props.CheckNumberSplider(2);
+                            props.changeActiveCourses();
+                        }}
                     >
                         {' '}
                         <div className={PythonCss.coursesBtn}>
                             Записаться на курс
                         </div>{' '}
-                    </NavLink>
+                    </div>
                     <div className={PythonCss.mentorWrapper}>
                         <div className={PythonCss.mentor}>
                             <img src={mentor} alt="" />
@@ -222,11 +241,13 @@ const Python = (props) => {
                         <MenuDesktop
                             ChoiseModule={ChoiseModule}
                             setChoiseModule={setChoiseModule}
+                            ChangNumberModule={props.ChangNumberModule}
                         />
                     ) : (
                         <MenuMobile
                             ChoiseModule={ChoiseModule}
                             setChoiseModule={setChoiseModule}
+                            ChangNumberModule={props.ChangNumberModule}
                         />
                     )}
 

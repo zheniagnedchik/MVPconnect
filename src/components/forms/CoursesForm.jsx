@@ -9,31 +9,20 @@ import VectorLeft from './img/VectorLeft.svg';
 import X from './img/X.webp';
 import DesktopSplider from './spliders/DesktopSplider';
 import MobileSplider from './spliders/MobileSplider';
-import axios from 'axios';
+
 import { NavLink } from 'react-router-dom';
-import Airtable from 'airtable';
 
 const CourseForm = (props) => {
-    props.ScrollTop();
-
     const slider1 = useRef();
     const [btnCheck, setBtnCheck] = useState(false);
     const [inputTel, setinputTel] = useState('');
     const [inputNick, setinputNick] = useState('');
     const [radioSoc, setradioSoc] = useState('');
-    const [nameCourses, setnameCourse] = useState(
-        props.state.numberSplider === 0
-            ? 'UX/UI Designer'
-            : props.state.numberSplider === 1
-            ? 'Frontend'
-            : props.state.numberSplider === 2
-            ? 'Python'
-            : null
-    );
+    const [nameCourses, setnameCourse] = useState('');
 
     const [inputSoc, setinputSoc] = useState('');
     const [selected, useSelected] = useState(false);
-    const [ChoiseModule, setChoiseModule] = useState(2);
+    const [ChoiseModule, setChoiseModule] = useState(props.state.numberModule);
     const [module, setModule] = useState(
         ChoiseModule === 1
             ? 'Максимальный'
@@ -83,7 +72,6 @@ const CourseForm = (props) => {
     );
 
     const SendData = (e) => {
-        window.scrollTo(0, 0);
         base('Sheet1').create([
             {
                 fields: {
@@ -99,18 +87,37 @@ const CourseForm = (props) => {
     };
 
     return (
-        <div className={FormCss.PracticeForm}>
+        <div
+            className={`${FormCss.PracticeForm} ${
+                props.formCoursesActive ? FormCss.formActive : ''
+            }`}
+        >
             <div className={FormCss.formWrapper}>
-                <div className={FormCss.cross}>
-                    <NavLink to="/">
+                <div className={FormCss.formItem}>
+                    <div
+                        onClick={() => props.changeActiveCourses()}
+                        className={FormCss.cross}
+                    >
                         {' '}
                         <img src={X} alt="" />{' '}
-                    </NavLink>
-                </div>
-                <div className={FormCss.formItem}>
+                    </div>
                     <div className={FormCss.overhead}>Форма записи на</div>
 
                     <Splide
+                        onReady={() => {
+                            setnameCourse(
+                                props.state.numberSplider === 0
+                                    ? 'Курс “UX/UI Designer”'
+                                    : props.state.numberSplider === 1
+                                    ? 'Курс “Front-end разработчик”'
+                                    : props.state.numberSplider === 2
+                                    ? 'Курс “Python”'
+                                    : ''
+                            );
+                        }}
+                        onActive={(splide, Slide) => {
+                            setnameCourse(Slide.slide.innerText);
+                        }}
                         ref={(slider) => (slider1.current = slider)}
                         className={FormCss.splideWrapper}
                         hasTrack={false}
@@ -129,7 +136,7 @@ const CourseForm = (props) => {
                             <SplideTrack className={FormCss.splideTrack}>
                                 <SplideSlide>
                                     <div className={FormCss.coursesTitle}>
-                                        Курс <br /> “UX/UI Designer”
+                                        Курс “UX/UI Designer”
                                     </div>
                                 </SplideSlide>
                                 <SplideSlide>
@@ -139,38 +146,16 @@ const CourseForm = (props) => {
                                 </SplideSlide>
                                 <SplideSlide>
                                     <div className={FormCss.coursesTitle}>
-                                        Курс <br /> “Python”
+                                        Курс “Python”
                                     </div>
                                 </SplideSlide>
                             </SplideTrack>
 
                             <div className="splide__arrows splide__CoursesArrows" />
-                            <button
-                                onClick={() =>
-                                    nameCourses === 'UX/UI Designer'
-                                        ? setnameCourse('Python')
-                                        : nameCourses === 'Python'
-                                        ? setnameCourse('Frontend')
-                                        : nameCourses === 'Frontend'
-                                        ? setnameCourse('UX/UI Designer')
-                                        : null
-                                }
-                                className="splide__arrow splide__arrow--prev splide__customFormArrow--prev"
-                            >
+                            <button className="splide__arrow splide__arrow--prev splide__customFormArrow--prev">
                                 <img src={VectorLeft} alt="" />
                             </button>
-                            <button
-                                onClick={() =>
-                                    nameCourses === 'UX/UI Designer'
-                                        ? setnameCourse('Frontend')
-                                        : nameCourses === 'Frontend'
-                                        ? setnameCourse('Python')
-                                        : nameCourses === 'Python'
-                                        ? setnameCourse('UX/UI Designer')
-                                        : null
-                                }
-                                className="splide__arrow splide__arrow--next splide__customFormArrow--next"
-                            >
+                            <button className="splide__arrow splide__arrow--next splide__customFormArrow--next">
                                 <img src={VectorRight} alt="" />
                             </button>
                         </div>
@@ -316,9 +301,11 @@ const CourseForm = (props) => {
                                 ссылке
                             </a>
                         </div>
-                        <NavLink
-                            to="/"
-                            onClick={(e) => SendData(e)}
+                        <div
+                            onClick={(e) => {
+                                SendData(e);
+                                props.changeActiveCourses();
+                            }}
                             className={`${
                                 btnCheck ? '' : FormCss.footerBtnDisabled
                             }`}
@@ -328,7 +315,7 @@ const CourseForm = (props) => {
                                 {' '}
                                 <p>Записаться</p>
                             </div>
-                        </NavLink>
+                        </div>
                     </div>
                 </div>
             </div>

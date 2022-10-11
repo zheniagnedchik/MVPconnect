@@ -2,17 +2,20 @@ import FeebackGraduatesDesktopCss from './FeebackGraduatesDesktop.module.css';
 import VectorRight from './img/VectorRight.svg';
 import VectorLeft from './img/VectorLeft.svg';
 import Stars from './img/1star.svg';
+import Star1 from './img/Star1.svg';
+import Star2 from './img/Star2.svg';
+import Star3 from './img/Star3.svg';
+import Star4 from './img/Star4.svg';
+import Star5 from './img/Star5.svg';
+import Star6 from './img/Star6.svg';
+import Star7 from './img/Star7.svg';
+import Star8 from './img/Star8.svg';
+import Star9 from './img/Star9.svg';
+import Stars2 from './img/Stars2.svg';
+import Stars3 from './img/Stars3.svg';
+import Stars4 from './img/Stars4.svg';
+import Stars5 from './img/Stars5.svg';
 
-import halfStar from './img/halfStar.svg';
-import oneStar from './img/1star.svg';
-import oneHStar from './img/1halfStar.svg';
-import twoStar from './img/2star.svg';
-import twoHStar from './img/2halfStar.svg';
-import threeStar from './img/3star.svg';
-import threeHStar from './img/3halfStar.svg';
-import fourStar from './img/4star.svg';
-import fourHStar from './img/4halfStar.svg';
-import fiveStar from './img/5stars.svg';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css/skyblue';
 
@@ -27,7 +30,7 @@ const FeebackGraduatesDesktop = (props) => {
         }
         setSelected(i);
     };
-
+    console.log(String(props.Stars.raiting).split('')[2]);
     return (
         <div className={FeebackGraduatesDesktopCss.FeebackGraduatesDesktop}>
             <div className={FeebackGraduatesDesktopCss.titleWrapper}>
@@ -83,25 +86,7 @@ const FeebackGraduatesDesktop = (props) => {
                                             FeebackGraduatesDesktopCss.number
                                         }
                                     >
-                                        {props.Stars.raiting <= 0.5
-                                            ? 0.5
-                                            : props.Stars.raiting <= 1
-                                            ? 1
-                                            : props.Stars.raiting <= 1.5
-                                            ? 1.5
-                                            : props.Stars.raiting <= 2
-                                            ? 2
-                                            : props.Stars.raiting <= 2.5
-                                            ? 2.5
-                                            : props.Stars.raiting <= 3
-                                            ? 3
-                                            : props.Stars.raiting <= 3.5
-                                            ? 3.5
-                                            : props.Stars.raiting <= 4
-                                            ? 4
-                                            : props.Stars.raiting <= 4.5
-                                            ? 4.5
-                                            : 5}
+                                        {props.Stars.raiting}
                                     </div>
                                     <div
                                         className={
@@ -117,30 +102,81 @@ const FeebackGraduatesDesktop = (props) => {
                                             FeebackGraduatesDesktopCss.stars
                                         }
                                     >
-                                        <img
-                                            src={
-                                                props.Stars.raiting <= 0.5
-                                                    ? halfStar
-                                                    : props.Stars.raiting <= 1
-                                                    ? oneStar
-                                                    : props.Stars.raiting <= 1.5
-                                                    ? oneHStar
-                                                    : props.Stars.raiting <= 2
-                                                    ? twoStar
-                                                    : props.Stars.raiting <= 2.5
-                                                    ? twoHStar
-                                                    : props.Stars.raiting <= 3
-                                                    ? threeStar
-                                                    : props.Stars.raiting <= 3.5
-                                                    ? threeHStar
-                                                    : props.Stars.raiting <= 4
-                                                    ? fourStar
-                                                    : props.Stars.raiting <= 4.5
-                                                    ? fourHStar
-                                                    : fiveStar
+                                        <div>
+                                            <img
+                                                src={
+                                                    props.Stars.raiting === 5
+                                                        ? Stars5
+                                                        : props.Stars.raiting >=
+                                                          4
+                                                        ? Stars4
+                                                        : props.Stars.raiting >=
+                                                          3
+                                                        ? Stars3
+                                                        : props.Stars.raiting >=
+                                                          2
+                                                        ? Stars2
+                                                        : ''
+                                                }
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div
+                                            className={
+                                                FeebackGraduatesDesktopCss.star
                                             }
-                                            alt=""
-                                        />
+                                        >
+                                            <img
+                                                src={
+                                                    String(
+                                                        props.Stars.raiting
+                                                    ).split('')[2] == 1
+                                                        ? Star1
+                                                        : String(
+                                                              props.Stars
+                                                                  .raiting
+                                                          ).split('')[2] == 2
+                                                        ? Star2
+                                                        : String(
+                                                              props.Stars
+                                                                  .raiting
+                                                          ).split('')[2] == 3
+                                                        ? Star3
+                                                        : String(
+                                                              props.Stars
+                                                                  .raiting
+                                                          ).split('')[2] == 4
+                                                        ? Star4
+                                                        : String(
+                                                              props.Stars
+                                                                  .raiting
+                                                          ).split('')[2] == 5
+                                                        ? Star5
+                                                        : String(
+                                                              props.Stars
+                                                                  .raiting
+                                                          ).split('')[2] == 6
+                                                        ? Star6
+                                                        : String(
+                                                              props.Stars
+                                                                  .raiting
+                                                          ).split('')[2] == 7
+                                                        ? Star7
+                                                        : String(
+                                                              props.Stars
+                                                                  .raiting
+                                                          ).split('')[2] == 8
+                                                        ? Star8
+                                                        : String(
+                                                              props.Stars
+                                                                  .raiting
+                                                          ).split('')[2] == 9
+                                                        ? Star9
+                                                        : ''
+                                                }
+                                                alt=""
+                                            />
+                                        </div>
                                     </div>
                                 </div>
                             </div>

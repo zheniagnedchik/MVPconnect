@@ -55,6 +55,16 @@ function App(props) {
         setInfoUser(result2.data.rates);
         setLocalCurrency(result.data.currency.code);
     }
+    // Opening Forms
+    const [formCoursesActive, setformCoursesActive] = useState(false);
+    const [formPracticeActive, setformPracticeActive] = useState(false);
+
+    const changeActiveCourses = () => {
+        setformCoursesActive(!formCoursesActive);
+    };
+    const changePracticeCourses = () => {
+        setformPracticeActive(!formPracticeActive);
+    };
 
     return (
         <BrowserRouter>
@@ -64,6 +74,8 @@ function App(props) {
                         path="/"
                         element={
                             <MainComponent
+                                changePracticeCourses={changePracticeCourses}
+                                formPracticeActive={formPracticeActive}
                                 state={props.state}
                                 creatingResult={props.creatingResult}
                                 clearResult={props.clearResult}
@@ -216,6 +228,9 @@ function App(props) {
                                 localCurrency={localCurrency}
                                 worldCurrency={infoUser}
                                 Prices={props.Prices}
+                                changeActiveCourses={changeActiveCourses}
+                                formCoursesActive={formCoursesActive}
+                                ChangNumberModule={props.ChangNumberModule}
                             />
                         }
                     />
@@ -229,6 +244,9 @@ function App(props) {
                                 localCurrency={localCurrency}
                                 worldCurrency={infoUser}
                                 Prices={props.Prices}
+                                changeActiveCourses={changeActiveCourses}
+                                formCoursesActive={formCoursesActive}
+                                ChangNumberModule={props.ChangNumberModule}
                             />
                         }
                     />
@@ -242,6 +260,9 @@ function App(props) {
                                 localCurrency={localCurrency}
                                 worldCurrency={infoUser}
                                 Prices={props.Prices}
+                                changeActiveCourses={changeActiveCourses}
+                                formCoursesActive={formCoursesActive}
+                                ChangNumberModule={props.ChangNumberModule}
                             />
                         }
                     />
@@ -254,27 +275,12 @@ function App(props) {
                                 localCurrency={localCurrency}
                                 worldCurrency={infoUser}
                                 Prices={props.Prices}
+                                changePracticeCourses={changePracticeCourses}
+                                formPracticeActive={formPracticeActive}
                             />
                         }
                     />
-                    <Route
-                        path="/PracticeForm"
-                        element={
-                            <PracticeForm
-                                ScrollTop={props.ScrollTop}
-                                state={props.state}
-                            />
-                        }
-                    />
-                    <Route
-                        path="/CourseForm"
-                        element={
-                            <CourseForm
-                                ScrollTop={props.ScrollTop}
-                                state={props.state}
-                            />
-                        }
-                    />
+
                     <Route
                         path="/certificate"
                         element={<Layout state={props.state} />}

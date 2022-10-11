@@ -37,6 +37,7 @@
     font-family: 'Roboto', Arial, sans-serif;
     font-weight: 300;
     line-height: 140%;
+    cursor: pointer;
 }
 
 .titleBtn {
@@ -50,6 +51,7 @@
     margin: 5vh 0 0;
     font-size: 1.2vmax;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .blackBack {
@@ -173,7 +175,7 @@
     height: 8vh;
     background: #d16eff;
     border-radius: 6px;
-
+    cursor: pointer;
     font-size: 1.2vmax;
     font-weight: 700;
 }

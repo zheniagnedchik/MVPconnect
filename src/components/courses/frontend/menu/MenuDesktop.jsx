@@ -5,7 +5,10 @@ const MenuDesktop = (props) => {
         <div className={MenuCss.dMenu}>
             <div className={MenuCss.dWrapper}>
                 <div
-                    onClick={() => props.setChoiseModule(1)}
+                    onClick={() => {
+                        props.setChoiseModule(1);
+                        props.ChangNumberModule(1);
+                    }}
                     className={` ${
                         props.ChoiseModule === 1 ? MenuCss.dMenuActive : ''
                     }`}
@@ -13,7 +16,10 @@ const MenuDesktop = (props) => {
                     <p> Максимальный</p>
                 </div>
                 <div
-                    onClick={() => props.setChoiseModule(2)}
+                    onClick={() => {
+                        props.setChoiseModule(2);
+                        props.ChangNumberModule(2);
+                    }}
                     className={` ${
                         props.ChoiseModule === 2 ? MenuCss.dMenuActive : ''
                     }`}
@@ -21,7 +27,10 @@ const MenuDesktop = (props) => {
                     <p> Базовый</p>
                 </div>
                 <div
-                    onClick={() => props.setChoiseModule(3)}
+                    onClick={() => {
+                        props.setChoiseModule(3);
+                        props.ChangNumberModule(3);
+                    }}
                     className={` ${
                         props.ChoiseModule === 3 ? MenuCss.dMenuActive : ''
                     }`}
@@ -29,7 +38,10 @@ const MenuDesktop = (props) => {
                     <p> Профессиональный</p>
                 </div>
                 <div
-                    onClick={() => props.setChoiseModule(4)}
+                    onClick={() => {
+                        props.setChoiseModule(4);
+                        props.ChangNumberModule(4);
+                    }}
                     className={` ${
                         props.ChoiseModule === 4 ? MenuCss.dMenuActive : ''
                     }`}

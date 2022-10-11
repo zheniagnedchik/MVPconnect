@@ -1,19 +1,15 @@
 import FormCss from './Form.module.css';
 import { useState } from 'react';
-import axios from 'axios';
-import { NavLink } from 'react-router-dom';
-import Airtable from 'airtable';
 import X from './img/X.webp';
 
 const PracticeForm = (props) => {
-    props.ScrollTop();
     const [selected, useSelected] = useState(false);
     const [btnCheck, setBtnCheck] = useState(false);
 
     const [inputTel, setinputTel] = useState('');
     const [inputNick, setinputNick] = useState('');
     const [radioSoc, setradioSoc] = useState('');
-    const [radioProf, setradioProf] = useState('');
+
     const [inputSoc, setinputSoc] = useState('');
 
     const ChangeState = (e) => {
@@ -28,17 +24,17 @@ const PracticeForm = (props) => {
 
     const checkBtn = (e) => {
         if (
-            e.currentTarget[12].value === '' ||
-            (!e.currentTarget[6].checked &&
-                !e.currentTarget[7].checked &&
-                !e.currentTarget[8].checked &&
-                !e.currentTarget[9].checked &&
-                !e.currentTarget[10].checked)
+            e.currentTarget[7].value === '' ||
+            (!e.currentTarget[1].checked &&
+                !e.currentTarget[2].checked &&
+                !e.currentTarget[3].checked &&
+                !e.currentTarget[4].checked &&
+                !e.currentTarget[5].checked)
         ) {
             setBtnCheck(false);
         } else if (
-            e.currentTarget[10].checked &&
-            e.currentTarget[11].value === ''
+            e.currentTarget[5].checked &&
+            e.currentTarget[6].value === ''
         ) {
             setBtnCheck(false);
         } else {
@@ -51,29 +47,34 @@ const PracticeForm = (props) => {
         'app5JtyuZXRZgEBUO'
     );
     const SendData = (e) => {
-        window.scrollTo(0, 0);
         base('Sheet1').create([
             {
                 fields: {
                     inputTel: inputTel,
                     inputNick: inputNick,
                     radioSoc: radioSoc,
-                    radioProf: radioProf,
+
                     inputSoc: inputSoc,
                 },
             },
         ]);
     };
+
     return (
-        <div className={FormCss.PracticeForm}>
+        <div
+            className={`${FormCss.PracticeForm} ${
+                props.formPracticeActive ? FormCss.formActive : ''
+            }`}
+        >
             <div className={FormCss.formWrapper}>
-                <div className={FormCss.cross}>
-                    <NavLink to="/">
+                <div className={FormCss.formItem}>
+                    <div
+                        onClick={() => props.changePracticeCourses()}
+                        className={FormCss.cross}
+                    >
                         {' '}
                         <img src={X} alt="" />{' '}
-                    </NavLink>
-                </div>
-                <div className={FormCss.formItem}>
+                    </div>
                     <div className={FormCss.overhead}>Форма записи на</div>
                     <div className={FormCss.title}>
                         Практический курс “Работа по стандартам IT-компаний”
@@ -97,75 +98,7 @@ const PracticeForm = (props) => {
                                 />
                             </div>
                         </div>
-                        <div className={FormCss.profWrapper}>
-                            <div className={FormCss.profTitle}>
-                                В роли кого вы планируете проходить практический
-                                курс (аналог стажировки в IT компании)
-                            </div>
-                            <div className={FormCss.profItem}>
-                                <input
-                                    onClick={() => {
-                                        setradioProf('Business Analyst');
-                                    }}
-                                    type="radio"
-                                    name="prof"
-                                    id="radio1"
-                                />
-                                <label htmlFor="radio1">Business Analyst</label>
-                            </div>
-                            <div className={FormCss.profItem}>
-                                <input
-                                    onClick={() => {
-                                        setradioProf('Project Manager');
-                                    }}
-                                    type="radio"
-                                    name="prof"
-                                    id="radio2"
-                                />
-                                <label htmlFor="radio2">Project Manager</label>
-                            </div>
-                            <div className={FormCss.profItem}>
-                                <input
-                                    onClick={() => {
-                                        setradioProf(
-                                            'Front-end developer (React)'
-                                        );
-                                    }}
-                                    type="radio"
-                                    name="prof"
-                                    id="radio3"
-                                />
-                                <label htmlFor="radio3">
-                                    Front-end developer (React)
-                                </label>
-                            </div>
-                            <div className={FormCss.profItem}>
-                                <input
-                                    onClick={() => {
-                                        setradioProf(
-                                            'Back-end developer (Python)'
-                                        );
-                                    }}
-                                    type="radio"
-                                    name="prof"
-                                    id="radio4"
-                                />
-                                <label htmlFor="radio4">
-                                    Back-end developer (Python)
-                                </label>
-                            </div>
-                            <div className={FormCss.profItem}>
-                                <input
-                                    onClick={() => {
-                                        setradioProf('Product Manager');
-                                    }}
-                                    type="radio"
-                                    name="prof"
-                                    id="radio5"
-                                />
-                                <label htmlFor="radio5">Product Manager</label>
-                            </div>
-                        </div>
+
                         <div className={FormCss.profWrapper}>
                             <div className={FormCss.profTitle}>
                                 Мессенджер для связи*
@@ -271,9 +204,11 @@ const PracticeForm = (props) => {
                                 ссылке
                             </a>
                         </div>
-                        <NavLink
-                            to="/"
-                            onClick={(e) => SendData(e)}
+                        <div
+                            onClick={(e) => {
+                                SendData(e);
+                                props.changePracticeCourses();
+                            }}
                             className={`${
                                 btnCheck ? '' : FormCss.footerBtnDisabled
                             }`}
@@ -283,7 +218,7 @@ const PracticeForm = (props) => {
                                 {' '}
                                 <p>Записаться</p>
                             </div>
-                        </NavLink>
+                        </div>
                     </div>
                 </div>
             </div>

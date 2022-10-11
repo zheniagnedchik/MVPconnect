@@ -5,7 +5,7 @@ import Vector from './img/Vector.svg';
 import VectorGold from './img/VectorGold.svg';
 import { NavLink } from 'react-router-dom';
 
-const StudentChoice = () => {
+const StudentChoice = (props) => {
     const [selected, setSelected] = useState(null);
     // Accordion
     const toggle = (i) => {
@@ -65,13 +65,13 @@ const StudentChoice = () => {
                         </div>
                     ))}
                 </div>
+            </div>{' '}
+            <div
+                onClick={() => props.changePracticeCourses()}
+                className={StudentChoiceCss.btn}
+            >
+                <p>Записаться</p>
             </div>
-            <NavLink to="/PracticeForm">
-                {' '}
-                <div className={StudentChoiceCss.btn}>
-                    <p>Записаться</p>
-                </div>
-            </NavLink>
         </div>
     );
 };

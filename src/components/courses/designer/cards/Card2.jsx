@@ -57,19 +57,23 @@ const Card2 = (props) => {
                         </div>{' '}
                     </div>
                 </div>
-                <div className={CardsCss.monthCurrency}>BYN/в месяц</div>
+                <div className={CardsCss.monthCurrency}>
+                    {props.localCurrency}/в месяц
+                </div>
                 <div className={CardsCss.descr}>
                     <ul>
                         <li>Оплата в 2 этапа</li>
                         <li>Скидки за нескольких модулей</li>
                     </ul>
                 </div>
-                <NavLink
-                    to="/CourseForm"
-                    onClick={() => props.CheckNumberSplider(0)}
+                <div
+                    onClick={() => {
+                        props.CheckNumberSplider(0);
+                        props.changeActiveCourses();
+                    }}
                 >
                     <div className={CardsCss.cardBtn}>Записаться на курс</div>{' '}
-                </NavLink>
+                </div>
             </div>
         </div>
     );
