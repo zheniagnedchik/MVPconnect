@@ -306,12 +306,22 @@ const Practice = (props) => {
                         <div className={PracticeCss.costItemWrapper}>
                             <div className={PracticeCss.costItem}>
                                 <div className={PracticeCss.cost}>
-                                    {Math.round(
-                                        props.Prices.prices.practice.twoMonth *
-                                            actualCurrency *
-                                            (1 + 2 / 100)
-                                    )}{' '}
-                                    {props.localCurrency} в месяц
+                                    {actualCurrency === undefined
+                                        ? Math.round(
+                                              props.Prices.prices.practice
+                                                  .twoMonth *
+                                                  (1 + 2 / 100)
+                                          )
+                                        : Math.round(
+                                              props.Prices.prices.practice
+                                                  .twoMonth *
+                                                  actualCurrency *
+                                                  (1 + 2 / 100)
+                                          )}{' '}
+                                    {actualCurrency === undefined
+                                        ? 'USD'
+                                        : props.localCurrency}{' '}
+                                    в месяц
                                 </div>
 
                                 <div className={PracticeCss.costProfWrapper}>
@@ -361,14 +371,23 @@ const Practice = (props) => {
                                         Стоимость программы -{' '}
                                         <b>
                                             {' '}
-                                            {Math.round(
-                                                props.Prices.prices.practice
-                                                    .twoMonth *
-                                                    actualCurrency *
-                                                    (1 + 2 / 100) *
-                                                    2
-                                            )}{' '}
-                                            {props.localCurrency}{' '}
+                                            {actualCurrency === undefined
+                                                ? Math.round(
+                                                      props.Prices.prices
+                                                          .practice.twoMonth *
+                                                          (1 + 2 / 100) *
+                                                          2
+                                                  )
+                                                : Math.round(
+                                                      props.Prices.prices
+                                                          .practice.twoMonth *
+                                                          actualCurrency *
+                                                          (1 + 2 / 100) *
+                                                          2
+                                                  )}{' '}
+                                            {actualCurrency === undefined
+                                                ? 'USD'
+                                                : props.localCurrency}{' '}
                                         </b>
                                     </p>
                                 </div>
@@ -384,13 +403,22 @@ const Practice = (props) => {
                             </div>
                             <div className={PracticeCss.costItem}>
                                 <div className={PracticeCss.cost}>
-                                    {Math.round(
-                                        props.Prices.prices.practice
-                                            .twoHalfMonth *
-                                            actualCurrency *
-                                            (1 + 2 / 100)
-                                    )}{' '}
-                                    {props.localCurrency} в месяц
+                                    {actualCurrency === undefined
+                                        ? Math.round(
+                                              props.Prices.prices.practice
+                                                  .twoHalfMonth *
+                                                  (1 + 2 / 100)
+                                          )
+                                        : Math.round(
+                                              props.Prices.prices.practice
+                                                  .twoHalfMonth *
+                                                  actualCurrency *
+                                                  (1 + 2 / 100)
+                                          )}{' '}
+                                    {actualCurrency === undefined
+                                        ? 'USD'
+                                        : props.localCurrency}{' '}
+                                    в месяц
                                 </div>
 
                                 <div className={PracticeCss.costProfWrapper}>
@@ -431,14 +459,25 @@ const Practice = (props) => {
                                         Стоимость программы -{' '}
                                         <b>
                                             {' '}
-                                            {Math.round(
-                                                props.Prices.prices.practice
-                                                    .twoHalfMonth *
-                                                    actualCurrency *
-                                                    (1 + 2 / 100) *
-                                                    2.5
-                                            )}{' '}
-                                            {props.localCurrency}
+                                            {actualCurrency === undefined
+                                                ? Math.round(
+                                                      props.Prices.prices
+                                                          .practice
+                                                          .twoHalfMonth *
+                                                          (1 + 2 / 100) *
+                                                          2.5
+                                                  )
+                                                : Math.round(
+                                                      props.Prices.prices
+                                                          .practice
+                                                          .twoHalfMonth *
+                                                          actualCurrency *
+                                                          (1 + 2 / 100) *
+                                                          2.5
+                                                  )}{' '}
+                                            {actualCurrency === undefined
+                                                ? 'USD'
+                                                : props.localCurrency}
                                         </b>
                                     </p>
                                 </div>

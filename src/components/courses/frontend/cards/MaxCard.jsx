@@ -34,32 +34,50 @@ const MaxCard = (props) => {
                     <div className={CardsCss.commonPrice}>
                         <p>Обычная цена:</p>
                         <div className={CardsCss.Price}>
-                            {Math.round(
-                                props.Prices.prices.frontend.max *
-                                    props.actualCurrency *
-                                    (1 + 2 / 100)
-                            )}
+                            {props.localCurrency === ''
+                                ? Math.round(
+                                      props.Prices.prices.frontend.max *
+                                          (1 + 2 / 100)
+                                  )
+                                : Math.round(
+                                      props.Prices.prices.frontend.max *
+                                          props.actualCurrency *
+                                          (1 + 2 / 100)
+                                  )}
                         </div>{' '}
                     </div>
                     <div className={CardsCss.discountPrice}>
                         <p>Цена по акции:</p>
                         <div className={CardsCss.monthPrice}>
-                            {Math.round(
-                                Math.round(
-                                    props.Prices.prices.frontend.max *
-                                        props.actualCurrency
-                                ) *
-                                    (1 -
-                                        props.Prices.prices.frontend.discount /
-                                            100) *
-                                    (1 + 2 / 100)
-                            )}{' '}
+                            {props.localCurrency === ''
+                                ? Math.round(
+                                      Math.round(
+                                          props.Prices.prices.frontend.max
+                                      ) *
+                                          (1 -
+                                              props.Prices.prices.frontend
+                                                  .discount /
+                                                  100) *
+                                          (1 + 2 / 100)
+                                  )
+                                : Math.round(
+                                      Math.round(
+                                          props.Prices.prices.frontend.max *
+                                              props.actualCurrency
+                                      ) *
+                                          (1 -
+                                              props.Prices.prices.frontend
+                                                  .discount /
+                                                  100) *
+                                          (1 + 2 / 100)
+                                  )}{' '}
                         </div>{' '}
                     </div>
                 </div>
 
                 <div className={CardsCss.monthCurrency}>
-                    {props.localCurrency}/в месяц
+                    {props.localCurrency === '' ? 'USD' : props.localCurrency}/в
+                    месяц
                 </div>
                 <div className={CardsCss.descr}>
                     <ul>

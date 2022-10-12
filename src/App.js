@@ -55,6 +55,7 @@ function App(props) {
         setInfoUser(result2.data.rates);
         setLocalCurrency(result.data.currency.code);
     }
+
     // Opening Forms
     const [formCoursesActive, setformCoursesActive] = useState(false);
     const [formPracticeActive, setformPracticeActive] = useState(false);
