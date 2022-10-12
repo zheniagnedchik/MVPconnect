@@ -1,4 +1,4 @@
-import HistorySuccessCss from './HistorySuccess.module.css';
+import HistorySuccessCss from './historySuccess.module.css';
 import VectorRight from './img/VectorRight.svg';
 import VectorLeft from './img/VectorLeft.svg';
 

@@ -18,7 +18,7 @@ const Layout = (props) => {
     return (
         <div>
             {state ? (
-                <div>
+                <div style={{ backgroundColor: 'black' }}>
                     {props.state.displaySize.isDesktop ? (
                         <BurgerMenuDesktop />
                     ) : (

@@ -10,7 +10,7 @@ import SuccessTrajectory from './successTrajectory/SuccessTrajectory';
 import TheoryCourse from './theoryCourse/TheoryCourse';
 import TheoryCourseDesktop from './theoryCourse/theoryCourseDesktop/theoryCourseDesktop';
 import FeebackGraduates from './feebackGraduates/FeebackGraduates';
-import HistorySuccess from './historySuccess/HistorySuccess';
+import HistorySuccess from './historySuccess/historySuccess';
 import { Outlet } from 'react-router-dom';
 
 import PracticeDesktop from './Practice/PracticeDesktop/PracticeDesktop';

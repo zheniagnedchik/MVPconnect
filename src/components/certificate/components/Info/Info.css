@@ -6,7 +6,7 @@
 .info__header-container {
     display: flex;
     width: 40%;
-    justify-content: space-between;
+    justify-content: center;
 }
 .info__container {
     display: flex;
@@ -53,7 +53,9 @@
 }
 .info__comand-img {
     width: 30px;
+    height: 30px;
     border-radius: 100px;
+    object-fit: cover;
 }
 .info__comand-img-container {
     margin-left: 20px;
@@ -92,6 +94,12 @@
     font-weight: 400;
     color: #787171;
     text-align: center;
+}
+.info__block-description-descr {
+    font-size: 16px;
+    font-weight: 400;
+    color: #787171;
+    width: 95%;
 }
 @media (max-width: 770px) {
     .info__header-item {
