@@ -30,7 +30,7 @@ const FeebackGraduatesDesktop = (props) => {
         }
         setSelected(i);
     };
-    console.log(String(props.Stars.raiting).split('')[2]);
+
     return (
         <div className={FeebackGraduatesDesktopCss.FeebackGraduatesDesktop}>
             <div className={FeebackGraduatesDesktopCss.titleWrapper}>
