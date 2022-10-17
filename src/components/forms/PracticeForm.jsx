@@ -53,7 +53,7 @@ const PracticeForm = (props) => {
                     inputTel: inputTel,
                     inputNick: inputNick,
                     radioSoc: radioSoc,
-
+                    TimeData: `${new Date().getDate()}.${new Date().getMonth()}.${new Date().getFullYear()} ${new Date().getHours()}:${new Date().getMinutes()}`,
                     inputSoc: inputSoc,
                 },
             },
