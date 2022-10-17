@@ -40,6 +40,7 @@ function App(props) {
     // Check IP User 'ipdata.co' (local currency) and fresh world currency data 'openexchangerates.org'
     const [localCurrency, setLocalCurrency] = useState('');
     const [infoUser, setInfoUser] = useState('');
+    const [countryUser, setCountryUser] = useState('');
 
     useEffect(() => {
         getData();
@@ -54,6 +55,7 @@ function App(props) {
 
         setInfoUser(result2.data.rates);
         setLocalCurrency(result.data.currency.code);
+        setCountryUser(result.data.city);
     }
 
     // Opening Forms
@@ -85,6 +87,7 @@ function App(props) {
                                 Stars={props.Stars}
                                 Videos={props.Videos}
                                 Prices={props.Prices}
+                                countryUser={countryUser}
                             />
                         }
                     >
@@ -232,6 +235,7 @@ function App(props) {
                                 changeActiveCourses={changeActiveCourses}
                                 formCoursesActive={formCoursesActive}
                                 ChangNumberModule={props.ChangNumberModule}
+                                countryUser={countryUser}
                             />
                         }
                     />
@@ -248,6 +252,7 @@ function App(props) {
                                 changeActiveCourses={changeActiveCourses}
                                 formCoursesActive={formCoursesActive}
                                 ChangNumberModule={props.ChangNumberModule}
+                                countryUser={countryUser}
                             />
                         }
                     />
@@ -264,6 +269,7 @@ function App(props) {
                                 changeActiveCourses={changeActiveCourses}
                                 formCoursesActive={formCoursesActive}
                                 ChangNumberModule={props.ChangNumberModule}
+                                countryUser={countryUser}
                             />
                         }
                     />
@@ -275,6 +281,7 @@ function App(props) {
                                 state={props.state}
                                 localCurrency={localCurrency}
                                 worldCurrency={infoUser}
+                                countryUser={countryUser}
                                 Prices={props.Prices}
                                 changePracticeCourses={changePracticeCourses}
                                 formPracticeActive={formPracticeActive}

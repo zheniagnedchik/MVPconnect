@@ -27,6 +27,7 @@ const MainComponent = (props) => {
                 displaySize={props.state.displaySize}
                 changePracticeCourses={props.changePracticeCourses}
                 formPracticeActive={props.formPracticeActive}
+                countryUser={props.countryUser}
             />
             <div className={MainComponentCss.wrapper}>
                 {props.state.displaySize.isDesktop ? (

@@ -105,6 +105,7 @@ const Frontend = (props) => {
                     state={props.state}
                     changeActiveCourses={props.changeActiveCourses}
                     formCoursesActive={props.formCoursesActive}
+                    countryUser={props.countryUser}
                 />
             ) : (
                 ''

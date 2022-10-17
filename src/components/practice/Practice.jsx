@@ -43,6 +43,7 @@ const Practice = (props) => {
             <PracticeForm
                 changePracticeCourses={props.changePracticeCourses}
                 formPracticeActive={props.formPracticeActive}
+                countryUser={props.countryUser}
             />
             <div className={PracticeCss.titleBack}>
                 <div className={PracticeCss.titleWrapper}>

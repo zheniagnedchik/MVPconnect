@@ -12,6 +12,7 @@ const MainPage = (props) => {
             <PracticeForm
                 changePracticeCourses={props.changePracticeCourses}
                 formPracticeActive={props.formPracticeActive}
+                countryUser={props.countryUser}
             />
             <div className={MainPageCss.mainPage}>
                 {props.displaySize.isDesktop ? (
